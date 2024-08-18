@@ -26,8 +26,6 @@
 
 		<div id="site-navigation" class="absolute lg:static inset-x-0 top-full h-0 lg:h-auto overflow-auto lg:overflow-visible bg-white shadow-none transition-all duration-500">
 			<nav id="site-navigation" class="container lg:!px-0 pb-5 lg:pb-0 lg:!max-w-full flex flex-col lg:flex-row lg:items-center gap-4 font-semibold" aria-label="<?php esc_attr_e('Main Navigation', '_pansa'); ?>">
-				<button aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', '_pansa'); ?></button>
-
 				<?php
 				wp_nav_menu(
 					array(
