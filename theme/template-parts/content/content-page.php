@@ -12,7 +12,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div <?php pansa_content_class('entry-content'); ?>>
+	<div <?php _pansa_content_class('entry-content'); ?>>
 		<?php if (get_the_content()) : ?>
 			<div class="container">
 				<?php the_content(); ?>
