@@ -29,7 +29,7 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Raleway', ...defaultTheme.fontFamily.sans],
+				sans: ['Red Hat Text', ...defaultTheme.fontFamily.sans],
 			},
 			fontSize: {
 				xl: '1.375rem',
