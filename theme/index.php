@@ -29,7 +29,7 @@ get_header();
 			}
 
 			// Previous/next page navigation.
-			smoothh_the_posts_navigation();
+			pansa_the_posts_navigation();
 		} else {
 
 			// If no content, include the "No posts found" template.
