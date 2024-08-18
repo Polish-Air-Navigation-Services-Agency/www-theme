@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -8,34 +9,59 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package _pansa
+ * @package Smoothh
  */
 
 get_header();
 ?>
 
-	<section id="primary">
-		<main id="main">
+<section id="primary">
+	<main id="main">
 
-			<?php
+		<?php
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+		/* Start the Loop */
+		$queriedObject = get_queried_object();
+		while (have_posts()) :
+			$sections = get_field('sections', $queriedObject);
+			$no_fade_sections = ['hero'];
 
-				get_template_part( 'template-parts/content/content', 'page' );
+			if (function_exists('yoast_breadcrumb') && (!$sections || $sections[0]['acf_fc_layout'] != 'hero')) :
+		?>
+				<div class="breadcrumbs-container">
+					<?php yoast_breadcrumb('<div id="breadcrumbs" class="breadcrumbs-default">', '</div>');; ?>
+				</div>
+				<?php
+			endif;
 
-				// If comments are open, or we have at least one comment, load
-				// the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
+			the_post();
+			get_template_part('template-parts/content/content', 'page');
 
-			endwhile; // End of the loop.
-			?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+
+			if ($sections) :
+				foreach ($sections as $section) :
+					$template = str_replace('_', '-', $section['acf_fc_layout']);
+				?>
+					<div <?php if (!in_array($template, $no_fade_sections)) {
+									echo 'data-aos="fade" data-aos-delay="50"';
+								} ?>>
+						<?php
+						$section_visible = $section['isSectionVisible'];
+						if (isset($section_visible) && $section_visible == true) {
+							get_template_part('flexible-content/sections/' . $template, '', $section);
+						} ?>
+					</div>
+		<?php
+				endforeach;
+			endif;
+
+
+		endwhile; // End of the loop.
+		?>
+
+	</main><!-- #main -->
+</section><!-- #primary -->
 
 <?php
 get_footer();
