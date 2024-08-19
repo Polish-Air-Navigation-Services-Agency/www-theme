@@ -12,7 +12,7 @@ if ($hero_background['url']) {
 }
 ?>
 
-<div class="relative translate-y-[-150px] w-full h-[300px] md:h-[600px] md:!h-[700px] flex flex-col justify-center">
+<div class="relative translate-y-[-150px] w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
     <?php if (isset($hero_bg_url)) : ?>
         <img src="<?php echo $hero_bg_url ?>" alt="background_image" class="absolute inset-0 z-[-1] object-cover !h-full w-full">
     <?php endif; ?>
@@ -29,7 +29,7 @@ if ($hero_background['url']) {
                 <h2 class="w-fit text-[16px] leading-[24px] font-semibold text-white after:content-[''] after:w-[61px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $small_title; ?></h2>
             <?php endif; ?>
             <?php if ($hero_text) : ?>
-                <h1 class="text-[40px] lg:text-[80px] lg:leading-[80px] font-medium text-white"><?php echo $hero_text; ?></h1>
+                <h1 class="text-[40px] lg:text-[80px] leading-[45px] lg:leading-[80px] font-medium text-white"><?php echo $hero_text; ?></h1>
             <?php endif; ?>
         </div>
 
@@ -48,7 +48,7 @@ if ($hero_background['url']) {
             </a>
         </button>
 
-        <a class="block absolute bottom-6 left-1/2 -translate-x-1/2">
+        <a href="#" class="block cursor-pointer absolute bottom-6 left-1/2 -translate-x-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="48" viewBox="0 0 50 48" fill="none">
                 <path d="M18.4003 32.9004L25 39.5001M25 39.5001L31.5997 32.9004M25 39.5001L24.9999 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
