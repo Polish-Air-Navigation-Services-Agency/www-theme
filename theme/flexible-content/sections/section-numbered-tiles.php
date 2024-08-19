@@ -32,7 +32,7 @@ $tiles = $args['tiles'];
                                                                                                                                         else echo 'bg-white hover:bg-primary'; ?>">
                             <?php if ($tile['number']) : ?>
                                 <p class="size-[92px] mb-[90px] self-end flex flex-col justify-center items-center text-[60px] text-primary rounded-full leading-[72px] font-medium  <?php if ($tileID == 1) echo 'bg-secondary rounded-full';
-                                                                                                                                                                                        else echo 'text-primary group-hover:bg-white'; ?>"><?php echo $tile['number']; ?></p>
+                                                                                                                                                                                        else echo 'text-primary group-hover:bg-secondary'; ?>"><?php echo $tile['number']; ?></p>
                             <?php endif; ?>
 
                             <?php if ($tile['title']) : ?>
