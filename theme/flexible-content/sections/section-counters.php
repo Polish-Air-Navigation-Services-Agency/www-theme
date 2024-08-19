@@ -22,7 +22,7 @@ if ($section_img['url']) {
             <circle cx="75" r="75" fill="#60B8D1" />
         </svg>
     </div>
-    <div class="pt-12 mb-[] lg:mb-[140px] relative z-0 container">
+    <div class="pt-12 mb-[100px] lg:mb-[140px] relative z-0 container">
         <!-- counter -->
         <?php if ($tiles_list) :
             $tileID = 0;
