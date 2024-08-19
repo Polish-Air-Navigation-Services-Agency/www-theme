@@ -15,7 +15,7 @@
 																					} else {
 																						echo 'top-0';
 																					} ?> w-full bg-transparent transition-all duration-300 shadow-md">
-	<div class="container py-5 flex items-center">
+	<div class="container py-10 flex items-center">
 		<div class="logo mr-16">
 			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="block max-w-[140px] md:max-w-[190px] 2xl:max-w-[220px]">
 				<svg xmlns="http://www.w3.org/2000/svg" width="120" height="20" viewBox="0 0 120 20" fill="none">
@@ -37,7 +37,7 @@
 				?>
 				<button class="bg-white !rounded-full !px-6 !py-[11px] text-[#0F304D]">
 					<a href="<?php echo esc_url(home_url('/kontakt')); ?>" class="flex items-center justify-center gap-[10px]">
-						Skontaktuj sie
+						<?php esc_html_e('Skontaktuj się', '_pansa'); ?>
 						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
 							<path d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#0F304D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 						</svg>

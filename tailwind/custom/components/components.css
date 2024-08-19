@@ -64,5 +64,5 @@
 }
 
 #primary-menu a {
-	@apply after:content-[''] after:w-[20px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:-right-6;
+	@apply after:content-[''] after:w-[20px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px];
 }
