@@ -51,6 +51,7 @@ function initCounter() {
 				duration: 2,
 				enableScrollSpy: true,
 				scrollSpyOnce: true,
+				decimal: ',',
 			}
 		).start();
 	}
