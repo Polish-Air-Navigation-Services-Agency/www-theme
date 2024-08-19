@@ -28,7 +28,7 @@ $tiles_list = $args['tiles_list'];
                                         <?php echo $tile['counter_target']; ?>
                                     </span>
 
-                                    <?php if ($tile['counter_unit2']) : ?>
+                                    <?php if ($tile['counter_unit_2']) : ?>
                                         <span><?php echo $tile['counter_unit_2']; ?></span>
                                     <?php endif; ?>
 
