@@ -36,7 +36,6 @@ if (!defined('ABSPATH')) {
       <div class="tooltip">
         <div class="tooltip-icon">i</div>
         <span class="tooltip-text">
-          <?php wc_registration_privacy_policy_text() ?>
         </span>
       </div>
       [/acceptance]
