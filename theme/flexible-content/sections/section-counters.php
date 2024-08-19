@@ -16,7 +16,7 @@ $tiles_list = $args['tiles_list'];
         <?php if ($tiles_list) :
             $tileID = 0;
         ?>
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-x-10 gap-y-10">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-x-10 gap-y-14 lg:gap-y-10">
                 <?php foreach ($tiles_list as $tile) :
                     $tileID++;
                 ?>
