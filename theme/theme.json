@@ -25,8 +25,8 @@
 					"name": "Secondary"
 				},
 				{
-					"slug": "tertiary",
-					"color": "#0369a1",
+					"slug": "textGray",
+					"color": "#353C40",
 					"name": "Tertiary"
 				}
 			]

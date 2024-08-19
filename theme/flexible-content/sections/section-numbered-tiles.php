@@ -19,17 +19,19 @@ $tiles = $args['tiles'];
                 ?>
                     <?php if ($tile) : ?>
                         <div class="tile-wrapper w-[355px] px-5 py-[30px] <?php if ($tileID == 1) echo 'bg-primary';
-                                                                            else echo 'bg-white'; ?> ">
+                                                                            else echo 'bg-white'; ?>">
                             <?php if ($tile['number']) : ?>
-                                <p class="w-fit mb-[90px] text-[60px] text-primary leading-[72px] rounder-full bg-secondary"><?php echo $tile['number']; ?></p>
+                                <p class="w-fit mb-[90px] text-[60px] text-primary leading-[72px] font-medium rounded-full bg-secondary"><?php echo $tile['number']; ?></p>
                             <?php endif; ?>
 
                             <?php if ($tile['title']) : ?>
-                                <p class="mb-[9px] text-[30px] text-white leading-[36px]"><?php echo $tile['title']; ?></p>
+                                <p class="mb-[9px] text-[30px] <?php if ($tileID == 1) echo 'text-textGray';
+                                                                else echo 'text-white'; ?> leading-[36px]"><?php echo $tile['title']; ?></p>
                             <?php endif; ?>
 
                             <?php if ($tile['description']) : ?>
-                                <p class="text-[16px] text-white leading-[24px]"><?php echo $tile['description']; ?></p>
+                                <p class="text-[16px] <?php if ($tileID == 1) echo 'text-textGray';
+                                                        else echo 'text-white'; ?> leading-[24px]"><?php echo $tile['description']; ?></p>
                             <?php endif; ?>
                         </div>
                     <?php endif; ?>

@@ -39,7 +39,7 @@ $description = $args['description'];
 
         </div>
         <div class="col2 basis-1/2">
-            <p class="max-w-[564px]">
+            <p class="max-w-[564px] text-textGray">
                 <?php echo $description; ?>
             </p>
         </div>
