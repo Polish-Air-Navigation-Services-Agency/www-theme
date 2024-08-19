@@ -27,7 +27,7 @@ $tiles_list = $args['tiles_list'];
                                     <span id="target<?php echo $tileID ?>" data-counter-target<?php echo $tileID ?>="<?php echo $tile['counter_target']; ?>" data-counter-qty>
                                         <?php echo $tile['counter_target']; ?>
                                     </span>
-                                    <span class="text-secondary text-[16px] font-semibold"><sup><?php echo $tile['counter_unit']; ?></sup></span>
+                                    <span class="text-secondary font-semibold"><sup><?php echo $tile['counter_unit']; ?></sup></span>
                                 </h3>
                             <?php endif; ?>
                         </div>
