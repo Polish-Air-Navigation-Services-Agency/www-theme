@@ -28,16 +28,16 @@ $tiles = $args['tiles'];
                     $tileID++;
                 ?>
                     <?php if ($tile) : ?>
-                        <div class="tile-wrapper w-[355px] px-5 py-[30px] <?php if ($tileID == 1) echo 'bg-primary';
-                                                                            else echo 'bg-white'; ?>">
+                        <div class="tile-wrapper w-[355px] px-5 py-[30px] flex flex-col <?php if ($tileID == 1) echo 'bg-primary';
+                                                                                        else echo 'bg-white'; ?>">
                             <?php if ($tile['number']) : ?>
-                                <p class="size-[92px] mb-[90px] flex flex-col justify-center items-center text-[60px] text-primary leading-[72px] font-medium  <?php if ($tileID == 1) echo 'bg-secondary rounded-full';
-                                                                                                                                                                else echo 'text-primary'; ?>"><?php echo $tile['number']; ?></p>
+                                <p class="size-[92px] mb-[90px] self-end flex flex-col justify-center items-center text-[60px] text-primary leading-[72px] font-medium  <?php if ($tileID == 1) echo 'bg-secondary rounded-full';
+                                                                                                                                                                        else echo 'text-primary'; ?>"><?php echo $tile['number']; ?></p>
                             <?php endif; ?>
 
                             <?php if ($tile['title']) : ?>
-                                <p class="mb-[9px] text-[30px] <?php if ($tileID == 1) echo 'text-white';
-                                                                else echo 'text-textGray'; ?> leading-[36px]"><?php echo $tile['title']; ?></p>
+                                <p class="mb-[9px] text-[30px] font-medium <?php if ($tileID == 1) echo 'text-white';
+                                                                            else echo 'text-textGray'; ?> leading-[36px]"><?php echo $tile['title']; ?></p>
                             <?php endif; ?>
 
                             <?php if ($tile['description']) : ?>
