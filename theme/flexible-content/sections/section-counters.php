@@ -31,7 +31,7 @@ if ($section_img['url']) {
                 <?php foreach ($tiles_list as $tile) :
                     $tileID++;
                 ?>
-                    <div class="relative flex flex-col lg: items-center text-left">
+                    <div class="relative flex flex-col items-center text-left">
                         <div class="mb-1 lg:mb-6 self-start">
                             <?php if ($tile) : ?>
                                 <h3 class="text-[40px] lg:text-[60px] text-white font-medium">
