@@ -11,13 +11,15 @@ $tiles = $args['tiles'];
 
 <section class="bg-[#F6F8F9]">
     <div class="container">
-        <?php if ($section_number) : ?>
-            <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold before:content-[''] before:w-[61px] before:h-[2px] before:bg-secondary before:rounded-full before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-70px] after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
-        <?php endif; ?>
+        <div class="title-wrapper w-full flex justify-center items-center">
+            <?php if ($section_number) : ?>
+                <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold before:content-[''] before:w-[61px] before:h-[2px] before:bg-secondary before:rounded-full before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-70px] after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
+            <?php endif; ?>
 
-        <?php if ($title) : ?>
-            <h2 class="mb-[50px] text-[60px] text-primary leading-[72px] font-medium"><?php echo $title; ?></h2>
-        <?php endif; ?>
+            <?php if ($title) : ?>
+                <h2 class="mb-[50px] text-[60px] text-primary leading-[72px] font-medium"><?php echo $title; ?></h2>
+            <?php endif; ?>
+        </div>
 
         <div class="tiles-wrapper w-fit mb-[100px] lg:mb-[190px] grid grid-cols-1 lg:grid-cols-3 gap-[30px] justify-center">
             <?php if ($tiles) :
@@ -36,12 +38,12 @@ $tiles = $args['tiles'];
 
                             <?php if ($tile['title']) : ?>
                                 <p class="mb-[9px] text-[30px] <?php if ($tileID == 1) echo 'text-white';
-                                                                else echo 'text-primary'; ?> leading-[36px]"><?php echo $tile['title']; ?></p>
+                                                                else echo 'text-textGray'; ?> leading-[36px]"><?php echo $tile['title']; ?></p>
                             <?php endif; ?>
 
                             <?php if ($tile['description']) : ?>
                                 <p class="text-[16px] <?php if ($tileID == 1) echo 'text-white';
-                                                        else echo 'text-primary'; ?> leading-[24px]"><?php echo $tile['description']; ?></p>
+                                                        else echo 'text-textGray'; ?> leading-[24px]"><?php echo $tile['description']; ?></p>
                             <?php endif; ?>
                         </div>
                     <?php endif; ?>
