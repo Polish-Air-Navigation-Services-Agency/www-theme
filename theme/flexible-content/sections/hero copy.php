@@ -1,6 +1,6 @@
 <?php
 
-/** Template to display 'Sekcja z treścią na dwie kolumny' - section_two_cols */
+/** Template to display 'Sekcja z treścią (dwie kolumny)' - section_two_cols */
 
 $section_number = $args['section_number'];
 $title = $args['title'];
