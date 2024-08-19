@@ -83,7 +83,7 @@ if ($section_img['url']) {
 
             <div class="col2 basis-1/2">
                 <?php if (isset($section_img)) : ?>
-                    <img class="lg:absolute mb-10 lg:mb-0" src="<?php echo $section_img_url ?>" alt="section_image" class="test">
+                    <img class="lg:absolute mb-5 lg:mb-0" src="<?php echo $section_img_url ?>" alt="section_image" class="test">
                 <?php endif; ?>
             </div>
         </div>
