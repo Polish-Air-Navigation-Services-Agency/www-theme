@@ -28,8 +28,8 @@ $tiles = $args['tiles'];
                     $tileID++;
                 ?>
                     <?php if ($tile) : ?>
-                        <div class="tile-wrapper w-[355px] px-5 py-[30px] flex flex-col <?php if ($tileID == 1) echo 'bg-primary';
-                                                                                        else echo 'bg-white'; ?>">
+                        <div class="tile-wrapper w-[355px] mx-auto px-5 py-[30px] flex flex-col <?php if ($tileID == 1) echo 'bg-primary';
+                                                                                                else echo 'bg-white'; ?>">
                             <?php if ($tile['number']) : ?>
                                 <p class="size-[92px] mb-[90px] self-end flex flex-col justify-center items-center text-[60px] text-primary leading-[72px] font-medium  <?php if ($tileID == 1) echo 'bg-secondary rounded-full';
                                                                                                                                                                         else echo 'text-primary'; ?>"><?php echo $tile['number']; ?></p>
