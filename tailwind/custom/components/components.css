@@ -58,3 +58,11 @@
 #primary-menu {
 	@apply flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-5 flex-wrap lg:justify-end;
 }
+
+#primary-menu li {
+	@apply relative
+}
+
+#primary-menu a {
+	@apply after:content-[''] after:w-[100px] after:h-[2px] after:bg-white after:roudned-full after:absolute after:top-0 after:right-0;
+}
