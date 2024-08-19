@@ -3,6 +3,11 @@
 /** Template to display 'Sekcja Wizja (liczniki)' - section_counters */
 
 $tiles_list = $args['tiles_list'];
+$section_number = $args['section_number'];
+$title = $args['title'];
+$description = $args['description'];
+$section_img = $args['section_img'];
+
 
 ?>
 
@@ -13,10 +18,11 @@ $tiles_list = $args['tiles_list'];
         </svg>
     </div>
     <div class="pt-12 relative z-0 container">
+        <!-- counter -->
         <?php if ($tiles_list) :
             $tileID = 0;
         ?>
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-x-10 gap-y-14 lg:gap-y-10">
+            <div class="counter grid grid-cols-1 lg:grid-cols-4 gap-x-10 gap-y-14 lg:gap-y-10">
                 <?php foreach ($tiles_list as $tile) :
                     $tileID++;
                 ?>
@@ -43,5 +49,28 @@ $tiles_list = $args['tiles_list'];
                 <?php endforeach; ?>
             </div>
         <?php endif; ?>
+        <!-- /counter end -->
+
+        <div class="two-col flex basis">
+            <div class="col1 basis-1/2 flex-col">
+                <?php if ($section_number) : ?>
+                    <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
+                <?php endif; ?>
+
+                <?php if ($title) : ?>
+                    <p class="mb-[50px] text-[60px] text-white leading-[72px] font-medium"><?php echo $title; ?></p>
+                <?php endif; ?>
+
+                <?php if ($description) : ?>
+                    <p class="max-w-[414px] text-[20px] text-white leading-[30px]"><?php echo $description; ?></p>
+                <?php endif; ?>
+            </div>
+
+            <div class="col2 basis-1/2">
+                <?php if (isset($section_img)) : ?>
+                    <img src="<?php echo $section_img ?>" alt="section_image" class="test">
+                <?php endif; ?>
+            </div>
+        </div>
     </div>
 </div>
