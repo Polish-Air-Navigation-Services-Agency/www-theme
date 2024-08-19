@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-<section id="primary">
+<section id="primary bg-[#F6F8F9]">
 	<main id="main">
 
 		<?php
