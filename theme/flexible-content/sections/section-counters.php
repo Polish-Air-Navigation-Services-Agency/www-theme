@@ -6,6 +6,7 @@ $tiles_list = $args['tiles_list'];
 $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
+$description2 = $args['description2'];
 $section_img = $args['section_img'];
 
 
@@ -17,7 +18,7 @@ $section_img = $args['section_img'];
             <circle cx="75" r="75" fill="#60B8D1" />
         </svg>
     </div>
-    <div class="pt-12 relative z-0 container">
+    <div class="pt-12 mb-[] lg:mb-[140px] relative z-0 container">
         <!-- counter -->
         <?php if ($tiles_list) :
             $tileID = 0;
@@ -62,7 +63,11 @@ $section_img = $args['section_img'];
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <p class="max-w-[414px] text-[20px] text-white leading-[30px]"><?php echo $description; ?></p>
+                    <p class="max-w-[414px] mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></p>
+                <?php endif; ?>
+
+                <?php if ($description2) : ?>
+                    <p class="max-w-[414px] text-[20px] text-white leading-[30px]"><?php echo $description2; ?></p>
                 <?php endif; ?>
             </div>
 
