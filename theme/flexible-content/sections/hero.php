@@ -12,7 +12,7 @@ if ($hero_background['url']) {
 }
 ?>
 
-<div class="relative translate-y-[-150px] w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
+<div class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
     <?php if (isset($hero_bg_url)) : ?>
         <img src="<?php echo $hero_bg_url ?>" alt="background_image" class="absolute inset-0 z-[-1] object-cover !h-full w-full">
     <?php endif; ?>
