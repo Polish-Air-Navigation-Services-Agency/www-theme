@@ -43,9 +43,9 @@ get_header();
 				foreach ($sections as $section) :
 					$template = str_replace('_', '-', $section['acf_fc_layout']);
 				?>
-					<div <?php if (!in_array($template, $no_fade_sections)) {
-									echo 'data-aos="fade" data-aos-delay="50"';
-								} ?>>
+					<div class="test" <?php if (!in_array($template, $no_fade_sections)) {
+															echo 'data-aos="fade" data-aos-delay="50"';
+														} ?>>
 						<?php
 						$section_visible = $section['isSectionVisible'];
 						if (isset($section_visible) && $section_visible == true) {
