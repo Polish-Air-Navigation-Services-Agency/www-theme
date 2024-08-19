@@ -16,7 +16,7 @@ if ($section_img['url']) {
 
 ?>
 
-<div class="relative w-full bg-primary pt-[140px]">
+<div class="relative w-full bg-primary pt-[140px] mb-20 lg:mb-[280px]">
     <div class="decoration absolute top-0 left-1/2 -translate-x-1/2">
         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="75" viewBox="0 0 150 75" fill="none">
             <circle cx="75" r="75" fill="#60B8D1" />
