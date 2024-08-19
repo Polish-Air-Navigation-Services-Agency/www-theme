@@ -17,7 +17,7 @@ if ($hero_background['url']) {
         <img src="<?php echo $hero_bg_url ?>" alt="background_image" class="absolute inset-0 z-[-1] object-cover !h-full w-full">
     <?php endif; ?>
 
-    <div class="decoration absolute bottom-0 left-0">
+    <div class="decoration absolute bottom-0 left-0 z-[-1]">
         <svg xmlns="http://www.w3.org/2000/svg" width="138" height="417" viewBox="0 0 138 417" fill="none">
             <path d="M-210.006 1.00488C-188.968 80.0074 -56.3187 239.811 45.3028 267.04C93.062 279.837 129.426 273.808 136.105 253.256C142.869 232.447 97.9617 212.361 74.3864 213.203C56.6944 213.833 43.271 259.943 41.1114 299.443C38.5784 345.762 57.6681 401.874 107.941 415.345" stroke="#60B8D1" stroke-width="2" />
         </svg>
@@ -26,7 +26,7 @@ if ($hero_background['url']) {
     <div class="container">
         <div class="relative mb-10 z-0 flex flex-col justify-center">
             <?php if ($small_title) : ?>
-                <h2 class="text-[16px] leading-[24px] font-semibold text-white"><?php echo $small_title; ?></h2>
+                <h2 class="text-[16px] leading-[24px] font-semibold text-white after:content-[''] after:w-[61px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px]"><?php echo $small_title; ?></h2>
             <?php endif; ?>
             <?php if ($hero_text) : ?>
                 <h1 class="text-[40px] lg:text-[80px] lg:leading-[80px] font-medium text-white"><?php echo $hero_text; ?></h1>
@@ -35,7 +35,7 @@ if ($hero_background['url']) {
 
         <div class="max-w-[360px] mb-[36px] relative">
             <?php if ($description) : ?>
-                <p class="text-[18px] leading-[27px] font-medium text-white after:content-[''] after:w-[61px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px]"><?php echo $description; ?></p>
+                <p class="text-[18px] leading-[27px] font-medium text-white"><?php echo $description; ?></p>
             <?php endif; ?>
         </div>
 
