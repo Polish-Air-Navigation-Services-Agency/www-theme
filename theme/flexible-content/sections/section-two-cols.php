@@ -2,6 +2,7 @@
 
 /** Template to display 'Sekcja z treścią (dwie kolumny)' - section_two_cols */
 
+$cols_reverse = $args['cols_reverse'];
 $section_number = $args['section_number'];
 $title = $args['title'];
 $button = $args['button'];
@@ -10,7 +11,7 @@ $description = $args['description'];
 ?>
 
 <div>
-    <div class="container w-full flex">
+    <div class="container w-full flex <?php if ($cols_reverse) echo 'flex-row-reverse'; ?> ">
         <div class="col1 basis-1/2">
             <?php echo $section_number; ?>
             <?php echo $title; ?>
