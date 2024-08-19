@@ -11,7 +11,7 @@ $tiles = $args['tiles'];
 <div>
     <div class="container">
         <div class="counter mb-[100px] lg:mb-[190px] grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
-            <?php if ($tiles_list) :
+            <?php if ($tiles) :
                 $tileID = 0;
             ?>
                 <?php foreach ($tiles as $tile) :
@@ -32,7 +32,6 @@ $tiles = $args['tiles'];
                             <?php endif; ?>
                         </div>
                     <?php endif; ?>
-
                 <?php endforeach; ?>
             <?php endif; ?>
         </div>
