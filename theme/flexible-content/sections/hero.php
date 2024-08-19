@@ -23,7 +23,7 @@ if ($hero_background['url']) {
         </svg>
     </div>
 
-    <div class="container mb-10 md:mb-0">
+    <div class="container">
         <div class="relative mb-10 z-0 flex flex-col justify-center">
             <?php if ($small_title) : ?>
                 <h2 class="w-fit text-[16px] leading-[24px] font-semibold text-white after:content-[''] after:w-[61px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $small_title; ?></h2>
