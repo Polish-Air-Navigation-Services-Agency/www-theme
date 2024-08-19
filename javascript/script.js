@@ -47,7 +47,7 @@ function initCounter() {
 			`target${i}`,
 			+document.querySelector(`[data-counter-target${i}]`).innerHTML,
 			{
-				separator: ' ',
+				separator: '',
 				duration: 2,
 				enableScrollSpy: true,
 				scrollSpyOnce: true,
