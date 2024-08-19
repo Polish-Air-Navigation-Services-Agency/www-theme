@@ -20,7 +20,7 @@ $tiles = $args['tiles'];
             <?php endif; ?>
         </div>
 
-        <div class="tiles-wrapper mx-auto w-fit mb-[100px] lg:mb-[190px] grid grid-cols-1 lg:grid-cols-3 gap-[30px] justify-center">
+        <div class="tiles-wrapper mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 gap-[30px] justify-center">
             <?php if ($tiles) :
                 $tileID = 0;
             ?>
