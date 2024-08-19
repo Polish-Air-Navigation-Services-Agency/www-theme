@@ -30,7 +30,8 @@ $tiles = $args['tiles'];
                         <div class="tile-wrapper w-[355px] px-5 py-[30px] <?php if ($tileID == 1) echo 'bg-primary';
                                                                             else echo 'bg-white'; ?>">
                             <?php if ($tile['number']) : ?>
-                                <p class="w-fit mb-[90px] text-[60px] text-primary leading-[72px] font-medium rounded-full bg-secondary"><?php echo $tile['number']; ?></p>
+                                <p class="w-fit mb-[90px] text-[60px] text-primary leading-[72px] font-medium  <?php if ($tileID == 1) echo 'bg-secondary rounded-full';
+                                                                                                                else echo 'text-primary'; ?>"><?php echo $tile['number']; ?></p>
                             <?php endif; ?>
 
                             <?php if ($tile['title']) : ?>
