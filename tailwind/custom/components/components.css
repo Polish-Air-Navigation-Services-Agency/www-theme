@@ -56,7 +56,7 @@
 }
 
 #primary-menu {
-	@apply flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-5 flex-wrap lg:justify-end;
+	@apply flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-16 flex-wrap lg:justify-end;
 }
 
 #primary-menu li {
@@ -64,5 +64,5 @@
 }
 
 #primary-menu a {
-	@apply after:content-[''] after:w-[100px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-0 after:right-0;
+	@apply after:content-[''] after:w-[100px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:-right-6;
 }
