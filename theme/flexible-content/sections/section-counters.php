@@ -9,6 +9,10 @@ $description = $args['description'];
 $description2 = $args['description2'];
 $section_img = $args['section_img'];
 
+if ($section_img['url']) {
+    $section_img_url = $section_img['url'];
+}
+
 
 ?>
 
@@ -67,13 +71,13 @@ $section_img = $args['section_img'];
                 <?php endif; ?>
 
                 <?php if ($description2) : ?>
-                    <p class="max-w-[414px] text-[20px] text-white leading-[30px]"><?php echo $description2; ?></p>
+                    <p class="max-w-[414px] text-[16px] text-white leading-[24px]"><?php echo $description2; ?></p>
                 <?php endif; ?>
             </div>
 
             <div class="col2 basis-1/2">
                 <?php if (isset($section_img)) : ?>
-                    <img src="<?php echo $section_img ?>" alt="section_image" class="test">
+                    <img src="<?php echo $section_img_url ?>" alt="section_image" class="test">
                 <?php endif; ?>
             </div>
         </div>
