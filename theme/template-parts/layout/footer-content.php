@@ -10,10 +10,9 @@
 
 ?>
 
-<footer id="colophon" class="py-10">
-
+<footer id="colophon" class="py-10 flex items-center justify-center">
+	<p>footer</p>
 	<?php if (has_nav_menu('menu-2')) : ?>
-		<p>footer</p>
 		<nav aria-label="<?php esc_attr_e('Footer Menu', '_pansa'); ?>">
 			<?php
 			wp_nav_menu(
