@@ -25,7 +25,7 @@ $description = $args['description'];
             <?php endif; ?>
 
             <?php if ($title) : ?>
-                <p class="mb-[50px] text-[60px] text-primary leading-[72px] font-medium"><?php echo $title; ?></p>
+                <h2 class="mb-[50px] text-[60px] text-primary leading-[72px] font-medium"><?php echo $title; ?></h2>
             <?php endif; ?>
 
             <?php if ($button) : ?>
