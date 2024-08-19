@@ -20,7 +20,7 @@ $tiles = $args['tiles'];
             <?php endif; ?>
         </div>
 
-        <div class="tiles-wrapper w-fit mb-[100px] lg:mb-[190px] grid grid-cols-1 lg:grid-cols-3 gap-[30px] justify-center">
+        <div class="tiles-wrapper mx-auto w-fit mb-[100px] lg:mb-[190px] grid grid-cols-1 lg:grid-cols-3 gap-[30px] justify-center">
             <?php if ($tiles) :
                 $tileID = 0;
             ?>
@@ -28,8 +28,8 @@ $tiles = $args['tiles'];
                     $tileID++;
                 ?>
                     <?php if ($tile) : ?>
-                        <div class="tile-wrapper w-full lg:w-[355px] mx-auto px-5 py-[30px] flex flex-col <?php if ($tileID == 1) echo 'bg-primary';
-                                                                                                            else echo 'bg-white'; ?>">
+                        <div class="tile-wrapper w-full lg:w-[355px] px-5 py-[30px] flex flex-col <?php if ($tileID == 1) echo 'bg-primary';
+                                                                                                    else echo 'bg-white'; ?>">
                             <?php if ($tile['number']) : ?>
                                 <p class="size-[92px] mb-[90px] self-end flex flex-col justify-center items-center text-[60px] text-primary leading-[72px] font-medium  <?php if ($tileID == 1) echo 'bg-secondary rounded-full';
                                                                                                                                                                         else echo 'text-primary'; ?>"><?php echo $tile['number']; ?></p>
