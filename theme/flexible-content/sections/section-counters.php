@@ -29,7 +29,7 @@ $tiles_list = $args['tiles_list'];
                                     </span>
 
                                     <?php if ($tile['counter_unit2']) : ?>
-                                        <span><?php echo $tile['counter_unit2']; ?></span>
+                                        <span><?php echo $tile['counter_unit_2']; ?></span>
                                     <?php endif; ?>
 
                                     <span class="text-secondary text-[16px] font-semibold absolute top-4"><?php echo $tile['counter_unit']; ?></span>
