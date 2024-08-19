@@ -73,11 +73,11 @@ if ($section_img['url']) {
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <div class="max-w-[414px] mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></div>
+                    <div class="max-w-fill lg:max-w-[414px] mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></div>
                 <?php endif; ?>
 
                 <?php if ($description2) : ?>
-                    <div class="max-w-[414px] lg:mb-[150px] text-[16px] text-white leading-[24px]"><?php echo $description2; ?></div>
+                    <div class="max-w-fill lg:max-w-[414px] lg:mb-[150px] text-[16px] text-white leading-[24px]"><?php echo $description2; ?></div>
                 <?php endif; ?>
             </div>
 
