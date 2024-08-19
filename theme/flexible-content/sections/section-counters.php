@@ -21,9 +21,9 @@ $tiles_list = $args['tiles_list'];
                     $tileID++;
                 ?>
                     <div class="relative flex flex-col lg: items-center text-left">
-                        <div class="mb-5 md:mb-7 self-start">
+                        <div class="mb-3 lg:mb-6 self-start">
                             <?php if ($tile) : ?>
-                                <h3 class="mb-6 text-[40px] lg:text-[60px] text-white font-medium">
+                                <h3 class="text-[40px] lg:text-[60px] text-white font-medium">
                                     <span id="target<?php echo $tileID ?>" data-counter-target<?php echo $tileID ?>="<?php echo $tile['counter_target']; ?>" data-counter-qty>
                                         <?php echo $tile['counter_target']; ?>
                                     </span>
