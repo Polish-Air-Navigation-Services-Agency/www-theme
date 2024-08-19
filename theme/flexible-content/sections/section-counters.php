@@ -21,7 +21,7 @@ $tiles_list = $args['tiles_list'];
                     $tileID++;
                 ?>
                     <div class="relative flex flex-col lg: items-center text-left">
-                        <div class="mb-3 lg:mb-6 self-start">
+                        <div class="mb-1 lg:mb-6 self-start">
                             <?php if ($tile) : ?>
                                 <h3 class="text-[40px] lg:text-[60px] text-white font-medium">
                                     <span id="target<?php echo $tileID ?>" data-counter-target<?php echo $tileID ?>="<?php echo $tile['counter_target']; ?>" data-counter-qty>
@@ -32,7 +32,7 @@ $tiles_list = $args['tiles_list'];
                                         <span><?php echo $tile['counter_unit_2']; ?></span>
                                     <?php endif; ?>
 
-                                    <span class="text-secondary text-[16px] font-semibold absolute top-4"><?php echo $tile['counter_unit']; ?></span>
+                                    <span class="text-secondary text-[16px] font-semibold absolute top-[10px] lg:top-4"><?php echo $tile['counter_unit']; ?></span>
                                 </h3>
                             <?php endif; ?>
                         </div>
