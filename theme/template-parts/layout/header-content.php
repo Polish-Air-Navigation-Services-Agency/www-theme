@@ -14,7 +14,7 @@
 																						echo 'top-8';
 																					} else {
 																						echo 'top-0';
-																					} ?> w-full bg-transparent transition-all duration-300 shadow-md">
+																					} ?> w-full bg-transparent transition-all duration-300">
 	<div class="container py-10 flex items-center">
 		<div class="logo mr-16">
 			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home" class="block max-w-[140px] md:max-w-[190px] 2xl:max-w-[220px]">
