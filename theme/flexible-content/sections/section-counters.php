@@ -16,11 +16,11 @@ $tiles_list = $args['tiles_list'];
         <?php if ($tiles_list) :
             $tileID = 0;
         ?>
-            <div class="grid grid-cols-4 gap-x-10 gap-y-10">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-x-10 gap-y-10">
                 <?php foreach ($tiles_list as $tile) :
                     $tileID++;
                 ?>
-                    <div class="relative flex flex-col items-center text-left">
+                    <div class="relative flex flex-col lg: items-center text-left">
                         <div class="mb-5 md:mb-7 self-start">
                             <?php if ($tile) : ?>
                                 <h3 class="mb-6 text-[40px] lg:text-[60px] text-white font-medium">
