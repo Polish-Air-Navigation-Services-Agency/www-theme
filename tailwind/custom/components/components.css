@@ -89,11 +89,15 @@
 }
 
 .form-basic textarea {
-	@apply py-4 min-h-32 max-h-80;
+	@apply py-4 h-[100px];
 }
 
 .tooltip span {
 	@apply inline text-[14px] leading-4;
+}
+
+.has-tooltip {
+	@apply flex gap-[4px];
 }
 
 .wpcf7-list-item {

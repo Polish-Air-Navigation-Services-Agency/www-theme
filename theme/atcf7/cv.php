@@ -30,8 +30,8 @@ if (!defined('ABSPATH')) {
     </label>[file* your-file id:your-file placeholder "Załącz CV*"]
   </div>
 
-  <div class="message-container w-full mb-[30px]">
-    [textarea* your-message x3 placeholder "Wiadomość..."]
+  <div class="message-container w-full">
+    [textarea* your-message x3 placeholder "Treść wiadomości"]
   </div>
 
   <div class="max-w-[520px] mb-5 [&_a]:!text-white hover:[&_a]:!text-white [&_input]:!accent-secondary">
