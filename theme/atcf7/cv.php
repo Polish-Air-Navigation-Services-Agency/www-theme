@@ -53,4 +53,11 @@ if (!defined('ABSPATH')) {
       <path class="group-hover:stroke-white" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#0F304D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
   </div>
+
+  <div class="btn-transparent group relative text-center max-w-full w-fit mx-auto [&_.wpcf7-spinner]:absolute [&_.wpcf7-spinner]:right-[-7px] [&_.wpcf7-spinner]:top-4 [&_svg_path]:hover:fill-secondary [&_svg_circle]:hover:stroke-secondary">
+    [submit "Wyślij wiadomość"]
+    <svg class="absolute right-5 top-6 pointer-events-none" width="14" height="10" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="!fill-none group-hover:stroke-primary transition duration-200" d="M0.774525 0.500055L5.50054 5.75635L10.2266 0.500055" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </div>
 </div>
