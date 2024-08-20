@@ -30,7 +30,7 @@ if ($image['url']) {
                     <?php endif; ?>
                 </div>
 
-                <div class="col2 basis-1/2">
+                <div class="col2 basis-1/2 z-[1]">
                     <div class="mx-auto <?php if ($hide_message_field) {
                                             echo '[&_.message-container]:hidden';
                                         } ?>">
