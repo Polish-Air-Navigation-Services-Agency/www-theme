@@ -27,10 +27,6 @@ if (!defined('ABSPATH')) {
       <span class="truncate" data-js="cv-file-name">
         <?php esc_html_e('Załącz plik CV', '_pansa') ?>
       </span>
-      <svg data-js="cv-file-icon" class="shrink-0" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line y1="5.50293" x2="10" y2="5.50293" stroke="#8117EE" />
-        <line x1="5" y1="0.5" x2="5" y2="10.5" stroke="#8117EE" />
-      </svg>
     </label>[file* your-file id:your-file placeholder "Załącz CV*"]
   </div>
 
