@@ -11,8 +11,14 @@
 ?>
 
 <footer id="colophon" class="bg-primary py-10">
-	<div class="container mx-auto pt-[60px] text-white">
-		<div class="footer-header mb-[60px] flex basis">
+	<div class="container mx-auto pt-[60px] text-white relative">
+		<div class="decoration absolute left-0 top-0">
+			<svg xmlns="http://www.w3.org/2000/svg" width="57" height="150" viewBox="0 0 57 150" fill="none">
+				<circle cx="-18" cy="75" r="75" fill="#60B8D1" />
+			</svg>
+		</div>
+
+		<div class="footer-header mb-[60px] flex basis relative">
 			<h2 class="basis-1/2 text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo esc_html_e('Nie widzisz oferty pracy dla siebie?', '_pansa'); ?></h2>
 			<div class="basis-1/2">
 				<div class="w-full flex justify-end items-center">
