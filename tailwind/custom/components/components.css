@@ -68,8 +68,9 @@
 }
 
 .form-basic input,
+.form-basic label,
 .form-basic textarea {
-	@apply px-4 md:px-6 min-w-0 w-full h-[44px] border border-b-[##BEBFBF] hover:border-primary outline-1 -outline-offset-2 outline-transparent [outline-style:solid] focus:outline-1 focus:border-secondary focus:outline-secondary  transition-all duration-200 bg-white placeholder:text-primary text-primary text-[16px];
+	@apply px-4 md:px-6 min-w-0 w-full h-[44px] border-b-[##BEBFBF] hover:border-primary outline-1 -outline-offset-2 outline-transparent [outline-style:solid] focus:outline-1 focus:border-secondary focus:outline-secondary  transition-all duration-200 bg-white placeholder:text-primary text-primary text-[16px];
 }
 .form-basic textarea {
 	@apply py-4 min-h-32 max-h-80;
