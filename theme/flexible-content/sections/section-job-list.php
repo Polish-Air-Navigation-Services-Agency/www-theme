@@ -53,7 +53,7 @@ $tiles = $args['tiles2'];
 
                             <div class="right-col">
                                 <?php if ($tile['url']) : ?>
-                                    <a href="<?php echo $tile['url']; ?>" class="group w-[160px] h-[50px] pl-[30px] pr-[70px] flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[2px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition-all duration-200 relative">
+                                    <a href="<?php echo $tile['url']; ?>" class="group w-[160px] h-[50px] pl-[30px] pr-[70px] flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition-all duration-200 relative">
                                         <?php esc_html_e('Aplikuj', '_pansa'); ?>
                                         <svg class="absolute right-[26px] top-[16px] pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
                                             <path class="group-hover:stroke-primary" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -66,5 +66,12 @@ $tiles = $args['tiles2'];
                 <?php endforeach; ?>
             <?php endif; ?>
         </div>
+
+        <a href="<?php echo esc_url(home_url('/kogo-szukamy')); ?>" class="group mx-auto w-[290px] h-[50px] pl-[30px] pr-[70px] flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition-all duration-200 relative">
+            <?php esc_html_e('Zobacz wszystkie oferty', '_pansa'); ?>
+            <svg class="absolute right-[26px] top-[16px] pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
+                <path class="group-hover:stroke-primary" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
     </div>
 </section>
