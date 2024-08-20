@@ -16,6 +16,15 @@ $hide_message_field = $args['hide_message_field'];
         <?php if ($description) : ?>
             <div class="prose-_pansa prose md:prose-xl text-white !font-light text-center mb-10 prose-h2:!text-white prose-h2:font-bold prose-h2:text-3xl prose-h2:md:text-5xl prose-h2:mb-9"><?php echo $description; ?></div>
         <?php endif; ?>
+
+        <?php if ($section_number) : ?>
+            <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
+        <?php endif; ?>
+
+        <?php if ($title) : ?>
+            <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-primary leading-[72px] font-medium"><?php echo $title; ?></h2>
+        <?php endif; ?>
+
         <div class="!max-w-[1410px] mx-auto <?php if ($hide_message_field) {
                                                 echo '[&_.message-container]:hidden';
                                             } ?>">
