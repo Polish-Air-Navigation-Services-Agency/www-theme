@@ -35,7 +35,7 @@ if (!defined('ABSPATH')) {
   </div>
 
   <div class="max-w-[520px] mb-5 [&_a]:!text-white hover:[&_a]:!text-white [&_input]:!accent-secondary">
-    <div class="has-tooltip mb-5 flex gap-[4px] [&>p]:self-start [&>p]:mt-[-10px]">
+    <div class="has-tooltip mb-5 flex gap-[4px] [&_p]:self-start [&_p]:mt-[-10px]">
       [acceptance gdpr_woo_consent]
       <div class="tooltip">
         <div class="tooltip-icon"></div>
