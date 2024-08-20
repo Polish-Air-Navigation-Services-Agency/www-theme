@@ -10,7 +10,7 @@ $hide_message_field = $args['hide_message_field'];
 
 ?>
 
-<div class="w-full py-10 md:py-[70px] mb:pb-20 bg-white">
+<div class="w-full py-10 md:py-[70px] mb:pb-20 bg-primary">
     <div class="container">
         <div class="cols-wrapper flex basis">
             <div class="col1 basis-1/2">
@@ -19,15 +19,15 @@ $hide_message_field = $args['hide_message_field'];
                 <?php endif; ?>
 
                 <?php if ($title) : ?>
-                    <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-primary leading-[72px] font-medium"><?php echo $title; ?></h2>
+                    <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[72px] font-medium"><?php echo $title; ?></h2>
                 <?php endif; ?>
             </div>
 
             <div class="col2 basis-1/2">
-                <div class="!max-w-[1410px] mx-auto <?php if ($hide_message_field) {
-                                                        echo '[&_.message-container]:hidden';
-                                                    } ?>">
-                    <div class="form-cv-wrapper form-with-confirm-wrapper">
+                <div class="mx-auto <?php if ($hide_message_field) {
+                                        echo '[&_.message-container]:hidden';
+                                    } ?>">
+                    <div class="form-cv-wrapper form-with-confirm-wrapper bg-white text-textGray">
                         <?php echo do_shortcode('[contact-form-7 id="841318a" title="CV"]'); ?>
                         <div class="form-confirmation pointer-events-none opacity-0 z-10 absolute inset-0 flex flex-col items-center justify-center transition duration-300 text-white">
                             <svg class="max-w-full mb-4" width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
