@@ -66,3 +66,18 @@
 #primary-menu a {
 	@apply after:content-[''] after:w-[20px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px];
 }
+
+.form-basic input,
+.form-basic textarea {
+	@apply px-4 md:px-6 min-w-0 w-full h-[44px] border border-b-[##BEBFBF] hover:border-primary outline-1 -outline-offset-2 outline-transparent [outline-style:solid] focus:outline-1 focus:border-secondary focus:outline-secondary  transition-all duration-200 bg-white placeholder:text-primary text-primary text-[16px];
+}
+.form-basic textarea {
+	@apply py-4 min-h-32 max-h-80;
+}
+/* .form-basic #your-file {
+	@apply hidden;
+} */
+
+.form-basic input.wpcf7-submit {
+	@apply font-bold text-base cursor-pointer w-auto pl-[30px] pr-14 transition duration-200;
+}

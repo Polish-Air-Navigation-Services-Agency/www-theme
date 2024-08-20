@@ -9,11 +9,19 @@ if (!defined('ABSPATH')) {
 
 <div class="form-basic cv">
   <div class="mb-[18px] grid grid-cols-2 gap-[28px]">
-    [text* your-name placeholder "Imię i nazwisko*"]
+    [text* your-name placeholder "Twoje imię*"]
 
-    [tel* your-phone placeholder "Telefon*"]
+    [text* your-lastname placeholder "Twoje nazwisko*"]
+
+    [tel* your-phone placeholder "Numer telefon*"]
 
     [email* your-email placeholder "Adres e-mail*"]
+
+    [text* your-country placeholder "Kraj*"]
+
+    [text* your-region placeholder "Region/Województwo*"]
+
+    [text* your-coop placeholder "Forma współpracy*"]
 
     <label for="your-file" class="flex justify-between items-center pl-4 pr-3 md:pl-6 min-w-0 w-full h-[55px] rounded-2xl border border-primary hover:border-secondary transition duration-200 bg-white placeholder:text-foreground text-foreground text-base cursor-pointer [&_br]:hidden" data-js="cv-file">
       <span class="truncate" data-js="cv-file-name">
@@ -41,7 +49,6 @@ if (!defined('ABSPATH')) {
       [/acceptance]
     </div>
   </div>
-
 
   <div class="btn-transparent group relative text-center max-w-full w-fit mx-auto [&_.wpcf7-spinner]:absolute [&_.wpcf7-spinner]:right-[-7px] [&_.wpcf7-spinner]:top-4 [&_svg_path]:hover:fill-secondary [&_svg_circle]:hover:stroke-secondary">
     [submit "Wyślij wiadomość"]
