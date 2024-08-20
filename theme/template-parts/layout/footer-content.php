@@ -37,7 +37,7 @@ $social_links = get_field('social_links', 'option');
 			</div>
 		</div>
 
-		<div class="footer-center mb-[43px] flex justify-between border-b-[1px] border-b-secondary">
+		<div class="footer-center pb-[43px] flex justify-between border-b-[1px] border-b-secondary">
 			<div class="left-col">
 				<?php if (has_nav_menu('menu-2')) : ?>
 					<nav aria-label="<?php esc_attr_e('Footer Menu', '_pansa'); ?>">
@@ -133,8 +133,8 @@ $social_links = get_field('social_links', 'option');
 			</div>
 		</div>
 
-		<div class="footer-bottom flex justify-between">
-			<span>© PANSA <?php echo date('Y'); ?>. All rights reserved</span>
+		<div class="footer-bottom py-4 flex justify-between font-medium">
+			<span class="font-normal">© PANSA <?php echo date('Y'); ?>. All rights reserved</span>
 			<?php if (has_nav_menu('menu-2')) : ?>
 				<nav aria-label="<?php esc_attr_e('Footer Menu', '_pansa'); ?>">
 					<?php
