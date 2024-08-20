@@ -13,7 +13,7 @@ $social_links = get_field('social_links', 'option');
 
 ?>
 
-<footer id="colophon" class="bg-primary pt-10 relative overflow-hidden">
+<footer id="colophon" class="bg-primary lg:pt-10 relative overflow-hidden">
 	<div class="decoration absolute left-0 top-[100px]">
 		<svg xmlns="http://www.w3.org/2000/svg" width="57" height="150" viewBox="0 0 57 150" fill="none">
 			<circle cx="-18" cy="75" r="75" fill="#60B8D1" />
@@ -21,10 +21,10 @@ $social_links = get_field('social_links', 'option');
 	</div>
 
 	<div class="container mx-auto pt-[60px] text-white">
-		<div class="footer-top mb-[60px] flex basis">
-			<h2 class="basis-1/2 text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo esc_html_e('Nie widzisz oferty pracy dla siebie?', '_pansa'); ?></h2>
-			<div class="basis-1/2">
-				<div class="w-full h-full flex justify-end items-center">
+		<div class="footer-top mb-[60px] flex flex-col lg:flex-row lg:basis">
+			<h2 class="lg:basis-1/2 mb-10 lg:mb-0 text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo esc_html_e('Nie widzisz oferty pracy dla siebie?', '_pansa'); ?></h2>
+			<div class="lg:basis-1/2">
+				<div class="w-full h-full flex lg:justify-end items-center">
 					<button class="group self-center bg-white hover:bg-primary !rounded-full !px-6 !py-[11px] text-[#0F304D] font-medium hover:text-white transition ease duration-200">
 						<a href="<?php echo esc_url(home_url('/kontakt')); ?>" class="flex items-center justify-center gap-[10px]">
 							<?php esc_html_e('Skontaktuj się z nami', '_pansa'); ?>
