@@ -68,9 +68,16 @@
 }
 
 .form-basic input,
-.form-basic label[for="your-file"],
 .form-basic textarea {
 	@apply px-0 min-w-0 w-full h-[44px] border border-white border-b-[#BEBFBF] hover:border-b-primary  focus:border-b-primary outline-none transition-all duration-200 bg-white placeholder:text-primary text-primary text-[16px];
+}
+
+.form-basic label[for="your-file"] {
+	@apply cursor-pointer px-0 min-w-0 w-full h-[44px] border border-white border-b-[#BEBFBF] hover:border-b-primary  focus:border-b-primary outline-none transition-all duration-200 bg-white placeholder:text-primary text-primary text-[16px];
+}
+
+.form-basic label[for="your-file"] input {
+	@apply !hidden;
 }
 
 .form-basic input#your-file {
