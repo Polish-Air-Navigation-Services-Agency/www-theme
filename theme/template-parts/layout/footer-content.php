@@ -74,22 +74,22 @@ $social_links = get_field('social_links', 'option');
 					?>
 				</div>
 			</div>
+		</div>
 
-			<div>
-				<?php if (has_nav_menu('menu-2')) : ?>
-					<nav aria-label="<?php esc_attr_e('Footer Menu', '_pansa'); ?>">
-						<?php
-						wp_nav_menu(
-							array(
-								'theme_location' => 'menu-3',
-								'menu_class'     => 'footer-menu-2',
-								'depth'          => 1,
-							)
-						);
-						?>
-					</nav>
-				<?php endif; ?>
-			</div>
+		<div>
+			<?php if (has_nav_menu('menu-2')) : ?>
+				<nav aria-label="<?php esc_attr_e('Footer Menu', '_pansa'); ?>">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'menu-3',
+							'menu_class'     => 'footer-menu-2',
+							'depth'          => 1,
+						)
+					);
+					?>
+				</nav>
+			<?php endif; ?>
 		</div>
 
 </footer><!-- #colophon -->
