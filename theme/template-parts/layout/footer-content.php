@@ -21,7 +21,7 @@ $social_links = get_field('social_links', 'option');
 	</div>
 
 	<div class="container mx-auto pt-[60px] text-white">
-		<div class="footer-header mb-[60px] flex basis">
+		<div class="footer-top mb-[60px] flex basis">
 			<h2 class="basis-1/2 text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo esc_html_e('Nie widzisz oferty pracy dla siebie?', '_pansa'); ?></h2>
 			<div class="basis-1/2">
 				<div class="w-full h-full flex justify-end items-center">
@@ -37,7 +37,7 @@ $social_links = get_field('social_links', 'option');
 			</div>
 		</div>
 
-		<div class="footer-center flex justify-between">
+		<div class="footer-center mb-[43px] flex justify-between border-b-[1px] border-b-secondary">
 			<div class="left-col">
 				<?php if (has_nav_menu('menu-2')) : ?>
 					<nav aria-label="<?php esc_attr_e('Footer Menu', '_pansa'); ?>">
@@ -62,11 +62,11 @@ $social_links = get_field('social_links', 'option');
 						<path d="M1.70801 1.19092C17.5997 28.9168 83.6662 75.8767 124.675 75.8767C143.949 75.8767 157.032 69.916 157.473 61.4727C157.921 52.9235 138.986 49.8804 130.194 52.5857C123.597 54.6154 123.194 73.4005 126.366 88.5469C130.086 106.308 142.934 125.581 163.222 125.581C184.185 125.581 198.116 109.369 198.116 88.628C198.116 72.5507 192.473 52.0055 182.305 52.0055C172.138 52.0055 165.414 70.9404 165.414 88.0755C165.414 128.624 209.762 149.965 268.148 149.965C332.787 149.965 355.722 120.802 355.722 96.8794C355.722 70.845 326.982 57.3193 299.256 53.6001C284.706 51.6482 261.048 48.866 261.048 59.0098C261.048 70.4313 291.817 65.1266 291.817 77.9947C291.817 88.5884 258.594 87.2806 227.574 74.2254C183.618 55.7262 185.034 26.1867 198.048 16.0291C211.911 5.20929 238.377 14.311 245.047 46.4604C247.861 60.0242 250.904 84.5056 241.255 84.5056C228.075 84.5056 229.751 49.4114 216.645 52.1406C208.496 53.8372 210.558 76.7561 212.993 87.9815C218.234 112.149 235.918 138.057 275.816 138.057C311.09 138.057 336.002 115.775 336.002 88.5469C336.002 73.869 329.836 52.0051 319.669 52.0051C309.501 52.0051 302.999 71.7834 302.999 88.0755C302.999 115.437 326.196 136.063 357.642 136.063C421.209 136.063 448.258 63.3664 448.258 63.3664" stroke="#60B8D1" stroke-width="2" />
 					</svg>
 				</div>
-				<div class="[&_p]:text-right">
+				<div class="mb-10 [&_p]:text-right">
 					<?php echo $company_details; ?>
 				</div>
 				<div class="socials">
-					<h3 class="mb-[10px] text-[20px] font-semibold"><?php echo esc_html_e('Obserwuj nas', '_pansa'); ?></h3>
+					<h3 class="mb-[10px] text-[20px] font-semibold text-right"><?php echo esc_html_e('Obserwuj nas', '_pansa'); ?></h3>
 					<?php
 					$socials_count = count(array_filter(array_values($social_links)));
 					if ($socials_count > 0) :
@@ -133,7 +133,8 @@ $social_links = get_field('social_links', 'option');
 			</div>
 		</div>
 
-		<div>
+		<div class="footer-bottom flex justify-between">
+			<span>© PANSA <?php echo date('Y'); ?>. All rights reserved</span>
 			<?php if (has_nav_menu('menu-2')) : ?>
 				<nav aria-label="<?php esc_attr_e('Footer Menu', '_pansa'); ?>">
 					<?php

@@ -115,3 +115,7 @@
 .footer-menu-1 li {
 	@apply mb-4 font-semibold hover:text-secondary;
 }
+
+.footer-menu-1 {
+	@apply flex gap-6;
+}
