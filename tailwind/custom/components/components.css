@@ -85,7 +85,7 @@
 }
 
 .form-basic .btn-transparent input.wpcf7-submit {
-	@apply rounded-full bg-primary hover:bg-white hover:text-primary focus:bg-pos-100 text-white disabled:!bg-[#C9C9C9] disabled:!bg-none disabled:!opacity-100 transition-all duration-200;
+	@apply rounded-full font-medium bg-primary hover:bg-[#0f304ded] focus:bg-pos-100 text-white disabled:!bg-[#C9C9C9] disabled:!bg-none disabled:!opacity-100 transition-all duration-200;
 }
 
 .form-basic textarea {
