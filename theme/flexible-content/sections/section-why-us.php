@@ -4,6 +4,7 @@
 
 $section_number = $args['section_number'];
 $title = $args['title'];
+$video = $args['video'];
 
 ?>
 
@@ -22,6 +23,10 @@ $title = $args['title'];
         <?php if ($title) : ?>
             <h2 class="mb-[50px] text-[60px] text-primary leading-[72px] font-medium"><?php echo $title; ?></h2>
         <?php endif; ?>
+    </div>
+
+    <div class="video">
+        <?php echo $video; ?>
     </div>
 
 </section>
