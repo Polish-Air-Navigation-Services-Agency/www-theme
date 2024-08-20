@@ -113,5 +113,5 @@
 }
 
 .footer-menu-1 li {
-	@apply mb-4;
+	@apply mb-4 font-semibold;
 }
