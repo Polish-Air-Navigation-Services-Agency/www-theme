@@ -86,8 +86,13 @@
 .form-basic textarea {
 	@apply py-4 min-h-32 max-h-80;
 }
+
 .tooltip span {
 	@apply inline text-[10px] leading-4;
+}
+
+.btn-send input {
+	@apply bg-primary hover:bg-white !rounded-full !px-6 !py-[11px] text-white hover:text-[#0F304D] transition ease duration-200;
 }
 
 .wpcf7-list-item {
