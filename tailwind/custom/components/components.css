@@ -75,9 +75,10 @@
 .form-basic textarea {
 	@apply py-4 min-h-32 max-h-80;
 }
-/* .form-basic #your-file {
-	@apply hidden;
-} */
+
+.wpcf7-list-item {
+	@apply !m-0;
+}
 
 .form-basic input.wpcf7-submit {
 	@apply font-bold text-base cursor-pointer w-auto pl-[30px] pr-14 transition duration-200;

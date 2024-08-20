@@ -35,11 +35,11 @@ if (!defined('ABSPATH')) {
   </div>
 
   <div class="max-w-[520px] mb-5 [&_a]:!text-white hover:[&_a]:!text-white [&_input]:!accent-secondary">
-    <div class="mb-5 has-tooltip">
+    <div class="has-tooltip mb-5 flex gap-[4px] [&>p]:self-start [&>p]:mt-[-10px]">
       [acceptance gdpr_woo_consent]
       <div class="tooltip">
         <div class="tooltip-icon"></div>
-        <span class="tooltip-text">
+        <span class="tooltip-text texx-[10px] leading-[15px]">
           <?php esc_html_e('Wyrażam zgodę na przetwarzanie przez Polską Agencje Żeglugi Powietrznej z siedzibą przy ul. Wieżowej 8, 02-147 Warszawa, moich danych osobowych zawartych w dokumentacji aplikacyjnej w celu i zakresie niezbędnym do uczestnictwa w przyszłych procesach rekrutacji, w tym informowania mnie o realizowanych przez Polską Agencje Żeglugi Powietrznej rekrutacjach.', '_pansa'); ?>
         </span>
       </div>
