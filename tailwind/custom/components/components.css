@@ -79,8 +79,13 @@
 .form-basic input#your-file {
 	@apply !border-none !hidden;
 }
+
 .form-basic input[type="submit"] {
 	@apply !border-none;
+}
+
+.form-basic .btn-transparent input.wpcf7-submit {
+	@apply border-[2px] border-white bg-transparent hover:bg-white hover:text-primary focus:bg-pos-100 text-white disabled:!bg-[#C9C9C9] disabled:!bg-none disabled:!opacity-100 transition-all duration-200;
 }
 
 .form-basic textarea {
