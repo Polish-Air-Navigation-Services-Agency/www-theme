@@ -2,11 +2,11 @@
 
 /** Template to display 'Sekcja z listą ofert pracy' - section_job_list */
 
-$tiles = $args['tiles'];
+$tiles = $args['tiles2'];
 
 ?>
 
-<section class="bg-[#F6F8F9]">
+<section>
     <div class="container mx-auto py-[100px]">
         <div class="tiles-wrapper mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 gap-[30px] justify-center">
             <?php if ($tiles) :
