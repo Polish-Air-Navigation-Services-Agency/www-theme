@@ -35,7 +35,7 @@
 					)
 				);
 				?>
-				<button class="bg-white !rounded-full !px-6 !py-[11px] text-[#0F304D]">
+				<button class="bg-white hover:bg-primary !rounded-full !px-6 !py-[11px] text-[#0F304D] hover:text-white transition ease duration-200">
 					<a href="<?php echo esc_url(home_url('/kontakt')); ?>" class="flex items-center justify-center gap-[10px]">
 						<?php esc_html_e('Skontaktuj się', '_pansa'); ?>
 						<svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
