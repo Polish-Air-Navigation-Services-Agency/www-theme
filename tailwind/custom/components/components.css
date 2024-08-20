@@ -88,10 +88,10 @@
 }
 
 .tooltip span {
-	@apply inline text-[10px] leading-4;
+	@apply inline text-[14px] leading-4;
 }
 
-.btn-send input {
+.btn-submit p input {
 	@apply bg-primary hover:bg-white !rounded-full !px-6 !py-[11px] text-white hover:text-[#0F304D] transition ease duration-200;
 }
 
