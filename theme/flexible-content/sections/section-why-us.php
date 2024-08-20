@@ -5,6 +5,8 @@
 $section_number = $args['section_number'];
 $title = $args['title'];
 $video = $args['video'];
+$desc1 = $args['desc1'];
+$desc2 = $args['desc2'];
 
 ?>
 
@@ -25,8 +27,17 @@ $video = $args['video'];
         <?php endif; ?>
     </div>
 
-    <div class="video [&>iframe]:w-full">
+    <div class="video [&>iframe]:w-full [&>iframe]:h-[630px] relative">
         <?php echo $video; ?>
+        <div class="desc-wrapper w-[457px] h-[443px] bg-primary pt-[70px] px-10 absolute bottom-[80px] right-0">
+            <p class="mb-[9px] text-[18px] font-medium leading-[27px]"><?php echo $desc1 ?></p>
+            <p class="text-[16px] leading-[24px]"><?php echo $desc2 ?></p>
+            <button class="mb-10 text-[18px] font-medium bg-primary !rounded-full border border-white !px-6 !py-[11px] text-white hover:text-[#0F304D] hover:bg-white hover:border-[#BEBFBF]">
+                <a href="<?php echo esc_url(home_url('/o-nas')); ?>" class="flex items-center justify-center gap-[10px]">
+                    <?php echo esc_html_e('Dowiedz się więcej', '_pansa'); ?>
+                </a>
+            </button>
+        </div>
     </div>
 
 </section>
