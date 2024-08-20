@@ -88,6 +88,10 @@
 	@apply font-bold text-base cursor-pointer w-auto pl-[30px] pr-14 transition duration-200;
 }
 
+.form-basic input[type="checkbox"] {
+	@apply mt-[-12px];
+}
+
 .form-basic textarea {
 	@apply py-4 h-[100px];
 }
