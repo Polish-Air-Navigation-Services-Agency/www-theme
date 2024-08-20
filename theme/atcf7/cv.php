@@ -23,7 +23,7 @@ if (!defined('ABSPATH')) {
 
     [text* your-coop placeholder "Forma współpracy*"]
 
-    <label for="your-file" class="flex justify-between items-center pl-4 pr-3 md:pl-6 min-w-0 w-full h-[55px] rounded-2xl border border-primary hover:border-secondary transition duration-200 bg-white placeholder:text-foreground text-foreground text-base cursor-pointer [&_br]:hidden" data-js="cv-file">
+    <label for="your-file" class="flex justify-between items-center [&_br]:hidden" data-js="cv-file">
       <span class="truncate" data-js="cv-file-name">
         <?php esc_html_e('Include CV', '_pansa') ?>
       </span>
@@ -41,9 +41,9 @@ if (!defined('ABSPATH')) {
   <div class="max-w-[520px] mb-5 [&_a]:!text-white hover:[&_a]:!text-white [&_input]:!accent-secondary">
     <div class="mb-5 has-tooltip">
       [acceptance gdpr_woo_consent]
-      <div class="tooltip">
-        <div class="tooltip-icon"></div>
-        <span class="tooltip-text">
+      <div class="tooltip [&>p]:inline">
+        <div class="tooltip-icon hidden"></div>
+        <span class="tooltip-text inline">
           Wyrażam zgodę na przetwarzanie przez Polską Agencje Żeglugi Powietrznej z siedzibą przy ul. Wieżowej 8, 02-147 Warszawa, moich danych osobowych zawartych w dokumentacji aplikacyjnej w celu i zakresie niezbędnym do uczestnictwa w przyszłych procesach rekrutacji, w tym informowania mnie o realizowanych przez Polską Agencje Żeglugi Powietrznej rekrutacjach.
         </span>
       </div>
