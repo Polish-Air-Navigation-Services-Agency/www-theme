@@ -45,7 +45,7 @@ if ($image['url']) {
                                             echo '[&_.message-container]:hidden';
                                         } ?>">
 
-                        <div class="form-cv-wrapper form-with-confirm-wrapper p-[40px_20px] lg:p-[40px_60px] bg-white text-textGray shadow-lg lg:shadow-none">
+                        <div class="form-cv-wrapper form-with-confirm-wrapper p-[40px_20px] lg:p-[40px_60px] bg-white text-textGray shadow-md lg:shadow-none">
                             <p class="mb-[30px] text-[30px] leading-[36px] font-medium"> <?php esc_html_e('Wypełnij formularz', '_pansa'); ?></p>
                             <?php echo do_shortcode('[contact-form-7 id="f8be224" title="CV"]'); ?>
                             <div class="form-confirmation pointer-events-none opacity-0 z-10 absolute inset-0 flex flex-col items-center justify-center transition duration-300 text-white">
