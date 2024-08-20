@@ -66,12 +66,25 @@ $social_links = get_field('social_links', 'option');
 					<?php echo $company_details; ?>
 				</div>
 				<div class="socials">
-					<h4><?php echo esc_html_e('Obserwuj nas', '_pansa'); ?></h4>
+					<h3 class="mb-[10px] text-[20px] font-semibold"><?php echo esc_html_e('Obserwuj nas', '_pansa'); ?></h3>
 					<?php
-					foreach ($social_links as $social_link) :
-						echo $social_link;
-					endforeach;
+					$socials_count = count(array_filter(array_values($social_links)));
+					if ($socials_count > 0) :
 					?>
+						<ul class="flex gap-3">
+							<?php if ($social_links['facebook']) : ?>
+								<li class="shrink-0">
+									<a class="block transition duration-200" <?php if ($social_links['linkedin'] != ' ') : ?> href="<?php echo esc_attr($social_links['facebook']) ?>" target="_blank" <?php endif; ?>>
+										<span class="hidden">Linkedin</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+											<rect width="34" height="34" rx="17" fill="#60B8D1" />
+											<path d="M22.8174 18.5625L23.5117 14.0381H19.1704V11.1021C19.1704 9.86426 19.7769 8.65771 21.7212 8.65771H23.6948V4.80566C23.6948 4.80566 21.9038 4.5 20.1914 4.5C16.6162 4.5 14.2793 6.66699 14.2793 10.5898V14.0381H10.3052V18.5625H14.2793V29.5H19.1704V18.5625H22.8174Z" fill="#0F304D" />
+										</svg>
+									</a>
+								</li>
+							<?php endif; ?>
+						</ul>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
