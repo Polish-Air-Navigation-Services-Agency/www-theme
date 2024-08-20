@@ -17,7 +17,7 @@ $desc2 = $args['desc2'];
         <?php endif; ?>
 
         <?php if ($title) : ?>
-            <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-primary leading-16 lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+            <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-primary leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
         <?php endif; ?>
     </div>
 
