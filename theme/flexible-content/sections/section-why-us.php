@@ -25,7 +25,7 @@ $video = $args['video'];
         <?php endif; ?>
     </div>
 
-    <div class="video">
+    <div class="video [&>iframe]:w-full">
         <?php echo $video; ?>
     </div>
 
