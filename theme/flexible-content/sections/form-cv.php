@@ -29,14 +29,14 @@ if ($image['url']) {
             </svg>
         </div>
         <div class="container">
-            <div class="cols-wrapper flex basis">
+            <div class="cols-wrapper flex basis flex-col lg:flex-row">
                 <div class="col1 basis-1/2">
                     <?php if ($section_number) : ?>
                         <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
                     <?php endif; ?>
 
                     <?php if ($title) : ?>
-                        <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[72px] font-medium"><?php echo $title; ?></h2>
+                        <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-16 lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
                     <?php endif; ?>
                 </div>
 
@@ -45,7 +45,7 @@ if ($image['url']) {
                                             echo '[&_.message-container]:hidden';
                                         } ?>">
 
-                        <div class="form-cv-wrapper form-with-confirm-wrapper p-[40px_60px] bg-white text-textGray">
+                        <div class="form-cv-wrapper form-with-confirm-wrapper p-[40px_20px] lg:p-[40px_60px] bg-white text-textGray">
                             <p class="mb-[30px] text-[30px] leading-[36px] font-medium"> <?php esc_html_e('Wypełnij formularz', '_pansa'); ?></p>
                             <?php echo do_shortcode('[contact-form-7 id="f8be224" title="CV"]'); ?>
                             <div class="form-confirmation pointer-events-none opacity-0 z-10 absolute inset-0 flex flex-col items-center justify-center transition duration-300 text-white">

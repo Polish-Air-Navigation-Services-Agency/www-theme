@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
 ?>
 
 <div class="form-basic cv">
-  <div class="mb-[18px] grid grid-cols-2 gap-x-[28px] gap-y-[10px]">
+  <div class="mb-[18px] grid grid-cols-1 lg:grid-cols-2 gap-x-[28px] gap-y-[10px]">
     [text* your-name placeholder "Twoje imię*"]
 
     [text* your-lastname placeholder "Twoje nazwisko*"]
