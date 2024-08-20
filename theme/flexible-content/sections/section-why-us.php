@@ -10,7 +10,7 @@ $desc2 = $args['desc2'];
 
 ?>
 
-<section class="relative pt-[100px] lg:pt-[174px] pb-[45px] overflow-hidden">
+<section class="relative pt-[100px] lg:pt-[174px] pb-[45px] lg:pb-[100px] overflow-hidden">
     <div class="decoration absolute top-0 right-0 z-[-1]">
         <svg xmlns="http://www.w3.org/2000/svg" width="294" height="235" viewBox="0 0 294 235" fill="none">
             <path d="M60.8584 81.3661C33.9435 74.1542 56.569 3.40919 28.3119 1.8108C10.7445 0.816981 2.41531 48.7456 1.24514 73.0001C-1.2765 125.218 31 169 44 176C73.2674 183.842 72.7056 197.234 93 189.425C122.651 178.015 142.39 152.299 151.234 119.291C159.265 89.3186 158.637 41.2987 137.875 35.7355C117.113 30.1723 93.0141 67.0023 84.0999 100.271C69.129 156.143 105.212 210.953 169.424 228.158C299.227 262.939 394.239 129.294 394.239 129.294" stroke="#60B8D1" stroke-width="2" />
@@ -29,7 +29,7 @@ $desc2 = $args['desc2'];
 
     <div class="video [&>iframe]:w-full [&>iframe]:h-[630px] relative">
         <?php echo $video; ?>
-        <div class="desc-wrapper w-[457px] h-[443px] text-white bg-primary pt-[70px] px-10 absolute bottom-[80px] right-0">
+        <div class="desc-wrapper w-[457px] h-[443px] text-white bg-primary pt-[70px] px-10 absolute bottom-[-80px] right-0">
             <div class="mb-[9px] text-[18px] font-medium leading-[27px]"><?php echo $desc1 ?></div>
             <div class="text-[16px] leading-[24px]"><?php echo $desc2 ?></div>
             <button class="mb-10 text-[18px] font-medium bg-primary !rounded-full border border-white !px-6 !py-[11px] hover:text-[#0F304D] hover:bg-white hover:border-[#BEBFBF] transition ease duration-200">
