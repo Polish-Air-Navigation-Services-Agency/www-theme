@@ -111,3 +111,7 @@
 .form-basic input.wpcf7-submit {
 	@apply font-bold text-base cursor-pointer w-auto pl-[30px] pr-[70px] transition duration-200;
 }
+
+.footer-menu-1 li {
+	@apply mb-4;
+}
