@@ -19,11 +19,11 @@ $tiles = $args['tiles2'];
                     endif;
                 ?>
                     <?php if ($tile) : ?>
-                        <div class="tile-wrapper pb-10 pt-[30px] flex justify-between items-center border-b-[1px] border-b-[#BEBFBF]">
+                        <div class="tile-wrapper pb-10 pt-[30px] flex flex-col lg:flex-row justify-between items-center border-b-[1px] border-b-[#BEBFBF]">
                             <div class="left-col flex gap-[26px]">
                                 <p class="text-[30px] font-medium text-secondary"><?php echo $tileID; ?></p>
 
-                                <div class="offer-wrapper">
+                                <div class="offer-wrapper mb-10 lg:mb-0">
                                     <?php if ($tile['title']) : ?>
                                         <p class="mb-[10px] text-[30px] font-medium text-primary"><?php echo $tile['title']; ?></p>
                                     <?php endif; ?>
