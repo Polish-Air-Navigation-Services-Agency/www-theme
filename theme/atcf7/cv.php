@@ -23,10 +23,14 @@ if (!defined('ABSPATH')) {
 
     [text* your-coop placeholder "Forma współpracy*"]
 
-    <label for="your-file" class="flex justify-between items-center [&_br]:hidden" data-js="cv-file">
+    <label for="your-file" class="flex justify-between items-center pl-4 pr-3 md:pl-6 min-w-0 w-full h-[55px] rounded-2xl border border-primary hover:border-secondary transition duration-200 bg-white placeholder:text-foreground text-foreground text-base cursor-pointer [&_br]:hidden" data-js="cv-file">
       <span class="truncate" data-js="cv-file-name">
-        <?php esc_html_e('Załącz plik CV', '_pansa') ?>
+        <?php esc_html_e('Include CV', '_pansa') ?>
       </span>
+      <svg data-js="cv-file-icon" class="shrink-0" width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line y1="5.50293" x2="10" y2="5.50293" stroke="#8117EE" />
+        <line x1="5" y1="0.5" x2="5" y2="10.5" stroke="#8117EE" />
+      </svg>
     </label>[file* your-file id:your-file placeholder "Załącz CV*"]
   </div>
 
@@ -35,12 +39,12 @@ if (!defined('ABSPATH')) {
   </div>
 
   <div class="max-w-[520px] mb-5 [&_a]:!text-white hover:[&_a]:!text-white [&_input]:!accent-secondary">
-    <div class="has-tooltip mb-5 flex gap-[4px] ">
+    <div class="mb-5 has-tooltip">
       [acceptance gdpr_woo_consent]
       <div class="tooltip">
-        <div class="tooltip-icon"></div>
-        <span class="tooltip-text text-[10px] !leading-3">
-          test
+        <div class="tooltip-icon">i</div>
+        <span class="tooltip-text">
+
         </span>
       </div>
       [/acceptance]
