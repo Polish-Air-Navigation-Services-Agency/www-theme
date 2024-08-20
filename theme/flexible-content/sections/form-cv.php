@@ -45,7 +45,6 @@ $hide_message_field = $args['hide_message_field'];
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
