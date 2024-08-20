@@ -67,7 +67,11 @@ $social_links = get_field('social_links', 'option');
 				</div>
 				<div class="socials">
 					<h4><?php echo esc_html_e('Obserwuj nas', '_pansa'); ?></h4>
-					<?php echo $social_links; ?>
+					<?php
+					foreach ($social_links as $social_link) :
+						echo $social_link;
+					endforeach;
+					?>
 				</div>
 			</div>
 
