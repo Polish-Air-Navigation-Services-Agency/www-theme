@@ -69,7 +69,7 @@ if ($section_img['url']) {
                 <?php endif; ?>
 
                 <?php if ($title) : ?>
-                    <h2 class="mb-[50px] text-[60px] text-white leading-[72px] font-medium"><?php echo $title; ?></h2>
+                    <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[72px] font-medium"><?php echo $title; ?></h2>
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
