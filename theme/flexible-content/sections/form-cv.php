@@ -18,7 +18,7 @@ if ($image['url']) {
 
 <section>
     <div class="w-full h-[456px] overflow-visible relative py-10 md:py-[70px] mb:pb-20 bg-primary">
-        <div class="decoration absolute top-[-80px] left-1/2 -translate-x-1/2 z-[-1]">
+        <div class="decoration hidden lg:block absolute top-[-80px] left-1/2 -translate-x-1/2 z-[-1]">
             <svg xmlns="http://www.w3.org/2000/svg" width="570" height="570" viewBox="0 0 570 570" fill="none">
                 <circle cx="285" cy="285" r="285" fill="#60B8D1" />
             </svg>
