@@ -10,7 +10,7 @@ $hide_message_field = $args['hide_message_field'];
 
 ?>
 
-<div class="w-full py-10 md:py-[70px] mb:pb-20 bg-primary">
+<div class="w-full h-[456px] overflow-visible py-10 md:py-[70px] mb:pb-20 bg-primary">
     <div class="container">
         <div class="cols-wrapper flex basis">
             <div class="col1 basis-1/2">
