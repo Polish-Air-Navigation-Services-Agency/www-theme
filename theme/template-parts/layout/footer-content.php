@@ -37,7 +37,7 @@ $social_links = get_field('social_links', 'option');
 			</div>
 		</div>
 
-		<div class="footer-center pb-[43px] flex justify-between border-b-[1px] border-b-secondary">
+		<div class="footer-center pb-[43px] flex flex-col lg:flex-row justify-between border-b-[1px] border-b-secondary">
 			<div class="left-col">
 				<?php if (has_nav_menu('menu-2')) : ?>
 					<nav aria-label="<?php esc_attr_e('Footer Menu', '_pansa'); ?>">
