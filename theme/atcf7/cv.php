@@ -41,10 +41,10 @@ if (!defined('ABSPATH')) {
   <div class="max-w-[520px] mb-5 [&_a]:!text-white hover:[&_a]:!text-white [&_input]:!accent-secondary">
     <div class="mb-5 has-tooltip">
       [acceptance gdpr_woo_consent]
-      <div class="tooltip">
+      <div class="tooltip flex gap-[4px]">
         <div class="tooltip-icon"></div>
         <span class="tooltip-text">
-          test
+          Wyrażam zgodę na przetwarzanie przez Polską Agencje Żeglugi Powietrznej z siedzibą przy ul. Wieżowej 8, 02-147 Warszawa, moich danych osobowych zawartych w dokumentacji aplikacyjnej w celu i zakresie niezbędnym do uczestnictwa w przyszłych procesach rekrutacji, w tym informowania mnie o realizowanych przez Polską Agencje Żeglugi Powietrznej rekrutacjach.
         </span>
       </div>
       [/acceptance]
