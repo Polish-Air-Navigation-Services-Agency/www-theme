@@ -4,6 +4,8 @@
 
 $header = $args['header'];
 $description = $args['description'];
+$section_number = $args['section_number'];
+$title = $args['title'];
 $hide_message_field = $args['hide_message_field'];
 
 ?>
