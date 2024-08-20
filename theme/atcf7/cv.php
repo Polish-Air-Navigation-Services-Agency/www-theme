@@ -42,9 +42,9 @@ if (!defined('ABSPATH')) {
     <div class="mb-5 has-tooltip">
       [acceptance gdpr_woo_consent]
       <div class="tooltip">
-        <div class="tooltip-icon">i</div>
+        <div class="tooltip-icon"></div>
         <span class="tooltip-text">
-
+          test
         </span>
       </div>
       [/acceptance]
