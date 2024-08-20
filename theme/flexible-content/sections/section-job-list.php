@@ -7,7 +7,7 @@ $tiles = $args['tiles2'];
 ?>
 
 <section>
-    <div class="container mx-auto py-[100px]">
+    <div class="container mx-auto pb-[100px]">
         <div class="tiles-wrapper">
             <?php if ($tiles) :
                 $tileID = 0;
