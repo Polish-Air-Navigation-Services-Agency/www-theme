@@ -79,6 +79,9 @@
 .form-basic input#your-file {
 	@apply !border-none !hidden;
 }
+.form-basic input[type="submit"] {
+	@apply !border-none;
+}
 
 .form-basic textarea {
 	@apply py-4 min-h-32 max-h-80;
