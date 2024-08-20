@@ -32,14 +32,7 @@ if (!defined('ABSPATH')) {
 
   <div class="max-w-[520px] mb-5 [&_a]:!text-white hover:[&_a]:!text-white [&_input]:!accent-secondary">
     <div class="mb-5 has-tooltip">
-      [acceptance gdpr_woo_consent] <?php
-                                    $policyPageUrl = get_permalink(wc_privacy_policy_page_id());
-                                    echo sprintf(
-                                      __('I accept the %sPrivacy Policy%s', 'gdpr-framework'),
-                                      "<a href='{$policyPageUrl}' target='_blank'>",
-                                      "</a>"
-                                    );
-                                    ?>
+      [acceptance gdpr_woo_consent]
       <div class="tooltip">
         <div class="tooltip-icon">i</div>
         <span class="tooltip-text">
