@@ -13,7 +13,7 @@ $social_links = get_field('social_links', 'option');
 
 ?>
 
-<footer id="colophon" class="bg-primary py-10 relative overflow-hidden">
+<footer id="colophon" class="bg-primary pt-10 relative overflow-hidden">
 	<div class="decoration absolute left-0 top-[100px]">
 		<svg xmlns="http://www.w3.org/2000/svg" width="57" height="150" viewBox="0 0 57 150" fill="none">
 			<circle cx="-18" cy="75" r="75" fill="#60B8D1" />
@@ -71,7 +71,7 @@ $social_links = get_field('social_links', 'option');
 					$socials_count = count(array_filter(array_values($social_links)));
 					if ($socials_count > 0) :
 					?>
-						<ul class="flex gap-3">
+						<ul class="flex gap-3 justify-end">
 							<?php if ($social_links['facebook']) : ?>
 								<li class="shrink-0">
 									<a class="block transition duration-200" <?php if ($social_links['facebook'] != ' ') : ?> href="<?php echo esc_attr($social_links['facebook']) ?>" target="_blank" <?php endif; ?>>
