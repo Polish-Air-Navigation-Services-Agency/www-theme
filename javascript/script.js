@@ -38,6 +38,7 @@ AOS.init({
 document.addEventListener('DOMContentLoaded', () => {
 	initMenuCollapse();
 	initCounter();
+	initVideoPlayer();
 });
 
 function initMenuCollapse() {
@@ -87,4 +88,20 @@ function initCounter() {
 			}
 		).start();
 	}
+}
+
+function initVideoPlayer() {
+	const videoWrapper = document.querySelector('[data-videoWrapper]');
+	const videoBtn = document.querySelector('.js-videoBtn');
+	// const videoYt = document.querySelector('.video-yt');
+
+	videoBtn.addEventListener('click', () => {
+		// videoYt.classList.replace('opacity-0', 'opacity-1');
+		videoWrapper.classList.add('after:opacity-0');
+		videoBtn.classList.add('opacity-0');
+		setTimeout(() => {
+			videoWrapper.classList.replace('after:z-[1]', 'after:z-[-1]');
+			videoBtn.classList.replace('z-[2]', 'z-[-1]');
+		}, 300);
+	});
 }
