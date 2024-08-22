@@ -36,8 +36,40 @@ AOS.init({
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+	initMenuCollapse();
 	initCounter();
 });
+
+function initMenuCollapse() {
+	const toggleBtn = document.querySelector('[data-js="nav-toggle"]');
+	const menuContainer = document.querySelector('[data-js="nav-container"]');
+
+	let menuExpanded =
+		toggleBtn.getAttribute('aria-expanded') === 'true' || false;
+
+	toggleBtn.addEventListener('click', function () {
+		// toggleDropdown(!menuExpanded, toggleBtn, menuContainer);
+
+		menuExpanded = !menuExpanded;
+		if (menuExpanded) {
+			toggleBtn.setAttribute('aria-expanded', true);
+			menuContainer.style.height = `calc(100dvh - ${menuContainer.offsetTop}px)`;
+			document.body.classList.add('overflow-hidden');
+		} else {
+			toggleBtn.setAttribute('aria-expanded', false);
+			menuContainer.style.height = 0;
+			document.body.classList.remove('overflow-hidden');
+		}
+	});
+
+	window.addEventListener('resize', () => {
+		if (window.innerWidth >= 1180) {
+			toggleBtn.setAttribute('aria-expanded', false);
+			menuContainer.style.removeProperty('height');
+			document.body.classList.remove('overflow-hidden');
+		}
+	});
+}
 
 function initCounter() {
 	let countersQty = document.querySelectorAll('[data-counter-qty]').length;
