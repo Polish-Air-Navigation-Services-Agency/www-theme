@@ -32,10 +32,10 @@ if ($video_thumbnail['url']) {
                 <path d="M60.8584 81.3661C33.9435 74.1542 56.569 3.40919 28.3119 1.8108C10.7445 0.816981 2.41531 48.7456 1.24514 73.0001C-1.2765 125.218 31 169 44 176C73.2674 183.842 72.7056 197.234 93 189.425C122.651 178.015 142.39 152.299 151.234 119.291C159.265 89.3186 158.637 41.2987 137.875 35.7355C117.113 30.1723 93.0141 67.0023 84.0999 100.271C69.129 156.143 105.212 210.953 169.424 228.158C299.227 262.939 394.239 129.294 394.239 129.294" stroke="#60B8D1" stroke-width="2" />
             </svg>
         </div>
-        <div class="video-wrapper lg:w-full lg:h-[630x] [&>iframe]:w-full [&>iframe]:lg:h-[630px] video-player-wrapper relative after:content-[''] after:absolute after:top-0 after:left-0 after:z-[1] after:w-full after:transition after:duration-[300ms] after:ease-out _after:bg-[url('<?php echo $video_thumbnail_url; ?>')] after:bg-center after:bg-cover after:bg-no-repeat after:h-[630px]" data-js="videoWrapper">
+        <div class="video-wrapper lg:w-full lg:h-[630x] [&>iframe]:w-full [&>iframe]:lg:h-[630px] video-player-wrapper relative" data-js="videoWrapper">
             <?php echo $video; ?>
         </div>
-        <div class="desc-wrapper lg:w-[457px] text-white bg-primary pt-[70px] pb-10 px-5 lg:px-10 lg:absolute bottom-[-80px] right-0 z-[1]">
+        <div class="desc-wrapper lg:w-[457px] text-white bg-primary pt-[70px] pb-10 px-5 lg:px-10 lg:absolute bottom-[-80px] right-0 z-[3]">
             <div class="mb-3 text-[18px] font-medium leading-[27px]"><?php echo $desc1 ?></div>
             <div class="mb-10 text-[16px] leading-[24px]"><?php echo $desc2 ?></div>
             <button class="text-[18px] font-medium bg-primary !rounded-full border border-white !px-6 !py-[11px] hover:text-[#0F304D] hover:bg-white hover:border-[#BEBFBF] transition ease duration-200">
