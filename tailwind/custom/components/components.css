@@ -173,3 +173,7 @@ html {
 .ham8.active .bottom {
 	stroke-dashoffset: -64px;
 }
+
+.video-wrapper::after {
+	background-image: url("https://pazp.domain.org.pl/wp-content/uploads/2024/08/7db3458c8df69dd38869bf315633abac.jpeg");
+}
