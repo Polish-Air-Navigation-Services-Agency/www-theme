@@ -36,7 +36,7 @@ if ($video_thumbnail['url']) {
             <?php echo $video; ?>
             <div class="wp-block-group btn-more js-videoBtn group desktop:w-[175px] w-[140px] desktop:h-[175px] h-[140px] mx-auto text-center rounded-full z-[2] absolute top-[60%] desktop:top-[60%] left-[50%] translate-x-[-50%] translate-y-[-80%] transition ease-out duration-300 flex flex-col justify-center items-center gap-y-0 cursor-pointer overflow-hidden">
                 <div class="wp-block-group yellow-bg w-full h-full rounded-full bg-primaryYellow scale-100 group-hover:scale-[85%] absolute transition ease-in-out duration-[700ms] z-0">
-                    <p class="hidden">yellow bg</p>
+                    <p class="hidden after:z-[-1]">yellow bg</p>
                 </div>
                 <div class="wp-block-group white-bg w-full h-full rounded-full bg-white scale-0 group-hover:scale-[85%] absolute transition ease-in-out duration-[500ms] z-[1]">
                     <p class="hidden">white bg</p>
