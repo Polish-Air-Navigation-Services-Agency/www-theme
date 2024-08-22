@@ -175,8 +175,6 @@ html {
 }
 
 .video-wrapper {
-	@apply after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:transition after:duration-[300ms] after:ease-out after:bg-center after:bg-cover after:bg-no-repeat after:h-[630px] after:z-[1];
-
 	background-image: url("https://pazp.domain.org.pl/wp-content/uploads/2024/08/7db3458c8df69dd38869bf315633abac.jpeg");
 }
 
@@ -192,5 +190,5 @@ html {
 }
 
 .test {
-	@apply after:z-[-1] after:opacity-0 opacity-0;
+	@apply after:z-[-1];
 }
