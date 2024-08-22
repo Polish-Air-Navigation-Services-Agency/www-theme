@@ -2,7 +2,6 @@
 
 /** Template to display 'Baner' - hero */
 
-$section_id = $args['section_id'];
 $hero_background = $args['hero_background'];
 $small_title = $args['small_title'];
 $hero_text = $args['hero_text'];
@@ -13,7 +12,7 @@ if ($hero_background['url']) {
 }
 ?>
 
-<section id="o_nas" class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
+<section class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
     <?php if (isset($hero_bg_url)) : ?>
         <img src="<?php echo $hero_bg_url ?>" alt="background_image" class="absolute inset-0 z-[-1] object-cover !h-full w-full">
     <?php endif; ?>
@@ -49,7 +48,7 @@ if ($hero_background['url']) {
             </a>
         </button>
 
-        <a href="o_nas" class="block cursor-pointer absolute bottom-6 left-1/2 -translate-x-1/2">
+        <a href="#o_nas" class="block cursor-pointer absolute bottom-6 left-1/2 -translate-x-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="48" viewBox="0 0 50 48" fill="none">
                 <path d="M18.4003 32.9004L25 39.5001M25 39.5001L31.5997 32.9004M25 39.5001L24.9999 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
