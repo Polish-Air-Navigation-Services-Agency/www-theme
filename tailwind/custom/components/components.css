@@ -157,7 +157,7 @@ html {
 }
 
 [aria-expanded="true"].menu-btn .line2 {
-	/* stroke-dashoffset: -20px; */
+	stroke-dashoffset: -20px;
 	transform: rotate(90deg);
 }
 
