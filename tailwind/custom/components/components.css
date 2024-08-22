@@ -152,3 +152,15 @@ html {
 	stroke-dasharray: 60 207;
 	stroke-width: 6;
 }
+[aria-expanded="true"].menu-btn .line1 {
+	stroke-dashoffset: -64px;
+}
+
+[aria-expanded="true"].menu-btn .line2 {
+	/* stroke-dashoffset: -20px; */
+	transform: rotate(90deg);
+}
+
+[aria-expanded="true"].menu-btn .line3 {
+	stroke-dashoffset: -64px;
+}
