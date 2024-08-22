@@ -64,7 +64,7 @@ html {
 }
 
 #primary-menu li {
-	@apply relative w-fit lg:w-auto;
+	@apply relative w-fit lg:w-auto hover:text-secondary transition duration-200;
 }
 
 #primary-menu a {
