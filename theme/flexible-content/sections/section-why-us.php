@@ -32,7 +32,7 @@ if ($video_thumbnail['url']) {
                 <path d="M60.8584 81.3661C33.9435 74.1542 56.569 3.40919 28.3119 1.8108C10.7445 0.816981 2.41531 48.7456 1.24514 73.0001C-1.2765 125.218 31 169 44 176C73.2674 183.842 72.7056 197.234 93 189.425C122.651 178.015 142.39 152.299 151.234 119.291C159.265 89.3186 158.637 41.2987 137.875 35.7355C117.113 30.1723 93.0141 67.0023 84.0999 100.271C69.129 156.143 105.212 210.953 169.424 228.158C299.227 262.939 394.239 129.294 394.239 129.294" stroke="#60B8D1" stroke-width="2" />
             </svg>
         </div>
-        <div class="video-wrapper lg:w-full lg:h-[630x] [&>iframe]:w-full [&>iframe]:lg:h-[630px] video-player-wrapper relative" data-js="videoWrapper">
+        <div class="video-wrapper lg:w-full lg:h-[630x] [&>iframe]:w-full [&>iframe]:lg:h-[630px] video-player-wrapper relative" data-videoWrapper>
             <?php echo $video; ?>
             <div class="wp-block-group btn-more js-videoBtn group desktop:w-[175px] w-[140px] desktop:h-[175px] h-[140px] mx-auto text-center rounded-full z-[2] absolute top-[60%] desktop:top-[60%] left-[50%] translate-x-[-50%] translate-y-[-80%] transition ease-out duration-300 flex flex-col justify-center items-center gap-y-0 cursor-pointer overflow-hidden">
                 <div class="wp-block-group yellow-bg w-full h-full rounded-full bg-primaryYellow scale-100 group-hover:scale-[85%] absolute transition ease-in-out duration-[700ms] z-0">
