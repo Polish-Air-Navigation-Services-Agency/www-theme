@@ -11,7 +11,7 @@
 ?>
 
 <header id="masthead" class="absolute z-20 <?php if (current_user_can('administrator')) {
-																							echo 'top-8';
+																							echo 'top-20';
 																						} else {
 																							echo 'top-0';
 																						} ?> w-full bg-transparent transition-all duration-300">
@@ -32,7 +32,7 @@
 			</svg>
 		</button>
 
-		<div id="site-navigation" class="w-full bg-primary lg:bg-transparent text-white absolute lg:static inset-x-0 top-full h-0 lg:h-auto overflow-auto lg:overflow-visible shadow-none transition-all duration-500" data-js="nav-container">
+		<div id="site-navigation" class="w-full bg-[#055bc0] lg:bg-transparent text-white absolute lg:static inset-x-0 top-full h-0 lg:h-auto overflow-auto lg:overflow-visible shadow-none transition-all duration-500" data-js="nav-container">
 			<nav class="container w-full pt-5 lg:pt-0 lg:!px-0 pb-5 lg:pb-0 lg:!max-w-full flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 font-medium" aria-label="<?php esc_attr_e('Main Navigation', '_pansa'); ?>">
 				<?php
 				wp_nav_menu(
