@@ -174,8 +174,8 @@ html {
 	stroke-dashoffset: -64px;
 }
 
-.video-wrapper::after {
-	@apply content-[''] absolute top-0 left-0 w-full transition duration-[300ms] ease-out bg-center bg-cover bg-no-repeat h-[630px];
+.video-wrapper {
+	@apply after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:transition after:duration-[300ms] after:ease-out after:bg-center after:bg-cover after:bg-no-repeat after:h-[630px];
 
 	background-image: url("https://pazp.domain.org.pl/wp-content/uploads/2024/08/7db3458c8df69dd38869bf315633abac.jpeg");
 }
