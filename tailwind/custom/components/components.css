@@ -145,8 +145,8 @@ html {
 	transition:
 		stroke-dasharray 400ms,
 		stroke-dashoffset 400ms;
-	stroke: #000;
-	stroke-width: 5.5;
+	stroke: #fff;
+	stroke-width: 4;
 	stroke-linecap: round;
 }
 .ham8 .top {

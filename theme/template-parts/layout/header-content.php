@@ -25,18 +25,12 @@
 		</div>
 
 		<button class="menu-btn w-fit lg:hidden" aria-controls="primary-menu" aria-expanded="false" aria-label="Primary Menu" data-js="nav-toggle">
-			<svg class="ham hamRotate" width="40" height="40" viewBox="0 0 100 100">
-				<path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
-				<path class="line line2" d="M 20,50 H 80"></path>
-				<path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+			<svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+				<path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+				<path class="line middle" d="m 30,50 h 40" />
+				<path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
 			</svg>
 		</button>
-
-		<svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-			<path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-			<path class="line middle" d="m 30,50 h 40" />
-			<path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-		</svg>
 
 
 		<div id="site-navigation" class="w-full bg-[#055bc0] lg:bg-transparent text-white absolute lg:static inset-x-0 top-full h-0 lg:h-auto overflow-auto lg:overflow-visible shadow-none transition-all duration-500" data-js="nav-container">
