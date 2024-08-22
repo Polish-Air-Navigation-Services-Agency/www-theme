@@ -101,7 +101,7 @@ function initVideoPlayer() {
 		videoBtn.classList.add('opacity-0');
 		setTimeout(() => {
 			videoWrapper.classList.replace('after:z-[1]', 'after:z-[-1]');
-			videoBtn.classList.replace('z-[2]', 'z-[-1]');
+			videoWrapper.style.videoBtn.classList.replace('z-[2]', 'z-[-1]');
 		}, 300);
 	});
 }
