@@ -10,7 +10,7 @@ $desc1 = $args['desc1'];
 $desc2 = $args['desc2'];
 
 if ($video_thumbnail['url']) {
-    $video_thumbnail_url = $image['url'];
+    $video_thumbnail_url = $video_thumbnail['url'];
 }
 
 ?>
