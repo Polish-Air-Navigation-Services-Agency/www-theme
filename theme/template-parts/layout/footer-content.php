@@ -25,7 +25,7 @@ $social_links = get_field('social_links', 'option');
 			<h2 class="lg:basis-1/2 mb-10 lg:mb-0 text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative"><?php echo esc_html_e('Nie widzisz oferty pracy dla siebie?', '_pansa'); ?></h2>
 			<div class="lg:basis-1/2">
 				<div class="w-full h-full flex lg:justify-end items-center">
-					<button class="group self-center bg-white hover:bg-primary !rounded-full !px-6 !py-[11px] text-[#0F304D] font-medium hover:text-white transition ease duration-200">
+					<button class="group self-center bg-white border-white hover:bg-primary !rounded-full !px-6 !py-[11px] text-[#0F304D] font-medium hover:text-white transition ease duration-200">
 						<a href="<?php echo esc_url(home_url('/kontakt')); ?>" class="flex items-center justify-center gap-[10px]">
 							<?php esc_html_e('Skontaktuj się z nami', '_pansa'); ?>
 							<svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
