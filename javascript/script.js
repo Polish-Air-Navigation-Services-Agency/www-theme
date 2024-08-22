@@ -53,7 +53,7 @@ function initMenuCollapse() {
 		menuExpanded = !menuExpanded;
 		if (menuExpanded) {
 			toggleBtn.setAttribute('aria-expanded', true);
-			menuContainer.style.height = `calc(100dvh - ${menuContainer.offsetTop}px)`;
+			menuContainer.style.height = `calc(100dvh - 120px)`;
 			document.body.classList.add('overflow-hidden');
 		} else {
 			toggleBtn.setAttribute('aria-expanded', false);
