@@ -64,7 +64,7 @@ html {
 }
 
 #primary-menu li {
-	@apply relative w-auto lg:w-fit;
+	@apply relative w-fit lg:w-auto;
 }
 
 #primary-menu a {
