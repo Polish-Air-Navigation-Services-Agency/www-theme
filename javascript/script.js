@@ -98,9 +98,11 @@ function initVideoPlayer() {
 	videoBtn.addEventListener('click', () => {
 		// videoYt.classList.replace('opacity-0', 'opacity-1');
 		videoWrapper.classList.add('after:opacity-0');
+		videoWrapper.classList.add('before:opacity-0');
 		videoBtn.classList.add('opacity-0');
 		setTimeout(() => {
 			videoWrapper.classList.replace('after:z-[1]', 'after:z-[-1]');
+			videoWrapper.classList.replace('before:z-[2]', 'before:z-[-1]');
 			videoBtn.classList.replace('z-[2]', 'z-[-1]');
 		}, 300);
 	});
