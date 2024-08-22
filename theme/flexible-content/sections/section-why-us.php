@@ -35,7 +35,7 @@ if ($video_thumbnail['url']) {
         <div class="video-wrapper lg:w-full lg:h-[630x] [&>iframe]:w-full [&>iframe]:lg:h-[630px] video-player-wrapper relative after:content-[''] after:absolute after:top-0 after:left-0 after:z-[1] after:w-full after:transition after:duration-[300ms] after:ease-out _after:bg-[url('<?php echo $video_thumbnail_url; ?>')] after:bg-center after:bg-cover after:bg-no-repeat after:h-[630px]" data-js="videoWrapper">
             <?php echo $video; ?>
         </div>
-        <div class="desc-wrapper lg:w-[457px] text-white bg-primary pt-[70px] pb-10 px-5 lg:px-10 lg:absolute bottom-[-80px] right-0">
+        <div class="desc-wrapper lg:w-[457px] text-white bg-primary pt-[70px] pb-10 px-5 lg:px-10 lg:absolute bottom-[-80px] right-0 z-[1]">
             <div class="mb-3 text-[18px] font-medium leading-[27px]"><?php echo $desc1 ?></div>
             <div class="mb-10 text-[16px] leading-[24px]"><?php echo $desc2 ?></div>
             <button class="text-[18px] font-medium bg-primary !rounded-full border border-white !px-6 !py-[11px] hover:text-[#0F304D] hover:bg-white hover:border-[#BEBFBF] transition ease duration-200">
