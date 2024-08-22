@@ -116,8 +116,9 @@ html {
 	@apply font-bold text-base cursor-pointer w-auto pl-[30px] pr-[70px] transition duration-200;
 }
 
-.footer-menu-1 li {
-	@apply mb-4 font-semibold hover:text-secondary;
+.footer-menu-1 li,
+.footer-menu-2 li {
+	@apply mb-4 font-semibold hover:text-secondary transition ease duration-200;
 }
 
 .footer-menu-2 {
