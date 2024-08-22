@@ -17,6 +17,10 @@
  * The supplied styles are meant to match the default `h1` classes from
  * Tailwind Typography.
  */
+
+html {
+	@apply scroll-smooth;
+}
 .page-title,
 .entry-title {
 	@apply max-w-content mx-auto mb-6 text-3xl font-extrabold text-neutral-900;
