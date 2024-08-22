@@ -2,6 +2,7 @@
 
 /** Template to display 'Baner' - hero */
 
+$section_id = $args['section_id'];
 $hero_background = $args['hero_background'];
 $small_title = $args['small_title'];
 $hero_text = $args['hero_text'];
@@ -12,7 +13,7 @@ if ($hero_background['url']) {
 }
 ?>
 
-<div class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
+<section id="<?php echo $section_id; ?>" class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
     <?php if (isset($hero_bg_url)) : ?>
         <img src="<?php echo $hero_bg_url ?>" alt="background_image" class="absolute inset-0 z-[-1] object-cover !h-full w-full">
     <?php endif; ?>
@@ -39,7 +40,7 @@ if ($hero_background['url']) {
             <?php endif; ?>
         </div>
 
-        <button class="group bg-white w-fit !rounded-full !px-6 !py-[11px] text-[#0F304D] font-medium hover:bg-primary hover:text-white">
+        <button class="group bg-white w-fit !rounded-full !px-6 !py-[11px] text-[#0F304D] font-medium hover:bg-primary hover:text-white transition ease duration-200">
             <a href="<?php echo esc_url(home_url('/kogo-szukamy')); ?>" class="flex items-center justify-center gap-[10px]">
                 <?php esc_html_e('Sprawdź kogo szukamy', '_pansa'); ?>
                 <svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
@@ -48,10 +49,10 @@ if ($hero_background['url']) {
             </a>
         </button>
 
-        <a href="#" class="block cursor-pointer absolute bottom-6 left-1/2 -translate-x-1/2">
+        <a href="<?php echo $section_id; ?>" class="block cursor-pointer absolute bottom-6 left-1/2 -translate-x-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="48" viewBox="0 0 50 48" fill="none">
                 <path d="M18.4003 32.9004L25 39.5001M25 39.5001L31.5997 32.9004M25 39.5001L24.9999 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
         </a>
     </div>
-</div>
+</section id="<?php echo $section_ID; ?>">
