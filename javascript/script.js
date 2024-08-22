@@ -105,6 +105,6 @@ function initVideoPlayer() {
 			videoBtn.classList.replace('z-[2]', 'z-[-1]');
 		}, 300);
 
-		descWrapper.classList.add('!z-[0]', '!bottom-[-110px]');
+		descWrapper.classList.add('!z-[-1]', '!bottom-[-110px]');
 	});
 }
