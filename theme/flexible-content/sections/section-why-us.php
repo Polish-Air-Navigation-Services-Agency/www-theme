@@ -39,6 +39,7 @@ if ($video_thumbnail['url']) {
                     <rect width="100" height="100" rx="50" fill="white" fill-opacity="0.4" />
                     <path d="M70 50L40 67.3205L40 32.6795L70 50Z" fill="white" />
                 </svg>
+                <span class="test after:z-[-1]"></span>
             </div>
         </div>
         <div class="desc-wrapper lg:w-[457px] text-white bg-primary pt-[70px] pb-10 px-5 lg:px-10 lg:absolute bottom-[-80px] right-0 z-[3]">
