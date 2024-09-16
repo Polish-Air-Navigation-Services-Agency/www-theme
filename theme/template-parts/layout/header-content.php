@@ -57,10 +57,18 @@
 															else : echo 'bg-primary hover:bg-white text-white hover:text-[#0F304D] border-[#BEBFBF]';
 															endif; ?> !rounded-full !px-6 !py-[11px]  transition ease duration-200">
 					<a href="<?php echo esc_url(home_url('/kontakt')); ?>" class="flex items-center justify-center gap-[10px]">
-						<?php esc_html_e('Skontaktuj się', '_pansa'); ?>
-						<svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
-							<path class="group-hover:stroke-[#0F304D]" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-						</svg>
+						<?php esc_html_e('Contact Us', '_pansa'); ?>
+
+						<?php if (is_front_page()) : ?>
+							<svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
+								<path class="group-hover:stroke-white" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#0F304D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						<?php else : ?>
+
+							<svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
+								<path class="group-hover:stroke-[#0F304D]" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						<?php endif; ?>
 					</a>
 				</button>
 
