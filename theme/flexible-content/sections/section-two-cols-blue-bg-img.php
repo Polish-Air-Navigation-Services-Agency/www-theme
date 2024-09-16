@@ -44,13 +44,13 @@ if ($section_img['url']) {
                     <?php endif; ?>
 
                     <?php if ($description2) : ?>
-                        <div class="mb-10 lg:mb-[150px] text-[16px] text-white leading-[24px]"><?php echo $description2; ?></div>
+                        <div class="mb-10 lg:mb-[64px] text-[16px] text-white leading-[24px]"><?php echo $description2; ?></div>
                     <?php endif; ?>
                 </div>
             </div>
         </div>
         <?php if (isset($section_img)) : ?>
-            <img class="" src="<?php echo $section_img_url ?>" alt="section_image" class="test">
+            <img class="" src="<?php echo $section_img_url ?>" alt="section_image" class="lg:mt-[-100px] lg:translate-y-[120px]">
         <?php endif; ?>
     </div>
 </section>
