@@ -25,14 +25,15 @@ if ($section_img['url']) {
             <circle cx="75" r="75" fill="#60B8D1" />
         </svg>
     </div>
+
+    <!-- banner img -->
+    <?php if (isset($banner_img)) : ?>
+        <img src="<?php echo $banner_img_url; ?>" alt="background image" class="absolute inset-0 z-[-1] object-cover !h-full w-full">
+
+    <?php endif; ?>
+    <!-- /banner img end -->
+
     <div class="pt-12 relative z-0 container">
-        <!-- banner img -->
-        <?php if (isset($banner_img)) : ?>
-            <img src="<?php echo $banner_img_url; ?>" alt="background image" class="absolute inset-0 z-[-1] object-cover !h-full w-full">
-
-        <?php endif; ?>
-        <!-- /banner img end -->
-
         <div class="two-col flex flex-col lg:flex-row basis relative">
             <div class="decoration hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="779" height="175" viewBox="0 0 779 175" fill="none">
@@ -48,19 +49,19 @@ if ($section_img['url']) {
                 <?php if ($title) : ?>
                     <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
                 <?php endif; ?>
+            </div>
 
+            <?php if (isset($section_img)) : ?>
+                <img class="lg:absolute mb-5 lg:mb-0" src="<?php echo $section_img_url ?>" alt="section_image" class="test">
+            <?php endif; ?>
+
+            <div class="col2 basis-1/2">
                 <?php if ($description) : ?>
                     <div class="max-w-fill lg:max-w-[414px] mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></div>
                 <?php endif; ?>
 
                 <?php if ($description2) : ?>
                     <div class="max-w-fill lg:max-w-[414px] mb-10 lg:mb-[150px] text-[16px] text-white leading-[24px]"><?php echo $description2; ?></div>
-                <?php endif; ?>
-            </div>
-
-            <div class="col2 basis-1/2">
-                <?php if (isset($section_img)) : ?>
-                    <img class="lg:absolute mb-5 lg:mb-0" src="<?php echo $section_img_url ?>" alt="section_image" class="test">
                 <?php endif; ?>
             </div>
         </div>
