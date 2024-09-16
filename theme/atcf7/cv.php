@@ -21,12 +21,13 @@ if (!defined('ABSPATH')) {
 
     [text* your-region placeholder "Region/Województwo*"]
 
-    <label for="your-file" class="flex justify-between items-center [&_br]:hidden" data-js="cv-file">
-      <span class="truncate" data-js="cv-file-name">
-        <?php esc_html_e('Attach CV file', '_pansa') ?>
-      </span>
-    </label>[file* your-file id:your-file placeholder "Załącz CV*"]
   </div>
+
+  <label for="your-file" class="flex justify-between items-center [&_br]:hidden" data-js="cv-file">
+    <span class="truncate" data-js="cv-file-name">
+      <?php esc_html_e('Attach CV file', '_pansa') ?>
+    </span>
+  </label>[file* your-file id:your-file placeholder "Załącz CV*"]
 
   <div class="message-container w-full">
     [textarea* your-message x3 placeholder "Treść wiadomości"]
