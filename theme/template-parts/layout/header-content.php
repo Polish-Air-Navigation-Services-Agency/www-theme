@@ -53,9 +53,9 @@
 					)
 				);
 				?>
-				<button class="group <?php if (is_front_page()) : echo 'bg-white hover:bg-primary text-[#0F304D] hover:text-white';
-															else : echo 'bg-primary hover:bg-white text-white hover:text-[#0F304D] border-[#BEBFBF]';
-															endif; ?> !rounded-full !px-6 !py-[11px]  transition ease duration-200">
+				<button class="group <?php if (is_front_page()) : echo 'bg-white hover:bg-primary text-[#0F304D] hover:text-white border-[1px] border-white hover:border-primary';
+															else : echo 'bg-primary hover:bg-white text-white hover:text-[#0F304D] border-[1px] border-primary hover:border-[BEBFBF]';
+															endif; ?> !rounded-full !px-6 !py-[11px] transition ease duration-200">
 					<a href="<?php echo esc_url(home_url('/kontakt')); ?>" class="flex items-center justify-center gap-[10px]">
 						<?php esc_html_e('Contact Us', '_pansa'); ?>
 
