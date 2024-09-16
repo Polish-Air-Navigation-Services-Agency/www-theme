@@ -2,14 +2,16 @@
 
 /** Template to display 'Sekcja z treścią (dwie kolumny + zdjęcia)' - section_two_cols_blue_bg_img */
 
-$tiles_list = $args['tiles_list'];
 $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
 $description2 = $args['description2'];
-$section_img = $args['section_img'];
-$section_img2 = $args['section_img2'];
+$banner_img = $args['banner_img'];
+$section_img = $args['section_img2'];
 
+if ($banner_img['url']) {
+    $banner_img_url = $banner_img['url'];
+}
 if ($section_img['url']) {
     $section_img_url = $section_img['url'];
 }
@@ -24,13 +26,12 @@ if ($section_img['url']) {
         </svg>
     </div>
     <div class="pt-12 relative z-0 container">
-        <!-- img -->
-        <?php if ($tiles_list) :
-            $tileID = 0;
-        ?>
+        <!-- banner img -->
+        <?php if (isset($banner_img)) : ?>
+            <img src="<?php echo $banner_img_url; ?>" alt="background image" class="absolute inset-0 z-[-1] object-cover !h-full w-full">
 
         <?php endif; ?>
-        <!-- /img end -->
+        <!-- /banner img end -->
 
         <div class="two-col flex flex-col lg:flex-row basis relative">
             <div class="decoration hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1]">
