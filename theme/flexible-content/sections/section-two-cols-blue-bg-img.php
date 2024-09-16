@@ -31,7 +31,7 @@ $decor = $args['decor'];
             <?php endif; ?>
 
             <?php if ($title) : ?>
-                <h2 class="mb-[30px] lg:mb-[50px] text-[50px] lg:text-[60px] text-primary leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+                <h2 class="mb-[30px] lg:mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
             <?php endif; ?>
 
             <?php if ($button) : ?>
@@ -45,7 +45,7 @@ $decor = $args['decor'];
 
         </div>
         <div class="col2 basis-1/2">
-            <p class="max-w-[564px] text-textGray">
+            <p class="max-w-[564px] text-white">
                 <?php echo $description; ?>
             </p>
         </div>
