@@ -21,7 +21,7 @@ if ($section_img['url']) {
 
 <section>
     <?php if (isset($banner_img)) : ?>
-        <img src="<?php echo $banner_img_url; ?>" alt="background image" class="translate-y-[-143px]">
+        <img src="<?php echo $banner_img_url; ?>" alt="background image" class="ml-auto mr-0 translate-y-[120px] z-[1] relative">
     <?php endif; ?>
 
 
