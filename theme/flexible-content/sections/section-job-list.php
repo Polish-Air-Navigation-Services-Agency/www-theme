@@ -3,6 +3,7 @@
 /** Template to display 'Sekcja z listą ofert pracy' - section_job_list */
 
 $tiles = $args['tiles2'];
+$is_preview = $args['preview'];
 
 ?>
 
@@ -11,6 +12,9 @@ $tiles = $args['tiles2'];
         <div class="tiles-wrapper mb-[60px]">
             <?php if ($tiles) :
                 $tileID = 0;
+                if ($is_preview) {
+                    $tiles = array_slice($tiles,0,5);
+                }
             ?>
                 <?php foreach ($tiles as $tile) :
                     $tileID++;
@@ -18,17 +22,15 @@ $tiles = $args['tiles2'];
                         $tileID = '0' . $tileID;
                     endif;
                 ?>
-                    <?php if ($tile) : ?>
                         <div class="tile-wrapper pb-10 pt-[30px] flex flex-col lg:flex-row justify-between items-center border-b-[1px] border-b-[#BEBFBF]">
                             <div class="left-col flex gap-[26px]">
-                                <p class="text-[30px] font-medium text-secondary"><?php echo $tileID; ?></p>
-
-                                <div class="offer-wrapper mb-10 lg:mb-0">
+                                <span class="text-[30px] font-medium text-secondary"><?php echo $tileID; ?></span>
+                                <div class="mb-10 lg:mb-0">
                                     <?php if ($tile['title']) : ?>
-                                        <p class="mb-[10px] text-[30px] font-medium text-primary"><?php echo $tile['title']; ?></p>
+                                        <h3 class="mb-[10px] text-[30px] font-medium text-primary"><?php echo $tile['title']; ?></h3>
                                     <?php endif; ?>
 
-                                    <div class="offer-details flex gap-[14px]">
+                                    <div class="flex gap-[14px]">
                                         <?php if ($tile['date']) : ?>
                                             <div class="flex gap-[4px]">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -51,7 +53,7 @@ $tiles = $args['tiles2'];
                                 </div>
                             </div>
 
-                            <div class="right-col">
+                            <div>
                                 <?php if ($tile['url']) : ?>
                                     <a href="<?php echo $tile['url']; ?>" class="group w-[160px] h-[50px] pl-[30px] pr-[70px] flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition-all duration-200 relative">
                                         <?php esc_html_e('Aplikuj', '_pansa'); ?>
@@ -62,16 +64,19 @@ $tiles = $args['tiles2'];
                                 <?php endif; ?>
                             </div>
                         </div>
-                    <?php endif; ?>
                 <?php endforeach; ?>
             <?php endif; ?>
         </div>
 
-        <a href="<?php echo esc_url(home_url('/kogo-szukamy')); ?>" class="group mx-auto w-[310px] h-[50px] pl-[30px] pr-[70px] flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition-all duration-200 relative">
-            <?php esc_html_e('Zobacz wszystkie oferty', '_pansa'); ?>
-            <svg class="absolute right-[26px] top-[16px] pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
-                <path class="group-hover:stroke-primary" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </a>
+        <?php if($is_preview) : 
+            $JOBS_PAGE_ID = 39;
+            ?> 
+            <a href="<?php echo get_permalink($JOBS_PAGE_ID); ?>" class="group mx-auto w-[310px] h-[50px] pl-[30px] pr-[70px] flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition-all duration-200 relative">
+                <?php esc_html_e('Zobacz wszystkie oferty', '_pansa'); ?>
+                <svg class="absolute right-[26px] top-[16px] pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
+                    <path class="group-hover:stroke-primary" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+        <?php endif; ?> 
     </div>
 </section>
