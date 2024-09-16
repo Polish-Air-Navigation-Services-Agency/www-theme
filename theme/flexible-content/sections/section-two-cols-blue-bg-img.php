@@ -2,52 +2,66 @@
 
 /** Template to display 'Sekcja z treścią (dwie kolumny + zdjęcia)' - section_two_cols_blue_bg_img */
 
-$section_id = $args['section_id'];
-$cols_reverse = $args['cols_reverse'];
+$tiles_list = $args['tiles_list'];
 $section_number = $args['section_number'];
 $title = $args['title'];
-$button = $args['button'];
 $description = $args['description'];
-$decor = $args['decor'];
+$description2 = $args['description2'];
+$section_img = $args['section_img'];
+$section_img2 = $args['section_img2'];
+
+if ($section_img['url']) {
+    $section_img_url = $section_img['url'];
+}
+
 
 ?>
 
-<section id="<?php if ($section_id) : echo $section_id;
-                endif; ?>" class="relative pt-[100px] lg:pt-[174px] pb-[45px] bg-primary overflow-hidden">
+<section class="relative w-full bg-primary pt-[140px] mb-20 lg:mb-[280px]">
+    <div class="decoration absolute top-0 left-1/2 -translate-x-1/2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="75" viewBox="0 0 150 75" fill="none">
+            <circle cx="75" r="75" fill="#60B8D1" />
+        </svg>
+    </div>
+    <div class="pt-12 relative z-0 container">
+        <!-- img -->
+        <?php if ($tiles_list) :
+            $tileID = 0;
+        ?>
 
-    <?php if ($decor) : ?>
-        <div class="decoration absolute bottom-0 left-0 z-[-1]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="881" height="153" viewBox="0 0 881 153" fill="none">
-                <path d="M-64.0471 0.974854C-30.4515 59.5884 109.215 158.863 195.91 158.863C236.654 158.863 264.313 146.262 265.246 128.413C266.192 110.339 226.163 103.906 207.577 109.625C193.63 113.916 192.779 153.628 199.485 185.648C207.347 223.196 234.51 263.939 277.398 263.939C321.716 263.939 351.166 229.667 351.166 185.82C351.166 151.832 339.238 108.399 317.742 108.399C296.247 108.399 282.032 148.428 282.032 184.652C282.032 270.372 375.787 315.488 499.217 315.488C635.865 315.488 684.352 253.836 684.352 203.264C684.352 148.226 623.593 119.632 564.979 111.77C534.221 107.643 484.206 101.762 484.206 123.206C484.206 147.351 549.253 136.137 549.253 163.341C549.253 185.736 479.018 182.971 413.441 155.372C320.517 116.264 323.509 53.8168 351.023 32.3433C380.33 9.46983 436.28 28.7111 450.38 96.676C456.33 125.35 462.762 177.105 442.365 177.105C414.5 177.105 418.045 102.915 390.337 108.684C373.111 112.271 377.47 160.722 382.617 184.453C393.696 235.544 431.081 290.314 515.427 290.314C589.997 290.314 642.662 243.21 642.662 185.648C642.662 154.619 629.627 108.398 608.133 108.398C586.638 108.398 572.893 150.21 572.893 184.652C572.893 242.495 621.932 286.098 688.409 286.098C822.792 286.098 879.976 132.416 879.976 132.416" stroke="#F5F5F5" stroke-width="2" />
-            </svg>
-        </div>
-    <?php endif; ?>
+        <?php endif; ?>
+        <!-- /img end -->
 
-    <div class="container w-full flex gap-0 lg:gap-[117px] <?php if ($cols_reverse) echo 'flex-col md:flex-row-reverse';
-                                                            else echo 'flex-col md:flex-row'; ?> ">
-        <div class="col1 basis-1/2 flex-col">
-            <?php if ($section_number) : ?>
-                <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
-            <?php endif; ?>
+        <div class="two-col flex flex-col lg:flex-row basis relative">
+            <div class="decoration hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="779" height="175" viewBox="0 0 779 175" fill="none">
+                    <path d="M0.895508 1.25024C48.5167 49.1714 209.119 108.915 292.86 86.4769C332.215 75.9315 355.67 56.6011 351.951 39.1184C348.188 21.4161 307.858 25.5623 291.385 35.8969C279.023 43.6515 288.48 82.2306 303.245 111.424C320.558 145.657 357.34 177.982 398.767 166.882C441.574 155.411 461.15 114.684 449.802 72.3318C441.005 39.5019 418.242 0.63599 397.479 6.19948C376.716 11.7627 373.346 54.1068 382.721 89.0967C404.877 171.782 506.862 191.156 625.875 159.395C626.04 159.351 710.5 141 778 25" stroke="#60B8D1" stroke-width="2" />
+                </svg>
+            </div>
 
-            <?php if ($title) : ?>
-                <h2 class="mb-[30px] lg:mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
-            <?php endif; ?>
+            <div class="col1 basis-1/2 flex-col">
+                <?php if ($section_number) : ?>
+                    <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
+                <?php endif; ?>
 
-            <?php if ($button) : ?>
-                <button class="mb-[30px] lg:mb-0 text-[18px] font-medium bg-white !rounded-full border border-[#BEBFBF] !px-6 !py-[11px] text-[#0F304D] hover:bg-primary hover:text-white hover:border-primary transition ease duration-200">
-                    <a href="<?php echo esc_url(home_url('/o-nas')); ?>" class="flex items-center justify-center gap-[10px]">
-                        <?php echo $button; ?>
-                    </a>
-                </button>
-            <?php endif; ?>
+                <?php if ($title) : ?>
+                    <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+                <?php endif; ?>
 
+                <?php if ($description) : ?>
+                    <div class="max-w-fill lg:max-w-[414px] mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></div>
+                <?php endif; ?>
 
-        </div>
-        <div class="col2 basis-1/2">
-            <p class="max-w-[564px] text-white">
-                <?php echo $description; ?>
-            </p>
+                <?php if ($description2) : ?>
+                    <div class="max-w-fill lg:max-w-[414px] mb-10 lg:mb-[150px] text-[16px] text-white leading-[24px]"><?php echo $description2; ?></div>
+                <?php endif; ?>
+            </div>
+
+            <div class="col2 basis-1/2">
+                <?php if (isset($section_img)) : ?>
+                    <img class="lg:absolute mb-5 lg:mb-0" src="<?php echo $section_img_url ?>" alt="section_image" class="test">
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 </section>
