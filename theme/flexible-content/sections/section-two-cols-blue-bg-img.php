@@ -38,7 +38,10 @@ if ($section_img['url']) {
                     <?php endif; ?>
                 </div>
 
-                <div class="col2 basis-1/2">
+                <div class="col2 basis-1/2 relative">
+                    <svg class="absolute bottom-0 right-0" xmlns="http://www.w3.org/2000/svg" width="265" height="158" viewBox="0 0 265 158" fill="none">
+                        <path d="M41.1767 54.8695C23.1732 50.0455 38.3076 2.7238 19.4062 1.65463C7.65529 0.989861 2.08386 33.0496 1.30112 49.2735C-0.385614 84.2021 21.2043 113.488 29.9001 118.171C49.4772 123.416 49.1014 132.374 62.6764 127.151C82.5103 119.518 95.7133 102.317 101.629 80.2376C107.001 60.189 106.581 28.0683 92.6934 24.347C78.8055 20.6258 62.6858 45.2615 56.7231 67.5149C46.709 104.888 70.845 141.551 113.797 153.06C200.623 176.325 264.177 86.9286 264.177 86.9286" stroke="#60B8D1" stroke-width="2" />
+                    </svg>
                     <?php if ($description) : ?>
                         <div class="mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></div>
                     <?php endif; ?>
