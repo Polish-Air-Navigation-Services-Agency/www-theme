@@ -7,7 +7,7 @@ $title = $args['title'];
 $description = $args['description'];
 $description2 = $args['description2'];
 $banner_img = $args['banner_img'];
-$section_img = $args['section_img2'];
+$section_img = $args['section_img'];
 
 if ($banner_img['url']) {
     $banner_img_url = $banner_img['url'];
