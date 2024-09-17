@@ -30,8 +30,8 @@ $tiles_list = $args['tiles_list'];
                         <?php if ($tile && $tileID >= 4) : ?>
                             <h3><?php echo $tile['title'] ?></h3>
                         <?php endif; ?>
+                    <?php endforeach; ?>
                 </div>
-            <?php endforeach; ?>
             </div>`
 
         <?php endif; ?>
