@@ -45,7 +45,8 @@ $decor = $args['decor'];
 
 
         </div>
-        <div class="col2 basis-1/2 <?php if($text_botttom) : echo 'self-end'; ?>">
+        <div class="col2 basis-1/2 <?php if ($text_botttom) : echo 'self-end';
+                                    endif; ?>">
             <p class="max-w-[564px] text-textGray">
                 <?php echo $description; ?>
             </p>
