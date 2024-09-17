@@ -67,15 +67,6 @@ if ($section_img['url']) {
                             <span class="test after:z-[-1] before:z-[-1] before:opacity-0 after:opacity-0 !z-[-1] !bottom-[-110px]"></span>
                         </div>
                     </div>
-                    <div class="desc-wrapper lg:w-[457px] text-white bg-primary pt-[70px] pb-10 px-5 lg:px-10 lg:absolute bottom-[-80px] right-0 z-[3] transition duration-500" data-descWrapper>
-                        <div class="mb-3 text-[18px] font-medium leading-[27px]"><?php echo $desc1 ?></div>
-                        <div class="mb-10 text-[16px] leading-[24px]"><?php echo $desc2 ?></div>
-                        <button class="text-[18px] font-medium bg-primary !rounded-full border border-white !px-6 !py-[11px] hover:text-[#0F304D] hover:bg-white hover:border-[#BEBFBF] transition ease duration-200">
-                            <a href="<?php echo esc_url(home_url('/o-nas')); ?>" class="flex items-center justify-center gap-[10px]">
-                                <?php echo esc_html_e('Dowiedz się więcej', '_pansa'); ?>
-                            </a>
-                        </button>
-                    </div>
                 </div>
             </div>
         <?php endif; ?>
