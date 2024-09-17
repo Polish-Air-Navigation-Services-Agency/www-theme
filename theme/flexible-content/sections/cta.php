@@ -22,7 +22,7 @@ $button = $args['button'];
         <?php endif; ?>
 
         <?php if ($button) : ?>
-            <button class="mb-[30px] lg:mb-0 text-[18px] font-medium bg-secondary tetx-white !rounded-full border border-[#BEBFBF] !px-6 !py-[11px] text-[#0F304D] hover:bg-primary hover:text-white hover:border-primary transition ease duration-200">
+            <button class="mb-[30px] lg:mb-0 text-[18px] text-white font-medium bg-secondary !rounded-full border border-primary !px-6 !py-[11px] hover:bg-primary hover:text-white hover:border-white transition ease duration-200">
                 <a href="<?php echo esc_url(home_url('/kogo-szukamy')); ?>" class="flex items-center justify-center gap-[10px]">
                     <?php echo $button; ?>
                     <svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
