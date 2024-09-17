@@ -11,7 +11,7 @@ $tiles_list = $args['tiles_list'];
         <?php if ($tiles_list) :
             $tileID = 0;
         ?>
-            <div class="tiles-wrapper flex flex-row basis">
+            <div class="tiles-wrapper flex flex-col lg:flex-row basis">
                 <div class="col1 basis-1/2 flex flex-col">
                     <?php
                     $tileID = 0;
