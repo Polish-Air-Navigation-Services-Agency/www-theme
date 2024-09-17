@@ -7,7 +7,7 @@ $is_preview = $args['preview'];
 
 ?>
 
-<section>
+<section class="bg-[#F6F8F9]">
     <div class="container mx-auto pb-[100px]">
         <div class="tiles-wrapper mb-[60px]">
             <?php if ($tiles) :
