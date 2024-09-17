@@ -11,7 +11,7 @@ $tiles_list = $args['tiles_list'];
         <?php if ($tiles_list) :
             $tileID = 0;
         ?>
-            ` <div class="tiles-wrapper flex flex-col basis">
+            ` <div class="tiles-wrapper flex flex-row basis">
                 <div class="col1 flex flex-col">
                     <?php foreach ($tiles_list as $tile) :
                         $tileID++;
@@ -19,6 +19,7 @@ $tiles_list = $args['tiles_list'];
 
                         <?php if ($tile && $tileID < 4) : ?>
                             <h3><?php echo $tile['title'] ?></h3>
+                            <h3><?php echo $tileID; ?></h3>
                         <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
@@ -29,6 +30,7 @@ $tiles_list = $args['tiles_list'];
                     ?>
                         <?php if ($tile && $tileID >= 4) : ?>
                             <h3><?php echo $tile['title'] ?></h3>
+                            <h3><?php echo $tileID ?></h3>
                         <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
