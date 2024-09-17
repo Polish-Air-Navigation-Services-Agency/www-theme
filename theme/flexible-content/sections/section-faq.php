@@ -10,15 +10,21 @@ $questions_list = $args['questions_list'];
                 endif; ?>" class="relative pt-[50px] pb-[45px] overflow-hidden">
 
     <div class="container w-full flex flex-col items-center justify-center">
-        <?php foreach ($questions_list as $question) :
-            $question_qty = 1
-        ?>
-            <?php echo $question_qty; ?>
-            <?php echo $question['question']; ?>
-            <?php echo $question['answer']; ?>
-        <?php
-            $question_qty++;
-        endforeach;
-        ?>
+        <div class="faq-wrapper">
+            <?php $question_qty = 1; ?>
+            <?php foreach ($questions_list as $question) :
+            ?>
+                <div class="question-wrapper flex gap-[44px] border-b-[1px] border-[#BEBFBF]">
+                    <p class="text-secondary text-[30px] font-medium"><?php echo $question_qty . '/'; ?></p>
+                    <div class="right-col">
+                        <h3 class="mb-5 text-[30px] font-medium"><?php echo $question['question']; ?></h3>
+                        <div class="mb-10 text-textGray text-[16px]"><?php echo $question['answer']; ?></div>
+                    </div>
+                </div>
+            <?php
+                $question_qty++;
+            endforeach;
+            ?>
+        </div>
     </div>
 </section>
