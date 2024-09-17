@@ -20,8 +20,8 @@ $tiles_list = $args['tiles_list'];
                     ?>
 
                         <?php if ($tile && $tileID < 4) : ?>
-                            <div class="tile-wrapper pt-[48px] pr-[48px] border-b-[1px] border-[#D4DEE4]">
-                                <div class="icon">
+                            <div class="tile-wrapper pt-[48px] pr-[48px] <?php ($tileID == 3) ? '' : 'border-b-[1px]' ?> _border-b-[1px] border-r-[1px] border-[#D4DEE4]">
+                                <div class="icon mb-[28px]">
                                     <img src="<?php echo $tile['icon'] ?>" alt="icon">
                                 </div>
                                 <h3 class="mb-3 text-[30px] font-medium"><?php echo $tile['title']; ?></h3>
@@ -39,7 +39,7 @@ $tiles_list = $args['tiles_list'];
                     ?>
                         <?php if ($tile && $tileID >= 4) : ?>
                             <div class="tile-wrapper pt-[48px] px-[48px] border-b-[1px] border-[#D4DEE4]">
-                                <div class="icon">
+                                <div class="icon mb-[28px]">
                                     <img src="<?php echo $tile['icon'] ?>" alt="icon">
                                 </div>
                                 <h3 class="mb-3 text-[30px] font-medium"><?php echo $tile['title']; ?></h3>
