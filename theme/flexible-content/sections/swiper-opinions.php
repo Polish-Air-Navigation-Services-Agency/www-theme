@@ -2,7 +2,6 @@
 
 /** Template to display 'Swiper z opiniami' - swiper_opinions */
 
-$image = $args['image'];
 $opinions_list = $args['opinions_list'];
 
 ?>
