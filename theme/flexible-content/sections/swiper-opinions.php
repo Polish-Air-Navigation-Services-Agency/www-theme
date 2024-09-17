@@ -9,10 +9,11 @@ $opinions_list = $args['opinions_list'];
 <section class="pb-[100px] overflow-hidden">
     <div class="container mx-auto">
         <div class="wrapper relative">
+            <svg class="decoration absolute bottom-0 left-0 z-[-1]" xmlns="http://www.w3.org/2000/svg" width="207" height="218" viewBox="0 0 207 218" fill="none">
+                <path d="M23.1519 0.999858C61.7343 11.338 76.385 54.402 74.441 89.9499C72.7836 120.265 62.4816 155.653 48.9037 156.136C30.8105 156.782 -3.65451 141.367 1.53699 125.397C6.66292 109.624 34.5708 104.997 71.2242 114.818C114.933 126.53 166.122 170.199 205.52 217" stroke="#60B8D1" stroke-width="2" />
+            </svg>
+
             <div class="swiper !max-w-[768px]" data-js="swiper-tiles-wide">
-                <svg class="decoration absolute bottom-0 left-0 z-[-1]" xmlns="http://www.w3.org/2000/svg" width="207" height="218" viewBox="0 0 207 218" fill="none">
-                    <path d="M23.1519 0.999858C61.7343 11.338 76.385 54.402 74.441 89.9499C72.7836 120.265 62.4816 155.653 48.9037 156.136C30.8105 156.782 -3.65451 141.367 1.53699 125.397C6.66292 109.624 34.5708 104.997 71.2242 114.818C114.933 126.53 166.122 170.199 205.52 217" stroke="#60B8D1" stroke-width="2" />
-                </svg>
                 <div class="swiper-wrapper z-[0]">
                     <?php foreach ($opinions_list as $opinion) : ?>
                         <div class="swiper-slide">
