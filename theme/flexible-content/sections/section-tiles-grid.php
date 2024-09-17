@@ -38,8 +38,13 @@ $tiles_list = $args['tiles_list'];
                         $tileID++;
                     ?>
                         <?php if ($tile && $tileID >= 4) : ?>
-                            <h3><?php echo $tile['title'] ?></h3>
-                            <h3><?php echo $tileID ?></h3>
+                            <div class="tile-wrapper pt-[48px] pr-[48px] border-b-[1px] border-[#D4DEE4]">
+                                <div class="icon">
+                                    <img src="<?php echo $tile['icon'] ?>" alt="icon">
+                                </div>
+                                <h3 class="mb-3 text-[30px] font-medium"><?php echo $tile['title']; ?></h3>
+                                <p class="mb-12 text-textGray"><?php echo $tile['description']; ?></p>
+                            </div>
                         <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
