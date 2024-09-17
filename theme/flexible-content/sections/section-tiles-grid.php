@@ -11,7 +11,7 @@ $tiles_list = $args['tiles_list'];
         <?php if ($tiles_list) :
             $tileID = 0;
         ?>
-            ` <div class="tiles-wrapper flex flex-row basis">
+            <div class="tiles-wrapper flex flex-row basis">
                 <div class="col1 basis-1/2 flex flex-col">
                     <?php
                     $tileID = 0;
@@ -25,7 +25,7 @@ $tiles_list = $args['tiles_list'];
                                     <img src="<?php echo $tile['icon'] ?>" alt="icon">
                                 </div>
                                 <h3 class="mb-3 text-[30px] font-medium"><?php echo $tile['title']; ?></h3>
-                                <p class="mb-12 text-textGray"><?php echo $tile['description';] ?></p>
+                                <p class="mb-12 text-textGray"><?php echo $tile['description']; ?></p>
                             </div>
                         <?php endif; ?>
                     <?php endforeach; ?>
