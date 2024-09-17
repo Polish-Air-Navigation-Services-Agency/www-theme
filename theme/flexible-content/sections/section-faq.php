@@ -7,7 +7,7 @@ $questions_list = $args['questions_list'];
 ?>
 
 <section class="relative pb-[45px] overflow-hidden">
-    <div class="container w-full lg:flex flex-col items-center justify-center">
+    <div class="container mx-auto">
         <div class="faq-wrapper">
             <?php $question_qty = 1; ?>
             <?php foreach ($questions_list as $question) :
@@ -15,7 +15,7 @@ $questions_list = $args['questions_list'];
                     $question_qty = '0' . $question_qty;
                 endif;
             ?>
-                <div class="question-wrapper mt-10 flex gap-[44px] border-b-[1px] border-[#BEBFBF]">
+                <div class="question-wrapper mt-10 lg:flex gap-[44px] border-b-[1px] border-[#BEBFBF]">
                     <p class="text-secondary text-[30px] font-medium"><?php echo $question_qty . '/'; ?></p>
                     <div class="right-col">
                         <h3 class="mb-5 text-[30px] font-medium leading-[36px]"><?php echo $question['question']; ?></h3>
