@@ -16,7 +16,7 @@ $bgGray = $args['bgGray'];
 ?>
 
 <section id="<?php if ($section_id) : echo $section_id;
-                endif; ?>" class="<?php echo ($bgGray) ? 'bg-[#F6F8F9]' : ''; ?>relative pt-[100px] lg:pt-[174px] pb-[45px] overflow-hidden">
+                endif; ?>" class="<?php echo ($bgGray) ? 'bg-[#F6F8F9]' : ''; ?> relative pt-[100px] lg:pt-[174px] pb-[45px] overflow-hidden">
 
     <?php if ($decor) : ?>
         <div class="decoration absolute bottom-0 left-0 z-[-1]">
