@@ -5,6 +5,7 @@
 $section_id = $args['section_id'];
 $section_number = $args['section_number'];
 $title = $args['title'];
+$description = $args['description'];
 
 ?>
 
@@ -17,7 +18,11 @@ $title = $args['title'];
         <?php endif; ?>
 
         <?php if ($title) : ?>
-            <h2 class="max-w-[500px] text-center text-[42px] lg:text-[60px] text-primary leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+            <h2 class="mb-10 max-w-[500px] text-center text-[42px] lg:text-[60px] text-primary leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+        <?php endif; ?>
+
+        <?php if ($description) : ?>
+            <div class="max-w-[612px] text-center text-[16px] lg:text-[18px] text-textGray leading-[24px] lg:leading-[28px]"><?php echo $description; ?></div>
         <?php endif; ?>
     </div>
 </section>
