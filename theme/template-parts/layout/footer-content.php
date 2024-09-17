@@ -22,7 +22,7 @@ $social_links = get_field('social_links', 'option');
 
 	<div class="container mx-auto pt-[60px] text-white">
 		<div class="footer-top mb-[60px] flex flex-col lg:flex-row lg:basis">
-			<h2 class="lg:basis-1/2 mb-10 lg:mb-0 text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative"><?php echo esc_html_e('Nie widzisz oferty pracy dla siebie?', '_pansa'); ?></h2>
+			<h2 class="lg:basis-1/2 mb-10 lg:mb-0 text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative"><?php echo esc_html_e('Have additional questions?', '_pansa'); ?></h2>
 			<div class="lg:basis-1/2">
 				<div class="w-full h-full flex lg:justify-end items-center">
 					<button class="group self-center bg-white border-[1px] border-white hover:bg-primary !rounded-full !px-6 !py-[11px] text-[#0F304D] font-medium hover:text-white transition ease duration-200">
