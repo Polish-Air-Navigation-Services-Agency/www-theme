@@ -38,7 +38,7 @@ $tiles_list = $args['tiles_list'];
                         $tileID++;
                     ?>
                         <?php if ($tile && $tileID >= 4) : ?>
-                            <div class="tile-wrapper pt-[48px] px-[48px] <?php echo ($tileID == 5) ? '' : 'border-b-[1px]' ?> border-[#D4DEE4]">
+                            <div class="tile-wrapper pt-[48px] lg:px-[48px] <?php echo ($tileID == 5) ? '' : 'border-b-[1px]' ?> border-[#D4DEE4]">
                                 <div class="icon mb-[28px]">
                                     <img src="<?php echo $tile['icon'] ?>" alt="icon">
                                 </div>
