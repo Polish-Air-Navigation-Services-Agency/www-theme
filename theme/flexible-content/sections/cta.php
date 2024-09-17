@@ -4,6 +4,7 @@
 
 $section_id = $args['section_id'];
 $title = $args['title'];
+$button = $args['button'];
 
 ?>
 
