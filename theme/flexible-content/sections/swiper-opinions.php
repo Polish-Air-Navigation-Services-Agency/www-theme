@@ -8,13 +8,13 @@ $opinions_list = $args['opinions_list'];
 
 <section class="relative pb-[100px] overflow-hidden">
     <div class="container mx-auto">
-        <div class="swiper" data-js="swiper-tiles-wide">
-            <div class="swiper-wrapper">
+        <div class="swiper max-w-[768px]" data-js="swiper-tiles-wide">
+            <div class="swiper-wrapper ">
                 <?php foreach ($opinions_list as $opinion) : ?>
                     <div class="swiper-slide">
                         <div class="slide flex flex-row basis gap-6">
-                            <div class="left-col basis-1/2 bg-[#D4DEE]">
-                                <img src="<?php echo $opinion['image'] ?>" alt="author-image">
+                            <div class="left-col basis-1/2 bg-[#D4DEE4]">
+                                <img class="m-auto" src="<?php echo $opinion['image'] ?>" alt="author-image">
                             </div>
 
                             <div class="right-col basis-1/2">
@@ -22,19 +22,19 @@ $opinions_list = $args['opinions_list'];
 
                                 <p class="mb-10 text-secondary text-[18px] font-medium"><?php echo $opinion['position'] ?></p>
 
-                                <p class="italic text-textGray text-[16px] leading-[24px]"><?php echo $opinion['opinion_text'] ?></p>
+                                <div class="italic text-textGray text-[16px] leading-[24px]"><?php echo $opinion['opinion_text'] ?></div>
                             </div>
                         </div>
                     </div>
                 <?php endforeach; ?>
             </div>
-            <div class="swiper-button-prev">
+            <div class="swiper-button-prev after:hidden">
                 <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
                     <circle cx="36" cy="36" r="36" transform="matrix(-1.19249e-08 -1 -1 1.19249e-08 72 72)" fill="#60B8D1" />
                     <path d="M36.5337 44.5971L45.3332 35.7976M45.3332 35.7976L36.5337 26.998M45.3332 35.7976L23.867 35.7975" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </div>
-            <div class="swiper-button-next">
+            <div class="swiper-button-next after:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
                     <circle cx="36" cy="36" r="36" transform="matrix(-1.19249e-08 -1 -1 1.19249e-08 72 72)" fill="#60B8D1" />
                     <path d="M36.5337 44.5971L45.3332 35.7976M45.3332 35.7976L36.5337 26.998M45.3332 35.7976L23.867 35.7975" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
