@@ -11,8 +11,16 @@ $opinions_list = $args['opinions_list'];
         <div class="swiper" data-js="swiper-tiles-wide">
             <div class="swiper-wrapper">
                 <?php foreach ($opinions_list as $opinion) : ?>
-                    <div class="swiper-slide">
-                        <?php echo $opinion['author'] ?>
+                    <div class="swiper-slide flex flex-row basis gap-6">
+                        <div class="left-col basis-1/2">
+                            <img src="<?php echo $opinion['image'] ?>" alt="author-image">
+                        </div>
+
+                        <div class="right-col basis-1/2">
+                            <?php echo $opinion['author'] ?>
+                            <?php echo $opinion['position'] ?>
+                            <?php echo $opinion['opinion_text'] ?>
+                        </div>
                     </div>
                 <?php endforeach; ?>
             </div>
