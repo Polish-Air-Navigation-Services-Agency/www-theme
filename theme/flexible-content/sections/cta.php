@@ -9,7 +9,7 @@ $button = $args['button'];
 ?>
 
 <section id="<?php if ($section_id) : echo $section_id;
-                endif; ?>" class="relative pt-[100px] lg:pt-[174px] pb-[45px] bg-primary overflow-hidden">
+                endif; ?>" class="relative mb-[80px] py-[80px] lg:py-[128px] bg-primary overflow-hidden">
     <svg class="decoration absolute left-0 top-1/2 -translate-x-full" xmlns="http://www.w3.org/2000/svg" width="75" height="150" viewBox="0 0 75 150" fill="none">
         <circle cy="75" r="75" fill="#60B8D1" />
     </svg>
@@ -18,13 +18,16 @@ $button = $args['button'];
     </svg>
     <div class="container w-full flex items-center justify-between">
         <?php if ($title) : ?>
-            <h2 class="max-w-[590px] text-center text-[42px] lg:text-[60px] text-primary leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+            <h2 class="max-w-[590px] text-white text-[42px] lg:text-[60px] leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
         <?php endif; ?>
 
         <?php if ($button) : ?>
-            <button class="mb-[30px] lg:mb-0 text-[18px] font-medium bg-white !rounded-full border border-[#BEBFBF] !px-6 !py-[11px] text-[#0F304D] hover:bg-primary hover:text-white hover:border-primary transition ease duration-200">
-                <a href="<?php echo esc_url(home_url('/o-nas')); ?>" class="flex items-center justify-center gap-[10px]">
+            <button class="mb-[30px] lg:mb-0 text-[18px] font-medium bg-secondary tetx-white !rounded-full border border-[#BEBFBF] !px-6 !py-[11px] text-[#0F304D] hover:bg-primary hover:text-white hover:border-primary transition ease duration-200">
+                <a href="<?php echo esc_url(home_url('/kogo-szukamy')); ?>" class="flex items-center justify-center gap-[10px]">
                     <?php echo $button; ?>
+                    <svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
+                        <path class="group-hover:stroke-[#0F304D]" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
                 </a>
             </button>
         <?php endif; ?>

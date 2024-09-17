@@ -9,7 +9,7 @@ $title = $args['title'];
 ?>
 
 <section id="<?php if ($section_id) : echo $section_id;
-                endif; ?>" class="relative pt-[100px] lg:pt-[174px] pb-[45px] overflow-hidden">
+                endif; ?>" class="relative pt-[50px] pb-[45px] overflow-hidden">
 
     <div class="container w-full flex flex-col items-center justify-center">
         <?php if ($section_number) : ?>
