@@ -2,8 +2,6 @@
 
 /** Template to display 'Sekcja z pytaniami' - section_faq */
 
-$section_id = $args['section_id'];
-$section_number = $args['section_number'];
 $questions_list = $args['questions_list'];
 
 ?>
