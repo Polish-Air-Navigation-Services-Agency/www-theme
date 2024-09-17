@@ -6,7 +6,7 @@ $tiles_list = $args['tiles_list'];
 
 ?>
 
-<section class="relative pt-[100px] lg:pt-[174px] pb-[45px] overflow-hidden">
+<section class="relative pt-[100px] pb-[100px] overflow-hidden">
     <div class="container mx-auto">
         <?php if ($tiles_list) :
             $tileID = 0;
@@ -20,7 +20,7 @@ $tiles_list = $args['tiles_list'];
                     ?>
 
                         <?php if ($tile && $tileID < 4) : ?>
-                            <div class="tile-wrapper pt-[48px] pr-[48px] <?php echo ($tileID == 3) ? '' : 'border-b-[1px]' ?> _border-b-[1px] border-r-[1px] border-[#D4DEE4]">
+                            <div class="tile-wrapper mt-[48px] pr-[48px] <?php echo ($tileID == 3) ? '' : 'border-b-[1px]' ?> _border-b-[1px] border-r-[1px] border-[#D4DEE4]">
                                 <div class="icon mb-[28px]">
                                     <img src="<?php echo $tile['icon'] ?>" alt="icon">
                                 </div>
@@ -48,8 +48,7 @@ $tiles_list = $args['tiles_list'];
                         <?php endif; ?>
                     <?php endforeach; ?>
                 </div>
-            </div>`
-
+            </div>
         <?php endif; ?>
     </div>
 </section>
