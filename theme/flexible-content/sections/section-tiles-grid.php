@@ -31,14 +31,14 @@ $tiles_list = $args['tiles_list'];
                     <?php endforeach; ?>
                 </div>
 
-                <div class="col2 basis-1/2 flex flex-col">
+                <div class="col2 basis-1/2 flex flex-col justify-center">
                     <?php
                     $tileID = 0;
                     foreach ($tiles_list as $tile) :
                         $tileID++;
                     ?>
                         <?php if ($tile && $tileID >= 4) : ?>
-                            <div class="tile-wrapper pt-[48px] pr-[48px] border-b-[1px] border-[#D4DEE4]">
+                            <div class="tile-wrapper pt-[48px] px-[48px] border-b-[1px] border-[#D4DEE4]">
                                 <div class="icon">
                                     <img src="<?php echo $tile['icon'] ?>" alt="icon">
                                 </div>
