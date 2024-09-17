@@ -18,7 +18,7 @@ $description = $args['description'];
         <?php endif; ?>
 
         <?php if ($title) : ?>
-            <h2 class="mb-10 max-w-[500px] text-center text-[42px] lg:text-[60px] text-primary leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+            <h2 class="mb-10 max-w-[840px] text-center text-[42px] lg:text-[60px] text-primary leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
         <?php endif; ?>
 
         <?php if ($description) : ?>
