@@ -29,7 +29,7 @@ if ($section_img['url']) {
 
     <div class="relative w-full bg-primary pt-[140px] mb-20 lg:mb-[280px]">
         <div class="pt-12 relative z-0 container">
-            <div class="two-col flex flex-col-reverse lg:flex-row-reverse gap-0 lg:gap-[117px] basis relative">
+            <div class="two-col flex flex-col lg:flex-row-reverse gap-0 lg:gap-[117px] basis relative">
                 <div class="col1 basis-1/2 flex-col">
                     <?php if ($section_number) : ?>
                         <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
@@ -46,14 +46,14 @@ if ($section_img['url']) {
                     <?php endif; ?>
 
                     <?php if ($description2) : ?>
-                        <div class="mb-10 text-[16px] text-white leading-[24px]"><?php echo $description2; ?></div>
+                        <div class="mb-10 lg:mb-0 text-[16px] text-white leading-[24px]"><?php echo $description2; ?></div>
                     <?php endif; ?>
                 </div>
             </div>
         </div>
         <?php if (isset($section_img)) : ?>
             <div class="lg:w-1/2 relative lg:translate-y-[100px]">
-                <svg class="absolute top-[-60px] lg:top-[50px] left-0 lg:left-auto lg:right-[-190px]" xmlns="http://www.w3.org/2000/svg" width="265" height="158" viewBox="0 0 265 158" fill="none">
+                <svg class="absolute top-[-60px] lg:top-[-70px] left-0 lg:left-auto lg:right-[-190px]" xmlns="http://www.w3.org/2000/svg" width="265" height="158" viewBox="0 0 265 158" fill="none">
                     <path d="M41.1767 54.8695C23.1732 50.0455 38.3076 2.7238 19.4062 1.65463C7.65529 0.989861 2.08386 33.0496 1.30112 49.2735C-0.385614 84.2021 21.2043 113.488 29.9001 118.171C49.4772 123.416 49.1014 132.374 62.6764 127.151C82.5103 119.518 95.7133 102.317 101.629 80.2376C107.001 60.189 106.581 28.0683 92.6934 24.347C78.8055 20.6258 62.6858 45.2615 56.7231 67.5149C46.709 104.888 70.845 141.551 113.797 153.06C200.623 176.325 264.177 86.9286 264.177 86.9286" stroke="#60B8D1" stroke-width="2" />
                 </svg>
                 <div class="video lg:w-auto [&>iframe]:w-full [&>iframe]:lg:h-[472px] relative">
