@@ -19,7 +19,7 @@ if ($section_img['url']) {
 
 ?>
 
-<section>
+<section class="mt-[-100px]">
     <?php if (isset($banner_img)) : ?>
         <img src="<?php echo $banner_img_url; ?>" alt="background image" class="ml-auto mr-0 translate-y-[120px] z-[1] relative">
     <?php endif; ?>
