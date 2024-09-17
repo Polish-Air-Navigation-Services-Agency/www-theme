@@ -17,7 +17,7 @@ $opinions_list = $args['opinions_list'];
                 <div class="swiper-wrapper z-[0]">
                     <?php foreach ($opinions_list as $opinion) : ?>
                         <div class="swiper-slide">
-                            <div class="slide flex lg:flex-row basis gap-6">
+                            <div class="slide flex flex-col lg:flex-row basis gap-6">
                                 <div class="left-col basis-1/2 bg-[#D4DEE4]">
                                     <img class="m-auto" src="<?php echo $opinion['image'] ?>" alt="author-image">
                                 </div>
