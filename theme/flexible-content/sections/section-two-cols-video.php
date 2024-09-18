@@ -15,7 +15,7 @@ $video_thumbnail = $args['video_thumbnail'];
 
 <section>
     <div class="relative w-full bg-primary mb-20 pt-10">
-        <?php if (isset($decoration_paragraph)) : ?>
+        <?php if ($decoration_paragraph) : ?>
             <svg class="decoration hidden lg:block absolute bottom-0 right-[80px]" xmlns="http://www.w3.org/2000/svg" width="609" height="107" viewBox="0 0 609 107" fill="none">
                 <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
             </svg>
