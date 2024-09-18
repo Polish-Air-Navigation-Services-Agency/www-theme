@@ -5,18 +5,10 @@
 $tiles_list = $args['tiles_list'];
 $section_number = $args['section_number'];
 $title = $args['title'];
-$description = $args['description'];
-$description2 = $args['description2'];
-$section_img = $args['section_img'];
-
-if ($section_img['url']) {
-    $section_img_url = $section_img['url'];
-}
-
 
 ?>
 
-<section class="relative w-full bg-primary pt-[140px] mb-20 lg:mb-[280px]">
+<section class="relative w-full bg-primary pt-[140px]">
     <div class="decoration absolute top-0 left-1/2 -translate-x-1/2">
         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="75" viewBox="0 0 150 75" fill="none">
             <circle cx="75" r="75" fill="#60B8D1" />
@@ -47,9 +39,6 @@ if ($section_img['url']) {
                                 </h3>
                             <?php endif; ?>
                         </div>
-                        <?php if ($tile['description']) : ?>
-                            <p class="text-[14px] text-white leading-[21px]"><?php echo $tile['description']; ?></p>
-                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
             </div>
