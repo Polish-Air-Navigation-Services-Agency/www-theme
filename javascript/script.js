@@ -95,7 +95,7 @@ function initCounter() {
 function initVideoPlayer() {
 	const videoBtn = document.querySelector('.js-videoBtn');
 	if(!videoBtn) return
-	
+
 	const videoWrapper = document.querySelector('[data-videoWrapper]');
 	const descWrapper = document.querySelector('[data-descWrapper]');
 
@@ -154,6 +154,8 @@ function initShowMoreJobs(){
 	function expandJobsList(increment){
 		const hiddenJobsList = document.querySelectorAll('[data-js-job-visible="false"]')
 		const hiddenJobsCount = hiddenJobsList.length
+
+		const limit = Math.min(increment, hiddenJobsCount);
 
         for (let i = 0; i < limit; i++) {
             hiddenJobsList[i].setAttribute('data-js-job-visible', 'true');
