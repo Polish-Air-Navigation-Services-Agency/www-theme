@@ -5,6 +5,7 @@
 $tiles_list = $args['tiles_list'];
 $section_number = $args['section_number'];
 $title = $args['title'];
+$description = $args['description'];
 
 ?>
 
@@ -19,7 +20,7 @@ $title = $args['title'];
         <?php if ($tiles_list) :
             $tileID = 0;
         ?>
-            <div class="counter mb-[100px] lg:mb-[190px] grid grid-cols-1 lg:grid-cols-4 gap-x-10 gap-y-14 lg:gap-y-10">
+            <div class="counter grid grid-cols-1 lg:grid-cols-4 gap-x-10 gap-y-14 lg:gap-y-10">
                 <?php foreach ($tiles_list as $tile) :
                     $tileID++;
                 ?>
@@ -39,6 +40,9 @@ $title = $args['title'];
                                 </h3>
                             <?php endif; ?>
                         </div>
+                        <?php if ($tile['description']) : ?>
+                            <p class="text-[14px] text-white leading-[21px]"><?php echo $tile['description']; ?></p>
+                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
             </div>
