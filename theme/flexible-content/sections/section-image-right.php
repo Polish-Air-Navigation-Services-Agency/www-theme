@@ -6,8 +6,10 @@ $image = $args['image'];
 
 ?>
 
-<section class="container relative">
-    <?php if ($image) : ?>
-        <img src="<?php echo $image; ?>" alt="image">
-    <?php endif; ?>
+<section class="relative">
+    <div class="container">
+        <?php if ($image) : ?>
+            <img src="<?php echo $image; ?>" alt="image">
+        <?php endif; ?>
+    </div>
 </section>
