@@ -6,6 +6,7 @@ $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
 $description2 = $args['description2'];
+$decoration = $args['decoration'];
 $video = $args['video'];
 $video_thumbnail = $args['video_thumbnail'];
 
@@ -19,6 +20,9 @@ $video_thumbnail = $args['video_thumbnail'];
         <div class="flex flex-col lg:flex-row">
             <div class="col1 basis-1/2 relative">
                 <?php if (isset($video)) : ?>
+                    <?php if (isset($image)) : ?>
+                        <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-0 right-0" src="<?php echo $image; ?>" alt="section_image" class="test">
+                    <?php endif; ?>
                     <div class="relative lg:translate-y-[100px]">
                         <svg class="absolute top-[-120px] lg:top-[-70px] left-0 lg:left-auto lg:right-[-190px]" xmlns="http://www.w3.org/2000/svg" width="265" height="158" viewBox="0 0 265 158" fill="none">
                             <path d="M41.1767 54.8695C23.1732 50.0455 38.3076 2.7238 19.4062 1.65463C7.65529 0.989861 2.08386 33.0496 1.30112 49.2735C-0.385614 84.2021 21.2043 113.488 29.9001 118.171C49.4772 123.416 49.1014 132.374 62.6764 127.151C82.5103 119.518 95.7133 102.317 101.629 80.2376C107.001 60.189 106.581 28.0683 92.6934 24.347C78.8055 20.6258 62.6858 45.2615 56.7231 67.5149C46.709 104.888 70.845 141.551 113.797 153.06C200.623 176.325 264.177 86.9286 264.177 86.9286" stroke="#60B8D1" stroke-width="2" />
@@ -40,6 +44,10 @@ $video_thumbnail = $args['video_thumbnail'];
             </div>
 
             <div class="col2 basis-1/2 relative">
+                <?php if ($title) : ?>
+                    <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+                <?php endif; ?>
+
                 <?php if ($description) : ?>
                     <div class="mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></div>
                 <?php endif; ?>
