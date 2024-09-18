@@ -31,18 +31,18 @@ $numbers_row = $args['numbers_row'];
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <div class="max-w-fill lg:max-w-[414px] mb-4 text-[20px] <?php echo ($white_bg) ? 'text-textGray' : 'text-white'; ?> leading-[30px]"><?php echo $description; ?></div>
+                    <div class="max-w-fill <?php echo ($white_bg) ? 'lg:max-w-[540px]' : 'lg:max-w-[414px]'; ?> mb-4 text-[20px] <?php echo ($white_bg) ? 'text-textGray' : 'text-white'; ?> leading-[30px]"><?php echo $description; ?></div>
                 <?php endif; ?>
 
                 <?php if ($description2) : ?>
-                    <div class="max-w-fill lg:max-w-[414px] mb-10 lg:mb-[150px] text-[16px] <?php echo ($white_bg) ? 'text-textGray' : 'text-white'; ?> leading-[24px]"><?php echo $description2; ?></div>
+                    <div class="max-w-fill <?php echo ($white_bg) ? 'lg:max-w-[540px]' : 'lg:max-w-[414px]'; ?> mb-10 lg:mb-[150px] text-[16px] <?php echo ($white_bg) ? 'text-textGray' : 'text-white'; ?> leading-[24px]"><?php echo $description2; ?></div>
                 <?php endif; ?>
 
                 <?php if ($numbers_row) : ?>
                     <div class="pt-10 border-t-[1px] border-[#D4DEE4] flex gap-[104px]">
                         <div class="tile1 text-primary">
                             <p class="font-semibold">Clients satisfaction</p>
-                            <p class="relative text-[60px] font-medium">100<span class="text-secondary text-[36px] font-semibold absolute top-0"><sup>%</sup></span></p>
+                            <p class="relative text-[60px] font-medium">100<span class="text-secondary text-[36px] font-semibold absolute top-[6px]"><sup>%</sup></span></p>
                         </div>
                     </div>
                 <?php endif; ?>
