@@ -14,7 +14,7 @@ $video_thumbnail = $args['video_thumbnail'];
 ?>
 
 <section class="bg-primary">
-    <div class="relative mb-20 pt-10">
+    <div class="container relative mb-20 pt-10">
         <?php if ($decoration_paragraph) : ?>
             <svg class="decoration hidden lg:block absolute bottom-0 right-[80px]" xmlns="http://www.w3.org/2000/svg" width="609" height="107" viewBox="0 0 609 107" fill="none">
                 <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
@@ -26,7 +26,7 @@ $video_thumbnail = $args['video_thumbnail'];
                     <?php if ($decoration_video) : ?>
                         <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-[-30px] right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
                     <?php endif; ?>
-                    <div class="relative lg:translate-y-[100px] calc(50% - 50vw)">
+                    <div class="relative lg:translate-y-[100px] ml-calc(50% - 50vw)">
                         <div class="video lg:w-auto [&>iframe]:w-full [&>iframe]:lg:h-[472px] relative">
                             <div class="video-wrapper video-wrapper-img2 lg:w-full lg:h-[472px] [&>iframe]:w-full [&>iframe]:lg:h-[472px] video-player-wrapper relative after:z-[1] after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:transition after:duration-[300ms] after:ease-out after:bg-center after:bg-cover after:bg-no-repeat after:h-full before:z-[2] before:transition before:duration-[300ms] before:ease-out" data-videoWrapper>
                                 <?php echo $video; ?>
