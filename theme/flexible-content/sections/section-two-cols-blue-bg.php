@@ -13,10 +13,7 @@ $overlapping_background = $args['overlapping_background'];
 ?>
 
 <section class="<?php echo ($overlapping_background) ? 'translate-y-[-100px]' : '' ?> ">
-    <div class="relative w-full bg-primary pt-[180px] mb-20 lg:mb-[280px]">
-        <svg class="decoration hidden lg:block absolute bottom-0 right-[80px]" xmlns="http://www.w3.org/2000/svg" width="609" height="107" viewBox="0 0 609 107" fill="none">
-            <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
-        </svg>
+    <div class="relative w-full bg-primary pt-[180px]">
         <div class="pt-12 relative container z-[1]">
             <div class="two-col flex flex-col lg:flex-row-reverse gap-0 lg:gap-[117px] basis relative">
                 <div class="col1 basis-1/2 flex-col">
