@@ -15,6 +15,9 @@ module.exports = {
 		// Ensure changes to PHP files and `theme.json` trigger a rebuild.
 		'./theme/**/*.php',
 	],
+	safelist: [
+		'!hidden',
+	],
 	theme: {
 		// Extend the default Tailwind theme.
 		container: {
