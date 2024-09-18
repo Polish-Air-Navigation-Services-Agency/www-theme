@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	initCounter();
 	initVideoPlayer();
 	initWideSwipers();
+	initShowMoreJobs();
 });
 
 function initMenuCollapse() {
@@ -137,4 +138,27 @@ function initWideSwipers() {
 			},
 		});
 	});
+}
+
+
+function initShowMoreJobs(){
+	const moreBtn = document.querySelector('[data-js-job="loadMore"]')
+	if (!moreBtn) return
+
+	const JOBS_INCREMENT_COUNT = 10
+
+	moreBtn.addEventListener('click',() => expandJobsList(JOBS_INCREMENT_COUNT))
+
+	function expandJobsList(increment){
+		const hiddenJobsList = document.querySelectorAll('[data-js-job-visible="false"]')
+		const hiddenJobsCount = hiddenJobsList.length
+
+        for (let i = 0; i < limit; i++) {
+            hiddenJobsList[i].setAttribute('data-js-job-visible', 'true');
+        }
+
+        if (hiddenJobsCount <= increment) {
+            moreBtn.classList.add('!hidden');
+        }
+	}
 }
