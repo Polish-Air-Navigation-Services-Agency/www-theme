@@ -5,6 +5,8 @@
 $tiles = $args['tiles2'];
 $is_preview = $args['preview'];
 
+$JOBS_INCREMENT_COUNT = 3;
+
 ?>
 
 <section class="bg-[#F6F8F9]">
@@ -18,12 +20,12 @@ $is_preview = $args['preview'];
             <div class="tiles-wrapper mb-10 md:mb-[60px]">
                 <?php foreach ($tiles as $key=>$tile) :
                     $tileID = $key + 1;
-                    if ($tileID < 10){
+                    if ($tileID < $JOBS_INCREMENT_COUNT){
                         $tileID = '0' . $tileID;
                     }
                 ?>
                     <div class="py-8 md:py-10 flex flex-col lg:flex-row justify-between border-b-[1px] border-b-[#BEBFBF]" 
-                        data-js-job-visible="<?php echo ($key < 10) ? 'true' : 'false'; ?>"
+                        data-js-job-visible="<?php echo ($key < $JOBS_INCREMENT_COUNT) ? 'true' : 'false'; ?>"
                     >
                         
                         <div class="flex gap-[26px]">
