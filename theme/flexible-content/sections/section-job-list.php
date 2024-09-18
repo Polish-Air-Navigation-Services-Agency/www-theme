@@ -87,7 +87,7 @@ $is_preview = $args['preview'];
                 <?php endif; ?>
 
             <?php else : ?>
-                <p class="text-lg max-w-96 text-center text-textGray">
+                <p class="mx-auto max-w-96 text-3xl md:text-5xl text-center text-textGray/60 font-semibold">
                     <?php esc_html_e('No offers', '_pansa'); ?>
                 </p>
             <?php endif; ?>
