@@ -43,7 +43,7 @@ $video_thumbnail = $args['video_thumbnail'];
                 <?php endif; ?>
             </div>
 
-            <div class="col2 basis-1/2 relative lg:translate-y-[100px]">
+            <div class="col2 mb-20 lg:mb-[140px] basis-1/2 relative lg:translate-y-[100px]">
                 <?php if ($section_number) : ?>
                     <span class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></span>
                 <?php endif; ?>
