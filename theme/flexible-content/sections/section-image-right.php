@@ -6,10 +6,12 @@ $image = $args['image'];
 
 ?>
 
-<section class="relative">
+<section class="relative overflow-hidden">
     <div class="container">
-        <?php if ($image) : ?>
-            <img src="<?php echo $image; ?>" alt="image">
-        <?php endif; ?>
+        <div class="mr-[calc(50%_-_50vw)]">
+            <?php if ($image) : ?>
+                <img src="<?php echo $image; ?>" alt="image">
+            <?php endif; ?>
+        </div>
     </div>
 </section>
