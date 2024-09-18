@@ -26,7 +26,7 @@ $video_thumbnail = $args['video_thumbnail'];
                     <?php if ($decoration_video) : ?>
                         <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-[-30px] right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
                     <?php endif; ?>
-                    <div class="relative lg:translate-y-[100px] ml-calc(50% - 50vw)">
+                    <div class="relative lg:translate-y-[100px] ml-[calc(50%_-_50vw)]">
                         <div class="video lg:w-auto [&>iframe]:w-full [&>iframe]:lg:h-[472px] relative">
                             <div class="video-wrapper video-wrapper-img2 lg:w-full lg:h-[472px] [&>iframe]:w-full [&>iframe]:lg:h-[472px] video-player-wrapper relative after:z-[1] after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:transition after:duration-[300ms] after:ease-out after:bg-center after:bg-cover after:bg-no-repeat after:h-full before:z-[2] before:transition before:duration-[300ms] before:ease-out" data-videoWrapper>
                                 <?php echo $video; ?>
@@ -43,7 +43,7 @@ $video_thumbnail = $args['video_thumbnail'];
                 <?php endif; ?>
             </div>
 
-            <div class="col2 mb-20 lg:mb-[140px] basis-1/2 relative lg:translate-y-[100px]">
+            <div class="col2 basis-1/2 relative lg:translate-y-[100px]">
                 <?php if ($section_number) : ?>
                     <span class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></span>
                 <?php endif; ?>
