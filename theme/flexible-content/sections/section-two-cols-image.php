@@ -8,6 +8,7 @@ $title = $args['title'];
 $description = $args['description'];
 $description2 = $args['description2'];
 $image = $args['image'];
+$numbers_row = $args['numbers_row'];
 
 ?>
 
@@ -36,6 +37,17 @@ $image = $args['image'];
                 <?php if ($description2) : ?>
                     <div class="max-w-fill lg:max-w-[414px] mb-10 lg:mb-[150px] text-[16px] <?php echo ($white_bg) ? 'text-textGray' : 'text-white'; ?> leading-[24px]"><?php echo $description2; ?></div>
                 <?php endif; ?>
+
+                <?php if ($numbers_row) : ?>
+                    <div class="pt-10 border border-t-[1px] border-[#D4DEE4] flex gap-[104px]">
+                        <div class="tile1">
+                            <p>Clients satisfaction</p>
+                            <p>100<span class="text-secondary text-[16px] font-semibold absolute top-[10px] lg:top-4"><sup>%</sup></span></p>
+                        </div>
+                    </div>
+                <?php endif; ?>
+
+
             </div>
 
             <div class="col2 basis-1/2">
