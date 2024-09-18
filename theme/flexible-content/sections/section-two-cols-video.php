@@ -23,7 +23,7 @@ $video_thumbnail = $args['video_thumbnail'];
         <div class="flex flex-col lg:flex-row">
             <div class="col1 basis-1/2 relative">
                 <?php if (isset($video)) : ?>
-                    <?php if (isset($decoration_video)) : ?>
+                    <?php if ($decoration_video) : ?>
                         <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-[-30px] right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
                     <?php endif; ?>
                     <div class="relative lg:translate-y-[100px]">
