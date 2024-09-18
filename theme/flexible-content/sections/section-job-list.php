@@ -22,13 +22,13 @@ $is_preview = $args['preview'];
                         $tileID = '0' . $tileID;
                     }
                 ?>
-                    <div class="pb-10 pt-[30px] flex flex-col lg:flex-row justify-between border-b-[1px] border-b-[#BEBFBF]" 
+                    <div class="py-8 md:py-10 flex flex-col lg:flex-row justify-between border-b-[1px] border-b-[#BEBFBF]" 
                         data-js-job-visible="<?php echo ($key < 10) ? 'true' : 'false'; ?>"
                     >
                         
                         <div class="flex gap-[26px]">
-                            <span class="text-[30px] font-medium text-secondary"><?php echo $tileID; ?></span>
-                            <div class="mb-3 lg:mb-0">
+                            <span class="text-[30px] w-9 font-medium text-secondary"><?php echo $tileID; ?></span>
+                            <div class="mb-5 lg:mb-0">
                                 <?php if ($tile['title']) : ?>
                                     <h3 class="mb-[10px] text-[30px] font-medium text-primary"><?php echo $tile['title']; ?></h3>
                                 <?php endif; ?>
