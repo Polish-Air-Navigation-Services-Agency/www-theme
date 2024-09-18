@@ -10,7 +10,7 @@ $image = $args['image'];
     <div class="container">
         <div class="mr-[calc(50%_-_50vw)]">
             <?php if ($image) : ?>
-                <img src="<?php echo $image; ?>" alt="image">
+                <img src="<?php echo $image; ?>" alt="image" class="h-[300px] lg:h-[520px] w-full object-cover">
             <?php endif; ?>
         </div>
     </div>
