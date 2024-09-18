@@ -10,6 +10,7 @@ $banner_img = $args['banner_img'];
 $section_img = $args['section_img'];
 $video = $args['video'];
 $video_thumbnail = $args['video_thumbnail'];
+$overlapping_background = $args['$overlapping_background'];
 
 if ($banner_img['url']) {
     $banner_img_url = $banner_img['url'];
@@ -18,16 +19,10 @@ if ($section_img['url']) {
     $section_img_url = $section_img['url'];
 }
 
-
 ?>
 
-<section class="mt-[-100px]">
-    <?php if (isset($banner_img)) : ?>
-        <img src="<?php echo $banner_img_url; ?>" alt="background image" class="ml-auto mr-0 translate-y-[120px] z-[1] relative">
-    <?php endif; ?>
-
-
-    <div class="relative w-full bg-primary pt-[140px] mb-20 lg:mb-[280px]">
+<section class="<?php echo ($overlapping_background) ? 'translate-y-[-100px]' : '' ?> ">
+    <div class="relative w-full bg-primary pt-[180px] mb-20 lg:mb-[280px]">
         <svg class="decoration hidden lg:block absolute bottom-0 right-[80px]" xmlns="http://www.w3.org/2000/svg" width="609" height="107" viewBox="0 0 609 107" fill="none">
             <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
         </svg>
