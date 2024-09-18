@@ -1,12 +1,11 @@
 <?php
 
-/** Template to display 'Sekcja ze zdjęciem (dwie kolumny, niebieskie tło)' - section_two_cols_img */
+/** Template to display 'Sekcja ze zdjęciem (dwie kolumny, niebieskie tło)' - section_two_cols_image */
 
 $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
 $description2 = $args['description2'];
-$video = $args['video'];
 $image = $args['image'];
 
 ?>
