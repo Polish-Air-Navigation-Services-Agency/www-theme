@@ -10,7 +10,7 @@ $banner_img = $args['banner_img'];
 $section_img = $args['section_img'];
 $video = $args['video'];
 $video_thumbnail = $args['video_thumbnail'];
-$overlapping_background = $args['$overlapping_background'];
+$overlapping_background = $args['overlapping_background'];
 
 if ($banner_img['url']) {
     $banner_img_url = $banner_img['url'];
