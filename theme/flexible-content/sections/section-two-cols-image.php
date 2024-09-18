@@ -1,7 +1,8 @@
 <?php
 
-/** Template to display 'Sekcja ze zdjęciem (dwie kolumny, niebieskie tło)' - section_two_cols_image */
+/** Template to display 'Sekcja ze zdjęciem (dwie kolumny)' - section_two_cols_image */
 
+$white_bg = $args['white_bg'];
 $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
@@ -10,7 +11,7 @@ $image = $args['image'];
 
 ?>
 
-<section class="bg-primary">
+<section class="<?php ($white_bg) ? 'bg-white' : 'blue-bg' ?>">
     <div class="container mx-auto relativ mb-20 pt-[180px]">
         <div class="two-col flex flex-col lg:flex-row basis relative">
             <div class="decoration hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[0]">
