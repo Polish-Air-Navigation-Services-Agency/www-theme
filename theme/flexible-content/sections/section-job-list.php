@@ -18,25 +18,19 @@ $is_preview = $args['preview'];
             <div class="tiles-wrapper mb-10 md:mb-[60px]">
                 <?php foreach ($tiles as $key=>$tile) :
                     $tileID = $key + 1;
+                    echo $tileID;
                     if ($tileID < 10){
                         $$tileID = '0' . $tileID;
-                        $tile_visible = true;
-                    }else{
-                        $tile_visible = false;
                     }
+                    echo $tileID;
                 ?>
-                    <div class="pb-10 pt-[30px] flex flex-col lg:flex-row justify-between items-center border-b-[1px] border-b-[#BEBFBF]" 
-                        data-js-job-visible="
-                        <?php if($key<10): ?>
-                            true
-                        <?php else: ?>
-                            false
-                        <?php endif; ?>"
+                    <div class="pb-10 pt-[30px] flex flex-col lg:flex-row justify-between border-b-[1px] border-b-[#BEBFBF]" 
+                        data-js-job-visible="<?php echo ($key < 10) ? 'true' : 'false'; ?>"
                     >
                         
-                        <div class="lex gap-[26px]">
+                        <div class="flex gap-[26px]">
                             <span class="text-[30px] font-medium text-secondary"><?php echo $tileID; ?></span>
-                            <div class="mb-10 lg:mb-0">
+                            <div class="mb-3 lg:mb-0">
                                 <?php if ($tile['title']) : ?>
                                     <h3 class="mb-[10px] text-[30px] font-medium text-primary"><?php echo $tile['title']; ?></h3>
                                 <?php endif; ?>
@@ -64,7 +58,7 @@ $is_preview = $args['preview'];
                             </div>
                         </div>
 
-                        <div>
+                        <div class="self-end lg:self-center">
                             <?php if ($tile['url']) : ?>
                                 <a href="<?php echo $tile['url']; ?>" class="group w-[160px] h-[50px] pl-[30px] pr-[70px] flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition-all duration-200 relative">
                                     <?php esc_html_e('Apply', '_pansa'); ?>
