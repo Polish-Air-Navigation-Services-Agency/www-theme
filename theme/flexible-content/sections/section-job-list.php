@@ -85,7 +85,7 @@ $is_preview = $args['preview'];
                             <path class="group-hover:stroke-primary transition duration-200" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
-                <?php else : ?>
+                <?php elseif(count($tiles)>10) : ?>
                     <button class="border border-[#BEBFBF] hover:border-primary text-primary hover:text-white hover:bg-primary text-lg transition duration-200" 
                         data-js-job="loadMore"
                     >
