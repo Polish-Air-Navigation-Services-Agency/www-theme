@@ -6,6 +6,8 @@ $section_id = $args['section_id'];
 $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
+$header_left = $args['header_left'];
+
 
 ?>
 
@@ -18,7 +20,7 @@ $description = $args['description'];
         <?php endif; ?>
 
         <?php if ($title) : ?>
-            <h2 class="mb-10 max-w-[840px] text-center text-[42px] lg:text-[60px] text-primary leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+            <h2 class="mb-10 max-w-[840px]  <?php echo ($header_left) ? 'text-left' : 'text-center'; ?> text-[42px] lg:text-[60px] text-primary leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
         <?php endif; ?>
 
         <?php if ($description) : ?>
