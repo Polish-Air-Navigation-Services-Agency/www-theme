@@ -26,15 +26,15 @@ $image = $args['image'];
                 <?php endif; ?>
 
                 <?php if ($title) : ?>
-                    <h2 class="mb-[50px] text-[50px] lg:text-[60px] <?php echo ($white_bg) ? 'text-white' : 'text-primary'; ?> leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+                    <h2 class="mb-[50px] text-[50px] lg:text-[60px] <?php echo ($white_bg) ? 'text-primary' : 'text-white'; ?> leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <div class="max-w-fill lg:max-w-[414px] mb-4 text-[20px] <?php echo ($white_bg) ? 'text-white' : 'text-textGray'; ?> leading-[30px]"><?php echo $description; ?></div>
+                    <div class="max-w-fill lg:max-w-[414px] mb-4 text-[20px] <?php echo ($white_bg) ? 'text-textGray' : 'text-white'; ?> leading-[30px]"><?php echo $description; ?></div>
                 <?php endif; ?>
 
                 <?php if ($description2) : ?>
-                    <div class="max-w-fill lg:max-w-[414px] mb-10 lg:mb-[150px] text-[16px] <?php echo ($white_bg) ? 'text-textGray' : 'text-primary'; ?> leading-[24px]"><?php echo $description2; ?></div>
+                    <div class="max-w-fill lg:max-w-[414px] mb-10 lg:mb-[150px] text-[16px] <?php echo ($white_bg) ? 'text-textGray' : 'text-white'; ?> leading-[24px]"><?php echo $description2; ?></div>
                 <?php endif; ?>
             </div>
 
