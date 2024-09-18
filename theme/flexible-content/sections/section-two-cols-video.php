@@ -1,6 +1,6 @@
 <?php
 
-/** Template to display 'Sekcja z treścią (niebieskie tło)' - section_two_cols_blue_bg */
+/** Template to display 'Sekcja z video (niebieskie tło)' - section_two_cols_video */
 
 $section_number = $args['section_number'];
 $title = $args['title'];
