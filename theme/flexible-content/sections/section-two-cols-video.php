@@ -20,7 +20,7 @@ $video_thumbnail = $args['video_thumbnail'];
                 <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
             </svg>
         <?php endif; ?>
-        <div class="flex flex-col lg:flex-row lg:gap-x-[68px]">
+        <div class="flex flex-col-reverse lg:flex-row lg:gap-x-[68px]">
             <div class="col1 basis-1/2 relative">
                 <?php if (isset($video)) : ?>
                     <?php if ($decoration_video) : ?>
