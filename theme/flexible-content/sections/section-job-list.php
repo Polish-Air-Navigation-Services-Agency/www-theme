@@ -9,12 +9,13 @@ $is_preview = $args['preview'];
 
 <section class="bg-[#F6F8F9]">
     <div class="container mx-auto pb-[100px]">
-        <div class="tiles-wrapper mb-[60px]">
+        
             <?php if ($tiles && count($tiles)>0) :
                 if ($is_preview) {
                     $tiles = array_slice($tiles, 0, 5);
                 }
             ?>
+            <div class="tiles-wrapper mb-10 md:mb-[60px]">
                 <?php foreach ($tiles as $key=>$tile) :
                     $tileID = $key + 1;
                     if ($tileID < 10){
@@ -75,13 +76,13 @@ $is_preview = $args['preview'];
                         </div>
                     </div>
                 <?php endforeach; ?>
-
+            </div>
                 <?php if ($is_preview) :
                     $JOBS_PAGE_ID = 39;
                 ?>
-                    <a href="<?php echo get_permalink($JOBS_PAGE_ID); ?>" class="group mx-auto px-6 py-4 flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition duration-200 relative">
+                    <a href="<?php echo get_permalink($JOBS_PAGE_ID); ?>" class="group mx-auto w-fit px-7 py-3 flex items-center justify-center gap-2.5 rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition duration-200 relative">
                         <?php esc_html_e('Show all offers', '_pansa'); ?>
-                        <svg class="pl-2.5 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
+                        <svg class="pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
                             <path class="group-hover:stroke-primary transition duration-200" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
@@ -98,7 +99,7 @@ $is_preview = $args['preview'];
                     <?php esc_html_e('No offers', '_pansa'); ?>
                 </p>
             <?php endif; ?>
-        </div>
+        
 
         
     </div>
