@@ -6,7 +6,7 @@ $image = $args['image'];
 
 ?>
 
-<section class="relative">
+<section class="container relative">
     <?php if ($image) : ?>
         <img src="<?php echo $image; ?>" alt="image">
     <?php endif; ?>
