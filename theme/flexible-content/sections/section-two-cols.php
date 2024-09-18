@@ -34,7 +34,7 @@ $bgGray = $args['bgGray'];
             <?php endif; ?>
 
             <?php if ($title) : ?>
-                <h2 class="text-[42px] lg:text-[60px] text-primary leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+                <h2 class="max-w-[600px] text-[42px] lg:text-[60px] text-primary leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
             <?php endif; ?>
 
             <?php if ($button) : ?>
