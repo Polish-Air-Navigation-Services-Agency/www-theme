@@ -93,8 +93,10 @@ function initCounter() {
 }
 
 function initVideoPlayer() {
-	const videoWrapper = document.querySelector('[data-videoWrapper]');
 	const videoBtn = document.querySelector('.js-videoBtn');
+	if(!videoBtn) return
+	
+	const videoWrapper = document.querySelector('[data-videoWrapper]');
 	const descWrapper = document.querySelector('[data-descWrapper]');
 
 	videoBtn.addEventListener('click', () => {
