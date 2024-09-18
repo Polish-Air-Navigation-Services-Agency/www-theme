@@ -5,7 +5,7 @@
 $tiles = $args['tiles2'];
 $is_preview = $args['preview'];
 
-$JOBS_INCREMENT_COUNT = 3;
+$JOBS_INCREMENT_COUNT = 10;
 
 ?>
 
@@ -20,7 +20,7 @@ $JOBS_INCREMENT_COUNT = 3;
             <div class="tiles-wrapper mb-10 md:mb-[60px]">
                 <?php foreach ($tiles as $key=>$tile) :
                     $tileID = $key + 1;
-                    if ($tileID < $JOBS_INCREMENT_COUNT){
+                    if ($tileID < 10){
                         $tileID = '0' . $tileID;
                     }
                 ?>

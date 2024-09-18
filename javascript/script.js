@@ -147,7 +147,7 @@ function initShowMoreJobs(){
 	const moreBtn = document.querySelector('[data-js-job="loadMore"]')
 	if (!moreBtn) return
 
-	const JOBS_INCREMENT_COUNT = 3
+	const JOBS_INCREMENT_COUNT = 10
 
 	moreBtn.addEventListener('click',() => expandJobsList(JOBS_INCREMENT_COUNT))
 
