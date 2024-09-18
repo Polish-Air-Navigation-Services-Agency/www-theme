@@ -10,8 +10,8 @@ $image = $args['image'];
 
 ?>
 
-<section>
-    <div class="container mx-auto relative bg-primary mb-20 pt-10">
+<section class="bg-primary">
+    <div class="container mx-auto relativ mb-20 pt-10">
         <svg class="decoration hidden lg:block absolute bottom-0 right-[80px]" xmlns="http://www.w3.org/2000/svg" width="609" height="107" viewBox="0 0 609 107" fill="none">
             <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
         </svg>
@@ -41,8 +41,8 @@ $image = $args['image'];
             </div>
 
             <div class="col2 basis-1/2">
-                <?php if (isset($section_img)) : ?>
-                    <img class="lg:absolute mb-5 lg:mb-0" src="<?php echo $image ?>" alt="section_image" class="test">
+                <?php if (isset($image)) : ?>
+                    <img class="lg:absolute mb-5 lg:mb-0" src="<?php echo $image; ?>" alt="section_image" class="test">
                 <?php endif; ?>
             </div>
         </div>
