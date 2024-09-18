@@ -16,7 +16,7 @@ $is_preview = $args['preview'];
                 }
             ?>
                 <?php foreach ($tiles as $key=>$tile) :
-                    $tileID == $key + 1;
+                    $tileID = $key + 1;
                     if ($tileID < 10){
                         $$tileID = '0' . $tileID;
                         $tile_visible = true;
