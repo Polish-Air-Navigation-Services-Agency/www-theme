@@ -39,7 +39,7 @@ $image = $args['image'];
 
             <div class="col2 basis-1/2">
                 <?php if (isset($image)) : ?>
-                    <img class="lg:absolute mb-5 lg:mb-0" src="<?php echo $image; ?>" alt="section_image" class="test">
+                    <img class="lg:absolute mb-5 lg:mb-0" src="<?php echo $image; ?>" alt="section_image">
                 <?php endif; ?>
             </div>
         </div>

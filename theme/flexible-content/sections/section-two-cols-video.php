@@ -20,8 +20,8 @@ $video_thumbnail = $args['video_thumbnail'];
         <div class="flex flex-col lg:flex-row">
             <div class="col1 basis-1/2 relative">
                 <?php if (isset($video)) : ?>
-                    <?php if (isset($image)) : ?>
-                        <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-0 right-0" src="<?php echo $image; ?>" alt="section_image" class="test">
+                    <?php if (isset($decoration)) : ?>
+                        <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-0 right-0" src="<?php echo $decoration; ?>" alt="decoration">
                     <?php endif; ?>
                     <div class="relative lg:translate-y-[100px]">
                         <svg class="absolute top-[-120px] lg:top-[-70px] left-0 lg:left-auto lg:right-[-190px]" xmlns="http://www.w3.org/2000/svg" width="265" height="158" viewBox="0 0 265 158" fill="none">
@@ -43,7 +43,7 @@ $video_thumbnail = $args['video_thumbnail'];
                 <?php endif; ?>
             </div>
 
-            <div class="col2 basis-1/2 relative">
+            <div class="col2 basis-1/2 relative lg:translate-y-[100px]">
                 <?php if ($title) : ?>
                     <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
                 <?php endif; ?>
