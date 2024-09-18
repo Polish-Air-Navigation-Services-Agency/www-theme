@@ -11,7 +11,7 @@ $image = $args['image'];
 
 ?>
 
-<section class="<?php ($white_bg) ? 'bg-white' : 'blue-bg' ?>">
+<section class="<?php ($white_bg) ? 'bg-white' : 'bg-primary'; ?>">
     <div class="container mx-auto relativ mb-20 pt-[180px]">
         <div class="two-col flex flex-col lg:flex-row basis relative">
             <div class="decoration hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[0]">
