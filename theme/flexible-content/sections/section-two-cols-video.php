@@ -6,7 +6,8 @@ $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
 $description2 = $args['description2'];
-$decoration = $args['decoration'];
+$decoration_video = $args['decoration_video'];
+$decoration_paragraph = $args['decoration_paragraph'];
 $video = $args['video'];
 $video_thumbnail = $args['video_thumbnail'];
 
@@ -14,14 +15,16 @@ $video_thumbnail = $args['video_thumbnail'];
 
 <section>
     <div class="relative w-full bg-primary mb-20 pt-10">
-        <svg class="decoration hidden lg:block absolute bottom-0 right-[80px]" xmlns="http://www.w3.org/2000/svg" width="609" height="107" viewBox="0 0 609 107" fill="none">
-            <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
-        </svg>
+        <?php if (isset($decoration_paragraph)) : ?>
+            <svg class="decoration hidden lg:block absolute bottom-0 right-[80px]" xmlns="http://www.w3.org/2000/svg" width="609" height="107" viewBox="0 0 609 107" fill="none">
+                <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
+            </svg>
+        <?php endif; ?>
         <div class="flex flex-col lg:flex-row">
             <div class="col1 basis-1/2 relative">
                 <?php if (isset($video)) : ?>
-                    <?php if (isset($decoration)) : ?>
-                        <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-0 right-0" src="<?php echo $decoration; ?>" alt="decoration">
+                    <?php if (isset($decoration_video)) : ?>
+                        <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-[-30px] right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
                     <?php endif; ?>
                     <div class="relative lg:translate-y-[100px]">
                         <div class="video lg:w-auto [&>iframe]:w-full [&>iframe]:lg:h-[472px] relative">
@@ -41,6 +44,10 @@ $video_thumbnail = $args['video_thumbnail'];
             </div>
 
             <div class="col2 basis-1/2 relative lg:translate-y-[100px]">
+                <?php if ($section_number) : ?>
+                    <span class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></span>
+                <?php endif; ?>
+
                 <?php if ($title) : ?>
                     <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
                 <?php endif; ?>
