@@ -26,18 +26,8 @@ get_header();
 			$sections = get_field('sections', $queriedObject);
 			$no_fade_sections = ['hero'];
 
-			if (function_exists('yoast_breadcrumb') && (!$sections || $sections[0]['acf_fc_layout'] != 'hero')) :
-		?>
-				<div class="breadcrumbs-container">
-					<?php yoast_breadcrumb('<div id="breadcrumbs" class="breadcrumbs-default">', '</div>');; ?>
-				</div>
-				<?php
-			endif;
-
 			the_post();
 			get_template_part('template-parts/content/content', 'page');
-
-
 
 			if ($sections) :
 				foreach ($sections as $section) :
