@@ -12,7 +12,7 @@ $overlapping_background = $args['overlapping_background'];
 
 ?>
 
-<section class="<?php echo ($overlapping_background) ? 'translate-y-[-100px]' : '' ?> ">
+<section class="<?php echo ($overlapping_background) ? 'translate-y-[-100px] mb-[-100px]' : '' ?> ">
     <div class="relative w-full bg-primary pt-[180px]">
         <div class="pt-12 relative container z-[1]">
             <div class="two-col flex flex-col lg:flex-row-reverse gap-0 lg:gap-[117px] basis relative">
