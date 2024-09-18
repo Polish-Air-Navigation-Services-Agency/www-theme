@@ -10,13 +10,6 @@ $video = $args['video'];
 $video_thumbnail = $args['video_thumbnail'];
 $overlapping_background = $args['overlapping_background'];
 
-if ($banner_img['url']) {
-    $banner_img_url = $banner_img['url'];
-}
-if ($section_img['url']) {
-    $section_img_url = $section_img['url'];
-}
-
 ?>
 
 <section class="<?php echo ($overlapping_background) ? 'translate-y-[-100px]' : '' ?> ">
