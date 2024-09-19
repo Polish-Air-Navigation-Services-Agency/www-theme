@@ -23,11 +23,6 @@ if ($image['url']) {
                 <circle cx="285" cy="285" r="285" fill="#60B8D1" />
             </svg>
         </div>
-        <div class="decoration absolute bottom-0 left-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="208" height="271" viewBox="0 0 208 271" fill="none">
-                <path d="M-60.0063 1.00488C-43.86 61.6364 57.9432 184.279 135.934 205.177C172.587 214.998 200.495 210.371 205.621 194.598C210.813 178.628 176.348 163.213 158.254 163.859C144.676 164.343 134.374 199.73 132.717 230.045C130.773 265.593 145.424 308.657 184.006 318.995" stroke="#60B8D1" stroke-width="2" />
-            </svg>
-        </div>
         <div class="container">
             <div class="cols-wrapper flex basis flex-col lg:flex-row">
                 <div class="col1 basis-1/2">
