@@ -18,20 +18,20 @@ if ($image['url']) {
 
 <section>
     <div class="w-full lg:h-[456px] overflow-visible relative py-10 md:py-[70px] mb:pb-20 bg-primary">
-        <div class="decoration hidden lg:block absolute top-[-80px] left-1/2 -translate-x-1/2 z-[-1]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="570" height="570" viewBox="0 0 570 570" fill="none">
-                <circle cx="285" cy="285" r="285" fill="#60B8D1" />
+        <div class="decoration absolute bottom-0 left-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="208" height="271" viewBox="0 0 208 271" fill="none">
+                <path d="M-60.0063 1.00488C-43.86 61.6364 57.9432 184.279 135.934 205.177C172.587 214.998 200.495 210.371 205.621 194.598C210.813 178.628 176.348 163.213 158.254 163.859C144.676 164.343 134.374 199.73 132.717 230.045C130.773 265.593 145.424 308.657 184.006 318.995" stroke="#60B8D1" stroke-width="2" />
             </svg>
         </div>
         <div class="container">
             <div class="cols-wrapper flex basis flex-col lg:flex-row">
-                <div class="col1 basis-1/2 lg:pr-10">
+                <div class="col1 basis-1/2">
                     <?php if ($section_number) : ?>
                         <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
                     <?php endif; ?>
 
                     <?php if ($title) : ?>
-                        <h2 class="lg:max-w-96 2xl:max-w-none mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative"><?php echo $title; ?></h2>
+                        <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative"><?php echo $title; ?></h2>
                     <?php endif; ?>
                 </div>
 
