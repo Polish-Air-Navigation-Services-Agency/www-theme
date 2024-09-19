@@ -10,7 +10,7 @@ $image = $args['image'];
 
 ?>
 
-<section class="lg:mb-[100px] lg:grid grid-cols-2">
+<section class="bg-[#F6F8F9] lg:mb-[100px] lg:grid grid-cols-2">
     <div class="col-span-full row-start-1">
         <div class="w-full bg-primary pt-20 lg:pt-[180px] relative">
             <svg class="hidden lg:block absolute top-[100px] left-[24%]" width="779" height="175" viewBox="0 0 779 175" fill="none" xmlns="http://www.w3.org/2000/svg">

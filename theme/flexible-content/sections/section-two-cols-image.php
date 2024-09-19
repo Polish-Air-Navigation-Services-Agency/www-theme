@@ -2,7 +2,6 @@
 
 /** Template to display 'Sekcja ze zdjęciem (dwie kolumny)' - section_two_cols_image */
 
-$white_bg = $args['white_bg'];
 $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
@@ -12,7 +11,7 @@ $numbers_row = $args['numbers_row'];
 
 ?>
 
-<section class="<?php echo ($white_bg) ? 'bg-white' : 'bg-primary'; ?> lg:mb-[100px] pt-20 lg:pt-[180px] lg:grid grid-cols-2">
+<section class="bg-white lg:mb-[100px] pt-20 lg:pt-[180px] lg:grid grid-cols-2">
     <div class="col-span-full row-start-1">
         <div class="container mx-auto relative">
             <svg class="hidden lg:block absolute -top-24 left-[calc(50%_-_100px)]" width="320" height="269" viewBox="0 0 320 269" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,15 +24,15 @@ $numbers_row = $args['numbers_row'];
                 <?php endif; ?>
 
                 <?php if ($title) : ?>
-                    <h2 class="mb-[50px] text-[50px] lg:text-[60px] <?php echo ($white_bg) ? 'text-primary' : 'text-white'; ?> leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+                    <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-primary leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <div class="max-w-fill <?php echo ($white_bg) ? 'lg:max-w-[540px]' : 'lg:max-w-[414px]'; ?> mb-4 text-[20px] <?php echo ($white_bg) ? 'text-textGray' : 'text-white'; ?> leading-[30px]"><?php echo $description; ?></div>
+                    <div class="max-w-fill  lg:max-w-[540px]  mb-4 text-[20px] text-textGray leading-[30px]"><?php echo $description; ?></div>
                 <?php endif; ?>
 
                 <?php if ($description2) : ?>
-                    <div class="max-w-fill <?php echo ($white_bg) ? 'lg:max-w-[540px]' : 'lg:max-w-[414px]'; ?> mb-10 lg:mb-[150px] text-[16px] <?php echo ($white_bg) ? 'text-textGray' : 'text-white'; ?> leading-[24px]"><?php echo $description2; ?></div>
+                    <div class="max-w-fill  lg:max-w-[540px]  mb-10 lg:mb-[150px] text-[16px] text-textGray leading-[24px]"><?php echo $description2; ?></div>
                 <?php endif; ?>
 
                 <?php if ($numbers_row) : ?>
