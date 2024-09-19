@@ -51,7 +51,7 @@ $numbers_row = $args['numbers_row'];
 
     <?php if (isset($image)) : ?>
         <div class="col-start-2 row-start-1">
-            <img class="mt-10 lg:mt-0 w-full relative" src="<?php echo $image; ?>" alt="section_image">
+            <img class="mt-10 lg:mt-0 w-full relative max-h-[400px] lg:max-h-[690px] object-cover" src="<?php echo $image; ?>" alt="section_image">
         </div>
     <?php endif; ?>
 
