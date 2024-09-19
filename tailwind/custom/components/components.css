@@ -196,17 +196,17 @@ html {
 }
 
 .swiper-btn-default{
-	@apply cursor-pointer flex shrink-0 justify-center items-center size-12 lg:size-[72px] rounded-full border border-[#F6F8F9] hover:border-secondary bg-secondary transition duration-200
+	@apply cursor-pointer flex shrink-0 justify-center items-center size-14 lg:size-[72px] rounded-full border border-[#F6F8F9] hover:border-secondary hover:bg-secondary transition duration-200
 }
 .swiper-btn-default.swiper-button-disabled{
 	@apply pointer-events-none
 }
-.swiper-btn-default.swiper-button-disabled svg{
+.swiper-btn-default.swiper-button-disabled svg path{
 	@apply stroke-[#F6F8F9]
 }
-.swiper-btn-default svg{
+.swiper-btn-default svg path{
 	@apply transition duration-200
 }
-.swiper-btn-default:hover svg{
+.swiper-btn-default:hover svg path{
 	@apply stroke-white
 }
