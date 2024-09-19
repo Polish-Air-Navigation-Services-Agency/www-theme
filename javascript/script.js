@@ -153,8 +153,8 @@ function initTileSwipers() {
 			modules: [Navigation],
 			watchSlidesProgress: true,
 			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
+				nextEl: '[data-js="swiper-next"]',
+				prevEl: '[data-js="swiper-prev"]',
 			},
 			breakpoints: {
 				768: {
