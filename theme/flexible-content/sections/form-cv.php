@@ -25,13 +25,13 @@ if ($image['url']) {
         </div>
         <div class="container">
             <div class="cols-wrapper flex basis flex-col lg:flex-row">
-                <div class="col1 basis-1/2">
+                <div class="col1 basis-1/2 lg:pr-10">
                     <?php if ($section_number) : ?>
                         <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
                     <?php endif; ?>
 
                     <?php if ($title) : ?>
-                        <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative"><?php echo $title; ?></h2>
+                        <h2 class="max-xl:max-w-96 mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative"><?php echo $title; ?></h2>
                     <?php endif; ?>
                 </div>
 
