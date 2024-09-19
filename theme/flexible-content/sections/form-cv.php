@@ -27,7 +27,7 @@ if ($image['url']) {
             <div class="cols-wrapper flex basis flex-col lg:flex-row">
                 <div class="col1 basis-1/2">
                     <?php if ($section_number) : ?>
-                        <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
+                        <p class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
                     <?php endif; ?>
 
                     <?php if ($title) : ?>

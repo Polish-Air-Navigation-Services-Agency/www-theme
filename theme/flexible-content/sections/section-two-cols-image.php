@@ -5,7 +5,6 @@
 $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
-$description2 = $args['description2'];
 $image = $args['image'];
 $numbers_row = $args['numbers_row'];
 
@@ -20,7 +19,7 @@ $numbers_row = $args['numbers_row'];
 
             <div class="w-full lg:w-1/2 lg:max-w-[540px] pr-10 relative">
                 <?php if ($section_number) : ?>
-                    <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
+                    <p class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
                 <?php endif; ?>
 
                 <?php if ($title) : ?>
@@ -28,11 +27,7 @@ $numbers_row = $args['numbers_row'];
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <div class="max-w-fill mb-4 text-[20px] text-textGray leading-[30px]"><?php echo $description; ?></div>
-                <?php endif; ?>
-
-                <?php if ($description2) : ?>
-                    <div class="max-w-fill mb-10 lg:mb-[150px] text-[16px] text-textGray leading-[24px]"><?php echo $description2; ?></div>
+                    <div class="max-w-fill mb-10 text-base text-textGray leading-[24px]"><?php echo $description; ?></div>
                 <?php endif; ?>
 
                 <?php if ($numbers_row) : ?>

@@ -73,11 +73,11 @@ html {
 
 .form-basic input,
 .form-basic textarea {
-	@apply px-0 min-w-0 w-full h-[50px] border border-white border-b-[#BEBFBF] hover:border-b-primary  focus:border-b-primary outline-none transition-all duration-200 bg-white placeholder:text-primary text-primary text-[16px];
+	@apply px-0 min-w-0 w-full h-[50px] border border-white border-b-[#BEBFBF] hover:border-b-primary  focus:border-b-primary outline-none transition-all duration-200 bg-white placeholder:text-primary text-primary text-base;
 }
 
 .form-basic label[for="your-file"] {
-	@apply cursor-pointer px-0 min-w-0 w-full h-[44px] border border-white border-b-[#BEBFBF] hover:border-b-primary  focus:border-b-primary outline-none transition-all duration-200 bg-white placeholder:text-primary text-primary text-[16px];
+	@apply cursor-pointer px-0 min-w-0 w-full h-[44px] border border-white border-b-[#BEBFBF] hover:border-b-primary  focus:border-b-primary outline-none transition-all duration-200 bg-white placeholder:text-primary text-primary text-base;
 }
 
 .form-basic input#your-file {

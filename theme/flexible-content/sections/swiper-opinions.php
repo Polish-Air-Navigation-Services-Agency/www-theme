@@ -27,7 +27,7 @@ $opinions_list = $args['opinions_list'];
 
                                     <p class="mb-10 text-secondary text-[18px] font-medium"><?php echo $opinion['position'] ?></p>
 
-                                    <div class="italic text-textGray text-[16px] leading-[24px]"><?php echo $opinion['opinion_text'] ?></div>
+                                    <div class="italic text-textGray text-base leading-[24px]"><?php echo $opinion['opinion_text'] ?></div>
                                 </div>
                             </div>
                         </div>

@@ -12,7 +12,7 @@ $tiles = $args['tiles'];
     <div class="container mx-auto py-[100px]">
         <div class="title-wrapper w-full flex flex-col justify-center items-center">
             <?php if ($section_number) : ?>
-                <p class="w-fit mb-2 text-[16px] leading-[24px] text-secondary font-semibold before:content-[''] before:w-[61px] before:h-[2px] before:bg-secondary before:rounded-full before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-70px] after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
+                <p class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold before:content-[''] before:w-[61px] before:h-[2px] before:bg-secondary before:rounded-full before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-70px] after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
             <?php endif; ?>
 
             <?php if ($title) : ?>
@@ -41,7 +41,7 @@ $tiles = $args['tiles'];
                             <?php endif; ?>
 
                             <?php if ($tile['description']) : ?>
-                                <p class="text-[16px] <?php if ($tileID == 1) echo 'text-white';
+                                <p class="text-base <?php if ($tileID == 1) echo 'text-white';
                                                         else echo 'text-textGray group-hover:text-white'; ?> leading-[24px]"><?php echo $tile['description']; ?></p>
                             <?php endif; ?>
                         </div>

@@ -19,7 +19,7 @@ $questions_list = $args['questions_list'];
                     <p class="text-secondary text-[30px] font-medium"><?php echo $question_qty . '/'; ?></p>
                     <div class="right-col">
                         <h3 class="mb-5 text-[30px] font-medium leading-[36px]"><?php echo $question['question']; ?></h3>
-                        <div class="mb-10 text-textGray text-[16px]"><?php echo $question['answer']; ?></div>
+                        <div class="mb-10 text-textGray text-base"><?php echo $question['answer']; ?></div>
                     </div>
                 </div>
             <?php

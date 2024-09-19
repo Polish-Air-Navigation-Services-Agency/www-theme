@@ -41,7 +41,7 @@ $overlapping_background = $args['overlapping_background'];
                                         <span><?php echo $tile['counter_unit_2']; ?></span>
                                     <?php endif; ?>
 
-                                    <span class="text-secondary text-[16px] font-semibold absolute top-[10px] lg:top-4"><?php echo $tile['counter_unit']; ?></span>
+                                    <span class="text-secondary text-base font-semibold absolute top-[10px] lg:top-4"><?php echo $tile['counter_unit']; ?></span>
                                 </h3>
                             <?php endif; ?>
                         </div>
