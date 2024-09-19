@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	initCounter();
 	initVideoPlayer();
 	initWideSwipers();
+	initTileSwipers();
 	initShowMoreJobs();
 });
 
@@ -142,6 +143,31 @@ function initWideSwipers() {
 	});
 }
 
+function initTileSwipers() {
+	const swiperContainers = document.querySelectorAll(
+		'[data-js="swiper-tiles"]'
+	);
+	swiperContainers.forEach((el) => {
+		new Swiper(el, {
+			slidesPerView: 1.2,
+			modules: [Navigation],
+			watchSlidesProgress: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+				},
+				1280: {
+					slidesPerView: 3,
+				},
+			},
+		});
+	});
+}
 
 function initShowMoreJobs(){
 	const moreBtn = document.querySelector('[data-js-job="loadMore"]')
