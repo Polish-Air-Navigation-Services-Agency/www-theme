@@ -194,3 +194,13 @@ html {
 [data-js-job-visible="false"]{
 	@apply !hidden
 }
+
+.swiper-btn-default{
+	@apply flex shrink-0 justify-center items-center size-12 lg:size-[72px] rounded-full border border-[#F6F8F9] hover:border-secondary bg-secondary transition duration-200
+}
+.swiper-btn-default svg{
+	@apply transition duration-200
+}
+.swiper-btn-default:hover svg{
+	@apply stroke-white
+}

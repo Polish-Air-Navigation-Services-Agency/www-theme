@@ -156,12 +156,11 @@ function initTileSwipers() {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
-
 			breakpoints: {
 				768: {
 					slidesPerView: 2,
 				},
-				1280: {
+				1180: {
 					slidesPerView: 3,
 				},
 			},
