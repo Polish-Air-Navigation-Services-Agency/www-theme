@@ -31,7 +31,7 @@ if ($image['url']) {
                     <?php endif; ?>
 
                     <?php if ($title) : ?>
-                        <h2 class="max-xl:max-w-96 mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative"><?php echo $title; ?></h2>
+                        <h2 class="lg:max-w-96 2xl:max-w-none mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative"><?php echo $title; ?></h2>
                     <?php endif; ?>
                 </div>
 
