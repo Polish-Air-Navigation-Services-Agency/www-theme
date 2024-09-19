@@ -12,7 +12,7 @@ $numbers_row = $args['numbers_row'];
 
 ?>
 
-<section class="<?php echo ($white_bg) ? 'bg-white' : 'bg-primary'; ?> lg:mb-20 pt-20 lg:pt-[180px] lg:grid grid-cols-2">
+<section class="<?php echo ($white_bg) ? 'bg-white' : 'bg-primary'; ?> lg:mb-[100px] pt-20 lg:pt-[180px] lg:grid grid-cols-2">
     <div class="col-span-full row-start-1">
         <div class="container mx-auto relative">
             <svg class="hidden lg:block absolute -top-24 left-[calc(50%_-_100px)]" width="320" height="269" viewBox="0 0 320 269" fill="none" xmlns="http://www.w3.org/2000/svg">
