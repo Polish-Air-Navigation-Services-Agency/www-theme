@@ -11,12 +11,13 @@ $button = $args['button'];
 $description = $args['description'];
 $decor = $args['decor'];
 $bgGray = $args['bgGray'];
+$overlapping_background = $args['overlapping_background'];
 
 
 ?>
 
 <section id="<?php if ($section_id) : echo $section_id;
-                endif; ?>" class="<?php echo ($bgGray) ? 'bg-[#F6F8F9]' : ''; ?> relative pt-[100px] lg:pt-[174px] pb-[45px] overflow-hidden">
+                endif; ?>" class="<?php echo ($bgGray) ? 'bg-[#F6F8F9]' : ''; ?>  <?php echo $overlapping_background? '-mt-12 lg:-mt-[140px] lg:pt-60':'lg:pt-[174px]' ?> relative pt-[100px] pb-[45px] overflow-hidden">
 
     <?php if ($decor) : ?>
         <div class="decoration absolute bottom-0 left-0 z-[-1]">
