@@ -35,11 +35,9 @@ $video_thumbnail = $args['video_thumbnail'];
                                         <path class="transition duration-200 group-hover:fill-secondary" d="M70 50L40 67.3205L40 32.6795L70 50Z" fill="white" />
                                     </svg>
                                     <?php if($video_thumbnail) : ?>
-                                        <img class="object-cover absolute inset-0" src="<?php echo $video_thumbnail ?>" alt="">
+                                        <img class="object-cover absolute inset-0" src="<?php echo $video_thumbnail['url'] ?>" alt="">
                                     <?php endif; ?>
                                 </div>
-
-    
                                 <?php echo $video; ?>
                             </div>
                         </div>
