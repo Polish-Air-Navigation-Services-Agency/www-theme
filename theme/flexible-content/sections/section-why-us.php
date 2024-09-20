@@ -44,6 +44,11 @@ if ($video_thumbnail['url']) {
             <div class="absolute z-10 inset-0 w-full [&>iframe]:w-full [&>iframe]:h-full opacity-0 transition duration-300" data-js-video-iframe-container>
                 <?php echo $video; ?>
             </div>
+            <div class="absolute inset-0">
+                <?php if (isset($video_thumbnail_url)) : ?>
+                    <img class="object-cover w-full h-auto" src="<?php echo $video_thumbnail_url ?>" alt="">
+                <?php endif; ?>
+            </div>
         </div>
         <div class="lg:w-[457px] text-white bg-primary pt-[70px] pb-10 px-5 lg:px-10 lg:absolute bottom-[-80px] right-0 z-[3] transition duration-500" data-descWrapper>
             <div class="mb-3 text-[18px] font-medium leading-[27px]"><?php echo $desc1 ?></div>
