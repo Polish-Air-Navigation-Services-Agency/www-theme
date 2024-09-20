@@ -31,7 +31,7 @@ $numbers = $args['numbers'];
                 <?php endif; ?>
 
                 <?php if ($numbers) : ?>
-                    <div class="pt-10 border-t-[1px] border-[#D4DEE4] flex flex-wrap">
+                    <div class="pt-10 border-t-[1px] border-[#D4DEE4] flex flex-wrap gap-5 md:gap-10 lg:gap-0 justify-center">
                         <?php foreach ($numbers as $key => $number):
                             $title = $number['title'];
                             $value = $number['value'];
@@ -44,7 +44,7 @@ $numbers = $args['numbers'];
 
                                 <?php if ($value) : ?>
                                     <p class="relative text-[60px] font-medium">
-                                        
+
                                         <?= $value ?>
 
                                         <?php if ($symbol) : ?>
