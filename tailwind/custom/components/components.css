@@ -174,23 +174,6 @@ html {
 	stroke-dashoffset: -64px;
 }
 
-.video-wrapper::after {
-	background-image: url("https://pazp.domain.org.pl/wp-content/uploads/2024/08/7db3458c8df69dd38869bf315633abac.jpeg");
-}
-.video-wrapper-img2::after {
-	background-image: url("http://pazp.domain.org.pl/wp-content/uploads/2024/09/Image-1.jpg");
-}
-
-.video-wrapper::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #0f304d70;
-}
-
 [data-js-job-visible="false"]{
 	@apply !hidden
 }

@@ -28,15 +28,19 @@ $video_thumbnail = $args['video_thumbnail'];
                     <?php endif; ?>
                     <div class="relative lg:translate-y-[100px] lg:ml-[calc(100%_-_50vw)]">
                         <div class="video lg:w-auto [&>iframe]:w-full [&>iframe]:lg:h-[472px] relative">
-                            <div class="video-wrapper video-wrapper-img2 lg:w-full lg:h-[472px] [&>iframe]:w-full [&>iframe]:lg:h-[472px] video-player-wrapper relative after:z-[1] after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:transition after:duration-[300ms] after:ease-out after:bg-center after:bg-cover after:bg-no-repeat after:h-full before:z-[2] before:transition before:duration-[300ms] before:ease-out" data-videoWrapper>
-                                <?php echo $video; ?>
-                                <div class="wp-block-group btn-more js-videoBtn group desktop:w-[175px] w-[140px] desktop:h-[175px] h-[140px] mx-auto text-center rounded-full z-[2] absolute top-[60%] desktop:top-[60%] left-[50%] translate-x-[-50%] translate-y-[-80%] transition ease-out duration-300 flex flex-col justify-center items-center gap-y-0 cursor-pointer overflow-hidden">
+                            <div class="lg:w-full lg:h-[472px] [&>iframe]:w-full [&>iframe]:lg:h-[472px] relative overflow-hidden" data-videoWrapper>
+                                <div class="group absolute z-20 inset-0 flex justify-center items-center cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                                         <rect width="100" height="100" rx="50" fill="white" fill-opacity="0.4" />
-                                        <path d="M70 50L40 67.3205L40 32.6795L70 50Z" fill="white" />
+                                        <path class="transition duration-200 group-hover:fill-secondary" d="M70 50L40 67.3205L40 32.6795L70 50Z" fill="white" />
                                     </svg>
-                                    <span class="test after:z-[-1] before:z-[-1] before:opacity-0 after:opacity-0 !z-[-1] !bottom-[-110px]"></span>
+                                    <?php if($video_thumbnail) : ?>
+                                        <img class="object-cover absolute inset-0" src="<?php echo $video_thumbnail ?>" alt="">
+                                    <?php endif; ?>
                                 </div>
+
+    
+                                <?php echo $video; ?>
                             </div>
                         </div>
                     </div>
