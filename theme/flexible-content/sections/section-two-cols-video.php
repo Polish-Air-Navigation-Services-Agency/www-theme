@@ -15,13 +15,13 @@ $video_thumbnail = $args['video_thumbnail'];
 
 <section class="bg-primary">
     <div class="container relative mb-20 pt-10">
-        <?php if ($decoration_paragraph) : ?>
+        <?php if (!$description && !$description2) : ?>
             <svg class="decoration hidden lg:block absolute bottom-0 right-[80px]" xmlns="http://www.w3.org/2000/svg" width="609" height="107" viewBox="0 0 609 107" fill="none">
                 <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
             </svg>
         <?php endif; ?>
-        <div class="flex flex-col-reverse lg:flex-row lg:gap-x-[68px]">
-            <div class="col1 basis-1/2 relative">
+        <div class="flex flex-col-reverse lg:flex-row">
+            <div class="col1 basis-1/2 relative <?php if ($title || $description || $description2) : ?> lg:pr-16 <?php endif; ?>">
                 <?php if (isset($video)) : ?>
                     <?php if ($decoration_video) : ?>
                         <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-[-30px] right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
