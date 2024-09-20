@@ -66,7 +66,7 @@ $video_thumbnail = $args['video_thumbnail'];
                 <?php endif; ?>">
                 
                 <?php if ($decoration_video) : ?>
-                    <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-[-30px] right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
+                    <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-11 right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
                 <?php endif; ?>
                 <div class="relative overflow-hidden" data-videoWrapper>
                     <div class="group absolute z-20 inset-0 flex justify-center items-center cursor-pointer transition duration-200" data-js-video-btn>
