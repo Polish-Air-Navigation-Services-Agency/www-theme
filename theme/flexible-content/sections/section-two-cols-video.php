@@ -15,8 +15,8 @@ $video_thumbnail = $args['video_thumbnail'];
 
 <section class="relative">
     <div class="lg:grid grid-cols-2">
-        <div class="col-span-full row-start-1">
-            <div class="container min-h-[80%] bg-primary pt-10">
+        <div class="col-span-full row-start-1 bg-primary pt-10">
+            <div class="container min-h-[80%]">
                 <div class="lg:w-1/2 lg:ml-auto relative">
                     <?php if ($section_number) : ?>
                         <span class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></span>
