@@ -46,11 +46,11 @@ if ($video_thumbnail['url']) {
             </div>
             <div class="absolute inset-0">
                 <?php if (isset($video_thumbnail_url)) : ?>
-                    <img class="object-cover w-full h-auto" src="<?php echo $video_thumbnail_url ?>" alt="">
+                    <img class="object-cover w-full h-full" src="<?php echo $video_thumbnail_url ?>" alt="">
                 <?php endif; ?>
             </div>
         </div>
-        <div class="lg:w-[457px] text-white bg-primary pt-[70px] pb-10 px-5 lg:px-10 lg:absolute bottom-[-80px] right-0 z-[3] transition duration-500" data-descWrapper>
+        <div class="lg:w-[457px] text-white bg-primary pt-[70px] pb-10 px-5 lg:px-10 lg:absolute bottom-[-80px] right-0 z-20 transition duration-500" data-descWrapper>
             <div class="mb-3 text-[18px] font-medium leading-[27px]"><?php echo $desc1 ?></div>
             <div class="mb-10 text-base leading-[24px]"><?php echo $desc2 ?></div>
             <button class="text-[18px] font-medium bg-primary !rounded-full border border-white !px-6 !py-[11px] hover:text-[#0F304D] hover:bg-white hover:border-[#BEBFBF] transition ease duration-200">
