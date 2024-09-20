@@ -73,7 +73,7 @@ $video_thumbnail = $args['video_thumbnail'];
                         <span class="inset-0 absolute z-10 bg-[#0F304D80]">
                         </span>
                     </div>
-                    <div class="absolute inset-0 w-full [&>iframe]:w-full [&>iframe]:h-full opacity-0 transition duration-300" data-js-video-iframe-container>
+                    <div class="absolute z-10 inset-0 w-full [&>iframe]:w-full [&>iframe]:h-full opacity-0 transition duration-300" data-js-video-iframe-container>
                         <?php echo $video; ?>
                     </div>
                     <div class="relative w-full min-h-52 lg:min-h-[400px]">

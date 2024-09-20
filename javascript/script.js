@@ -99,10 +99,12 @@ function initVideoPlayer() {
 	
 	const videoBtn = document.querySelector('[data-js-video-btn]');
 	const iframeContainer = document.querySelector('[data-js-video-iframe-container]');
+	const iframeEl = iframeContainer.querySelector('iframe')
 
 	videoBtn.addEventListener('click', () => {
 		iframeContainer.classList.remove('opacity-0');
-		videoBtn.classList.add('opacity-0')
+		videoBtn.classList.add('opacity-0','pointer-events-none')
+		iframeEl.src += '&autoplay=1' 
 	});
 }
 
