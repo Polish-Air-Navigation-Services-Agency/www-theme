@@ -28,7 +28,7 @@ $video_thumbnail = $args['video_thumbnail'];
                             <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
                         </svg>
                     <?php endif; ?>
-                    <div class="lg:w-1/2 lg:ml-auto">
+                    <div class="lg:w-1/2 lg:ml-auto pb-10">
                         <?php if ($section_number) : ?>
                             <span class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></span>
                         <?php endif; ?>
@@ -42,7 +42,7 @@ $video_thumbnail = $args['video_thumbnail'];
                         <?php endif; ?>
     
                         <?php if ($description2) : ?>
-                            <div class="mb-10 lg:mb-0 text-base text-white leading-[24px]"><?php echo $description2; ?></div>
+                            <div class="text-base text-white leading-[24px]"><?php echo $description2; ?></div>
                         <?php endif; ?>
     
                     </div>
@@ -55,7 +55,7 @@ $video_thumbnail = $args['video_thumbnail'];
                 <?php if ($title || $description || $description2) : ?> 
                     lg:pr-16 
                 <?php endif; ?>
-                
+
                 <?php if (!$description && !$description2 && !$title) : ?>
                     lg:pt-44
                 <?php else: ?>
