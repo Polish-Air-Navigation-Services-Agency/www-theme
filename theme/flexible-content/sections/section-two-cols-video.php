@@ -36,12 +36,12 @@ $video_thumbnail = $args['video_thumbnail'];
                                 <span class="inset-0 absolute z-10 bg-[#0F304D80]">
                                 </span>
                             </div>
-                            <div class="absolute inset-0 w-full">
+                            <?php if($video_thumbnail) : ?>
+                                <img class="relative z-10 object-cover w-full h-auto" src="<?php echo $video_thumbnail['url'] ?>" alt="">
+                            <?php endif; ?>
+                            <div class="absolute inset-0 w-full [&>iframe]:w-full [&>iframe]:h-full">
                                 <?php echo $video; ?>
                             </div>
-                            <?php if($video_thumbnail) : ?>
-                                <img class="object-cover w-full h-auto" src="<?php echo $video_thumbnail['url'] ?>" alt="">
-                            <?php endif; ?>
                         </div>
                     </div>
                 <?php endif; ?>
