@@ -54,7 +54,7 @@ $video_thumbnail = $args['video_thumbnail'];
         </div>
 
         <?php if (isset($video)) : ?>
-            <div class="col-start-1 row-start-1 pt-20 relative 
+            <div class="col-start-1 row-start-1 relative 
                 <?php if ($title || $description || $description2) : ?> 
                     lg:pr-16 
                 <?php endif; ?>
