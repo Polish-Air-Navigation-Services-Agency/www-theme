@@ -32,9 +32,12 @@ $numbers_row = $args['numbers_row'];
 
                 <?php if ($numbers_row) : ?>
                     <div class="pt-10 border-t-[1px] border-[#D4DEE4] flex gap-[104px]">
-                        <div class="tile1 text-primary">
+                        <div class="text-primary">
                             <p class="font-semibold">Clients satisfaction</p>
-                            <p class="relative text-[60px] font-medium">100<span class="text-secondary text-[36px] font-semibold absolute top-[6px]"><sup>%</sup></span></p>
+                            <p class="relative text-[60px] font-medium">
+                                100
+                                <span class="text-secondary text-[36px] font-semibold absolute top-[6px]"></span>
+                            </p>
                         </div>
                     </div>
                 <?php endif; ?>
