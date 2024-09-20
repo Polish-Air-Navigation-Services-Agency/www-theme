@@ -18,9 +18,9 @@ $video_thumbnail = $args['video_thumbnail'];
         <div class="col-span-full row-start-1">
             <div class="bg-primary pt-20 min-h-[80%] relative
                 <?php if (!$description && !$description2 && !$title) : ?>
-                    lg:pt-44
-                <?php else: ?>
                     lg:pt-28 
+                <?php else: ?>
+                    lg:pt-44
                 <?php endif; ?>">
 
                 <?php if (!$description && !$description2 && !$title) : ?>
@@ -60,10 +60,11 @@ $video_thumbnail = $args['video_thumbnail'];
                 <?php endif; ?>
 
                 <?php if (!$description && !$description2 && !$title) : ?>
-                    lg:pt-44
-                <?php else: ?>
                     lg:pt-28 
+                <?php else: ?>
+                    lg:pt-44
                 <?php endif; ?>">
+                
                 <?php if ($decoration_video) : ?>
                     <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-[-30px] right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
                 <?php endif; ?>
