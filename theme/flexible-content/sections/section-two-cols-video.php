@@ -15,37 +15,38 @@ $video_thumbnail = $args['video_thumbnail'];
 
 <section class="relative">
     <div class="lg:grid grid-cols-2">
-        <div class="col-span-full row-start-1 bg-primary pt-10">
-            <div class="container min-h-[80%]">
-                <div class="lg:w-1/2 lg:ml-auto relative">
-                    <?php if ($section_number) : ?>
-                        <span class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></span>
-                    <?php endif; ?>
-
-                    <?php if ($title) : ?>
-                        <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
-                    <?php endif; ?>
-
-                    <?php if ($description) : ?>
-                        <div class="mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></div>
-                    <?php endif; ?>
-
-                    <?php if ($description2) : ?>
-                        <div class="mb-10 lg:mb-0 text-base text-white leading-[24px]"><?php echo $description2; ?></div>
-                    <?php endif; ?>
-
+        <div class="col-span-full row-start-1">
+            <div class="bg-primary pt-20">
+                <div class="container min-h-[80%] relative">
                     <?php if (!$description && !$description2) : ?>
                         <svg class="decoration hidden lg:block absolute bottom-0 right-[80px]" xmlns="http://www.w3.org/2000/svg" width="609" height="107" viewBox="0 0 609 107" fill="none">
                             <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
                         </svg>
                     <?php endif; ?>
-
+                    <div class="lg:w-1/2 lg:ml-auto">
+                        <?php if ($section_number) : ?>
+                            <span class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></span>
+                        <?php endif; ?>
+    
+                        <?php if ($title) : ?>
+                            <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+                        <?php endif; ?>
+    
+                        <?php if ($description) : ?>
+                            <div class="mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></div>
+                        <?php endif; ?>
+    
+                        <?php if ($description2) : ?>
+                            <div class="mb-10 lg:mb-0 text-base text-white leading-[24px]"><?php echo $description2; ?></div>
+                        <?php endif; ?>
+    
+                    </div>
                 </div>
             </div>
         </div>
 
         <?php if (isset($video)) : ?>
-            <div class="col-start-1 row-start-1 pt-10 <?php if ($title || $description || $description2) : ?> lg:pr-16 <?php endif; ?>">
+            <div class="col-start-1 row-start-1 pt-20 relative <?php if ($title || $description || $description2) : ?> lg:pr-16 <?php endif; ?>">
                 <?php if ($decoration_video) : ?>
                     <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-[-30px] right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
                 <?php endif; ?>
