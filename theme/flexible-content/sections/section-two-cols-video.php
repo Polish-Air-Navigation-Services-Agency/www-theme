@@ -22,31 +22,34 @@ $video_thumbnail = $args['video_thumbnail'];
                 <?php else: ?>
                     lg:pt-28 
                 <?php endif; ?>">
-                <div class="container relative">
-                    <?php if (!$description && !$description2 && !$title) : ?>
-                        <svg class="decoration hidden lg:block absolute bottom-0 right-[80px]" xmlns="http://www.w3.org/2000/svg" width="609" height="107" viewBox="0 0 609 107" fill="none">
-                            <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
-                        </svg>
-                    <?php endif; ?>
-                    <div class="lg:w-1/2 lg:ml-auto pb-10">
-                        <?php if ($section_number) : ?>
-                            <span class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></span>
-                        <?php endif; ?>
+
+                <?php if (!$description && !$description2 && !$title) : ?>
+                    <svg class="decoration hidden lg:block absolute bottom-0 right-[80px]" xmlns="http://www.w3.org/2000/svg" width="609" height="107" viewBox="0 0 609 107" fill="none">
+                        <circle cx="304.5" cy="304.5" r="304.5" fill="#60B8D1" />
+                    </svg>
+                <?php else: ?>
+                    <div class="container relative">
+                        <div class="lg:w-1/2 lg:ml-auto pb-10">
+                            <?php if ($section_number) : ?>
+                                <span class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></span>
+                            <?php endif; ?>
+        
+                            <?php if ($title) : ?>
+                                <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+                            <?php endif; ?>
+        
+                            <?php if ($description) : ?>
+                                <div class="mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></div>
+                            <?php endif; ?>
+        
+                            <?php if ($description2) : ?>
+                                <div class="text-base text-white leading-[24px]"><?php echo $description2; ?></div>
+                            <?php endif; ?>
     
-                        <?php if ($title) : ?>
-                            <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
-                        <?php endif; ?>
-    
-                        <?php if ($description) : ?>
-                            <div class="mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></div>
-                        <?php endif; ?>
-    
-                        <?php if ($description2) : ?>
-                            <div class="text-base text-white leading-[24px]"><?php echo $description2; ?></div>
-                        <?php endif; ?>
-    
+                        </div>
                     </div>
-                </div>
+                <?php endif; ?>
+                
             </div>
         </div>
 
