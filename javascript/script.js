@@ -94,23 +94,15 @@ function initCounter() {
 }
 
 function initVideoPlayer() {
-	const videoBtn = document.querySelector('.js-videoBtn');
-	if(!videoBtn) return
-
 	const videoWrapper = document.querySelector('[data-videoWrapper]');
-	const descWrapper = document.querySelector('[data-descWrapper]');
+	if(!videoWrapper) return
+	
+	const videoBtn = document.querySelector('[data-js-video-btn]');
+	const iframeContainer = document.querySelector('[data-js-video-iframe-container]');
 
 	videoBtn.addEventListener('click', () => {
-		videoWrapper.classList.add('after:opacity-0');
-		videoWrapper.classList.add('before:opacity-0');
-		videoBtn.classList.add('opacity-0');
-		setTimeout(() => {
-			videoWrapper.classList.replace('after:z-[1]', 'after:z-[-1]');
-			videoWrapper.classList.replace('before:z-[2]', 'before:z-[-1]');
-			videoBtn.classList.replace('z-[2]', 'z-[-1]');
-		}, 300);
-
-		descWrapper.classList.add('!z-[-1]', '!bottom-[-110px]');
+		iframeContainer.classList.remove('opacity-0');
+		videoBtn.classList.add('opacity-0')
 	});
 }
 

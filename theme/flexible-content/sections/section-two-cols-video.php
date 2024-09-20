@@ -65,7 +65,7 @@ $video_thumbnail = $args['video_thumbnail'];
                     <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-[-30px] right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
                 <?php endif; ?>
                 <div class="relative overflow-hidden" data-videoWrapper>
-                    <div class="group absolute z-20 inset-0 flex justify-center items-center cursor-pointer">
+                    <div class="group absolute z-20 inset-0 flex justify-center items-center cursor-pointer transition duration-200" data-js-video-btn>
                         <svg class="z-20" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
                             <rect width="100" height="100" rx="50" fill="white" fill-opacity="0.4" />
                             <path class="transition duration-200 group-hover:fill-secondary" d="M70 50L40 67.3205L40 32.6795L70 50Z" fill="white" />
@@ -73,13 +73,13 @@ $video_thumbnail = $args['video_thumbnail'];
                         <span class="inset-0 absolute z-10 bg-[#0F304D80]">
                         </span>
                     </div>
-                    <div class="relative z-10 w-full min-h-52 lg:min-h-[400px]">
+                    <div class="absolute inset-0 w-full [&>iframe]:w-full [&>iframe]:h-full opacity-0 transition duration-300" data-js-video-iframe-container>
+                        <?php echo $video; ?>
+                    </div>
+                    <div class="relative w-full min-h-52 lg:min-h-[400px]">
                         <?php if ($video_thumbnail) : ?>
                             <img class="object-cover w-full h-auto max-h-[660px]" src="<?php echo $video_thumbnail['url'] ?>" alt="">
                         <?php endif; ?>
-                    </div>
-                    <div class="absolute inset-0 w-full [&>iframe]:w-full [&>iframe]:h-full">
-                        <?php echo $video; ?>
                     </div>
                 </div>
             </div>
