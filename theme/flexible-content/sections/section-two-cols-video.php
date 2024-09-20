@@ -27,21 +27,21 @@ $video_thumbnail = $args['video_thumbnail'];
                         <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-[-30px] right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
                     <?php endif; ?>
                     <div class="relative lg:translate-y-[100px] lg:ml-[calc(100%_-_50vw)]">
-                        <div class="video lg:w-auto [&>iframe]:w-full [&>iframe]:lg:h-[472px] relative">
-                            <div class="lg:w-full lg:h-[472px] [&>iframe]:w-full [&>iframe]:lg:h-[472px] relative overflow-hidden" data-videoWrapper>
-                                <div class="group absolute z-20 inset-0 flex justify-center items-center cursor-pointer">
-                                    <svg class="z-20" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
-                                        <rect width="100" height="100" rx="50" fill="white" fill-opacity="0.4" />
-                                        <path class="transition duration-200 group-hover:fill-secondary" d="M70 50L40 67.3205L40 32.6795L70 50Z" fill="white" />
-                                    </svg>
-                                    <span class="inset-0 absolute z-10 bg-[#0F304D80]">
-                                    </span>
-                                    <?php if($video_thumbnail) : ?>
-                                        <img class="object-cover absolute inset-0 z-0 w-full h-full" src="<?php echo $video_thumbnail['url'] ?>" alt="">
-                                    <?php endif; ?>
-                                </div>
+                        <div class="relative overflow-hidden" data-videoWrapper>
+                            <div class="group absolute z-20 inset-0 flex justify-center items-center cursor-pointer">
+                                <svg class="z-20" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+                                    <rect width="100" height="100" rx="50" fill="white" fill-opacity="0.4" />
+                                    <path class="transition duration-200 group-hover:fill-secondary" d="M70 50L40 67.3205L40 32.6795L70 50Z" fill="white" />
+                                </svg>
+                                <span class="inset-0 absolute z-10 bg-[#0F304D80]">
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 w-full">
                                 <?php echo $video; ?>
                             </div>
+                            <?php if($video_thumbnail) : ?>
+                                <img class="object-cover w-full h-auto" src="<?php echo $video_thumbnail['url'] ?>" alt="">
+                            <?php endif; ?>
                         </div>
                     </div>
                 <?php endif; ?>
