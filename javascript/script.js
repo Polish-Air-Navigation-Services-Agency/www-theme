@@ -95,16 +95,18 @@ function initCounter() {
 
 function initVideoPlayer() {
 	const videoWrapper = document.querySelector('[data-videoWrapper]');
-	if(!videoWrapper) return
-	
+	if (!videoWrapper) return;
+
 	const videoBtn = document.querySelector('[data-js-video-btn]');
-	const iframeContainer = document.querySelector('[data-js-video-iframe-container]');
-	const iframeEl = iframeContainer.querySelector('iframe')
+	const iframeContainer = document.querySelector(
+		'[data-js-video-iframe-container]'
+	);
+	const iframeEl = iframeContainer.querySelector('iframe');
 
 	videoBtn.addEventListener('click', () => {
 		iframeContainer.classList.remove('opacity-0');
-		videoBtn.classList.add('opacity-0','pointer-events-none')
-		iframeEl.src += '&autoplay=1' 
+		videoBtn.classList.add('opacity-0', 'pointer-events-none');
+		iframeEl.src += '&autoplay=1';
 	});
 }
 
@@ -121,17 +123,6 @@ function initWideSwipers() {
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
-			},
-
-			breakpoints: {
-				// 768: {
-				// 	slidesPerView: 1.5,
-				// 	spaceBetween: 25,
-				// },
-				// 1280: {
-				// 	slidesPerView: 2.5,
-				// 	spaceBetween: 60,
-				// },
 			},
 		});
 	});
@@ -162,26 +153,30 @@ function initTileSwipers() {
 	});
 }
 
-function initShowMoreJobs(){
-	const moreBtn = document.querySelector('[data-js-job="loadMore"]')
-	if (!moreBtn) return
+function initShowMoreJobs() {
+	const moreBtn = document.querySelector('[data-js-job="loadMore"]');
+	if (!moreBtn) return;
 
-	const JOBS_INCREMENT_COUNT = 10
+	const JOBS_INCREMENT_COUNT = 10;
 
-	moreBtn.addEventListener('click',() => expandJobsList(JOBS_INCREMENT_COUNT))
+	moreBtn.addEventListener('click', () =>
+		expandJobsList(JOBS_INCREMENT_COUNT)
+	);
 
-	function expandJobsList(increment){
-		const hiddenJobsList = document.querySelectorAll('[data-js-job-visible="false"]')
-		const hiddenJobsCount = hiddenJobsList.length
+	function expandJobsList(increment) {
+		const hiddenJobsList = document.querySelectorAll(
+			'[data-js-job-visible="false"]'
+		);
+		const hiddenJobsCount = hiddenJobsList.length;
 
 		const limit = Math.min(increment, hiddenJobsCount);
 
-        for (let i = 0; i < limit; i++) {
-            hiddenJobsList[i].setAttribute('data-js-job-visible', 'true');
-        }
+		for (let i = 0; i < limit; i++) {
+			hiddenJobsList[i].setAttribute('data-js-job-visible', 'true');
+		}
 
-        if (hiddenJobsCount <= increment) {
-            moreBtn.classList.add('!hidden');
-        }
+		if (hiddenJobsCount <= increment) {
+			moreBtn.classList.add('!hidden');
+		}
 	}
 }
