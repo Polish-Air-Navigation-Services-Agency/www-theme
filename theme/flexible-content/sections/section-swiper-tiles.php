@@ -19,13 +19,13 @@ $tiles = $args['tiles'];
                 <h2 class="max-w-[600px] text-[42px] lg:text-[60px] text-foreground leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
             <?php endif; ?>
             <div class="hidden shrink-0 md:flex gap-6 self-end">
-                <button class="swiper-btn-default size-[72px]" data-js="swiper-prev">
-                    <svg class="w-[25px]" width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="swiper-btn-default" data-js="swiper-prev">
+                    <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.4658 18.5969L1.66629 9.79733M1.66629 9.79733L10.4658 0.997789M1.66629 9.79733L23.1325 9.79728" stroke="#0F304D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
-                <button class="swiper-btn-default size-[72px]" data-js="swiper-next">
-                    <svg class="w-[25px]" width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="swiper-btn-default" data-js="swiper-next">
+                    <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5342 18.5969L23.3337 9.79733M23.3337 9.79733L14.5342 0.997789M23.3337 9.79733L1.86751 9.79728" stroke="#0F304D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
