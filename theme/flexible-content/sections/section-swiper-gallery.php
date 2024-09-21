@@ -37,7 +37,7 @@ $tiles = $args['tiles'];
                 <?php foreach ($tiles as $key => $tile) : ?>
                     <div class="swiper-slide px-6 md:pr-9 lg:pr-14 border-l border-l-[#D4DEE4]">
                         <?php if ($tile['image']) : ?>
-                            <img src="<?php $tile['image']['url'] ?>" alt="">
+                            <img src="<?php echo $tile['image']['url'] ?>" alt="">
                         <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
