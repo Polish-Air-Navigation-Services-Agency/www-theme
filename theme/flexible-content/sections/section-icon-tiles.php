@@ -9,7 +9,7 @@ $tiles = $args['tiles'];
 ?>
 
 <section class="bg-[#F6F8F9]">
-    <div class="container mx-auto py-[100px]">
+    <div class="container mx-auto py-[100px] relative">
         <div class="decoration absolute top-0 left-1/2 -translate-x-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" width="150" height="75" viewBox="0 0 150 75" fill="none">
                 <circle cx="75" r="75" fill="#60B8D1"></circle>
@@ -39,7 +39,7 @@ $tiles = $args['tiles'];
                             <?php endif; ?>
 
                             <?php if ($tile['title']) : ?>
-                                <h3 class="mb-[9px] text-[30px] font-medium leading-[36px]"><?php echo $tile['title']; ?></h3>
+                                <h3 class="mb-3 text-[30px] font-medium leading-[36px]"><?php echo $tile['title']; ?></h3>
                             <?php endif; ?>
 
                             <?php if ($tile['description']) : ?>
