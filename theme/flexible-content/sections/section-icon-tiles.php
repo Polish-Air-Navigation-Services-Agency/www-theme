@@ -4,6 +4,7 @@
 
 $section_number = $args['section_number'];
 $title = $args['title'];
+$subtitle = $args['subtitle'];
 $tiles = $args['tiles'];
 
 ?>
