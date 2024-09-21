@@ -29,7 +29,7 @@ $tiles = $args['tiles'];
                     <?php if ($tile) : ?>
                         <div class="tile-wrapper group w-full lg:w-[355px] px-5 py-[30px] flex flex-col transition ease duration-200">
                             <?php if ($tile['icon']) : ?>
-                                <?php echo $tile['icon']['url'] ?>
+                                <img src="<?php echo $tile['icon']['url'] ?>" alt="<?php echo $tile['icon']['url'] ?>">
                             <?php endif; ?>
 
                             <?php if ($tile['title']) : ?>
