@@ -24,6 +24,10 @@ $tiles = $args['tiles'];
             <?php if ($title) : ?>
                 <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-primary leading-[64px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
             <?php endif; ?>
+
+            <?php if ($subtitle) : ?>
+                <p class="mx-auto max-w-[488px] text-[18px] text-center leading-[28px] text-textGray"><?php echo $subtitle; ?></p>
+            <?php endif; ?>
         </div>
 
         <div class="tiles-wrapper mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 gap-[30px] justify-center">
