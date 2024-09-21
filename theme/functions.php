@@ -151,9 +151,12 @@ add_action('widgets_init', '_pansa_widgets_init');
 function _pansa_scripts()
 {
 	wp_enqueue_style('_pansa-style', get_stylesheet_uri(), array(), _PANSA_VERSION);
-	wp_enqueue_script('_pansa-script', get_template_directory_uri() . '/js/script.min.js', array(), _PANSA_VERSION, true);
 	wp_enqueue_style('swiper-css', '//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', '11.1.14');
+	wp_enqueue_style('lightbox-css', '//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css', '2.11.4');
+
+	wp_enqueue_script('_pansa-script', get_template_directory_uri() . '/js/script.min.js', array(), _PANSA_VERSION, true);
 	wp_enqueue_script('swiper', '//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', '11.1.14');
+	wp_enqueue_script('lightbox', '//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js', '2.11.4');
 
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

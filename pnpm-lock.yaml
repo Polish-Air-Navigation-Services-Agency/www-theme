@@ -11,6 +11,9 @@ dependencies:
   countup.js:
     specifier: ^2.8.0
     version: 2.8.0
+  lightbox2:
+    specifier: ^2.11.4
+    version: 2.11.4
   swiper:
     specifier: ^11.1.9
     version: 11.1.9
@@ -1765,6 +1768,10 @@ packages:
       prelude-ls: 1.2.1
       type-check: 0.4.0
     dev: true
+
+  /lightbox2@2.11.4:
+    resolution: {integrity: sha512-Fof7RJFWV3Fe4CWTjpto30h04Led97nRStFNLaUD/VrlEs72r7LF9WMndENYvU2e4o8WboSuy+dmetXSKSnQ2Q==}
+    dev: false
 
   /lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
