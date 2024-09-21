@@ -16,7 +16,7 @@ $tiles = $args['tiles'];
 
         <div class="flex justify-between mb-11">
             <?php if ($title) : ?>
-                <h2 class="max-w-[600px] text-[42px] lg:text-[60px] text-foreground leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+                <h2 class="max-w-[680px] text-[42px] lg:text-[60px] text-foreground leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
             <?php endif; ?>
             <div class="hidden shrink-0 md:flex gap-6 self-end">
                 <button class="swiper-btn-default" data-js="swiper-prev">
@@ -35,7 +35,7 @@ $tiles = $args['tiles'];
         <div class="swiper w-full !overflow-visible [&_.swiper-slide]:w-4/5 [&_.swiper-slide]:md:w-1/2 [&_.swiper-slide]:lg:w-1/3" data-js="swiper-tiles">
             <div class="swiper-wrapper">
                 <?php foreach ($tiles as $key => $tile) : ?>
-                    <div class="swiper-slide px-6 md:pr-9 lg:pr-14 border-l border-l-[#D4DEE4]">
+                    <div class="swiper-slide px-6 md:pr-9 lg:pr-14">
                         <?php if ($tile['image']) : ?>
                             <img src="<?php echo $tile['image']['url'] ?>" alt="">
                         <?php endif; ?>
