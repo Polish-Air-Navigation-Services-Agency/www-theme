@@ -38,7 +38,7 @@ $tiles = $args['tiles'];
                     <div class="swiper-slide md:pr-9 lg:pr-14">
                         <?php if ($tile['image']) : ?>
                             <a href="<?php echo $tile['image']['url'] ?>" data-lightbox="gallery">
-                                <img src="<?php echo $tile['image']['url'] ?>" alt="" data-lightbox="gallery">
+                                <img src="<?php echo $tile['image']['url'] ?>" alt="<?php echo $tile['image']['alt'] ?>" data-lightbox="gallery">
                             </a>
                         <?php endif; ?>
                     </div>
