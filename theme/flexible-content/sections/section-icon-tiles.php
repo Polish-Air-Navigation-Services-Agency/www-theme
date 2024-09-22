@@ -31,7 +31,7 @@ $tiles = $args['tiles'];
             <?php endif; ?>
         </div>
 
-        <div class="tiles-wrapper mx-auto w-fit grid grid-cols-1 lg:grid-cols-3 gap-[30px] justify-center">
+        <div class="tiles-wrapper mx-auto w-fit hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-[30px] justify-center">
             <?php if ($tiles) :
                 $tileID = 0;
             ?>
@@ -54,6 +54,27 @@ $tiles = $args['tiles'];
                     <?php endif; ?>
                 <?php endforeach; ?>
             <?php endif; ?>
+        </div>
+
+        <div class="swiper lg:hidden w-full !overflow-visible [&_.swiper-slide]:w-4/5 [&_.swiper-slide]:md:w-1/2 [&_.swiper-slide]:lg:w-1/3" data-js="swiper-tiles">
+            <div class="swiper-wrapper">
+                <?php foreach ($tiles as $key => $tile) : ?>
+                    <div class="swiper-slide px-6 md:pr-9 lg:pr-14">
+                        <?php if ($tile['icon']) : ?>
+                            <img class="!w-[32px] pb-6" src="<?php echo $tile['icon']['url'] ?>" alt="<?php echo $tile['icon']['url'] ?>">
+                        <?php endif; ?>
+
+                        <?php if ($tile['title']) : ?>
+                            <h3 class="mb-3 text-[30px] font-medium leading-[36px]"><?php echo $tile['title']; ?></h3>
+                        <?php endif; ?>
+
+                        <?php if ($tile['description']) : ?>
+                            <p class="text-base leading-[24px] text-textGray"><?php echo $tile['description']; ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
         </div>
     </div>
 </section>
