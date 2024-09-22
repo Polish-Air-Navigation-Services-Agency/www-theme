@@ -9,7 +9,7 @@ $tiles = $args['tiles'];
 
 ?>
 
-<section class="bg-[#F6F8F9]">
+<section class="bg-[#F6F8F9] overflow-hidden">
     <div class="container mx-auto py-[100px] relative">
         <div class="decoration absolute top-0 left-1/2 -translate-x-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" width="150" height="75" viewBox="0 0 150 75" fill="none">
@@ -56,7 +56,7 @@ $tiles = $args['tiles'];
             <?php endif; ?>
         </div>
 
-        <div class="swiper lg:hidden w-full !overflow-visible [&_.swiper-slide]:w-4/5 [&_.swiper-slide]:md:w-1/2 [&_.swiper-slide]:lg:w-1/3" data-js="swiper-tiles">
+        <div class="swiper !lg:hidden w-full !overflow-visible [&_.swiper-slide]:w-4/5 [&_.swiper-slide]:md:w-1/2 [&_.swiper-slide]:lg:w-1/3" data-js="swiper-tiles">
             <div class="swiper-wrapper">
                 <?php foreach ($tiles as $key => $tile) : ?>
                     <div class="swiper-slide px-6 md:pr-9 lg:pr-14">
