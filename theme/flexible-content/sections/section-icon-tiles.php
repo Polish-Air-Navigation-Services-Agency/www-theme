@@ -27,7 +27,7 @@ $tiles = $args['tiles'];
             <?php endif; ?>
 
             <?php if ($subtitle) : ?>
-                <div class="mx-auto max-w-[488px] text-[18px] text-center leading-[28px] text-textGray"><?php echo $subtitle; ?></div>
+                <div class="mx-auto mb-[30px] max-w-[488px] text-[18px] text-center leading-[28px] text-textGray"><?php echo $subtitle; ?></div>
             <?php endif; ?>
         </div>
 
@@ -56,7 +56,7 @@ $tiles = $args['tiles'];
             <?php endif; ?>
         </div>
 
-        <div class="swiper !lg:hidden w-full !overflow-visible [&_.swiper-slide]:w-4/5 [&_.swiper-slide]:md:w-1/2 [&_.swiper-slide]:lg:w-1/3" data-js="swiper-tiles">
+        <div class="swiper lg:!hidden w-full !overflow-visible [&_.swiper-slide]:w-4/5 [&_.swiper-slide]:md:w-1/2 [&_.swiper-slide]:lg:w-1/3" data-js="swiper-tiles">
             <div class="swiper-wrapper">
                 <?php foreach ($tiles as $key => $tile) : ?>
                     <div class="swiper-slide px-6 md:pr-9 lg:pr-14">
