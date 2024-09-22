@@ -59,7 +59,7 @@ $tiles = $args['tiles'];
         <div class="swiper lg:!hidden w-full !overflow-visible [&_.swiper-slide]:w-4/5 [&_.swiper-slide]:md:w-1/2 [&_.swiper-slide]:lg:w-1/3" data-js="swiper-tiles">
             <div class="swiper-wrapper">
                 <?php foreach ($tiles as $key => $tile) : ?>
-                    <div class="swiper-slide px-6 md:pr-9 lg:pr-14">
+                    <div class="swiper-slide md:pr-9 lg:pr-14">
                         <?php if ($tile['icon']) : ?>
                             <img class="!w-[32px] pb-6" src="<?php echo $tile['icon']['url'] ?>" alt="<?php echo $tile['icon']['url'] ?>">
                         <?php endif; ?>
