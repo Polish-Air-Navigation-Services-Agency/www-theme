@@ -7,12 +7,13 @@ $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
 $header_left = $args['header_left'];
+$grayBackground = $args['grayBackground'];
+
 
 
 ?>
 
-<section id="<?php if ($section_id) : echo $section_id;
-                endif; ?>" class="relative pt-[50px] pb-[45px] overflow-hidden">
+<section id="<?php echo ($section_id) ? $section_id : ''; ?>" class="relative pt-[50px] pb-[45px] overflow-hidden<?php echo ($grayBackground) ? 'bg-[#F6F8F9]' : ''; ?>">
 
     <div class="container w-full flex flex-col <?php echo ($header_left) ? 'items-start' : 'items-center'; ?> justify-center">
         <?php if ($section_number) : ?>
