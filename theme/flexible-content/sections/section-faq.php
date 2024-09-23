@@ -6,7 +6,7 @@ $questions_list = $args['questions_list'];
 
 ?>
 
-<section class="relative pb-10 lg:pb-[100px] pt-2.5 bg-[#F6F8F9]">
+<section class="relative pb-16 lg:pb-[100px] pt-2.5 bg-[#F6F8F9]">
     <div class="container mx-auto">
         <div class="faq-wrapper">
             <?php $question_qty = 1; ?>
