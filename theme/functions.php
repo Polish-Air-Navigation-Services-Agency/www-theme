@@ -39,7 +39,7 @@ if (!defined('_PANSA_TYPOGRAPHY_CLASSES')) {
 	 */
 	define(
 		'_PANSA_TYPOGRAPHY_CLASSES',
-		'prose prose-neutral max-w-none prose-a:text-primary'
+		'prose prose-neutral max-w-none prose-a:text-primary pb-20 pt-[100px] lg:pt-[174px]'
 	);
 }
 
