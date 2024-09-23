@@ -13,7 +13,7 @@ $grayBackground = $args['grayBackground'];
 
 ?>
 
-<section id="<?php echo ($section_id) ? $section_id : ''; ?>" class="relative <?php echo ($grayBackground) ? 'pt-[100px]' : 'pt-[50px]'; ?> pb-[45px] overflow-hidden <?php echo ($grayBackground) ? 'bg-[#F6F8F9]' : ''; ?>">
+<section id="<?php echo ($section_id) ? $section_id : ''; ?>" class="relative <?php echo ($grayBackground && !$header_left) ? 'pt-[100px]' : 'pt-[50px]'; ?> pb-[45px] overflow-hidden <?php echo ($grayBackground) ? 'bg-[#F6F8F9]' : ''; ?>">
 
     <div class="container w-full flex flex-col <?php echo ($header_left) ? 'items-start' : 'items-center text-center'; ?> justify-center">
         <?php if ($section_number) : ?>
