@@ -10,6 +10,7 @@ $title = $args['title'];
 $button = $args['button'];
 $description = $args['description'];
 $decor = $args['decor'];
+$decor_botom = $args['decor_bottom'];
 $bgGray = $args['bgGray'];
 $overlapping_background = $args['overlapping_background'];
 
@@ -56,3 +57,11 @@ $overlapping_background = $args['overlapping_background'];
         </div>
     </div>
 </section>
+
+<?php if($decor_botom): ?>
+    <div class="container">
+        <svg class="block mx-auto max-w-[50%]" width="472" height="125" viewBox="0 0 472 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M236 0C137.907 0 51.3894 49.5569 0.116577 125H471.884C420.611 49.5569 334.093 0 236 0Z" fill="#60B8D1"/>
+        </svg>
+    </div>
+<?php endif; ?>
