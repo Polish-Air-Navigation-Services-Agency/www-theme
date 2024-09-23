@@ -12,7 +12,6 @@
 import Swiper from 'swiper';
 import { Autoplay, Navigation } from 'swiper/modules';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { CountUp } from 'countup.js';
 
 AOS.init();

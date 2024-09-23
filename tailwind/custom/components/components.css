@@ -198,5 +198,5 @@ body .ham .line {
 }
 
 .post-edit-link{
-	@apply absolute left-5 top-5 rounded-lg bg-white
+	@apply fixed z-50 left-5 top-20 rounded-lg bg-white px-6 py-4
 }
