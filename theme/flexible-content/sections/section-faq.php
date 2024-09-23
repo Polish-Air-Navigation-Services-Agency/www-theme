@@ -6,7 +6,7 @@ $questions_list = $args['questions_list'];
 
 ?>
 
-<section class="relative pb-10 lg:pb-[100px] bg-[#F6F8F9]">
+<section class="relative pb-10 lg:pb-[100px] pt-2.5 bg-[#F6F8F9]">
     <div class="container mx-auto">
         <div class="faq-wrapper">
             <?php $question_qty = 1; ?>
@@ -15,7 +15,7 @@ $questions_list = $args['questions_list'];
                     $question_qty = '0' . $question_qty;
                 endif;
             ?>
-                <div class="question-wrapper mt-10 lg:flex gap-[44px] border-b-[1px] border-[#BEBFBF]">
+                <div class="question-wrapper mb-10 last:mb-0 lg:flex gap-[44px] border-b-[1px] border-[#BEBFBF]">
                     <p class="text-secondary text-[30px] font-medium"><?php echo $question_qty . '/'; ?></p>
                     <div class="right-col">
                         <h3 class="mb-5 text-[30px] font-medium leading-[36px]"><?php echo $question['question']; ?></h3>
