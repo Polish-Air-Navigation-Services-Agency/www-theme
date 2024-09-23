@@ -14,7 +14,7 @@
 
 	<div <?php _pansa_content_class('entry-content'); ?>>
 		<?php if (get_the_content()) : ?>
-			<div class="container">
+			<div class="container pb-20 pt-[100px] lg:pt-[174px]">
 				<?php the_content(); ?>
 			</div>
 
