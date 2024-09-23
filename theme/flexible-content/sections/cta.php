@@ -9,7 +9,7 @@ $button = $args['button'];
 ?>
 
 <section id="<?php if ($section_id) : echo $section_id;
-                endif; ?>" class="relative mb-[80px] py-[80px] lg:py-[128px] bg-primary overflow-hidden">
+                endif; ?>" class="relative py-[80px] lg:py-[128px] bg-primary overflow-hidden">
     <svg class="decoration absolute left-0 top-1/2 -translate-x-full" xmlns="http://www.w3.org/2000/svg" width="75" height="150" viewBox="0 0 75 150" fill="none">
         <circle cy="75" r="75" fill="#60B8D1" />
     </svg>
