@@ -14,7 +14,7 @@ $video_thumbnail = $args['video_thumbnail'];
 ?>
 
 <section class="relative">
-    <div class="lg:grid grid-cols-2">
+    <div class="lg:grid grid-cols-2" data-aos="fade" data-aos-delay="50">
         <div class="col-span-full row-start-1">
             <div class="bg-primary pt-20 min-h-[80%] relative
                 <?php if (!$description && !$description2 && !$title) : ?>

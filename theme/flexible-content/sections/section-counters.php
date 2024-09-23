@@ -20,7 +20,7 @@ $overlapping_background = $args['overlapping_background'];
             </svg>
         </div>
     <?php endif; ?>
-    <div class="pt-12 relative z-0 container">
+    <div class="pt-12 relative z-0 container" data-aos="fade" data-aos-delay="50">
         <!-- counter -->
         <?php if ($tiles_list) :
             $tileID = 0;

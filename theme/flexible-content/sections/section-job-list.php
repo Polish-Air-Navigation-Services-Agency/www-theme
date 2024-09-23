@@ -10,7 +10,7 @@ $JOBS_INCREMENT_COUNT = 10;
 ?>
 
 <section class="bg-[#F6F8F9]">
-    <div class="container mx-auto pb-[100px]">
+    <div class="container mx-auto pb-[100px]"  data-aos="fade" data-aos-delay="50">
         
             <?php if ($tiles && count($tiles)>0) :
                 if ($is_preview) {

@@ -24,7 +24,7 @@ get_header();
 		$queriedObject = get_queried_object();
 		while (have_posts()) :
 			$sections = get_field('sections', $queriedObject);
-			$no_fade_sections = ['hero'];
+			$no_fade_sections = ['hero','section-two-cols','section-counters','section-two-cols-image-offset','section-two-cols-video','section-job-list'];
 
 			the_post();
 			get_template_part('template-parts/content/content', 'page');

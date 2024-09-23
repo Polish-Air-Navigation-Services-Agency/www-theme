@@ -29,7 +29,7 @@ $overlapping_background = $args['overlapping_background'];
     <?php endif; ?>
 
     <div class="container w-full flex  gap-[30px] lg:gap-[117px] <?php if ($cols_reverse) echo 'flex-col md:flex-row-reverse';
-                                                                    else echo 'flex-col md:flex-row'; ?> ">
+                                                                    else echo 'flex-col md:flex-row'; ?> " data-aos="fade" data-aos-delay="50">
         <div class="basis-1/2 flex-col">
             <?php if ($section_number) : ?>
                 <span class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></span>
