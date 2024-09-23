@@ -63,7 +63,7 @@ $video_thumbnail = $args['video_thumbnail'];
                     lg:pt-28 
                 <?php else: ?>
                     lg:pt-44
-                <?php endif; ?>">
+                <?php endif; ?>" data-aos="fade" data-aos-delay="50">
                 
                 <?php if ($decoration_video) : ?>
                     <img class="hidden lg:block lg:absolute mb-5 lg:mb-0 top-11 right-0" src="<?php echo $decoration_video; ?>" alt="decoration">
