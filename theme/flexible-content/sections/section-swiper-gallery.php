@@ -35,7 +35,7 @@ $tiles = $args['tiles'];
         <div class="swiper w-full !overflow-visible [&_.swiper-slide]:w-4/5 [&_.swiper-slide]:md:w-1/2 [&_.swiper-slide]:lg:w-1/3" data-js="swiper-tiles">
             <div class="swiper-wrapper">
                 <?php foreach ($tiles as $key => $tile) : ?>
-                    <div class="swiper-slide md:pr-9 lg:pr-14">
+                    <div class="swiper-slide pr-5">
                         <?php if ($tile['image']) : ?>
                             <a href="<?php echo $tile['image']['url'] ?>" data-lightbox="gallery">
                                 <img src="<?php echo $tile['image']['url'] ?>" alt="<?php echo $tile['image']['alt'] ?>" data-lightbox="gallery">
