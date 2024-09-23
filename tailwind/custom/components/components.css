@@ -140,14 +140,17 @@ html {
 .hamRotate180.active {
 	transform: rotate(180deg);
 }
-.line {
+body.home .ham .line {
+	@apply stroke-white
+}
+body .ham .line {
 	fill: none;
 	transition:
 		stroke-dasharray 400ms,
 		stroke-dashoffset 400ms;
-	stroke: #fff;
 	stroke-width: 4;
 	stroke-linecap: round;
+	@apply stroke-primary
 }
 .ham8 .top {
 	stroke-dasharray: 40 160;
@@ -192,4 +195,8 @@ html {
 }
 .swiper-btn-default:hover svg path{
 	@apply stroke-white
+}
+
+.post-edit-link{
+	@apply absolute left-5 top-5 rounded-lg bg-white
 }

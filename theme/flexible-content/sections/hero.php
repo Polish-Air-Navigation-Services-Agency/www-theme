@@ -39,14 +39,12 @@ if ($hero_background['url']) {
             <?php endif; ?>
         </div>
 
-        <button class="group bg-white w-fit !rounded-full !px-6 !py-[11px] text-[#0F304D] font-medium hover:bg-primary hover:text-white transition ease duration-200">
-            <a href="<?php echo esc_url(home_url('/kogo-szukamy')); ?>" class="flex items-center justify-center gap-[10px]">
-                <?php esc_html_e('Sprawdź kogo szukamy', '_pansa'); ?>
-                <svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
-                    <path class="group-hover:stroke-white" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#0F304D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </a>
-        </button>
+        <a href="<?php echo esc_url(home_url('/kogo-szukamy')); ?>" class="flex items-center justify-center gap-[10px] group bg-white w-fit !rounded-full !px-6 !py-[11px] text-[#0F304D] font-medium hover:bg-primary hover:text-white transition duration-200">
+            <?php esc_html_e('Sprawdź kogo szukamy', '_pansa'); ?>
+            <svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
+                <path class="group-hover:stroke-white" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#0F304D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
 
         <a href="#o_nas" class="group block cursor-pointer absolute bottom-6 left-1/2 -translate-x-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="48" viewBox="0 0 50 48" fill="none">
