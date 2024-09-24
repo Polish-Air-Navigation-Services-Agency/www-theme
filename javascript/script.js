@@ -219,10 +219,12 @@ function initiIsElementVisible(el) {
 
 function test() {
 	let tile = document.querySelector('.tile-wrapper');
-	if (initiIsElementVisible(tile)) {
-		tile.classList.add('visible');
-		console.log('visible');
-	} else {
-		console.log('else');
-	}
+	tile.addEventListener('scroll', function () {
+		if (initiIsElementVisible(tile)) {
+			tile.classList.add('visible');
+			console.log('visible');
+		} else {
+			console.log('else');
+		}
+	});
 }
