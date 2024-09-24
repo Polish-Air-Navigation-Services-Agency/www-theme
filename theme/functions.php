@@ -206,8 +206,14 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
+// Remove default block styles css frontend
+function pansa_remove_wp_block_library_css(){
+	wp_dequeue_style( 'wp-block-library' );
+}
+add_action( 'wp_enqueue_scripts', 'pansa_remove_wp_block_library_css' );
 
-function smoothh_img_responsive($img, $classes, $dimensions, $loading = '')
+
+function pansa_img_responsive($img, $classes, $dimensions, $loading = '')
 {
 	if (!isset($img) || !isset($img['url']) || !isset($img['ID'])) {
 		return '';

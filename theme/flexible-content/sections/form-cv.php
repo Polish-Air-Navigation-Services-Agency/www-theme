@@ -61,6 +61,6 @@ if ($image['url']) {
         </div>
     </div>
     <?php if($image_url){
-        echo smoothh_img_responsive($image, 'w-full', array(1440, 500), 'lazy');
+        echo pansa_img_responsive($image, 'w-full', array(1440, 500), 'lazy');
     } ?>
 </section>

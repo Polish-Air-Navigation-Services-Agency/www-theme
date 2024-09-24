@@ -47,7 +47,7 @@ if ($video_thumbnail['url']) {
             <div class="absolute inset-0">
                 <?php if (isset($video_thumbnail_url)) : ?>
                     <?php 
-                        echo smoothh_img_responsive($video_thumbnail, 'object-cover w-full h-full', array(1300, 640), 'lazy');
+                        echo pansa_img_responsive($video_thumbnail, 'object-cover w-full h-full', array(1300, 640), 'lazy');
                     ?>
                 <?php endif; ?>
             </div>

@@ -67,7 +67,7 @@ $numbers = $args['numbers'];
     <?php if (isset($image)) : ?>
         <div class="col-start-2 row-start-1">
             <?php 
-                echo smoothh_img_responsive($image, 'mt-10 lg:mt-0 w-full relative max-h-[400px] lg:max-h-[690px] object-cover', array(768, 700), 'lazy');
+                echo pansa_img_responsive($image, 'mt-10 lg:mt-0 w-full relative max-h-[400px] lg:max-h-[690px] object-cover', array(768, 700), 'lazy');
              ?>
         </div>
     <?php endif; ?>

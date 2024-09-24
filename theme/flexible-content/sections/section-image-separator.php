@@ -15,7 +15,7 @@ $add_decor = $args['add_decor'];
             </svg>
         <?php endif;?>
         <?php if (isset($image['url'])){
-                echo smoothh_img_responsive($image, 'w-full object-cover max-h-[600px]', array(1440, 600), 'lazy');
+                echo pansa_img_responsive($image, 'w-full object-cover max-h-[600px]', array(1440, 600), 'lazy');
         }; ?>
     </div>
 </section>
