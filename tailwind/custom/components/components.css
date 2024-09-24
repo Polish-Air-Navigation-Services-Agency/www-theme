@@ -68,7 +68,7 @@ html {
 }
 
 #primary-menu a {
-	@apply uppercase after:content-[''] after:w-[20px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px];
+	@apply uppercase after:content-[''] after:w-[20px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px] hover:after:bg-secondary;
 }
 
 .form-basic input,
@@ -141,7 +141,7 @@ html {
 	transform: rotate(180deg);
 }
 body.home .ham .line {
-	@apply stroke-white
+	@apply stroke-white;
 }
 body .ham .line {
 	fill: none;
@@ -150,7 +150,7 @@ body .ham .line {
 		stroke-dashoffset 400ms;
 	stroke-width: 4;
 	stroke-linecap: round;
-	@apply stroke-primary
+	@apply stroke-primary;
 }
 .ham8 .top {
 	stroke-dasharray: 40 160;
@@ -177,26 +177,26 @@ body .ham .line {
 	stroke-dashoffset: -64px;
 }
 
-[data-js-job-visible="false"]{
-	@apply !hidden
+[data-js-job-visible="false"] {
+	@apply !hidden;
 }
 
-.swiper-btn-default{
-	@apply cursor-pointer flex shrink-0 justify-center items-center size-14 lg:size-[72px] rounded-full border-2 border-[#F6F8F9] hover:border-secondary hover:bg-secondary transition duration-200
+.swiper-btn-default {
+	@apply cursor-pointer flex shrink-0 justify-center items-center size-14 lg:size-[72px] rounded-full border-2 border-[#F6F8F9] hover:border-secondary hover:bg-secondary transition duration-200;
 }
-.swiper-btn-default.swiper-button-disabled{
-	@apply pointer-events-none
+.swiper-btn-default.swiper-button-disabled {
+	@apply pointer-events-none;
 }
-.swiper-btn-default.swiper-button-disabled svg path{
-	@apply stroke-primary/50
+.swiper-btn-default.swiper-button-disabled svg path {
+	@apply stroke-primary/50;
 }
-.swiper-btn-default svg path{
-	@apply transition duration-200
+.swiper-btn-default svg path {
+	@apply transition duration-200;
 }
-.swiper-btn-default:hover svg path{
-	@apply stroke-white
+.swiper-btn-default:hover svg path {
+	@apply stroke-white;
 }
 
-.post-edit-link{
-	@apply fixed z-50 left-5 top-20 rounded-lg bg-white px-6 py-4
+.post-edit-link {
+	@apply fixed z-50 left-5 top-20 rounded-lg bg-white px-6 py-4;
 }
