@@ -66,12 +66,12 @@ $social_links = get_field('social_links', 'option');
 					<?php echo $company_details; ?>
 				</div>
 				<div class="socials">
-					<h3 class="mb-[10px] text-[20px] font-semibold text-right"><?php echo esc_html_e('Obserwuj nas', '_pansa'); ?></h3>
+					<h3 class="mb-[10px] text-[20px] font-semibold text-left lg:text-right"><?php echo esc_html_e('Obserwuj nas', '_pansa'); ?></h3>
 					<?php
 					$socials_count = count(array_filter(array_values($social_links)));
 					if ($socials_count > 0) :
 					?>
-						<ul class="flex gap-3 justify-end">
+						<ul class="flex gap-3 justify-start lg:justify-end">
 							<?php if ($social_links['facebook']) : ?>
 								<li class="shrink-0 group">
 									<a class="block transition duration-200" <?php if ($social_links['facebook'] != ' ') : ?> href="<?php echo esc_attr($social_links['facebook']) ?>" target="_blank" <?php endif; ?>>
