@@ -218,7 +218,9 @@ function initiIsElementVisible(el) {
 }
 
 function test() {
-	let tile = document.querySelector('.tile-wrapper');
+	let tile = document.querySelector(
+		'[data-js-tile-numbered="tile-numbered"]'
+	);
 	console.log(tile);
 
 	document.body.addEventListener('scroll', function () {
