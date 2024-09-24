@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	initWideSwipers();
 	initTileSwipers();
 	initShowMoreJobs();
+	initiIsElementVisible();
+	test();
 });
 
 function initMenuCollapse() {
@@ -100,7 +102,7 @@ function initVideoPlayer() {
 	const iframeContainer = document.querySelector(
 		'[data-js-video-iframe-container]'
 	);
-	const iframeUrl = iframeContainer.dataset.jsVideoIframeContainer
+	const iframeUrl = iframeContainer.dataset.jsVideoIframeContainer;
 
 	videoBtn.addEventListener('click', () => {
 		iframeContainer.classList.remove('opacity-0');
@@ -108,9 +110,10 @@ function initVideoPlayer() {
 
 		const iframe = document.createElement('iframe');
 		iframe.src = `${iframeUrl}&autoplay=1`;
-		iframe.width = "560";
-		iframe.height = "315";
-		iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+		iframe.width = '560';
+		iframe.height = '315';
+		iframe.allow =
+			'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
 		iframe.allowFullscreen = true;
 		iframeContainer.appendChild(iframe);
 	});
@@ -184,5 +187,37 @@ function initShowMoreJobs() {
 		if (hiddenJobsCount <= increment) {
 			moreBtn.classList.add('!hidden');
 		}
+	}
+}
+
+function initiIsElementVisible(el) {
+	var rect = el.getBoundingClientRect(),
+		vWidth = window.innerWidth || document.documentElement.clientWidth,
+		vHeight = window.innerHeight || document.documentElement.clientHeight,
+		efp = function (x, y) {
+			return document.elementFromPoint(x, y);
+		};
+
+	if (
+		rect.right < 0 ||
+		rect.bottom < 0 ||
+		rect.left > vWidth ||
+		rect.top > vHeight
+	)
+		return false;
+
+	return (
+		el.contains(efp(rect.left, rect.top)) ||
+		el.contains(efp(rect.right, rect.top)) ||
+		el.contains(efp(rect.right, rect.bottom)) ||
+		el.contains(efp(rect.left, rect.bottom))
+	);
+}
+
+function test() {
+	let tile = document.querySelector('.tile-wrapper');
+	if (initiIsElementVisible(tile)) {
+		tile.classList.add('visible');
+		console.log('visible');
 	}
 }
