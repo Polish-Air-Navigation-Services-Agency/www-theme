@@ -224,7 +224,7 @@ function test() {
 
 	console.log(tile);
 
-	document.body.addEventListener('scroll', function () {
+	document.addEventListener('scroll', function () {
 		console.log('scrolling');
 
 		if (initiIsElementVisible(tile)) {
