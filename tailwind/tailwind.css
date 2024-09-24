@@ -41,6 +41,6 @@
  * This injects external styles
  */
 
-@import 'aos/dist/aos.css';
-@import 'lightbox2/dist/css/lightbox.min.css';
+ @import 'aos/dist/aos.css';
+ @import './lightbox.css';
 @import 'swiper/swiper-bundle.min.css'

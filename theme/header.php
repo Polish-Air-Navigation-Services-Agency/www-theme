@@ -30,8 +30,6 @@
 	<?php wp_body_open(); ?>
 
 	<div id="page">
-		TEST
-	<img src="<?php echo get_template_directory_uri(); ?>/images/prev.png" alt="Previous Image">
 		<a href="#content" class="sr-only"><?php esc_html_e('Skip to content', '_pansa'); ?></a>
 
 		<?php get_template_part('template-parts/layout/header', 'content'); ?>
