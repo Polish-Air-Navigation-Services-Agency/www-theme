@@ -42,7 +42,7 @@ if ($video_thumbnail['url']) {
                 </span>
             </div>
             <div class="absolute z-10 inset-0 w-full [&>iframe]:w-full [&>iframe]:h-full opacity-0 transition duration-300" data-js-video-iframe-container>
-                <?php echo $video; ?>
+                <?php echo str_replace('<iframe ','<iframe loading="lazy" ',$video); ?>
             </div>
             <div class="absolute inset-0">
                 <?php if (isset($video_thumbnail_url)) : ?>
