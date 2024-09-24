@@ -120,8 +120,8 @@ $social_links = get_field('social_links', 'option');
 								<li class="shrink-0 group">
 									<a class="block transition duration-200" <?php if ($social_links['youtube'] != ' ') : ?> href="<?php echo esc_attr($social_links['youtube']) ?>" target="_blank" <?php endif; ?>>
 										<span class="hidden">YouTube</span>
-										<svg class="group-hover:!fill-[#488ca0] transition duration-200" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-											<rect width="34" height="34" rx="17" fill="#60B8D1" />
+										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+											<rect class="group-hover:!fill-[#488ca0] transition duration-200" width="34" height="34" rx="17" fill="#60B8D1" />
 											<path d="M28 14.71C28.0495 13.2786 27.7365 11.858 27.09 10.58C26.6514 10.0556 26.0427 9.70169 25.37 9.57998C22.5875 9.32751 19.7936 9.22403 17 9.26998C14.2167 9.22194 11.4327 9.32208 8.66003 9.56998C8.11185 9.6697 7.60454 9.92683 7.20003 10.31C6.30003 11.14 6.20003 12.56 6.10003 13.76C5.95494 15.9175 5.95494 18.0824 6.10003 20.24C6.12896 20.9154 6.22952 21.5858 6.40003 22.24C6.5206 22.745 6.76455 23.2123 7.11003 23.6C7.51729 24.0034 8.03641 24.2752 8.60003 24.38C10.7559 24.6461 12.9282 24.7564 15.1 24.71C18.6 24.76 21.67 24.71 25.3 24.43C25.8775 24.3316 26.4112 24.0595 26.83 23.65C27.11 23.3699 27.3191 23.0271 27.44 22.65C27.7977 21.5526 27.9733 20.4041 27.96 19.25C28 18.69 28 15.31 28 14.71ZM14.74 19.85V13.66L20.66 16.77C19 17.69 16.81 18.73 14.74 19.85Z" fill="#0F304D" />
 										</svg>
 									</a>
