@@ -57,7 +57,7 @@ $JOBS_INCREMENT_COUNT = 10;
                             </div>
                         </div>
 
-                        <div class="self-end lg:self-center">
+                        <div class="self-start lg:self-center">
                             <?php if ($tile['url']) : ?>
                                 <a href="<?php echo $tile['url']; ?>" class="group w-[160px] h-[50px] pl-[30px] pr-[70px] ml-[60px] lg:ml-0 flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition-all duration-200 relative">
                                     <?php esc_html_e('Apply', '_pansa'); ?>
