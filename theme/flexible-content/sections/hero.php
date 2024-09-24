@@ -18,9 +18,9 @@ if ($hero_background_mobile['url']) {
 ?>
 
 <section class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
-    <picture>
+    <picture class="absolute inset-0 -z-10 object-cover !h-full w-full">
         <source media="(min-width:768px)" srcset="<?= $hero_bg_url ?>">
-        <img src="<?= $hero_bg_url_mobile ?>" class="absolute inset-0 -z-10 object-cover !h-full w-full md:hidden" <?= $hero_background_mobile['alt'] ? 'alt="'.$hero_background_mobile['alt'] . "'" : '' ?> >
+        <img src="<?= $hero_bg_url_mobile ?>" class="w-full h-full" <?= $hero_background_mobile['alt'] ? 'alt="'.$hero_background_mobile['alt'] . '"' : '' ?> >
     </picture>
 
     <div class="decoration absolute bottom-0 left-0 z-[-1]">
