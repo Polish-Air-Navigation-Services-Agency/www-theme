@@ -100,12 +100,19 @@ function initVideoPlayer() {
 	const iframeContainer = document.querySelector(
 		'[data-js-video-iframe-container]'
 	);
-	const iframeEl = iframeContainer.querySelector('iframe');
+	const iframeUrl = iframeContainer.dataset.jsVideoIframeContainer
 
 	videoBtn.addEventListener('click', () => {
 		iframeContainer.classList.remove('opacity-0');
 		videoBtn.classList.add('opacity-0', 'pointer-events-none');
-		iframeEl.src += '&autoplay=1';
+
+		const iframe = document.createElement('iframe');
+		iframe.src = `${iframeUrl}?autoplay=1`;
+		iframe.width = "560";
+		iframe.height = "315";
+		iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+		iframe.allowFullscreen = true;
+		iframeContainer.appendChild(iframe);
 	});
 }
 
