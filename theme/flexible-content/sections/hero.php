@@ -14,7 +14,8 @@ if ($hero_background['url']) {
 
 <section class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
     <?php if (isset($hero_bg_url)) :
-        echo smoothh_img_responsive($hero_background, 'absolute inset-0 -z-10 object-cover !h-full w-full', array(1800, 600), 'eager');
+        echo smoothh_img_responsive($hero_background, 'absolute inset-0 -z-10 object-cover !h-full w-full hidden md:block', array(1800, 600), 'eager');
+        echo smoothh_img_responsive($hero_background, 'absolute inset-0 -z-10 object-cover !h-full w-full md:hidden', array(768, 600), 'eager');
     endif; ?>
 
     <div class="decoration absolute bottom-0 left-0 z-[-1]">

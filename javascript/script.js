@@ -13,6 +13,7 @@ import Swiper from 'swiper';
 import { Autoplay, Navigation } from 'swiper/modules';
 import AOS from 'aos';
 import { CountUp } from 'countup.js';
+import 'lightbox2'
 
 AOS.init();
 AOS.init({
