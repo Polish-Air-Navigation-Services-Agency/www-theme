@@ -133,7 +133,7 @@ $social_links = get_field('social_links', 'option');
 			</div>
 		</div>
 
-		<div class="footer-bottom py-4 flex justify-between font-medium">
+		<div class="footer-bottom py-4 flex flex-col lg:flex-row justify-between font-medium">
 			<?php if (has_nav_menu('menu-2')) : ?>
 				<nav aria-label="<?php esc_attr_e('Footer Menu', '_pansa'); ?>">
 					<?php
