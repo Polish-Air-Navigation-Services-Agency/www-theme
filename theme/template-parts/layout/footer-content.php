@@ -134,7 +134,6 @@ $social_links = get_field('social_links', 'option');
 		</div>
 
 		<div class="footer-bottom py-4 flex justify-between font-medium">
-			<span class="font-normal">© PANSA <?php echo date('Y'); ?>. All rights reserved</span>
 			<?php if (has_nav_menu('menu-2')) : ?>
 				<nav aria-label="<?php esc_attr_e('Footer Menu', '_pansa'); ?>">
 					<?php
@@ -148,6 +147,7 @@ $social_links = get_field('social_links', 'option');
 					?>
 				</nav>
 			<?php endif; ?>
+			<span class="font-normal">© PANSA <?php echo date('Y'); ?>. All rights reserved</span>
 		</div>
 
 </footer><!-- #colophon -->
