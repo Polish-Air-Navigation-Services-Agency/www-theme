@@ -191,23 +191,30 @@ function initShowMoreJobs() {
 }
 
 function initiIsElementVisible(el) {
-	var top = el.offsetTop;
-	var left = el.offsetLeft;
-	var width = el.offsetWidth;
-	var height = el.offsetHeight;
+	if (el) {
+		let rect = el.getBoundingClientRect(),
+			vWidth = window.innerWidth || document.documentElement.clientWidth,
+			vHeight =
+				window.innerHeight || document.documentElement.clientHeight,
+			efp = function (x, y) {
+				return document.elementFromPoint(x, y);
+			};
 
-	while (el.offsetParent) {
-		el = el.offsetParent;
-		top += el.offsetTop;
-		left += el.offsetLeft;
+		if (
+			rect.right < 0 ||
+			rect.bottom < 0 ||
+			rect.left > vWidth ||
+			rect.top > vHeight
+		)
+			return false;
+
+		return (
+			el.contains(efp(rect.left, rect.top)) ||
+			el.contains(efp(rect.right, rect.top)) ||
+			el.contains(efp(rect.right, rect.bottom)) ||
+			el.contains(efp(rect.left, rect.bottom))
+		);
 	}
-
-	return (
-		top >= window.scrollY &&
-		left >= window.scrollX &&
-		top + height <= window.scrollY + window.innerHeight &&
-		left + width <= window.scrollX + window.innerWidth
-	);
 }
 
 function test() {
