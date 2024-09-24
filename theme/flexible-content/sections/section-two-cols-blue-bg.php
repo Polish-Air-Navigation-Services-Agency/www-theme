@@ -15,7 +15,7 @@ $overlapping_background = $args['overlapping_background'];
 <section class="<?php echo ($overlapping_background) ? 'translate-y-[-100px] mb-[-100px]' : '' ?> ">
     <div class="relative w-full bg-primary pt-[180px]">
         <div class="pt-12 relative container z-[1]">
-            <div class="two-col flex flex-col lg:flex-row relative">
+            <div class="two-col flex flex-col-reverse lg:flex-row relative">
                 <div class="basis-1/2 relative">
                     <?php if ($description) : ?>
                         <div class="mb-4 text-[20px] text-white leading-[30px]"><?php echo $description; ?></div>
@@ -32,7 +32,7 @@ $overlapping_background = $args['overlapping_background'];
                     <?php endif; ?>
 
                     <?php if ($title) : ?>
-                        <h2 class="max-w-[480px] text-[42px] lg:text-[60px] text-white leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
+                        <h2 class="max-w-[480px] mb-10 lg:mb-0 text-[42px] lg:text-[60px] text-white leading-[50px] lg:leading-[72px] font-medium"><?php echo $title; ?></h2>
                     <?php endif; ?>
                 </div>
             </div>
