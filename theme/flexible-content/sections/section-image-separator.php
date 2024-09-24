@@ -14,8 +14,8 @@ $add_decor = $args['add_decor'];
                 <circle cx="75" r="75" fill="#60B8D1" />
             </svg>
         <?php endif;?>
-        <?php if ($image) : ?>
-            <img src="<?php echo $image; ?>" class="w-full object-cover max-h-[600px]" alt="image">
-        <?php endif; ?>
+        <?php if (isset($image['url'])){
+                echo smoothh_img_responsive($image, 'w-full object-cover max-h-[600px]', array(1440, 600), 'lazy');
+        }; ?>
     </div>
 </section>

@@ -82,7 +82,7 @@ $video_thumbnail = $args['video_thumbnail'];
                     </div>
                     <div class="relative w-full min-h-52 lg:min-h-[400px]">
                         <?php if ($video_thumbnail) : ?>
-                            <img class="object-cover w-full h-auto max-h-[660px]" src="<?php echo $video_thumbnail['url'] ?>" alt="">
+                            <img class="object-cover w-full h-auto max-h-[660px]" width="600" height="660" src="<?php echo $video_thumbnail['url']; ?>" <?php if(isset($video_thumbnail['alt'])){echo 'alt="'.$video_thumbnail['alt'].'"';}; ?> loading="lazy" >
                         <?php endif; ?>
                     </div>
                 </div>
