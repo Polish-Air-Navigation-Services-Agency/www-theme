@@ -6,7 +6,6 @@ $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
 $description2 = $args['description2'];
-$video = $args['video'];
 $video_thumbnail = $args['video_thumbnail'];
 $overlapping_background = $args['overlapping_background'];
 
