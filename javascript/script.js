@@ -225,7 +225,9 @@ function test() {
 	document.addEventListener('scroll', function () {
 		if (initiIsElementVisible(tile)) {
 			tile.classList.replace('bg-white', 'bg-primary');
-			tile.classList.add('!text-white');
+			tile.classList.add('text-white');
+			tile.classList.add('[&>h3]:text-white');
+			tile.classList.add('[&>p]:text-white');
 			console.log('visible');
 		} else {
 			console.log('not visible');
