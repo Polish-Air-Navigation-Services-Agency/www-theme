@@ -10,24 +10,23 @@ $JOBS_INCREMENT_COUNT = 10;
 ?>
 
 <section class="bg-[#F6F8F9]">
-    <div class="container mx-auto pb-[100px]"  data-aos="fade" data-aos-delay="50">
-        
-            <?php if ($tiles && count($tiles)>0) :
-                if ($is_preview) {
-                    $tiles = array_slice($tiles, 0, 5);
-                }
-            ?>
+    <div class="container mx-auto pb-[100px]" data-aos="fade" data-aos-delay="50">
+
+        <?php if ($tiles && count($tiles) > 0) :
+            if ($is_preview) {
+                $tiles = array_slice($tiles, 0, 5);
+            }
+        ?>
             <div class="tiles-wrapper mb-10 md:mb-[60px]">
-                <?php foreach ($tiles as $key=>$tile) :
+                <?php foreach ($tiles as $key => $tile) :
                     $tileID = $key + 1;
-                    if ($tileID < 10){
+                    if ($tileID < 10) {
                         $tileID = '0' . $tileID;
                     }
                 ?>
-                    <div class="py-8 md:py-10 flex flex-col lg:flex-row justify-between border-b-[1px] border-b-[#BEBFBF]" 
-                        data-js-job-visible="<?php echo ($key < $JOBS_INCREMENT_COUNT) ? 'true' : 'false'; ?>"
-                    >
-                        
+                    <div class="py-8 md:py-10 flex flex-col lg:flex-row justify-between border-b-[1px] border-b-[#BEBFBF]"
+                        data-js-job-visible="<?php echo ($key < $JOBS_INCREMENT_COUNT) ? 'true' : 'false'; ?>">
+
                         <div class="flex gap-[26px]">
                             <span class="text-[30px] w-9 font-medium text-secondary"><?php echo $tileID; ?></span>
                             <div class="mb-5 lg:mb-0">
@@ -60,7 +59,7 @@ $JOBS_INCREMENT_COUNT = 10;
 
                         <div class="self-end lg:self-center">
                             <?php if ($tile['url']) : ?>
-                                <a href="<?php echo $tile['url']; ?>" class="group w-[160px] h-[50px] pl-[30px] pr-[70px] flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition-all duration-200 relative">
+                                <a href="<?php echo $tile['url']; ?>" class="group w-[160px] h-[50px] pl-[30px] pr-[70px] ml-[60px] lg:ml-0 flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition-all duration-200 relative">
                                     <?php esc_html_e('Apply', '_pansa'); ?>
                                     <svg class="absolute right-[26px] top-[16px] pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
                                         <path class="group-hover:stroke-primary" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -71,30 +70,29 @@ $JOBS_INCREMENT_COUNT = 10;
                     </div>
                 <?php endforeach; ?>
             </div>
-                <?php if ($is_preview) :
-                    $JOBS_PAGE_ID = 39;
-                ?>
-                    <a href="<?php echo get_permalink($JOBS_PAGE_ID); ?>" target="_blank" class="group mx-auto w-fit px-7 py-3 flex items-center justify-center gap-2.5 rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition duration-200 relative">
-                        <?php esc_html_e('Show all offers', '_pansa'); ?>
-                        <svg class="pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
-                            <path class="group-hover:stroke-primary transition duration-200" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                <?php elseif(count($tiles)>10) : ?>
-                    <button class="block mx-auto rounded-full px-5 py-3 font-medium border border-[#BEBFBF] hover:border-primary text-primary hover:text-white hover:bg-primary text-lg transition duration-200" 
-                        data-js-job="loadMore"
-                    >
-                        <?php esc_html_e('Show more', '_pansa'); ?>
-                    </button>
-                <?php endif; ?>
-
-            <?php else : ?>
-                <p class="mx-auto max-w-96 text-3xl md:text-4xl text-center text-textGray/40 font-medium">
-                    <?php esc_html_e('No offers', '_pansa'); ?>
-                </p>
+            <?php if ($is_preview) :
+                $JOBS_PAGE_ID = 39;
+            ?>
+                <a href="<?php echo get_permalink($JOBS_PAGE_ID); ?>" target="_blank" class="group mx-auto w-fit px-7 py-3 flex items-center justify-center gap-2.5 rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition duration-200 relative">
+                    <?php esc_html_e('Show all offers', '_pansa'); ?>
+                    <svg class="pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
+                        <path class="group-hover:stroke-primary transition duration-200" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            <?php elseif (count($tiles) > 10) : ?>
+                <button class="block mx-auto rounded-full px-5 py-3 font-medium border border-[#BEBFBF] hover:border-primary text-primary hover:text-white hover:bg-primary text-lg transition duration-200"
+                    data-js-job="loadMore">
+                    <?php esc_html_e('Show more', '_pansa'); ?>
+                </button>
             <?php endif; ?>
-        
 
-        
+        <?php else : ?>
+            <p class="mx-auto max-w-96 text-3xl md:text-4xl text-center text-textGray/40 font-medium">
+                <?php esc_html_e('No offers', '_pansa'); ?>
+            </p>
+        <?php endif; ?>
+
+
+
     </div>
 </section>
