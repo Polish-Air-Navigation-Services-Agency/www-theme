@@ -107,7 +107,7 @@ function initVideoPlayer() {
 		videoBtn.classList.add('opacity-0', 'pointer-events-none');
 
 		const iframe = document.createElement('iframe');
-		iframe.src = `${iframeUrl}?autoplay=1`;
+		iframe.src = `${iframeUrl}&autoplay=1`;
 		iframe.width = "560";
 		iframe.height = "315";
 		iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
