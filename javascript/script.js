@@ -219,6 +219,8 @@ function initiIsElementVisible(el) {
 
 function test() {
 	let tile = document.querySelector('.tile-wrapper');
+	console.log(tile);
+
 	document.body.addEventListener('scroll', function () {
 		if (initiIsElementVisible(tile)) {
 			tile.classList.add('visible');
