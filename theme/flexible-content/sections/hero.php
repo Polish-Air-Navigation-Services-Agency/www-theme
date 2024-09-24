@@ -20,7 +20,7 @@ if ($hero_background_mobile['url']) {
 <section class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
     <picture class="absolute inset-0 -z-10 object-cover !h-full w-full">
         <source media="(min-width:768px)" srcset="<?= $hero_bg_url ?>">
-        <img src="<?= $hero_bg_url_mobile ?>" class="w-full h-full object-cover" <?= $hero_background_mobile['alt'] ? 'alt="'.$hero_background_mobile['alt'] . '"' : '' ?> >
+        <img src="<?= $hero_bg_url_mobile ?>" class="w-full h-full object-cover" <?= $hero_background_mobile['alt'] ? 'alt="'.$hero_background_mobile['alt'] . '"' : '' ?> loading="eager">
     </picture>
 
     <div class="decoration absolute bottom-0 left-0 z-[-1]">
