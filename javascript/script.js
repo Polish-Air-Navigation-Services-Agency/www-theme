@@ -229,7 +229,10 @@ function test() {
 			tile.children[1].classList.replace('text-textGray', 'text-white');
 			tile.children[2].classList.replace('text-textGray', 'text-white');
 		} else {
-			console.log('not visible');
+			tile.classList.replace('bg-primary', 'bg-white');
+			tile.children[0].style.background = '#FFF';
+			tile.children[1].classList.replace('text-white', 'text-textGray');
+			tile.children[2].classList.replace('text-white', 'text-textGray');
 		}
 	});
 }
