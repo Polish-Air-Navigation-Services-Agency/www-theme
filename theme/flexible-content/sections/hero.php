@@ -3,6 +3,7 @@
 /** Template to display 'Baner' - hero */
 
 $hero_background = $args['hero_background'];
+$hero_background_mobile = $args['hero_background_mobile'];
 $small_title = $args['small_title'];
 $hero_text = $args['hero_text'];
 $description = $args['description'];
@@ -10,12 +11,21 @@ $description = $args['description'];
 if ($hero_background['url']) {
     $hero_bg_url = $hero_background['url'];
 }
+
+if ($hero_background_mobile['url']) {
+    $hero_bg_url_mobile = $hero_background_mobile['url'];
+}
 ?>
 
 <section class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
-    <?php if (isset($hero_bg_url)) :
+    <?php if (isset($hero_bg_url) && !isset($hero_bg_url_mobile)) :
         echo smoothh_img_responsive($hero_background, 'absolute inset-0 -z-10 object-cover !h-full w-full hidden md:block', array(1800, 600), 'eager');
         echo smoothh_img_responsive($hero_background, 'absolute inset-0 -z-10 object-cover !h-full w-full md:hidden', array(768, 600), 'eager');
+    endif; ?>
+
+    <?php if (isset($hero_bg_url) && isset($hero_bg_url_mobile)) :
+        echo smoothh_img_responsive($hero_background, 'absolute inset-0 -z-10 object-cover !h-full w-full hidden md:block', array(1800, 600), 'eager');
+        echo smoothh_img_responsive($hero_background_mobile, 'absolute inset-0 -z-10 object-cover !h-full w-full md:hidden', array(768, 600), 'eager');
     endif; ?>
 
     <div class="decoration absolute bottom-0 left-0 z-[-1]">
