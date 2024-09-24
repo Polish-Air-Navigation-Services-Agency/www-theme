@@ -18,15 +18,10 @@ if ($hero_background_mobile['url']) {
 ?>
 
 <section class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
-    <?php if (isset($hero_bg_url) && !isset($hero_bg_url_mobile)) :
-        echo smoothh_img_responsive($hero_background, 'absolute inset-0 -z-10 object-cover !h-full w-full hidden md:block', array(1800, 600), 'eager');
-        echo smoothh_img_responsive($hero_background, 'absolute inset-0 -z-10 object-cover !h-full w-full md:hidden', array(768, 600), 'eager');
-    endif; ?>
-
-    <?php if (isset($hero_bg_url) && isset($hero_bg_url_mobile)) :
-        echo smoothh_img_responsive($hero_background, 'absolute inset-0 -z-10 object-cover !h-full w-full hidden md:block', array(1800, 600), 'eager');
-        echo smoothh_img_responsive($hero_background_mobile, 'absolute inset-0 -z-10 object-cover !h-full w-full md:hidden', array(768, 600), 'eager');
-    endif; ?>
+    <picture>
+        <source media="(min-width:768px)" srcset="<?= $hero_bg_url ?>">
+        <img src="<?= $hero_bg_url_mobile ?>" class="absolute inset-0 -z-10 object-cover !h-full w-full md:hidden" <?= $hero_background_mobile['alt'] ? 'alt="'.$hero_background_mobile['alt'] . "'" : '' ?> >
+    </picture>
 
     <div class="decoration absolute bottom-0 left-0 z-[-1]">
         <svg xmlns="http://www.w3.org/2000/svg" width="138" height="417" viewBox="0 0 138 417" fill="none">
