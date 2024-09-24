@@ -37,7 +37,7 @@ $tiles = $args['tiles'];
                                 <h3 class="mb-[9px] text-[30px] font-medium text-textGray group-hover:text-white leading-[36px]"><?php echo $tile['title']; ?></h3>
                             <?php endif; ?>
 
-                            <?php if ($tile['descripion']) : ?>
+                            <?php if ($tile['description']) : ?>
                                 <p class="text-base text-textGray group-hover:text-white leading-[24px]"><?php echo $tile['description']; ?></p>
                             <?php endif; ?>
                         </div>
