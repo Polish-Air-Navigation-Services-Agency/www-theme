@@ -64,11 +64,11 @@ html {
 }
 
 #primary-menu li {
-	@apply relative w-fit lg:w-auto hover:text-secondary transition duration-200;
+	@apply relative w-fit lg:w-auto transition duration-200;
 }
 
 #primary-menu a {
-	@apply uppercase after:content-[''] after:w-[20px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px] hover:after:bg-secondary;
+	@apply uppercase hover:text-secondary after:content-[''] after:w-[20px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px] hover:after:bg-secondary;
 }
 
 .form-basic input,
