@@ -221,9 +221,12 @@ function test() {
 	let tile = document.querySelector(
 		'[data-js-tile-numbered="tile-numbered"]'
 	);
+
 	console.log(tile);
 
 	document.body.addEventListener('scroll', function () {
+		console.log('scrolling');
+
 		if (initiIsElementVisible(tile)) {
 			tile.classList.add('visible');
 			console.log('visible');
