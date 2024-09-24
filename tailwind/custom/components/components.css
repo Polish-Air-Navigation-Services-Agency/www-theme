@@ -67,8 +67,12 @@ html {
 	@apply relative w-fit lg:w-auto;
 }
 
-#primary-menu a {
+.home #primary-menu a {
 	@apply uppercase hover:text-secondary after:content-[''] after:w-[20px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px] hover:after:bg-secondary transition duration-200;
+}
+
+#primary-menu a {
+	@apply uppercase text-primary hover:text-secondary after:content-[''] after:w-[20px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px] hover:after:bg-secondary transition duration-200;
 }
 
 .form-basic input,
