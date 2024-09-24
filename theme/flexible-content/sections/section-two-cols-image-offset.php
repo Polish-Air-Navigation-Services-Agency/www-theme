@@ -40,10 +40,12 @@ $image = $args['image'];
         </div>
     </div>
 
-    <?php if (isset($image)) : ?>
+    <?php if (isset($image['url'])) : ?>
         <div class="col-span-full row-start-1" data-aos="fade" data-aos-delay="50">
             <div class="container lg:pt-[180px]">
-                <img class="-mt-10 lg:mt-0 ml-auto w-full lg:w-1/2 relative max-h-[400px] lg:max-h-[690px] object-cover" src="<?php echo $image; ?>" alt="section_image">
+                <?php 
+                    echo smoothh_img_responsive($image, '-mt-10 lg:mt-0 ml-auto w-full lg:w-1/2 relative max-h-[400px] lg:max-h-[690px] object-cover', array(600, 690), 'lazy');
+                 ?>
             </div>
         </div>
     <?php endif; ?>

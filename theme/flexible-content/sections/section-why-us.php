@@ -46,7 +46,9 @@ if ($video_thumbnail['url']) {
             </div>
             <div class="absolute inset-0">
                 <?php if (isset($video_thumbnail_url)) : ?>
-                    <img class="object-cover w-full h-full" src="<?php echo $video_thumbnail_url ?>" alt="">
+                    <?php 
+                        echo smoothh_img_responsive($video_thumbnail, 'object-cover w-full h-full', array(1300, 640), 'lazy');
+                    ?>
                 <?php endif; ?>
             </div>
         </div>

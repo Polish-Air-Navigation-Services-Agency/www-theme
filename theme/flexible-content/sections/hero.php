@@ -13,9 +13,9 @@ if ($hero_background['url']) {
 ?>
 
 <section class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
-    <?php if (isset($hero_bg_url)) : ?>
-        <img src="<?php echo $hero_bg_url ?>" alt="background_image" class="absolute inset-0 z-[-1] object-cover !h-full w-full">
-    <?php endif; ?>
+    <?php if (isset($hero_bg_url)) :
+        echo smoothh_img_responsive($hero_background, 'absolute inset-0 -z-10 object-cover !h-full w-full', array(1800, 600), 'eager');
+    endif; ?>
 
     <div class="decoration absolute bottom-0 left-0 z-[-1]">
         <svg xmlns="http://www.w3.org/2000/svg" width="138" height="417" viewBox="0 0 138 417" fill="none">

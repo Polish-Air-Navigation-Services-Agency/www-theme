@@ -60,5 +60,7 @@ if ($image['url']) {
             </div>
         </div>
     </div>
-    <img src="<?php echo $image_url; ?>" alt="image" class="w-full">
+    <?php if($image_url){
+        echo smoothh_img_responsive($image, 'w-full', array(1440, 500), 'lazy');
+    } ?>
 </section>

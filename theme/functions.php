@@ -208,3 +208,52 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+
+function smoothh_img_responsive($img, $classes, $dimensions, $loading = '')
+{
+	if (!isset($img) || !isset($img['url']) || !isset($img['ID'])) {
+		return '';
+	}
+	$url = $img['url'];
+	$ID = $img['ID'];
+	$alt = isset($img['alt']) ? $img['alt'] : '';
+
+	$default_size = 'full';
+	$dimensions_string = '';
+	if (isset($dimensions) && count($dimensions) == 2) {
+		$dimensions_string = 'width="' . $dimensions[0] . '" height="' . $dimensions[1] . '" ';
+		$default_size = get_best_fit_image_size($dimensions[0]);
+	}
+
+	$srcset_string = 'srcset="' . wp_get_attachment_image_srcset($ID, $default_size) . '" ';
+	$sizes_string = 'sizes="' . wp_get_attachment_image_sizes($ID, $default_size, wp_get_attachment_metadata($ID)) . '" ';
+	$alt_string = $alt == '' ? '' : ('alt="' . $alt . '" ');
+	$loading_string = '';
+	if ($loading != '') {
+		$loading_string = 'loading="' . $loading . '" ';
+	}
+
+	return '<img class="' . $classes . '" ' . $dimensions_string . 'src="' . $url . '" ' . $srcset_string . $sizes_string . $alt_string . $loading_string . '/>';
+}
+
+function get_best_fit_image_size($custom_width)
+{
+	$image_sizes = array(
+		'thumbnail' => 150,
+		'medium' => 300,
+		'medium_large' => 768,
+		'large' => 1024,
+	);
+
+	$best_fit_size = 'full';
+
+	foreach ($image_sizes as $size => $width) {
+		if ($width > $custom_width) {
+			break;
+		}
+		$best_fit_size = $size;
+	}
+
+	return $best_fit_size;
+}
