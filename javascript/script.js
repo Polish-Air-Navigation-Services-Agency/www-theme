@@ -222,16 +222,12 @@ function test() {
 		'[data-js-tile-numbered="tile-numbered"]'
 	);
 
-	console.log(tile);
-
 	document.addEventListener('scroll', function () {
-		console.log('scrolling');
-
 		if (initiIsElementVisible(tile)) {
-			tile.classList.add('visible');
+			tile.classList.add('!bg-primary');
 			console.log('visible');
 		} else {
-			console.log('else');
+			console.log('not visible');
 		}
 	});
 }
