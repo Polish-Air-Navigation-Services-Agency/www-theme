@@ -28,21 +28,17 @@ $tiles = $args['tiles'];
                     $tileID++;
                 ?>
                     <?php if ($tile) : ?>
-                        <div class="tile-wrapper group w-full lg:w-[355px] px-5 py-[30px] flex flex-col transition ease duration-200 <?php if ($tileID == 1) echo 'bg-primary';
-                                                                                                                                        else echo 'bg-white hover:bg-primary'; ?>">
+                        <div class="tile-wrapper group w-full lg:w-[355px] px-5 py-[30px] flex flex-col bg-white hover:bg-primary transition ease duration-200">
                             <?php if ($tile['number']) : ?>
-                                <p class="size-[92px] mb-[90px] self-end flex flex-col justify-center items-center text-[60px] text-primary rounded-full leading-[72px] font-medium  <?php if ($tileID == 1) echo 'bg-secondary rounded-full';
-                                                                                                                                                                                        else echo 'text-primary group-hover:bg-secondary'; ?>"><?php echo $tile['number']; ?></p>
+                                <p class="size-[92px] mb-[90px] self-end flex flex-col justify-center items-center text-[60px] text-primary rounded-full leading-[72px] font-medium group-hover:bg-secondary"><?php echo $tile['number']; ?></p>
                             <?php endif; ?>
 
                             <?php if ($tile['title']) : ?>
-                                <h3 class="mb-[9px] text-[30px] font-medium <?php if ($tileID == 1) echo 'text-white';
-                                                                            else echo 'text-textGray group-hover:text-white'; ?> leading-[36px]"><?php echo $tile['title']; ?></h3>
+                                <h3 class="mb-[9px] text-[30px] font-medium text-textGray group-hover:text-white leading-[36px]"><?php echo $tile['title']; ?></h3>
                             <?php endif; ?>
 
-                            <?php if ($tile['description']) : ?>
-                                <p class="text-base <?php if ($tileID == 1) echo 'text-white';
-                                                        else echo 'text-textGray group-hover:text-white'; ?> leading-[24px]"><?php echo $tile['description']; ?></p>
+                            <?php if ($tile['descripion']) : ?>
+                                <p class="text-base text-textGray group-hover:text-white leading-[24px]"><?php echo $tile['description']; ?></p>
                             <?php endif; ?>
                         </div>
                     <?php endif; ?>
