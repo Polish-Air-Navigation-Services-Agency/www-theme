@@ -109,6 +109,10 @@ html {
 	@apply opacity-100 pointer-events-auto;
 }
 
+.form-with-confirm-wrapper{
+	@apply relative
+}
+
 .tooltip span {
 	@apply inline text-[14px] leading-4;
 }

@@ -21,21 +21,23 @@ $contact_info = $args['contact_info'];
         <div class="container">
             <div class="cols-wrapper flex basis flex-col-reverse lg:flex-row">
                 <div class="lg:basis-1/2 bg-white py-10 px-5 lg:px-[60px]">
-                    <?php if ($header) : ?>
-                        <h2 class="mb-7 text-3xl font-medium text-primary"><?php echo $header; ?></h2>
-                    <?php endif; ?>
-
+                    
                     <div class="form-contact-wrapper form-with-confirm-wrapper text-textGray">
+
+                        <?php if ($header) : ?>
+                            <h2 class="mb-7 text-3xl font-medium text-primary"><?php echo $header; ?></h2>
+                        <?php endif; ?>
+
                         <?php echo do_shortcode('[contact-form-7 id="96c400d" title="Kontakt"]'); ?>
                         
-                        <div class="bg-white form-confirmation pointer-events-none opacity-0 z-10 absolute inset-0 flex flex-col items-center justify-center transition duration-300 text-white">
+                        <div class="form-confirmation bg-white  pointer-events-none opacity-0 z-10 absolute inset-0 flex flex-col items-center justify-center transition duration-300 text-primary">
                             <svg class="max-w-full mb-4" width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="62.5" cy="62.5" r="60.5" stroke="#ffffff" stroke-width="4"></circle>
-                                <path d="M38.5713 62.5L54.2856 77.8571L85.7141 47.1428" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <circle cx="62.5" cy="62.5" r="60.5" stroke="#60B8D1" stroke-width="4"></circle>
+                                <path d="M38.5713 62.5L54.2856 77.8571L85.7141 47.1428" stroke="#60B8D1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
-                            <h3 class="text-center text-2xl md:leading-10 md:!text-[40px] max-w-[460px] font-bold mb-5"><?php esc_html_e('Thank you for sending your message', '_pansa'); ?></h3>
-                            <p class="text-center text-base max-w-[460px] mb-10 md:mb-16"><?php esc_html_e('Our experts are already verifying your message, we will get back to you soon with the information you need', '_pansa'); ?></p>
-                            <button data-js-form-reset="form-contact-wrapper" class="w-full max-w-[520px] border-none !bg-white hover:!bg-secondary hover:!text-white transition-all duration-200 !text-foreground h-[55px] !px-5 xl:!px-12 !rounded-[15px] font-semibold !flex items-center justify-center">
+                            <h3 class="text-center text-2xl md:leading-10 md:!text-[40px] max-w-[460px] font-semibold mb-5"><?php esc_html_e('Thank you for sending your message', '_pansa'); ?></h3>
+                            <p class="text-center text-base max-w-[460px] mb-10 md:mb-16"><?php esc_html_e('We will get back to you soon.', '_pansa'); ?></p>
+                            <button data-js-form-reset="form-contact-wrapper" class="max-w-[520px] border border-primary bg-primary hover:!bg-white text-white hover:text-primary transition-all duration-200 px-5 xl:!px-12 py-3 rounded-full font-semibold !flex items-center justify-center">
                                 <?php esc_html_e('Go back to form', '_pansa'); ?>
                             </button>
                         </div>
@@ -45,8 +47,8 @@ $contact_info = $args['contact_info'];
                 <div class="lg:basis-1/2 lg:pl-[100px] mb-10 lg:mb-0">
 
                     <?php if ($image_url) : ?>
-                        <div class="relative w-fit mb-3">
-                            <?= pansa_img_responsive($image, 'w-full min-[430px]:max-w-[315px] object-cover', array(480, 480), 'lazy'); ?>
+                        <div class="relative mb-3 min-[430px]:max-w-[315px]">
+                            <img src="<?= $image_url ?>" class="w-full object-cover" <?= $image['alt'] ? 'alt="'.$image['alt'] . '"' : '' ?> loading="lazy">
                             <svg class="hidden min-[430px]:block absolute left-full top-1/2 -translate-y-1/2 max-h-[80%]" width="72" height="284" viewBox="1 0 85 284" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M72 142C72 84.0755 43.8577 32.7242 0.5 0.872803V283.127C43.8577 251.276 72 199.924 72 142Z" fill="#60B8D1"/>
                             </svg>
