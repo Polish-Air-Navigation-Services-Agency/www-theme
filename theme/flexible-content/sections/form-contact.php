@@ -46,7 +46,7 @@ $contact_info = $args['contact_info'];
 
                     <?php if ($image_url) : ?>
                         <div class="relative w-fit mb-3">
-                            <?= pansa_img_responsive($image, 'w-full min-w-[430px]:max-w-[315px] object-cover', array(480, 480), 'lazy'); ?>
+                            <?= pansa_img_responsive($image, 'w-full min-[430px]:max-w-[315px] object-cover', array(480, 480), 'lazy'); ?>
                             <svg class="hidden min-[430px]:block absolute left-full top-1/2 -translate-y-1/2 max-h-[80%]" width="72" height="284" viewBox="1 0 85 284" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M72 142C72 84.0755 43.8577 32.7242 0.5 0.872803V283.127C43.8577 251.276 72 199.924 72 142Z" fill="#60B8D1"/>
                             </svg>
