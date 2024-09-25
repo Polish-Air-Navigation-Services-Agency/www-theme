@@ -12,7 +12,7 @@ $overlapping_background = $args['overlapping_background'];
 
 ?>
 
-<section class="relative w-full bg-primary pt-[140px] <?php echo ($overlapping_background) ? 'translate-y-[-100px] mb-[-100px]' : '' ?> ">
+<section class="relative w-full bg-primary pt-[140px] overflow-hidden <?php echo ($overlapping_background) ? 'translate-y-[-100px] mb-[-100px]' : '' ?> ">
     <?php if ($decoration) : ?>
         <div class="decoration absolute top-0 left-1/2 -translate-x-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" width="150" height="75" viewBox="0 0 150 75" fill="none">
