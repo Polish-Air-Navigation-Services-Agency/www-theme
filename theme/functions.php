@@ -220,7 +220,7 @@ function pansa_remove_wp_block_library_css(){
 }
 add_action( 'wp_enqueue_scripts', 'pansa_remove_wp_block_library_css' );
 
-$name = 'extra-wide'; $width = '1920px'; $height = '900px'; $crop = true;
+$name = 'extra-wide'; $width = '2048px'; $height = '900px'; $crop = true;
 add_image_size($name, $width, $height, $crop);
 
 function pansa_img_responsive($img, $classes, $dimensions, $loading = '')
@@ -257,7 +257,7 @@ function get_best_fit_image_size($custom_width)
 		'medium' => 300,
 		'medium_large' => 768,
 		'large' => 1024,
-		'extra-wide' => 1920,
+		'extra-wide' => 2048,
 	);
 
 	$best_fit_size = 'full';
