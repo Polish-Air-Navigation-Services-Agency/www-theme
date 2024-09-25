@@ -16,7 +16,7 @@ $location_text = $args['location_text'];
                         <path d="M32.3336 1.76186L11.3812 20.8095V30.3333L17.0955 24.619M1.85742 14.1428L32.3336 1.69519L27.0003 29.3809L1.85742 14.1428Z" stroke="#60B8D1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     <div>
-                        <h3 class="text-primary text-3xl font-medium mb-3"><?php __('Text or call us', '_pansa'); ?></h3>
+                        <h3 class="text-primary text-3xl font-medium mb-3"><?= __('Text or call us', '_pansa'); ?></h3>
                         <div class="text-textGray font-semibold text-xl prose-a:transition prose-a:duration-200 hover:prose-a:text-secondary">
                             <?= $contact_text; ?>
                         </div>
@@ -33,7 +33,7 @@ $location_text = $args['location_text'];
 
 
                     <div>
-                        <h3 class="text-primary text-3xl font-medium mb-3"><?php __('Our location', '_pansa'); ?></h3>
+                        <h3 class="text-primary text-3xl font-medium mb-3"><?= __('Our location', '_pansa'); ?></h3>
                         <div class="text-textGray font-semibold text-xl">
                             <?= $location_text; ?>
                         </div>
