@@ -71,7 +71,7 @@ html {
 	@apply uppercase hover:text-secondary after:content-[''] after:w-[20px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px] hover:after:!bg-secondary transition duration-200 after:transition after:duration-200;
 }
 
-.form-basic input,
+.form-basic input:not([type="checkbox"]),
 .form-basic textarea {
 	@apply px-0 min-w-0 w-full h-[50px] border border-white border-b-[#BEBFBF] hover:border-b-primary  focus:border-b-primary outline-none transition-all duration-200 bg-white placeholder:text-primary text-primary text-base;
 }
@@ -93,7 +93,11 @@ html {
 }
 
 .form-basic input[type="checkbox"] {
-	@apply mt-[-12px];
+	@apply mt-[5px];
+}
+
+.form-basic .wpcf7-acceptance label{
+	@apply flex gap-2.5 items-start
 }
 
 .form-basic textarea {
