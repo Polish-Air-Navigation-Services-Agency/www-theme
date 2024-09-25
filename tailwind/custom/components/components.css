@@ -202,14 +202,14 @@ body .ham .line {
 }
 
 @media not all and (min-width: 1180px) {
-	[data-js-tile-numbered="tile-numbered"]:not(.tile-visible:nas(~ .tile-visible)){
+	[data-js-tile-numbered="tile-numbered"]:not(.tile-visible:has(~ .tile-visible)){
 		@apply bg-primary 
 	}
-	[data-js-tile-numbered="tile-numbered"]:not(.tile-visible:nas(~ .tile-visible)) span {
+	[data-js-tile-numbered="tile-numbered"]:not(.tile-visible:has(~ .tile-visible)) span {
 		@apply bg-secondary
 	}
-	[data-js-tile-numbered="tile-numbered"]:not(.tile-visible:nas(~ .tile-visible)) h3,
-	[data-js-tile-numbered="tile-numbered"]:not(.tile-visible:nas(~ .tile-visible)) p {
+	[data-js-tile-numbered="tile-numbered"]:not(.tile-visible:has(~ .tile-visible)) h3,
+	[data-js-tile-numbered="tile-numbered"]:not(.tile-visible:has(~ .tile-visible)) p {
 		@apply text-white
 	}
 }
