@@ -54,7 +54,7 @@ $contact_info = $args['contact_info'];
                     <p><?= $position ?></p>
                     <?php endif; ?>
 
-                    <?php if ($contact_info){ echo $contact_info} ?>
+                    <?php if ($contact_info){ echo $contact_info ;} ?>
 
                 </div>
             </div>
