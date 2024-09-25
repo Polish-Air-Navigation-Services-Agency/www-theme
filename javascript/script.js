@@ -14,7 +14,6 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import AOS from 'aos';
 import { CountUp } from 'countup.js';
 
-AOS.init();
 AOS.init({
 	disable: false,
 	startEvent: 'DOMContentLoaded',
@@ -190,49 +189,28 @@ function initShowMoreJobs() {
 	}
 }
 
-function initiIsElementVisible(el) {
-	if (el) {
-		let rect = el.getBoundingClientRect(),
-			vWidth = window.innerWidth || document.documentElement.clientWidth,
-			vHeight =
-				window.innerHeight || document.documentElement.clientHeight,
-			efp = function (x, y) {
-				return document.elementFromPoint(x, y);
-			};
+function initiIsElementVisible() {
+	const tiles = document.querySelectorAll('[data-js-tile-numbered="tile-numbered"]');
 
-		if (
-			rect.right < 0 ||
-			rect.bottom < 0 ||
-			rect.left > vWidth ||
-			rect.top > vHeight
-		)
-			return false;
+	if (!tiles.length) return
 
-		return (
-			el.contains(efp(rect.left, rect.top)) ||
-			el.contains(efp(rect.right, rect.top)) ||
-			el.contains(efp(rect.right, rect.bottom)) ||
-			el.contains(efp(rect.left, rect.bottom))
-		);
-	}
-}
-
-function test() {
-	let tile = document.querySelector(
-		'[data-js-tile-numbered="tile-numbered"]'
-	);
-
-	document.addEventListener('scroll', function () {
-		if (initiIsElementVisible(tile) && window.innerWidth < 1024) {
-			tile.classList.replace('bg-white', 'bg-primary');
-			tile.children[0].style.background = '#60B8D1';
-			tile.children[1].classList.replace('text-textGray', 'text-white');
-			tile.children[2].classList.replace('text-textGray', 'text-white');
+	const observerOptions = {
+	  root: null, 
+	  rootMargin: '0px',
+	  threshold: 0.2
+	};
+  
+	const observerCallback = (entries) => {
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  entry.target.classList.add('tile-visible');
 		} else {
-			tile.classList.replace('bg-primary', 'bg-white');
-			tile.children[0].style.background = '#FFF';
-			tile.children[1].classList.replace('text-white', 'text-textGray');
-			tile.children[2].classList.replace('text-white', 'text-textGray');
+		  entry.target.classList.remove('tile-visible');
 		}
-	});
+	  });
+	};
+  
+	const observer = new IntersectionObserver(observerCallback, observerOptions);
+  
+	tiles.forEach(tile => observer.observe(tile));
 }

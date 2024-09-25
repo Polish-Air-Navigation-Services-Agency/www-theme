@@ -200,3 +200,16 @@ body .ham .line {
 .post-edit-link {
 	@apply fixed z-50 left-5 top-20 rounded-lg bg-white px-6 py-4;
 }
+
+@media not all and (min-width: 1180px) {
+	[data-js-tile-numbered="tile-numbered"].tile-visible {
+		@apply bg-primary 
+	}
+	[data-js-tile-numbered="tile-numbered"].tile-visible span {
+		@apply bg-secondary
+	}
+	[data-js-tile-numbered="tile-numbered"].tile-visible h3,
+	[data-js-tile-numbered="tile-numbered"].tile-visible p {
+		@apply text-white
+	}
+}
