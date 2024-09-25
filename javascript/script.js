@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	initTileSwipers();
 	initShowMoreJobs();
 	initiIsElementVisible();
-	test();
 });
 
 function initMenuCollapse() {
@@ -197,7 +196,7 @@ function initiIsElementVisible() {
 	const observerOptions = {
 	  root: null, 
 	  rootMargin: '0px 0px 50px 0px',
-	  threshold: 0.1
+	  threshold: 1
 	};
   
 	const observerCallback = (entries) => {
