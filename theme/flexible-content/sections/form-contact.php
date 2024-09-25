@@ -64,7 +64,7 @@ $contact_info = $args['contact_info'];
                     <?php endif; ?>
 
                     <?php if ($contact_info) : ?>
-                    <div class="text-textGray font-semibold text-xl prose-a:transition prose-a:duration-200 prose-a:hover:text-secondary">
+                    <div class="text-textGray font-semibold text-xl prose-a:transition prose-a:duration-200 hover:prose-a:text-secondary">
                     <?= $contact_info ?>
                     </div>
                     <?php endif; ?>
