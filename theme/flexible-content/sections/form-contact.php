@@ -42,12 +42,12 @@ $contact_info = $args['contact_info'];
                     </div>
                 </div>
 
-                <div class="lg:basis-1/2 lg:pl-[100px]">
+                <div class="lg:basis-1/2 lg:pl-[100px] mb-10 lg:mb-0">
 
                     <?php if ($image_url) : ?>
-                        <div class="relative mb-3">
-                            <?= pansa_img_responsive($image, 'w-full max-w-[315px]', array(315, 350), 'lazy'); ?>
-                            <svg class="hidden lg:block absolute left-full top-1/2 translate-y-1/2 max-h-[80%]" width="72" height="284" viewBox="0 0 72 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="relative w-fit mb-3">
+                            <?= pansa_img_responsive($image, 'w-full min-w-[430px]:max-w-[315px] object-cover', array(480, 480), 'lazy'); ?>
+                            <svg class="hidden min-w-[430px]:block absolute left-full top-1/2 -translate-y-1/2 max-h-[80%]" width="72" height="284" viewBox="1 0 85 284" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M72 142C72 84.0755 43.8577 32.7242 0.5 0.872803V283.127C43.8577 251.276 72 199.924 72 142Z" fill="#60B8D1"/>
                             </svg>
                         </div>
@@ -58,7 +58,7 @@ $contact_info = $args['contact_info'];
                     <?php endif; ?>
 
                     <?php if ($position) : ?>
-                    <p class="text-lg text-secondary font-medium pb-2.5 relative after:absolute after:block after:content-[''] after:h-1 after:bg-secondary after:bottom-0 after:w-[61px] after:rounded-full"><?= $position ?></p>
+                    <p class="text-lg text-secondary font-medium pb-2.5 mb-2.5 relative after:absolute after:block after:content-[''] after:h-1 after:bg-secondary after:bottom-0 after:w-[61px] after:rounded-full"><?= $position ?></p>
                     <?php endif; ?>
 
                     <?php if ($contact_info) : ?>
