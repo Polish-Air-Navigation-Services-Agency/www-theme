@@ -52,7 +52,7 @@ if ($hero_background_mobile['url']) {
             </svg>
         </a>
 
-        <a href="#o_nas" class="group block cursor-pointer absolute bottom-6 left-1/2 -translate-x-1/2">
+        <a href="#o_nas" aria-label="scroll down" class="group block cursor-pointer absolute bottom-6 left-1/2 -translate-x-1/2">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="48" viewBox="0 0 50 48" fill="none">
                 <path class="group-hover:stroke-primary transition duration-200" d="M18.4003 32.9004L25 39.5001M25 39.5001L31.5997 32.9004M25 39.5001L24.9999 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>

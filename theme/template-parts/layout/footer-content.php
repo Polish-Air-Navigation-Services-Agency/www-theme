@@ -72,7 +72,7 @@ $social_links = get_field('social_links', 'option');
 						<ul class="flex gap-3 justify-start lg:justify-end">
 							<?php if ($social_links['facebook']) : ?>
 								<li class="shrink-0 group">
-									<a class="block transition duration-200" <?php if ($social_links['facebook'] != ' ') : ?> href="<?php echo esc_attr($social_links['facebook']) ?>" target="_blank" <?php endif; ?>>
+									<a class="block transition duration-200" <?php if ($social_links['facebook'] != ' ') : ?> href="<?php echo esc_attr($social_links['facebook']) ?>" target="_blank" aria-label="Facebook" <?php endif; ?>>
 										<span class="hidden">Facebook</span>
 										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
 											<rect class="group-hover:!fill-[#488ca0] transition duration-200" width="34" height="34" rx="17" fill="#60B8D1" />
@@ -83,7 +83,7 @@ $social_links = get_field('social_links', 'option');
 							<?php endif; ?>
 							<?php if ($social_links['linkedin']) : ?>
 								<li class="shrink-0 group">
-									<a class="block transition duration-200" <?php if ($social_links['linkedin'] != ' ') : ?> href="<?php echo esc_attr($social_links['linkedin']) ?>" target="_blank" <?php endif; ?>>
+									<a class="block transition duration-200" <?php if ($social_links['linkedin'] != ' ') : ?> href="<?php echo esc_attr($social_links['linkedin']) ?>" target="_blank" aria-label="linkedin" <?php endif; ?>>
 										<span class="hidden">Linkedin</span>
 										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
 											<rect class="group-hover:!fill-[#488ca0] transition duration-200" width="34" height="34" rx="17" fill="#60B8D1" />
@@ -94,7 +94,7 @@ $social_links = get_field('social_links', 'option');
 							<?php endif; ?>
 							<?php if ($social_links['x']) : ?>
 								<li class="shrink-0 group">
-									<a class="block transition duration-200" <?php if ($social_links['x'] != ' ') : ?> href="<?php echo esc_attr($social_links['x']) ?>" target="_blank" <?php endif; ?>>
+									<a class="block transition duration-200" <?php if ($social_links['x'] != ' ') : ?> href="<?php echo esc_attr($social_links['x']) ?>" target="_blank"  aria-label="x" <?php endif; ?>>
 										<span class="hidden">X</span>
 										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
 											<rect class="group-hover:!fill-[#488ca0] transition duration-200" width="34" height="34" rx="17" fill="#60B8D1" />
@@ -105,7 +105,7 @@ $social_links = get_field('social_links', 'option');
 							<?php endif; ?>
 							<?php if ($social_links['instagram']) : ?>
 								<li class="shrink-0 group">
-									<a class="block transition duration-200" <?php if ($social_links['instagram'] != ' ') : ?> href="<?php echo esc_attr($social_links['instagram']) ?>" target="_blank" <?php endif; ?>>
+									<a class="block transition duration-200" <?php if ($social_links['instagram'] != ' ') : ?> href="<?php echo esc_attr($social_links['instagram']) ?>" target="_blank" aria-label="instagram" <?php endif; ?>>
 										<span class="hidden">Instagram</span>
 										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
 											<rect class="group-hover:!fill-[#488ca0] transition duration-200" width="34" height="34" rx="17" fill="#60B8D1" />
@@ -116,7 +116,7 @@ $social_links = get_field('social_links', 'option');
 							<?php endif; ?>
 							<?php if ($social_links['youtube']) : ?>
 								<li class="shrink-0 group">
-									<a class="block transition duration-200" <?php if ($social_links['youtube'] != ' ') : ?> href="<?php echo esc_attr($social_links['youtube']) ?>" target="_blank" <?php endif; ?>>
+									<a class="block transition duration-200" <?php if ($social_links['youtube'] != ' ') : ?> href="<?php echo esc_attr($social_links['youtube']) ?>" target="_blank" aria-label="youtube" <?php endif; ?>>
 										<span class="hidden">YouTube</span>
 										<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
 											<rect class="group-hover:!fill-[#488ca0] transition duration-200" width="34" height="34" rx="17" fill="#60B8D1" />

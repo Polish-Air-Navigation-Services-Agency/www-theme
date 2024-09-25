@@ -20,11 +20,13 @@ $tiles = $args['tiles'];
             <?php endif; ?>
             <div class="hidden shrink-0 md:flex gap-6 self-end">
                 <button class="swiper-btn-default" data-js="swiper-prev">
+                    <span class="hidden">Prev</span>
                     <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.4658 18.5969L1.66629 9.79733M1.66629 9.79733L10.4658 0.997789M1.66629 9.79733L23.1325 9.79728" stroke="#0F304D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
                 <button class="swiper-btn-default" data-js="swiper-next">
+                    <span class="hidden">Next</span>
                     <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5342 18.5969L23.3337 9.79733M23.3337 9.79733L14.5342 0.997789M23.3337 9.79733L1.86751 9.79728" stroke="#0F304D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
