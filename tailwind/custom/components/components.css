@@ -104,6 +104,11 @@ html {
 	@apply py-4 h-[100px];
 }
 
+.form-with-confirm-wrapper:has(.wpcf7-acceptance-as-validation.sent)
+	.form-confirmation {
+	@apply opacity-100 pointer-events-auto;
+}
+
 .tooltip span {
 	@apply inline text-[14px] leading-4;
 }

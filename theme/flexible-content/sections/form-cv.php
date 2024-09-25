@@ -43,7 +43,7 @@ if ($image['url']) {
                         <div class="form-cv-wrapper form-with-confirm-wrapper p-[40px_20px] lg:p-[40px_60px] bg-white text-textGray shadow-md lg:shadow-none">
                             <p class="mb-[30px] text-[30px] leading-[36px] font-medium"> <?php esc_html_e('Send your CV', '_pansa'); ?></p>
                             <?php echo do_shortcode('[contact-form-7 id="f8be224" title="CV"]'); ?>
-                            <div class="form-confirmation pointer-events-none opacity-0 z-10 absolute inset-0 flex flex-col items-center justify-center transition duration-300 text-white">
+                            <div class="form-confirmation bg-white pointer-events-none opacity-0 z-10 absolute inset-0 flex flex-col items-center justify-center transition duration-300 text-white">
                                 <svg class="max-w-full mb-4" width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="62.5" cy="62.5" r="60.5" stroke="#ffffff" stroke-width="4"></circle>
                                     <path d="M38.5713 62.5L54.2856 77.8571L85.7141 47.1428" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
