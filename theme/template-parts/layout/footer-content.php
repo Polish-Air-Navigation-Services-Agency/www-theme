@@ -25,14 +25,12 @@ $social_links = get_field('social_links', 'option');
 			<h2 class="lg:basis-1/2 mb-10 lg:mb-0 text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative"><?php echo esc_html_e('Have additional questions?', '_pansa'); ?></h2>
 			<div class="lg:basis-1/2">
 				<div class="w-full h-full flex lg:justify-end items-center">
-					<button class="group self-center bg-white border-[1px] border-white hover:bg-primary !rounded-full !px-6 !py-[11px] text-[#0F304D] font-medium hover:text-white transition ease duration-200">
-						<a href="<?php echo esc_url(home_url('/kontakt')); ?>" class="flex items-center justify-center gap-[10px]">
-							<?php esc_html_e('Skontaktuj się z nami', '_pansa'); ?>
-							<svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
-								<path class="group-hover:stroke-white" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#0F304D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-							</svg>
-						</a>
-					</button>
+					<a href="<?php echo esc_url(home_url('/kontakt')); ?>" class="group bg-white border-[1px] border-white hover:bg-primary !rounded-full !px-6 !py-[11px] text-[#0F304D] font-medium hover:text-white transition duration-200 flex items-center justify-center gap-[10px]">
+						<?php esc_html_e('Skontaktuj się z nami', '_pansa'); ?>
+						<svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
+							<path class="group-hover:stroke-white" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#0F304D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
 				</div>
 			</div>
 		</div>
