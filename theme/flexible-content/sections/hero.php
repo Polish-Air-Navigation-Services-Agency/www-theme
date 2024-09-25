@@ -32,7 +32,7 @@ if ($hero_background_mobile['url']) {
     <div class="container">
         <div class="relative mb-10 z-0 flex flex-col justify-center">
             <?php if ($small_title) : ?>
-                <h2 class="w-fit text-base leading-[24px] font-semibold text-white after:content-[''] after:w-5 min-[380px]:after:w-[61px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $small_title; ?></h2>
+                <h2 class="w-fit text-base leading-[24px] font-semibold text-white after:content-[''] after:w-5 min-[380px]:after:w-[61px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:ml-2.5 relative"><?php echo $small_title; ?></h2>
             <?php endif; ?>
             <?php if ($hero_text) : ?>
                 <h1 class="text-[40px] lg:text-[80px] leading-[45px] lg:leading-[80px] font-medium text-white"><?php echo $hero_text; ?></h1>
