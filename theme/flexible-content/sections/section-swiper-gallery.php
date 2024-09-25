@@ -39,7 +39,7 @@ $tiles = $args['tiles'];
                         <?php if ($tile['image']) : ?>
                             <a href="<?php echo $tile['image']['url'] ?>" data-lightbox="gallery">
                                 <?php
-                                        echo pansa_img_responsive($tile['image'], 'w-full object-cover', array(400, 400), 'lazy');
+                                        echo pansa_img_responsive($tile['image'], 'w-full object-cover', array(768, 768), 'lazy');
                                  ?>
                             </a>
                         <?php endif; ?>
