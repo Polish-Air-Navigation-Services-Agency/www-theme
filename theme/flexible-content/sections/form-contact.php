@@ -25,7 +25,7 @@ $contact_info = $args['contact_info'];
                         <h2 class="mb-7 text-3xl font-medium text-primary"><?php echo $header; ?></h2>
                     <?php endif; ?>
 
-                    <div class="form-cv-wrapper form-with-confirm-wrapper p-[40px_20px] lg:p-[40px_60px] bg-white text-textGray shadow-md lg:shadow-none">
+                    <div class="form-contact-wrapper form-with-confirm-wrapper text-textGray">
                         <?php echo do_shortcode('[contact-form-7 id="96c400d" title="Kontakt"]'); ?>
                         
                         <div class="form-confirmation pointer-events-none opacity-0 z-10 absolute inset-0 flex flex-col items-center justify-center transition duration-300 text-white">
@@ -35,26 +35,30 @@ $contact_info = $args['contact_info'];
                             </svg>
                             <h3 class="text-center text-2xl md:leading-10 md:!text-[40px] max-w-[460px] font-bold mb-5"><?php esc_html_e('Thank you for sending your message', '_pansa'); ?></h3>
                             <p class="text-center text-base max-w-[460px] mb-10 md:mb-16"><?php esc_html_e('Our experts are already verifying your message, we will get back to you soon with the information you need', '_pansa'); ?></p>
-                            <button data-js-form-reset="form-cv-wrapper" class="w-full max-w-[520px] border-none !bg-white hover:!bg-secondary hover:!text-white transition-all duration-200 !text-foreground h-[55px] !px-5 xl:!px-12 !rounded-[15px] font-semibold !flex items-center justify-center">
+                            <button data-js-form-reset="form-contact-wrapper" class="w-full max-w-[520px] border-none !bg-white hover:!bg-secondary hover:!text-white transition-all duration-200 !text-foreground h-[55px] !px-5 xl:!px-12 !rounded-[15px] font-semibold !flex items-center justify-center">
                                 <?php esc_html_e('Go back to form', '_pansa'); ?>
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:basis-1/2 lg:pr-[100px]">
+                <div class="lg:basis-1/2 lg:pl-[100px]">
                    <?php if($image_url){
                         echo pansa_img_responsive($image, 'w-full max-w-[315px]', array(315, 350), 'lazy');
                     } ?>
-                    <?php if ($header) : ?>
-                    <h3><?= $header ?></h3>
+                    <?php if ($person_name) : ?>
+                    <h3 class="text-3xl font-medium text-foreground mb-1"><?= $person_name ?></h3>
                     <?php endif; ?>
 
                     <?php if ($position) : ?>
-                    <p><?= $position ?></p>
+                    <p class="text-lg text-secondary font-medium pb-2.5 relative after:absolute after:block after:content-[''] after:h-1 after:w-[61px] after:rounded-full"><?= $position ?></p>
                     <?php endif; ?>
 
-                    <?php if ($contact_info){ echo $contact_info ;} ?>
+                    <?php if ($contact_info) : ?>
+                    <div class="text-textGray font-semibold text-xl prose-a:transition prose-a:duration-200 prose-a:hover:text-secondary">
+                    <?= $contact_info ?>
+                    </div>
+                    <?php endif; ?>
 
                 </div>
             </div>
