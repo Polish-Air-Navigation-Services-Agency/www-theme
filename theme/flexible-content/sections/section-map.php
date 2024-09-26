@@ -4,11 +4,12 @@
 
 $contact_text = $args['contact_text'];
 $location_text = $args['location_text'];
+$search_text = $args['search_text']
 
 ?>
 
 <section>
-    <div class="py-10 lg:py-[60px]">
+    <div class="py-10 lg:py-[60px] overflow-hidden">
         <div class="container flex flex-col md:flex-row flex-wrap gap-10 mb-12">
             <?php if ($contact_text) : ?>
                 <div class="flex gap-4 lg:basis-1/3">
@@ -41,5 +42,12 @@ $location_text = $args['location_text'];
                 </div>
             <?php endif; ?>
         </div>
+        <?php if($search_text): ?>
+        <div class="container">
+            <div class="mr-[calc(50%_-_50vw)]">
+                <iframe class="h-[400px] lg:h-[650px] w-full" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=558&amp;hl=en&amp;q=<?php echo rawurlencode($search_text) ?>&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        </div>
+        <?php endif; ?>
     </div>
 </section>
