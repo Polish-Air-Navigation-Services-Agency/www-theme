@@ -6,7 +6,6 @@ $section_number = $args['section_number'];
 $title = $args['title'];
 $description = $args['description'];
 $image = $args['image'];
-$numbers = $args['numbers'];
 
 ?>
 
@@ -28,36 +27,6 @@ $numbers = $args['numbers'];
 
                 <?php if ($description) : ?>
                     <div class="max-w-fill mb-10 text-base text-textGray leading-[24px]"><?php echo $description; ?></div>
-                <?php endif; ?>
-
-                <?php if ($numbers) : ?>
-                    <div class="pt-10 border-t-[1px] border-[#D4DEE4] flex flex-wrap gap-5 md:gap-10 lg:gap-0 justify-center">
-                        <?php foreach ($numbers as $key => $number):
-                            $title = $number['title'];
-                            $value = $number['value'];
-                            $symbol = $number['symbol']
-                        ?>
-                            <div class="text-primary pr-5 md:basis-1/2">
-                                <?php if ($title) : ?>
-                                    <h4 class="font-semibold"><?= $title ?></h4>
-                                <?php endif; ?>
-
-                                <?php if ($value) : ?>
-                                    <p class="relative text-[60px] font-medium">
-
-                                        <?= $value ?>
-
-                                        <?php if ($symbol) : ?>
-                                            <span class="text-secondary text-[36px] font-semibold absolute top-[6px]"><?= $symbol ?></span>
-                                        <?php endif; ?>
-
-                                    </p>
-                                <?php endif; ?>
-
-                            </div>
-                        <?php endforeach; ?>
-
-                    </div>
                 <?php endif; ?>
             </div>
 
