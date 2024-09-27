@@ -23,6 +23,11 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<?php wp_head(); ?>
+	<script>
+		const translations = {
+			'Attach CV file': '<?php esc_html_e('Attach CV file', '_pansa') ?>',
+		}
+	</script>
 </head>
 
 <body <?php body_class(); ?>>

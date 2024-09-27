@@ -41,7 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	initTileSwipers();
 	initShowMoreJobs();
 	initiIsElementVisible();
-	initHideFormConfirmation()
+	initHideFormConfirmation();
+	initCvFileLabelText()
 });
 
 function initMenuCollapse() {
@@ -225,4 +226,23 @@ function initHideFormConfirmation(){
 			})
 		}
 	})
+}
+
+function initCvFileLabelText() {
+	const labelEl = document.querySelector('[data-js="cv-file"]');
+	const inputEl = document.querySelector('input#your-file');
+	if (!labelEl || !inputEl) return;
+
+	const textEl = labelEl.querySelector('[data-js="cv-file-name"]');
+	const labelBtn = document.querySelector('[data-js="cv-file-icon"]');
+	inputEl.addEventListener('change', (e) => {
+		const file = e.target.files[0];
+		if (file) {
+			textEl.innerText = file.name;
+			labelBtn.classList.add('hidden');
+		} else {
+			textEl.innerText = translations['Attach CV file'] ?? 'Attach CV file';
+			labelBtn.classList.remove('hidden');
+		}
+	});
 }
