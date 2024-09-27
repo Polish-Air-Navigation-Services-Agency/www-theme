@@ -15,7 +15,7 @@ if ($video_thumbnail['url']) {
 
 ?>
 
-<section class="relative pt-[100px] lg:pt-[140px] lg:pb-[100px] overflow-hidden">
+<section class="relative pt-[100px] lg:pt-[140px] lg:pb-[100px] lg:mb-[-100px] overflow-hidden">
     <div class="title-wrapper container w-full flex flex-col justify-center items-center">
         <?php if ($section_number) : ?>
             <p class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold before:content-[''] before:w-[61px] before:h-[2px] before:bg-secondary before:rounded-full before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-70px] after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></p>
