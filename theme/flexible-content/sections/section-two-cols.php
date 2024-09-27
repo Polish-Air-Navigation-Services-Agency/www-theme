@@ -40,7 +40,7 @@ $overlapping_background = $args['overlapping_background'];
             <?php endif; ?>
 
             <?php if ($button) : ?>
-                <button class="mb-[30px] lg:mb-0 text-[18px] font-medium bg-white !rounded-full border border-[#BEBFBF] !px-6 !py-[11px] text-[#0F304D] hover:bg-primary hover:text-white hover:border-primary transition ease duration-200">
+                <button class="mb-[30px] mt-8 lg:mt-[50px] lg:mb-0 text-[18px] font-medium bg-white !rounded-full border border-[#BEBFBF] !px-6 !py-[11px] text-[#0F304D] hover:bg-primary hover:text-white hover:border-primary transition ease duration-200">
                     <a href="<?php echo esc_url(home_url('/o-nas')); ?>" class="flex items-center justify-center gap-[10px]">
                         <?php echo $button; ?>
                     </a>
