@@ -24,7 +24,6 @@ if (!defined('ABSPATH')) {
   </div>
 
   <label for="your-file" class="flex justify-between items-center [&_br]:hidden" data-js="cv-file">
-    <div class="truncate w-full flex justify-between">
       <span data-js="cv-file-name">
         <?php esc_html_e('Attach CV file', '_pansa') ?>
       </span>
@@ -32,7 +31,6 @@ if (!defined('ABSPATH')) {
         <path d="M9 1V17" stroke="#0F304D" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M17 9H1" stroke="#0F304D" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
-    </div>
   </label>[file* your-file id:your-file placeholder "Załącz CV*"]
 
   <div class="message-container w-full">
