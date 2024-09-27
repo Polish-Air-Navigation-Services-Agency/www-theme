@@ -7,7 +7,7 @@ $add_decor = $args['add_decor'];
 
 ?>
 
-<section class="relative pb-[100px] ">
+<section class="relative <?php if($add_decor) : ?> pb-[100px] <?php endif;?>">
     <div class="w-full relative">
         <?php if($add_decor) : ?>
             <svg class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full" xmlns="http://www.w3.org/2000/svg" width="150" height="75" viewBox="0 0 150 75" fill="none">
