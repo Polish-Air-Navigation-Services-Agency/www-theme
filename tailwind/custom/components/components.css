@@ -76,7 +76,7 @@ header.header-sticky{
 }
 
 header.header-sticky .menu-item a{
-	@apply lg:text-primary after:bg-primary
+	@apply lg:text-primary after:!bg-primary
 }
 
 header.header-sticky .logo svg path{
@@ -210,7 +210,7 @@ header.header-sticky .ham .line{
 }
 
 header.header-sticky:has([aria-expanded="true"].menu-btn) .ham .line{
-	@apply fill-white
+	@apply !stroke-white
 }
 
 body .ham .line {
