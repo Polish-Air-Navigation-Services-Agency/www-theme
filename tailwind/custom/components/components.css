@@ -76,7 +76,7 @@ header.header-sticky{
 }
 
 header.header-sticky .menu-item a{
-	@apply lg:text-primary after:!bg-primary
+	@apply lg:text-primary after:lg:!bg-primary
 }
 
 header.header-sticky .logo svg path{
