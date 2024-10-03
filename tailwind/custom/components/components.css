@@ -301,5 +301,5 @@ body .ham .line {
 	@apply overflow-hidden
 }
 [data-js-parallax="img"]{
-	@apply absolute block object-cover inset-x-0 top-0 -bottom-20
+	@apply absolute block object-cover inset-x-0 top-0 bottom-[-50px] lg:bottom-[-100px]
 }

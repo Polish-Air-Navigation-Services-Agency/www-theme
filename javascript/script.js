@@ -291,7 +291,7 @@ function initSvgAnimations() {
 }
 
 function initParallaxes(){
-	const PARALLAX_OFFSET = 80;
+	const PARALLAX_OFFSET = 100;
 	const parallaxContainers = document.querySelectorAll('[data-js-parallax="container"]')
 	if (!parallaxContainers.length) return
 
@@ -302,10 +302,15 @@ function initParallaxes(){
 
 		window.addEventListener('scroll',()=>{
 			let {top} = parallaxImage.getBoundingClientRect()
-			let offset = -top * (PARALLAX_OFFSET/window.innerHeight)
+			let offsetRatio = (isMobile() ? PARALLAX_OFFSET/2 : PARALLAX_OFFSET) / window.innerHeight
+			let offset = -top * offsetRatio 
 		
 			parallaxImage.style.transform = `translateY(${offset}px)`;
 		})
 		
 	})
+}
+
+function isMobile(){
+	return window.innerHeight < 1180
 }
