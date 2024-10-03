@@ -76,15 +76,15 @@ header.header-sticky{
 }
 
 header.header-sticky .menu-item a{
-	@apply lg:text-primary
+	@apply lg:text-primary after:bg-primary
 }
 
 header.header-sticky .logo svg path{
-	@apply lg:fill-primary
+	@apply fill-primary
 }
 
 header.header-sticky :has([aria-expanded="true"].menu-btn){
-	@apply !bg-secondary
+	@apply !bg-primary
 }
 
 header.header-sticky .nav-btn-main{
@@ -97,6 +97,13 @@ header.header-sticky.header-collapsed{
 
 header .nav-btn-main{
 	@apply flex items-center justify-center gap-[10px] bg-white hover:bg-primary text-primary hover:text-white border border-white hover:border-primary !rounded-full !px-6 !py-[11px] transition duration-200
+}
+
+header.header-sticky .nav-btn-main svg path{
+	@apply lg:stroke-white
+}
+header.header-sticky .nav-btn-main:hover svg path{
+	@apply lg:stroke-primary
 }
 
 body:not(.home) header .nav-btn-main,
@@ -192,6 +199,9 @@ header.header-sticky .nav-btn-main{
 }
 body.home .ham .line {
 	@apply stroke-white;
+}
+header.header-sticky .ham .line{
+	@apply !stroke-primary
 }
 body .ham .line {
 	fill: none;
