@@ -34,6 +34,7 @@ AOS.init({
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+	initMenuStickyCollapse();
 	initMenuCollapse();
 	initCounter();
 	initVideoPlayer();
@@ -44,6 +45,21 @@ document.addEventListener('DOMContentLoaded', () => {
 	initHideFormConfirmation();
 	initCvFileLabelText()
 });
+
+function initMenuStickyCollapse(){
+	const header = document.querySelector('header');
+	const SCROLL_THRESHOLD = 50
+
+	let lastScrollY = 0
+	window.addEventListener('scroll',()=>{
+		const currentScrollY = window.scrollY;
+
+		header.classList.toggle('header-sticky', currentScrollY > SCROLL_THRESHOLD);
+		header.classList.toggle('header-collapsed', currentScrollY > SCROLL_THRESHOLD && currentScrollY > lastScrollY);
+
+		lastScrollY = currentScrollY;
+	})
+}
 
 function initMenuCollapse() {
 	const toggleBtn = document.querySelector('[data-js="nav-toggle"]');
