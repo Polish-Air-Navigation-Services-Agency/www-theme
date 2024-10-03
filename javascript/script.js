@@ -285,7 +285,6 @@ function initSvgAnimations() {
 	decors.forEach(decor=>{
 		decor.querySelectorAll('path').forEach(path=>{
 			path.setAttribute('pathLength',100);
-			path.parentElement.style.opacity = '100%'
 		})
 		observer.observe(decor)
 	})

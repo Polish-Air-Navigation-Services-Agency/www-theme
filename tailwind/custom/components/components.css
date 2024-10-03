@@ -286,14 +286,15 @@ body .ham .line {
 
 
 .svg-draw-animation{
+	opacity: 0;
 	stroke-dashoffset: 100;
 	stroke-dasharray: 100;
 	transition-property: stroke-dashoffset;
-	opacity: 0;
-	@apply duration-[1500] delay-100
+	@apply duration-[1.5s] delay-100
 }
 
 .svg-draw-animation.decor-visible{
+	opacity: 1;
 	stroke-dashoffset: 0;
 }
 
