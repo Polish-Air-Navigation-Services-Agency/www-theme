@@ -18,10 +18,12 @@ if ($hero_background_mobile['url']) {
 ?>
 
 <section class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
-    <picture class="absolute inset-0 -z-10 object-cover !h-full w-full">
-        <source media="(min-width:768px)" srcset="<?= $hero_bg_url ?>">
-        <img src="<?= $hero_bg_url_mobile ?>" class="w-full h-full object-cover" <?= $hero_background_mobile['alt'] ? 'alt="'.$hero_background_mobile['alt'] . '"' : '' ?> loading="eager">
-    </picture>
+    <div class="absolute inset-0 -z-10" data-js-parallax="container">
+        <picture class="object-cover inset-x-auto top-0 -bottom-10" data-js-parallax="img">
+            <source media="(min-width:768px)" srcset="<?= $hero_bg_url ?>">
+            <img src="<?= $hero_bg_url_mobile ?>" class="w-full h-full object-cover" <?= $hero_background_mobile['alt'] ? 'alt="'.$hero_background_mobile['alt'] . '"' : '' ?> loading="eager">
+        </picture>
+    </div>
 
     <div class="decoration absolute bottom-0 left-0 z-[-1]">
         <svg class="svg-draw-animation" xmlns="http://www.w3.org/2000/svg" width="138" height="417" viewBox="0 0 138 417" fill="none">

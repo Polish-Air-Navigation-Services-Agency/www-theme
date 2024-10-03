@@ -43,7 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	initiIsElementVisible();
 	initHideFormConfirmation();
 	initCvFileLabelText();
-	initSvgAnimations()
+	initSvgAnimations();
+	initParallaxes();
 });
 
 function initMenuStickyCollapse(){
@@ -286,5 +287,25 @@ function initSvgAnimations() {
 			path.setAttribute('pathLength',100);
 		})
 		observer.observe(decor)
+	})
+}
+
+function initParallaxes(){
+	const PARALLAX_OFFSET = 50;
+	const parallaxContainers = document.querySelectorAll('[data-js-parallax="container"]')
+	if (!parallaxContainers.length) return
+
+	parallaxContainers.forEach(container=>{
+		
+		const parallaxImage = container.querySelector('[data-js-parallax="img"]')
+		if (!parallaxImage) return
+
+		window.addEventListener('scroll',()=>{
+			let {top} = parallaxImage.getBoundingClientRect()
+			let offset = -top * (PARALLAX_OFFSET/window.innerHeight)
+		
+			parallaxImage.style.transform = `translateY(${offset}px)`;
+		})
+		
 	})
 }
