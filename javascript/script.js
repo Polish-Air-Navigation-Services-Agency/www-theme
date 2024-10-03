@@ -43,7 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	initShowMoreJobs();
 	initiIsElementVisible();
 	initHideFormConfirmation();
-	initCvFileLabelText()
+	initCvFileLabelText();
+	initSvgPathLengths()
 });
 
 function initMenuStickyCollapse(){
@@ -265,7 +266,7 @@ function initCvFileLabelText() {
 }
 
 function initSvgPathLengths() {
-	const paths = document.querySelectorAll('svg path')
+	const paths = document.querySelectorAll('.decoration path')
 
 	paths.forEach(path=>{
 		path.setAttribute('pathLength',100)
