@@ -263,3 +263,11 @@ function initCvFileLabelText() {
 		}
 	});
 }
+
+function initSvgPathLengths() {
+	const paths = document.querySelectorAll('svg path')
+
+	paths.forEach(path=>{
+		path.setAttribute('pathLength',100)
+	})
+}
