@@ -270,14 +270,11 @@ function initSvgAnimations() {
 	const observerOptions = {
 		root: null, 
 		rootMargin: '0px 0px -50px 0px',
-		threshold: 1
+		threshold: 0
 	};
 
 	const observerCallback = (entries) => {
-		entries.forEach(entry => {
-			let elem = entry.target;
-			if (entry.isIntersecting) entry.target.classList.add('decor-visible');
-		});
+		console.log(entries)
 	  };
 	
 	const observer = new IntersectionObserver(observerCallback, observerOptions);

@@ -288,7 +288,7 @@ body .ham .line {
 .svg-draw-animation{
 	stroke-dashoffset: 100;
 	stroke-dasharray: 100;
-	@apply transition-all duration-[1.5s] delay-500
+	@apply transition-all duration-1000 delay-100
 }
 .svg-draw-animation.decor-visible{
 	stroke-dashoffset: 0;
