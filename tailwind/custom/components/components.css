@@ -75,6 +75,14 @@ header.header-sticky{
 	@apply bg-white
 }
 
+header.header-sticky .menu-item a{
+	@apply lg:text-primary
+}
+
+header.header-sticky .logo svg path{
+	@apply lg:fill-primary
+}
+
 header.header-sticky :has([aria-expanded="true"].menu-btn){
 	@apply !bg-secondary
 }
@@ -89,6 +97,11 @@ header.header-sticky.header-collapsed{
 
 header .nav-btn-main{
 	@apply flex items-center justify-center gap-[10px] bg-white hover:bg-primary text-primary hover:text-white border border-white hover:border-primary !rounded-full !px-6 !py-[11px] transition duration-200
+}
+
+body:not(.home) header .nav-btn-main,
+header.header-sticky .nav-btn-main{
+	@apply lg:bg-primary lg:hover:bg-white lg:text-white lg:hover:text-primary lg:border-primary
 }
 
 #primary-menu a {
