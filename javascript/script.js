@@ -285,13 +285,15 @@ function initSvgAnimations() {
 	decors.forEach(decor=>{
 		decor.querySelectorAll('path').forEach(path=>{
 			path.setAttribute('pathLength',100);
+			path.parentElement.style.opacity = '100%'
 		})
 		observer.observe(decor)
 	})
 }
 
 function initParallaxes(){
-	const PARALLAX_OFFSET = 100;
+	const PARALLAX_OFFSET_DESKTOP = 100;
+	const PARALLAX_OFFSET_MOBILE = 65;
 	const parallaxContainers = document.querySelectorAll('[data-js-parallax="container"]')
 	if (!parallaxContainers.length) return
 
@@ -302,7 +304,7 @@ function initParallaxes(){
 
 		window.addEventListener('scroll',()=>{
 			let {top} = parallaxImage.getBoundingClientRect()
-			let offsetRatio = (isMobile() ? PARALLAX_OFFSET/2 : PARALLAX_OFFSET) / window.innerHeight
+			let offsetRatio = (isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP) / window.innerHeight
 			let offset = -top * offsetRatio 
 		
 			parallaxImage.style.transform = `translateY(${offset}px)`;

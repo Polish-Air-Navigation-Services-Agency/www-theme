@@ -289,17 +289,17 @@ body .ham .line {
 	stroke-dashoffset: 100;
 	stroke-dasharray: 100;
 	transition-property: stroke-dashoffset;
-	@apply opacity-0 duration-[1500] delay-100
+	opacity: 0;
+	@apply duration-[1500] delay-100
 }
 
 .svg-draw-animation.decor-visible{
 	stroke-dashoffset: 0;
-	@apply opacity-100
 }
 
 [data-js-parallax="container"]{
 	@apply overflow-hidden
 }
 [data-js-parallax="img"]{
-	@apply absolute block object-cover inset-x-0 top-0 bottom-[-50px] lg:bottom-[-100px]
+	@apply absolute block object-cover inset-x-0 top-0 bottom-[-65px] lg:bottom-[-100px]
 }
