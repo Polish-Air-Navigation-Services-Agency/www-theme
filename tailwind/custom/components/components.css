@@ -296,3 +296,10 @@ body .ham .line {
 	stroke-dashoffset: 0;
 	@apply opacity-100
 }
+
+[data-js-parallax="container"]{
+	@apply overflow-hidden
+}
+[data-js-parallax="img"]{
+	@apply block
+}
