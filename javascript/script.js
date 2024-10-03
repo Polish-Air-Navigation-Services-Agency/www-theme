@@ -291,7 +291,7 @@ function initSvgAnimations() {
 }
 
 function initParallaxes(){
-	const PARALLAX_OFFSET = 50;
+	const PARALLAX_OFFSET = 56;
 	const parallaxContainers = document.querySelectorAll('[data-js-parallax="container"]')
 	if (!parallaxContainers.length) return
 
