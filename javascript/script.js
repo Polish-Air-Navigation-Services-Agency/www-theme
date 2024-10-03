@@ -265,7 +265,7 @@ function initCvFileLabelText() {
 }
 
 function initSvgAnimations() {
-	const paths = document.querySelectorAll('.svg-draw-animation')
+	const decors = document.querySelectorAll('.svg-draw-animation')
 
 	const observerOptions = {
 		root: null, 
@@ -275,14 +275,17 @@ function initSvgAnimations() {
 
 	const observerCallback = (entries) => {
 		entries.forEach(entry => {
-		  if (entry.isIntersecting) entry.target.classList.add('decor-visible');
+			let elem = entry.target;
+			if (entry.isIntersecting) entry.target.classList.add('decor-visible');
 		});
 	  };
 	
 	const observer = new IntersectionObserver(observerCallback, observerOptions);
   
-	paths.forEach(path=>{
-		path.setAttribute('pathLength',100);
-		observer.observe(path)
+	decors.forEach(decor=>{
+		decor.querySelectorAll('path').forEach(path=>{
+			path.setAttribute('pathLength',100);
+		})
+		observer.observe(decor)
 	})
 }
