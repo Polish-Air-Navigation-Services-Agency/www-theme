@@ -71,32 +71,32 @@ header{
 	@apply transition duration-300
 }
 
-header.header-sticky{
+header.header-nontransparent{
 	@apply bg-white
 }
 
-header.header-sticky .menu-item a{
+header.header-nontransparent .menu-item a{
 	@apply lg:text-primary after:lg:!bg-primary
 }
 
-header.header-sticky .logo svg path{
+header.header-nontransparent .logo svg path{
 	@apply fill-primary
 }
 
-header.header-sticky:has([aria-expanded="true"].menu-btn){
+header.header-nontransparent:has([aria-expanded="true"].menu-btn){
 	@apply !bg-[#055bc0]
 }
 
-header.header-sticky:has([aria-expanded="true"].menu-btn) .logo svg path{
+header.header-nontransparent:has([aria-expanded="true"].menu-btn) .logo svg path{
 	@apply fill-white
 }
 
 
-header.header-sticky .nav-btn-main{
+header.header-nontransparent .nav-btn-main{
 	@apply bg-white
 }
 
-header.header-sticky.header-collapsed{
+header.header-collapsed{
 	@apply -translate-y-full
 }
 
@@ -104,15 +104,15 @@ header .nav-btn-main{
 	@apply flex items-center justify-center gap-[10px] bg-white hover:bg-primary text-primary hover:text-white border border-white hover:border-primary !rounded-full !px-6 !py-[11px] transition duration-200
 }
 
-header.header-sticky .nav-btn-main svg path{
+header.header-nontransparent .nav-btn-main svg path{
 	@apply lg:stroke-white
 }
-header.header-sticky .nav-btn-main:hover svg path{
+header.header-nontransparent .nav-btn-main:hover svg path{
 	@apply lg:stroke-primary
 }
 
 body:not(.home) header .nav-btn-main,
-header.header-sticky .nav-btn-main{
+header.header-nontransparent .nav-btn-main{
 	@apply lg:bg-primary lg:hover:bg-white lg:text-white lg:hover:text-primary lg:border-primary
 }
 
@@ -205,11 +205,11 @@ header.header-sticky .nav-btn-main{
 body.home .ham .line {
 	@apply stroke-white;
 }
-header.header-sticky .ham .line{
+header.header-nontransparent .ham .line{
 	@apply !stroke-primary
 }
 
-header.header-sticky:has([aria-expanded="true"].menu-btn) .ham .line{
+header.header-nontransparent:has([aria-expanded="true"].menu-btn) .ham .line{
 	@apply !stroke-white
 }
 

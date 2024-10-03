@@ -10,7 +10,7 @@
 
 ?>
 
-<header id="masthead" class="fixed inset-x-0 z-20 top-0 w-full bg-transparent transition-all duration-300 [.header-collapsed]:bg-white z-50">
+<header id="masthead" class="fixed inset-x-0 top-0 w-full bg-transparent transition-all duration-300 z-50">
 	<div class="container lg:py-8 flex justify-between lg:justify-normal items-center">
 		<div class="logo mr-16">
 			<a href="<?php echo esc_url(home_url('/')); ?>" rel="home" aria-label="Home" class="block max-w-[140px] md:max-w-[190px] 2xl:max-w-[220px] py-2">

@@ -55,7 +55,7 @@ function initMenuStickyCollapse(){
 	window.addEventListener('scroll',()=>{
 		const currentScrollY = window.scrollY;
 
-		header.classList.toggle('header-sticky', currentScrollY > BG_THRESHOLD);
+		header.classList.toggle('header-nontransparent', currentScrollY > BG_THRESHOLD);
 		header.classList.toggle('header-collapsed', currentScrollY > COLLAPSE_THRESHOLD && currentScrollY > lastScrollY);
 
 		lastScrollY = currentScrollY;
