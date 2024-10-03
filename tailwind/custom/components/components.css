@@ -88,7 +88,7 @@ header.header-sticky.header-collapsed{
 }
 
 header .nav-btn-main{
-	@apply flex items-center justify-center gap-[10px] bg-white hover:bg-primary text-primary hover:text-white border border-white hover:border-primary !rounded-full !px-6 !py-[11px] transition ease duration-200
+	@apply flex items-center justify-center gap-[10px] bg-white hover:bg-primary text-primary hover:text-white border border-white hover:border-primary !rounded-full !px-6 !py-[11px] transition duration-200
 }
 
 #primary-menu a {
