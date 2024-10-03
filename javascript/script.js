@@ -23,7 +23,6 @@ AOS.init({
 	disableMutationObserver: false,
 	debounceDelay: 50,
 	throttleDelay: 99,
-
 	offset: 200,
 	delay: 0,
 	duration: 400,
@@ -44,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	initiIsElementVisible();
 	initHideFormConfirmation();
 	initCvFileLabelText();
-	initSvgPathLengths()
+	initSvgAnimations()
 });
 
 function initMenuStickyCollapse(){
@@ -265,10 +264,25 @@ function initCvFileLabelText() {
 	});
 }
 
-function initSvgPathLengths() {
-	const paths = document.querySelectorAll('.decoration path')
+function initSvgAnimations() {
+	const paths = document.querySelectorAll('.svg-draw-animation')
 
+	const observerOptions = {
+		root: null, 
+		rootMargin: '0px 0px -50px 0px',
+		threshold: 1
+	};
+
+	const observerCallback = (entries) => {
+		entries.forEach(entry => {
+		  if (entry.isIntersecting) entry.target.classList.add('decor-visible');
+		});
+	  };
+	
+	const observer = new IntersectionObserver(observerCallback, observerOptions);
+  
 	paths.forEach(path=>{
-		path.setAttribute('pathLength',100)
+		path.setAttribute('pathLength',100);
+		observer.observe(path)
 	})
 }

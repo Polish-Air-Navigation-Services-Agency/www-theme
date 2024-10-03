@@ -24,7 +24,7 @@ if ($hero_background_mobile['url']) {
     </picture>
 
     <div class="decoration absolute bottom-0 left-0 z-[-1]">
-        <svg xmlns="http://www.w3.org/2000/svg" width="138" height="417" viewBox="0 0 138 417" fill="none">
+        <svg class="svg-draw-animation" xmlns="http://www.w3.org/2000/svg" width="138" height="417" viewBox="0 0 138 417" fill="none">
             <path d="M-210.006 1.00488C-188.968 80.0074 -56.3187 239.811 45.3028 267.04C93.062 279.837 129.426 273.808 136.105 253.256C142.869 232.447 97.9617 212.361 74.3864 213.203C56.6944 213.833 43.271 259.943 41.1114 299.443C38.5784 345.762 57.6681 401.874 107.941 415.345" stroke="#60B8D1" stroke-width="2" />
         </svg>
     </div>

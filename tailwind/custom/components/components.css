@@ -285,11 +285,11 @@ body .ham .line {
 }
 
 
-.aos-init .decoration svg{
+.svg-draw-animation svg{
 	stroke-dashoffset: 100;
 	stroke-dasharray: 100;
 	@apply transition-all duration-[1.5s] delay-500
 }
-.aos-init.aos-animate .decoration svg{
+.svg-draw-animation.decor-visible svg{
 	stroke-dashoffset: 0;
 }

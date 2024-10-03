@@ -13,7 +13,7 @@ $button = $args['button'];
     <svg class="decoration absolute left-0 top-1/2 -translate-x-full" xmlns="http://www.w3.org/2000/svg" width="75" height="150" viewBox="0 0 75 150" fill="none">
         <circle cy="75" r="75" fill="#60B8D1" />
     </svg>
-    <svg class="decoration absolute right-0 bottom-0" xmlns="http://www.w3.org/2000/svg" width="680" height="133" viewBox="0 0 680 133" fill="none">
+    <svg class="decoration svg-draw-animation absolute right-0 bottom-0" xmlns="http://www.w3.org/2000/svg" width="680" height="133" viewBox="0 0 680 133" fill="none">
         <path d="M1 1.68506C48.6212 49.6062 209.223 109.35 292.964 86.9117C332.32 76.3663 355.774 57.0359 352.056 39.5533C348.292 21.8509 307.962 25.9971 291.49 36.3317C279.128 44.0863 288.585 82.6654 303.349 111.859C320.662 146.092 357.444 178.417 398.871 167.316C441.679 155.846 461.255 115.119 449.907 72.7666C441.11 39.9367 418.346 1.0708 397.583 6.63429C376.821 12.1975 373.45 54.5416 382.826 89.5315C404.981 172.217 506.966 191.591 625.979 159.83C626.144 159.786 710.604 141.435 778.104 25.4348" stroke="#60B8D1" stroke-width="2" />
     </svg>
     <div class="container w-full flex flex-col lg:flex-row items-center justify-between">
