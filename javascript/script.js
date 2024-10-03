@@ -48,14 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initMenuStickyCollapse(){
 	const header = document.querySelector('header');
-	const SCROLL_THRESHOLD = 50
+	const COLLAPSE_THRESHOLD = 50
+	const BG_THRESHOLD = 100
 
 	let lastScrollY = 0
 	window.addEventListener('scroll',()=>{
 		const currentScrollY = window.scrollY;
 
-		header.classList.toggle('header-sticky', currentScrollY > SCROLL_THRESHOLD);
-		header.classList.toggle('header-collapsed', currentScrollY > SCROLL_THRESHOLD && currentScrollY > lastScrollY);
+		header.classList.toggle('header-sticky', currentScrollY > BG_THRESHOLD);
+		header.classList.toggle('header-collapsed', currentScrollY > COLLAPSE_THRESHOLD && currentScrollY > lastScrollY);
 
 		lastScrollY = currentScrollY;
 	})
