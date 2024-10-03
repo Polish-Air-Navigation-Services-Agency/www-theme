@@ -291,7 +291,7 @@ function initSvgAnimations() {
 }
 
 function initParallaxes(){
-	const PARALLAX_OFFSET_DESKTOP = 100;
+	const PARALLAX_OFFSET_DESKTOP = 130;
 	const PARALLAX_OFFSET_MOBILE = 65;
 	const parallaxContainers = document.querySelectorAll('[data-js-parallax="container"]')
 	if (!parallaxContainers.length) return
