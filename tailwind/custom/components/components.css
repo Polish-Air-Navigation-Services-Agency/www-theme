@@ -288,7 +288,7 @@ body .ham .line {
 .aos-init .decoration svg{
 	stroke-dashoffset: 100;
 	stroke-dasharray: 100;
-	@apply transition duration-300
+	@apply transition duration-300 delay-500
 }
 .aos-init.aos-animate .decoration svg{
 	stroke-dashoffset: 0;
