@@ -274,9 +274,7 @@ function initSvgAnimations() {
 	};
 
 	const observerCallback = (entries) => {
-		console.log(entries)
 		entries.forEach(entry => {
-			let elem = entry.target;
 			if (entry.isIntersecting) entry.target.classList.add('decor-visible');
 		});
 	  };
