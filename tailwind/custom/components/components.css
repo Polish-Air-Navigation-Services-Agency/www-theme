@@ -83,9 +83,14 @@ header.header-sticky .logo svg path{
 	@apply fill-primary
 }
 
-header.header-sticky :has([aria-expanded="true"].menu-btn){
-	@apply !bg-primary
+header.header-sticky:has([aria-expanded="true"].menu-btn){
+	@apply !bg-[#055bc0]
 }
+
+header.header-sticky:has([aria-expanded="true"].menu-btn) .logo svg path{
+	@apply fill-white
+}
+
 
 header.header-sticky .nav-btn-main{
 	@apply bg-white
@@ -203,6 +208,11 @@ body.home .ham .line {
 header.header-sticky .ham .line{
 	@apply !stroke-primary
 }
+
+header.header-sticky:has([aria-expanded="true"].menu-btn) .ham .line{
+	@apply fill-white
+}
+
 body .ham .line {
 	fill: none;
 	transition:
