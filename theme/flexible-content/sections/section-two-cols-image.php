@@ -12,7 +12,7 @@ $image = $args['image'];
 <section class="bg-white lg:mb-[100px] pt-20 lg:pt-[180px] lg:grid grid-cols-2">
     <div class="col-span-full row-start-1">
         <div class="container mx-auto relative">
-            <svg data-js-parallax class="svg-draw-animation hidden lg:block absolute -top-24 left-[calc(50%_-_100px)]" width="320" height="269" viewBox="0 0 320 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg data-js-parallax data-js-parallax="200" class="svg-draw-animation hidden lg:block absolute -top-24 left-[calc(50%_-_100px)]" width="320" height="269" viewBox="0 0 320 269" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.00488 267.164C61.6364 251.018 184.279 149.215 205.177 71.2241C214.998 34.5707 210.371 6.66282 194.598 1.53689C178.628 -3.65462 163.213 30.8104 163.859 48.9036C164.343 62.4815 199.73 72.7835 230.045 74.4409C265.593 76.3849 308.657 61.7342 318.995 23.1517" stroke="#60B8D1" stroke-width="2" />
             </svg>
 

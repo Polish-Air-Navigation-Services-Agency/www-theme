@@ -304,6 +304,11 @@ function initParallaxes(){
 
 	function applyParallax(element) {
 		const isContainer = element.dataset.jsParallax === 'container';
+		const customOffset = element.dataset.jsParallaxOffset ? parseFloat(element.dataset.jsParallaxOffset) : null;
+		const parallaxOffset = customOffset !== null 
+			? customOffset 
+			: (isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP);
+
 		const target = isContainer ? element.querySelector('[data-js-parallax="img"]') : element;
 		if (!target) return;
 
@@ -311,7 +316,7 @@ function initParallaxes(){
 		const viewportHeight = window.innerHeight;
 		const safeHeight = Math.max(viewportHeight - height, PARALLAX_SAFE_VH);
 		const offsetRatio = -top / safeHeight;
-		const offset = (isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP) * offsetRatio;
+		const offset = parallaxOffset * offsetRatio;
 
 		target.style.transform = `translateY(${offset}px)`;
 	}
