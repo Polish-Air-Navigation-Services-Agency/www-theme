@@ -285,6 +285,14 @@ body .ham .line {
 }
 
 
+.section_image_right{
+	@apply relative overflow-hidden
+}
+
+.aos-init:has(.section_image_right){
+	@apply relative z-20
+}
+
 .svg-draw-animation{
 	opacity: 0;
 	stroke-dashoffset: 100;
