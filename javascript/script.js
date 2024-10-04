@@ -302,17 +302,23 @@ function initParallaxes(){
 		const parallaxImage = container.querySelector('[data-js-parallax="img"]')
 		if (!parallaxImage) return
 
+		calcParallax(container)
+
 		window.addEventListener('scroll',()=>{
-			const viewportHeight = window.innerHeight;
-			const {top,height} = container.getBoundingClientRect()
-			const safeHeight = Math.max(viewportHeight - height, PARALLAX_SAFE_VH); 
-			let offsetRatio = - top / safeHeight
-			let offset = (isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP) * offsetRatio 
-		
-			parallaxImage.style.transform = `translateY(${offset}px)`;
+			calcParallax(container)
 		})
 		
 	})
+	
+	function calcParallax(container){
+		const viewportHeight = window.innerHeight;
+		const {top,height} = container.getBoundingClientRect()
+		const safeHeight = Math.max(viewportHeight - height, PARALLAX_SAFE_VH); 
+		let offsetRatio = - top / safeHeight
+		let offset = (isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP) * offsetRatio 
+	
+		parallaxImage.style.transform = `translateY(${offset}px)`;
+	}
 }
 
 function isMobile(){
