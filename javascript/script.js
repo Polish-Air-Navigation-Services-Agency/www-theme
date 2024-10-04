@@ -302,7 +302,7 @@ function initParallaxes(){
 		if (!parallaxImage) return
 
 		window.addEventListener('scroll',()=>{
-			let {top} = parallaxImage.getBoundingClientRect()
+			let {top} = container.getBoundingClientRect()
 			let offsetRatio = (isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP) / window.innerHeight
 			let offset = -top * offsetRatio 
 		
