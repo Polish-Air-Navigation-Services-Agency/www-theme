@@ -60,7 +60,11 @@ if ($image['url']) {
             </div>
         </div>
     </div>
-    <?php if($image_url){
-        echo pansa_img_responsive($image, 'w-full', array(1440, 500), 'lazy');
-    } ?>
+    <?php if($image_url): ?>
+        <div class="aspect-[1440/550]" data-js-parallax="container">
+            <div data-js-parallax="img">
+                <?php echo pansa_img_responsive($image, 'w-full', array(1440, 500), 'lazy');?>
+            </div>
+        </div>
+    <?php endif;?>
 </section>
