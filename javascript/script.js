@@ -299,9 +299,6 @@ function initParallaxes(){
 
 	parallaxContainers.forEach(container=>{
 		
-		const parallaxImage = container.querySelector('[data-js-parallax="img"]')
-		if (!parallaxImage) return
-
 		calcParallax(container)
 
 		window.addEventListener('scroll',()=>{
@@ -311,6 +308,9 @@ function initParallaxes(){
 	})
 	
 	function calcParallax(container){
+		const parallaxImage = container.querySelector('[data-js-parallax="img"]')
+		if (!parallaxImage) return
+
 		const viewportHeight = window.innerHeight;
 		const {top,height} = container.getBoundingClientRect()
 		const safeHeight = Math.max(viewportHeight - height, PARALLAX_SAFE_VH); 
