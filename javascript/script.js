@@ -302,9 +302,10 @@ function initParallaxes(){
 		if (!parallaxImage) return
 
 		window.addEventListener('scroll',()=>{
-			let {top} = container.getBoundingClientRect()
-			let offsetRatio = (isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP) / window.innerHeight
-			let offset = -top * offsetRatio 
+			const viewportHeight = window.innerHeight;
+			const {top,height} = container.getBoundingClientRect()
+			let offsetRatio = - rect.top / (viewportHeight-rect.height)
+			let offset = isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP + offsetRatio -top * offsetRatio 
 		
 			parallaxImage.style.transform = `translateY(${offset}px)`;
 		})
