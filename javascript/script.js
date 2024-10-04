@@ -293,6 +293,7 @@ function initSvgAnimations() {
 function initParallaxes(){
 	const PARALLAX_OFFSET_DESKTOP = 130;
 	const PARALLAX_OFFSET_MOBILE = 65;
+	const PARALLAX_SAFE_VH = 600;
 	const parallaxContainers = document.querySelectorAll('[data-js-parallax="container"]')
 	if (!parallaxContainers.length) return
 
@@ -304,7 +305,7 @@ function initParallaxes(){
 		window.addEventListener('scroll',()=>{
 			const viewportHeight = window.innerHeight;
 			const {top,height} = container.getBoundingClientRect()
-			const safeHeight = Math.max(viewportHeight - height, 1); 
+			const safeHeight = Math.max(viewportHeight - height, PARALLAX_SAFE_VH); 
 			let offsetRatio = - top / safeHeight
 			let offset = (isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP) * offsetRatio 
 		
