@@ -294,30 +294,26 @@ function initParallaxes(){
 	const PARALLAX_OFFSET_DESKTOP = 120;
 	const PARALLAX_OFFSET_MOBILE = 50;
 	const PARALLAX_SAFE_VH = 600;
-	const parallaxContainers = document.querySelectorAll('[data-js-parallax="container"]')
-	if (!parallaxContainers.length) return
 
-	parallaxContainers.forEach(container=>{
-		
-		calcParallax(container)
-
-		window.addEventListener('scroll',()=>{
-			calcParallax(container)
-		})
-		
-	})
+	const parallaxElements = document.querySelectorAll('[data-js-parallax]');
 	
-	function calcParallax(container){
-		const parallaxImage = container.querySelector('[data-js-parallax="img"]')
-		if (!parallaxImage) return
+	parallaxElements.forEach(element => {
+		applyParallax(element);
+		window.addEventListener('scroll', () => applyParallax(element));
+	});
 
+	function applyParallax(element) {
+		const isContainer = element.dataset.jsParallax === 'container';
+		const target = isContainer ? element.querySelector('[data-js-parallax="img"]') : element;
+		if (!target) return;
+
+		const { top, height } = element.getBoundingClientRect();
 		const viewportHeight = window.innerHeight;
-		const {top,height} = container.getBoundingClientRect()
-		const safeHeight = Math.max(viewportHeight - height, PARALLAX_SAFE_VH); 
-		let offsetRatio = - top / safeHeight
-		let offset = (isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP) * offsetRatio 
-	
-		parallaxImage.style.transform = `translateY(${offset}px)`;
+		const safeHeight = Math.max(viewportHeight - height, PARALLAX_SAFE_VH);
+		const offsetRatio = -top / safeHeight;
+		const offset = (isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP) * offsetRatio;
+
+		target.style.transform = `translateY(${offset}px)`;
 	}
 }
 
