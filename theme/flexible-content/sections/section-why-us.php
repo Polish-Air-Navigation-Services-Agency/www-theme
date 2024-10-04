@@ -27,7 +27,7 @@ if ($video_thumbnail['url']) {
     </div>
 
     <div class="video lg:w-[92%] relative">
-        <div class="decoration absolute top-[-130px] right-[-150px] z-[-1]">
+        <div data-js-parallax data-js-parallax-offset="100" class="decoration absolute top-[-100px] right-[-150px] z-[-1] pointer-events-none">
             <svg class="svg-draw-animation" xmlns="http://www.w3.org/2000/svg" width="294" height="235" viewBox="0 0 294 235" fill="none">
                 <path d="M60.8584 81.3661C33.9435 74.1542 56.569 3.40919 28.3119 1.8108C10.7445 0.816981 2.41531 48.7456 1.24514 73.0001C-1.2765 125.218 31 169 44 176C73.2674 183.842 72.7056 197.234 93 189.425C122.651 178.015 142.39 152.299 151.234 119.291C159.265 89.3186 158.637 41.2987 137.875 35.7355C117.113 30.1723 93.0141 67.0023 84.0999 100.271C69.129 156.143 105.212 210.953 169.424 228.158C299.227 262.939 394.239 129.294 394.239 129.294" stroke="#60B8D1" stroke-width="2" />
             </svg>
