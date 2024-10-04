@@ -8,10 +8,12 @@ $image = $args['image'];
 
 <section class="relative overflow-hidden">
     <div class="container">
-        <div class="mr-[calc(50%_-_50vw)]">
-            <?php if (isset($image['url'])){
-                echo pansa_img_responsive($image, 'h-[300px] lg:h-[520px] w-full object-cover relative z-10', array(1536, 520), 'eager');
-            }; ?>
+        <div class="mr-[calc(50%_-_50vw)] relative z-10" data-js-parallax="container">
+            <div data-js-parallax="img">
+                <?php if (isset($image['url'])){
+                    echo pansa_img_responsive($image, 'h-[300px] lg:h-[520px] w-full object-cover', array(1536, 520), 'eager');
+                }; ?>
+            </div>
         </div>
     </div>
 </section>
