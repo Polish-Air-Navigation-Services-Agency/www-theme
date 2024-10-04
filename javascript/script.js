@@ -305,7 +305,7 @@ function initParallaxes(){
 			const viewportHeight = window.innerHeight;
 			const {top,height} = container.getBoundingClientRect()
 			let offsetRatio = - top / (viewportHeight-height)
-			let offset = isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP + offsetRatio -top * offsetRatio 
+			let offset = (isMobile() ? PARALLAX_OFFSET_MOBILE : PARALLAX_OFFSET_DESKTOP) * offsetRatio 
 		
 			parallaxImage.style.transform = `translateY(${offset}px)`;
 		})
