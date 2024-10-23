@@ -99,16 +99,20 @@ header.header-collapsed{
 header .nav-btn-main{
 	@apply flex items-center justify-center gap-[10px] bg-primary hover:bg-secondary text-white !rounded-full !px-6 !py-[11px] text-lg lg:text-base transition duration-200
 }
-
 header .nav-btn-main svg path{
 	@apply stroke-white
 }
 
-
-body:not(.home) header .nav-btn-main,
-header.header-nontransparent .nav-btn-main{
-	@apply lg:bg-primary lg:hover:bg-white lg:text-white lg:hover:text-primary lg:border-primary
+.home header:not(.header-nontransparent):has( [aria-expanded="false"].menu-btn) .nav-btn-main{
+	@apply bg-white hover:bg-primary text-primary hover:text-white
 }
+.home header:not(.header-nontransparent):has( [aria-expanded="false"].menu-btn) .nav-btn-main svg path{
+	@apply stroke-primary
+}
+.home header:not(.header-nontransparent):has( [aria-expanded="false"].menu-btn) .nav-btn-main:hover svg path{
+	@apply stroke-white
+}
+
 
 #primary-menu a {
 	@apply flex justify-between items-center py-4 lg:py-0 lg:w-fit uppercase hover:text-secondary after:content-[''] after:ml-2 after:w-[20px] after:h-[2px] after:bg-primary after:rounded-full hover:after:!bg-secondary transition duration-200 after:transition after:duration-200;
