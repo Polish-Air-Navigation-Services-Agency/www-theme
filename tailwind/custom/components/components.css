@@ -71,6 +71,14 @@ html {
 	@apply border-b-0
 }
 
+.menu-btn::after{
+	@apply absolute top-[15px] left-[15px] z-10 block w-10 h-10 content-[''] rounded-full border border-white/25 transition-all duration-200
+}
+.menu-btn::after{
+	@apply border-[#BEBFBF]
+}
+
+
 header{
 	@apply transition duration-300
 }
