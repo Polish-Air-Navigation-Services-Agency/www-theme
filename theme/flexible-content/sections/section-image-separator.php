@@ -14,7 +14,7 @@ $add_decor = $args['add_decor'];
                 <circle cx="75" r="75" fill="#60B8D1" />
             </svg>
         <?php endif;?>
-        <div class="max-h-[600px] aspect-[1100/550] md:aspect-[2048/600]" data-js-parallax="container">
+        <div class="max-h-[600px] aspect-[900/550] md:aspect-[2048/600]" data-js-parallax="container">
             <div data-js-parallax="img">
                 <?php if (isset($image['url'])){
                         echo pansa_img_responsive($image, 'h-full w-full object-cover', array(2048, 600), 'lazy');
