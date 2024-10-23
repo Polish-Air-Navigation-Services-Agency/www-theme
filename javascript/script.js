@@ -56,7 +56,7 @@ function initMenuStickyCollapse(){
 	header.classList.toggle('header-nontransparent', window.scrollY > BG_THRESHOLD);
 
 	window.addEventListener('scroll',()=>{
-		if(document.body.classList.has('overflow-hidden')) return
+		if(document.body.classList.contains('overflow-hidden')) return
 		const currentScrollY = window.scrollY;
 
 		header.classList.toggle('header-nontransparent', currentScrollY > BG_THRESHOLD);
