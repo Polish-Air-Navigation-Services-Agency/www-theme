@@ -84,13 +84,8 @@ header.header-nontransparent .logo svg path{
 }
 
 header.header-nontransparent:has([aria-expanded="true"].menu-btn){
-	@apply !bg-[#055bc0]
+	@apply !bg-white
 }
-
-header.header-nontransparent:has([aria-expanded="true"].menu-btn) .logo svg path{
-	@apply fill-white
-}
-
 
 header.header-nontransparent .nav-btn-main{
 	@apply bg-white
@@ -117,7 +112,7 @@ header.header-nontransparent .nav-btn-main{
 }
 
 #primary-menu a {
-	@apply uppercase hover:text-secondary after:content-[''] after:w-[20px] after:h-[2px] after:bg-white after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px] hover:after:!bg-secondary transition duration-200 after:transition after:duration-200;
+	@apply uppercase hover:text-secondary after:content-[''] after:w-[20px] after:h-[2px] after:bg-primary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px] hover:after:!bg-secondary transition duration-200 after:transition after:duration-200;
 }
 
 .form-basic input:not([type="checkbox"]),
