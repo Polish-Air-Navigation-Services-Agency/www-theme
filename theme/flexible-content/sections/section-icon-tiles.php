@@ -27,7 +27,7 @@ $tiles = $args['tiles'];
             <?php endif; ?>
 
             <?php if ($subtitle) : ?>
-                <div class="mx-auto mb-[30px] max-w-[488px] text-[18px] text-center leading-[28px] text-textGray"><?php echo $subtitle; ?></div>
+                <div class="mx-auto mb-[30px] max-w-screen-md text-base text-center text-textGray"><?php echo $subtitle; ?></div>
             <?php endif; ?>
         </div>
 
