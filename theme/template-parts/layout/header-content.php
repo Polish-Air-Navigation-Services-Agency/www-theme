@@ -57,12 +57,12 @@ $social_links = get_field('social_links', 'option');
 				</nav><!-- #site-navigation -->
 
 
-				<div class="lg:hidden">
-					<div class=" mb-10 mt-auto text-left">
+				<div class="lg:hidden my-10">
+					<div class=" mb-6">
 						<?php echo $company_details; ?>
 					</div>
 					<div class="socials">
-						<h3 class="mb-[10px] text-[20px] font-semibold text-left "><?php echo esc_html_e('Obserwuj nas', '_pansa'); ?></h3>
+						<h3 class="text-[20px] font-semibold "><?php echo esc_html_e('Obserwuj nas', '_pansa'); ?></h3>
 						<?php
 						$socials_count = count(array_filter(array_values($social_links)));
 						if ($socials_count > 0) :
