@@ -75,6 +75,10 @@ header{
 	@apply transition duration-300
 }
 
+header:has( [aria-expanded="true"].menu-btn){
+	@apply bg-white
+}
+
 header.header-nontransparent{
 	@apply bg-white
 }
@@ -95,12 +99,10 @@ header .nav-btn-main{
 	@apply flex items-center justify-center gap-[10px] bg-primary hover:bg-secondary text-white !rounded-full !px-6 !py-[11px] text-lg lg:text-base transition duration-200
 }
 
-header.header-nontransparent .nav-btn-main svg path{
+header .nav-btn-main svg path{
 	@apply stroke-white
 }
-header.header-nontransparent .nav-btn-main:hover svg path{
-	@apply stroke-secondary
-}
+
 
 body:not(.home) header .nav-btn-main,
 header.header-nontransparent .nav-btn-main{
