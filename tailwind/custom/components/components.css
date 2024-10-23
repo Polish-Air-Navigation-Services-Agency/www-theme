@@ -87,6 +87,7 @@ header.header-nontransparent .menu-item a{
 	@apply lg:text-primary after:lg:!bg-primary
 }
 
+header:has( [aria-expanded="true"].menu-btn) .logo svg path,
 header.header-nontransparent .logo svg path{
 	@apply fill-primary
 }
@@ -110,7 +111,7 @@ header.header-nontransparent .nav-btn-main{
 }
 
 #primary-menu a {
-	@apply flex justify-between items-center py-4 lg:py-0 lg:w-fit uppercase hover:text-secondary after:content-[''] after:ml-1 after:w-[20px] after:h-[2px] after:bg-primary after:rounded-full hover:after:!bg-secondary transition duration-200 after:transition after:duration-200;
+	@apply flex justify-between items-center py-4 lg:py-0 lg:w-fit uppercase hover:text-secondary after:content-[''] after:ml-2 after:w-[20px] after:h-[2px] after:bg-primary after:rounded-full hover:after:!bg-secondary transition duration-200 after:transition after:duration-200;
 }
 
 .form-basic input:not([type="checkbox"]),
@@ -198,6 +199,7 @@ header.header-nontransparent .nav-btn-main{
 body.home .ham .line {
 	@apply stroke-white;
 }
+header:has( [aria-expanded="true"].menu-btn) .ham .line,
 header.header-nontransparent .ham .line{
 	@apply !stroke-primary
 }
