@@ -30,7 +30,7 @@
 
 
 		<div id="site-navigation" class="w-full bg-white lg:bg-transparent text-primary <?php if (is_front_page()) : ?>lg:text-white <?php endif; ?> absolute lg:static inset-x-0 top-full h-0 lg:h-auto overflow-auto lg:overflow-visible shadow-none transition-all duration-500" data-js="nav-container">
-			<nav class="container w-full pt-5 lg:pt-0 lg:!px-0 pb-5 lg:pb-0 lg:!max-w-full flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 font-medium <?php echo (!is_front_page()) ? 'lg:[&_li_a]:after:!bg-primary' : ''; ?>" aria-label="<?php esc_attr_e('Main Navigation', '_pansa'); ?>">
+			<nav class="container w-full pt-5 lg:pt-0 lg:!px-0 pb-5 lg:pb-0 lg:!max-w-full flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 font-medium <?php echo (is_front_page()) ? 'lg:[&_li_a]:after:!bg-white' : ''; ?>" aria-label="<?php esc_attr_e('Main Navigation', '_pansa'); ?>">
 				<?php
 				wp_nav_menu(
 					array(
