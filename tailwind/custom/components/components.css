@@ -72,10 +72,10 @@ html {
 }
 
 .menu-btn::after{
-	@apply absolute top-[5px] left-[6px] z-10 block w-10 h-10 content-[''] rounded-full border border-white/25 transition-all duration-200
+	@apply absolute top-[5px] left-[5px] z-10 block w-10 h-10 content-[''] rounded-full border border-[#BEBFBF] transition-all duration-200
 }
-.menu-btn::after{
-	@apply border-[#BEBFBF]
+.home header:not(.header-nontransparent) .menu-btn::after{
+	@apply border-white/25
 }
 
 
