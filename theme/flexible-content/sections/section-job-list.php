@@ -59,7 +59,7 @@ $JOBS_INCREMENT_COUNT = 10;
 
                         <div class="self-start lg:self-center">
                             <?php if ($tile['url']) : ?>
-                                <a href="<?php echo $tile['url']; ?>" class="group w-[160px] h-[50px] pl-[30px] pr-[70px] ml-[60px] lg:ml-0 flex items-center justify-center rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition-all duration-200 relative">
+                                <a href="<?php echo $tile['url']; ?>" class="group w-[160px] h-[50px] pl-[30px] pr-[70px] ml-[60px] lg:ml-0 flex items-center justify-center rounded-full text-[18px] font-medium bg-primary hover:bg-secondary text-white transition-all duration-200 relative">
                                     <?php esc_html_e('Apply', '_pansa'); ?>
                                     <svg class="absolute right-[26px] top-[16px] pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
                                         <path class="group-hover:stroke-primary" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -73,10 +73,10 @@ $JOBS_INCREMENT_COUNT = 10;
             <?php if ($is_preview) :
                 $JOBS_PAGE_ID = 39;
             ?>
-                <a href="<?php echo get_permalink($JOBS_PAGE_ID); ?>" target="_blank" class="group mx-auto w-fit px-7 py-3 flex items-center justify-center gap-2.5 rounded-full text-[18px] font-medium bg-primary border-[1px] border-primary hover:bg-white hover:text-primary hover:border-[#BEBFBF] text-white transition duration-200 relative">
+                <a href="<?php echo get_permalink($JOBS_PAGE_ID); ?>" target="_blank" class="mx-auto w-fit px-7 py-3 flex items-center justify-center gap-2.5 rounded-full text-[18px] font-medium bg-primary hover:bg-secondary text-white transition duration-200 relative">
                     <?php esc_html_e('Show all offers', '_pansa'); ?>
                     <svg class="pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
-                        <path class="group-hover:stroke-primary transition duration-200" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path class="transition duration-200" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </a>
             <?php elseif (count($tiles) > 10) : ?>
