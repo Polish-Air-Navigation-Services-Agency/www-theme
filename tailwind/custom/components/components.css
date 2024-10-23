@@ -254,6 +254,10 @@ header:has( [aria-expanded="true"].menu-btn) .ham8 .bottom {
 	@apply !hidden;
 }
 
+.home #o_nas{
+	@apply lg:pt-[130px] lg:pb-[85px]
+}
+
 .swiper-btn-default {
 	@apply cursor-pointer flex shrink-0 justify-center items-center size-14 lg:size-[72px] rounded-full border-2 border-[#F6F8F9] hover:border-secondary hover:bg-secondary transition duration-200;
 }
@@ -315,3 +319,4 @@ header:has( [aria-expanded="true"].menu-btn) .ham8 .bottom {
 [data-js-parallax="img"]{
 	@apply absolute block object-cover inset-x-0 top-0 bottom-[-50px] lg:bottom-[-120px]
 }
+
