@@ -64,7 +64,11 @@ html {
 }
 
 #primary-menu li {
-	@apply relative w-fit lg:w-auto;
+	@apply border-b border-b-[#DEDFDF];
+}
+
+#primary-menu li:last-of-type {
+	@apply border-b-0
 }
 
 header{
@@ -83,20 +87,12 @@ header.header-nontransparent .logo svg path{
 	@apply fill-primary
 }
 
-header.header-nontransparent:has([aria-expanded="true"].menu-btn){
-	@apply !bg-white
-}
-
-header.header-nontransparent .nav-btn-main{
-	@apply bg-white
-}
-
 header.header-collapsed{
 	@apply -translate-y-full
 }
 
 header .nav-btn-main{
-	@apply flex items-center justify-center gap-[10px] bg-white hover:bg-primary text-primary hover:text-white border border-white hover:border-primary !rounded-full !px-6 !py-[11px] transition duration-200
+	@apply flex items-center justify-center gap-[10px] bg-primary hover:bg-secondary text-white !rounded-full !px-6 !py-[11px] transition duration-200
 }
 
 header.header-nontransparent .nav-btn-main svg path{
@@ -112,7 +108,7 @@ header.header-nontransparent .nav-btn-main{
 }
 
 #primary-menu a {
-	@apply uppercase hover:text-secondary after:content-[''] after:w-[20px] after:h-[2px] after:bg-primary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-26px] hover:after:!bg-secondary transition duration-200 after:transition after:duration-200;
+	@apply flex justify-between items-center py-4 lg:py-0 lg:w-fit uppercase hover:text-secondary after:content-[''] after:w-[20px] after:h-[2px] after:bg-primary after:rounded-full hover:after:!bg-secondary transition duration-200 after:transition after:duration-200;
 }
 
 .form-basic input:not([type="checkbox"]),
@@ -202,10 +198,6 @@ body.home .ham .line {
 }
 header.header-nontransparent .ham .line{
 	@apply !stroke-primary
-}
-
-header.header-nontransparent:has([aria-expanded="true"].menu-btn) .ham .line{
-	@apply !stroke-white
 }
 
 body .ham .line {
