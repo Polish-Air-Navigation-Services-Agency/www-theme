@@ -37,7 +37,7 @@ $tiles = $args['tiles'];
         <div class="swiper w-full !overflow-visible [&_.swiper-slide]:w-4/5 [&_.swiper-slide]:md:w-1/2 [&_.swiper-slide]:lg:w-1/3" data-js="swiper-tiles">
             <div class="swiper-wrapper">
                 <?php foreach ($tiles as $key => $tile) : ?>
-                    <div class="swiper-slide px-6 md:pr-9 lg:pr-14 border-l border-l-[#D4DEE4]">
+                    <div class="swiper-slide !h-auto px-6 md:pr-9 lg:pr-14 border-l border-l-[#D4DEE4]">
                         <span class="block text-3xl font-medium text-secondary mt-5 mb-7">
                             <?php
                             $tile_num = $key + 1;
