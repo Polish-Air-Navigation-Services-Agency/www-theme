@@ -72,7 +72,7 @@ html {
 }
 
 .menu-btn::after{
-	@apply absolute top-[15px] left-[15px] z-10 block w-10 h-10 content-[''] rounded-full border border-white/25 transition-all duration-200
+	@apply absolute top-[5px] left-[6px] z-10 block w-10 h-10 content-[''] rounded-full border border-white/25 transition-all duration-200
 }
 .menu-btn::after{
 	@apply border-[#BEBFBF]
@@ -202,10 +202,10 @@ header .nav-btn-main svg path{
 	-ms-user-select: none;
 	user-select: none;
 }
-.hamRotate.active {
+header:has( [aria-expanded="true"].menu-btn) .hamRotate {
 	transform: rotate(45deg);
 }
-.hamRotate180.active {
+header:has( [aria-expanded="true"].menu-btn) .hamRotate180 {
 	transform: rotate(180deg);
 }
 body.home .ham .line {
@@ -240,13 +240,13 @@ body .ham .line {
 		transform 400ms,
 		stroke-dashoffset 400ms;
 }
-.ham8.active .top {
+header:has( [aria-expanded="true"].menu-btn) .ham8 .top {
 	stroke-dashoffset: -64px;
 }
-.ham8.active .middle {
+header:has( [aria-expanded="true"].menu-btn) .ham8 .middle {
 	transform: rotate(90deg);
 }
-.ham8.active .bottom {
+header:has( [aria-expanded="true"].menu-btn) .ham8 .bottom {
 	stroke-dashoffset: -64px;
 }
 
