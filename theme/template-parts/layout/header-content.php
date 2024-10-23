@@ -50,7 +50,7 @@ $social_links = get_field('social_links', 'option');
 						class="nav-btn-main group">
 						<?php esc_html_e('Contact Us', '_pansa'); ?>
 						<svg class="self-center" xmlns="http://www.w3.org/2000/svg" width="34" height="16" viewBox="0 0 34 16" fill="none">
-							<path class="stroke-primary group-hover:stroke-white <?php if (!is_front_page()) : ?>lg:stroke-white lg:group-hover:stroke-primary <?php endif; ?>transition duration-200" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							<path class="transition duration-200" d="M26.4003 14.5996L33 7.99996M33 7.99996L26.4003 1.4003M33 7.99996L1.49994 8.00003" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 						</svg>
 					</a>
 	
