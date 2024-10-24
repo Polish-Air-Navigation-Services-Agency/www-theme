@@ -144,8 +144,8 @@ function initWideSwipers() {
 		'[data-js="swiper-tiles-wide"]'
 	);
 	swiperContainers.forEach((el) => {
-		const nextBtn = el.parentElement.querySelector('[data-js="swiper-next"]') 
-		const prevBtn = el.parentElement.querySelector('[data-js="swiper-prev"]') 
+		const nextBtn = el.parentElement.querySelector('.swiper-button-next') 
+		const prevBtn = el.parentElement.querySelector('.swiper-button-prev') 
 		new Swiper(el, {
 			spaceBetween: 20,
 			slidesPerView: 1,
