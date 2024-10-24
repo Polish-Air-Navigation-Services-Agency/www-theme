@@ -8,7 +8,7 @@ $tiles = $args['tiles'];
 
 ?>
 
-<section class="bg-[#F6F8F9]">
+<section id="benefits" class="bg-[#F6F8F9]">
     <div class="container mx-auto py-[100px]">
         <div class="title-wrapper w-full flex flex-col justify-center items-center">
             <?php if ($section_number) : ?>
