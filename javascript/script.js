@@ -144,14 +144,16 @@ function initWideSwipers() {
 		'[data-js="swiper-tiles-wide"]'
 	);
 	swiperContainers.forEach((el) => {
+		const nextBtn = el.parentElement.querySelector('[data-js="swiper-next"]') 
+		const prevBtn = el.parentElement.querySelector('[data-js="swiper-prev"]') 
 		new Swiper(el, {
 			spaceBetween: 20,
 			slidesPerView: 1,
 			modules: [Navigation],
 			watchSlidesProgress: true,
 			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
+				nextEl: nextBtn,
+				prevEl: prevBtn,
 			},
 		});
 	});
@@ -162,13 +164,15 @@ function initTileSwipers() {
 		'[data-js="swiper-tiles"]'
 	);
 	swiperContainers.forEach((el) => {
+		const nextBtn = el.parentElement.querySelector('[data-js="swiper-next"]') 
+		const prevBtn = el.parentElement.querySelector('[data-js="swiper-prev"]') 
 		new Swiper(el, {
 			slidesPerView: 1.2,
 			modules: [Navigation],
 			watchSlidesProgress: true,
 			navigation: {
-				nextEl: '[data-js="swiper-next"]',
-				prevEl: '[data-js="swiper-prev"]',
+				nextEl: nextBtn,
+				prevEl: prevBtn,
 			},
 			breakpoints: {
 				768: {
