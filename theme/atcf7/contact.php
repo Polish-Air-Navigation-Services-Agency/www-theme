@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
   </div>
 
   <div class="message-container w-full">
-    [textarea* your-message x3 placeholder "Treść wiadomości"]
+    [textarea your-message x3 placeholder "Treść wiadomości"]
   </div>
 
   <div class="max-w-[520px] mb-5 [&_a]:!text-white hover:[&_a]:!text-white [&_input]:!accent-secondary">
