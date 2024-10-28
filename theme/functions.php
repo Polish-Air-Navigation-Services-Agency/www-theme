@@ -281,13 +281,11 @@ function aldi_wpcf7_consent($contact_form, $abort, $submission)
 	$form_id = $contact_form->id();
 	if ($form_id == '1064') {
 		$posted_data = $submission->get_posted_data();
-		$user_email = $posted_data['prod-id'];
+		$user_email = $posted_data['email'];
 
 		$has_consent = isset($posted_data['privacy-policy']) && $posted_data['privacy-policy'] === '1';
-
-		print_r($posted_data);
 		
-		if ($has_consent) {
+		if ($has_consent && $user_email) {
 			$dataSubject = gdpr('data-subject')->getByEmail($user_email);
 			$dataSubject->giveConsent('privacy-policy');
 		}
