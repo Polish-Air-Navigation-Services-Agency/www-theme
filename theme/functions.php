@@ -272,3 +272,25 @@ function get_best_fit_image_size($custom_width)
 
 	return $best_fit_size;
 }
+
+
+add_action('wpcf7_before_send_mail', 'aldi_wpcf7_consent', 10, 3);
+
+function aldi_wpcf7_consent($contact_form, $abort, $submission)
+{
+	$form_id = $contact_form->id();
+	if ($form_id == '1064') {
+		$posted_data = $submission->get_posted_data();
+		$user_email = $posted_data['prod-id'];
+
+		$has_consent = isset($posted_data['privacy-policy']) && $posted_data['privacy-policy'] === '1';
+
+		print_r($posted_data);
+		
+		if ($has_consent) {
+			$dataSubject = gdpr('data-subject')->getByEmail($user_email);
+			$dataSubject->giveConsent('privacy-policy');
+		}
+
+	}
+}
