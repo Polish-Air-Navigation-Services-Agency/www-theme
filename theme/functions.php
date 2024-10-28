@@ -281,7 +281,7 @@ function aldi_wpcf7_consent($contact_form, $abort, $submission)
 	$form_id = $contact_form->id();
 	if ($form_id == '1064') {
 		$posted_data = $submission->get_posted_data();
-		$user_email = $posted_data['email'];
+		$user_email = $posted_data['your-email'];
 
 		$has_consent = isset($posted_data['privacy-policy']) && $posted_data['privacy-policy'] === '1';
 		
