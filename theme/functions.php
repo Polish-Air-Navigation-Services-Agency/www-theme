@@ -278,17 +278,14 @@ add_action('wpcf7_before_send_mail', 'aldi_wpcf7_consent', 10, 3);
 
 function aldi_wpcf7_consent($contact_form, $abort, $submission)
 {
-	$form_id = $contact_form->id();
-	if ($form_id == '1064') {
-		$posted_data = $submission->get_posted_data();
-		$user_email = $posted_data['your-email'];
+	$posted_data = $submission->get_posted_data();
+	$user_email = $posted_data['your-email'];
 
-		$has_consent = isset($posted_data['privacy-policy']) && $posted_data['privacy-policy'] === '1';
-		
-		if ($has_consent && $user_email) {
-			$dataSubject = gdpr('data-subject')->getByEmail($user_email);
-			$dataSubject->giveConsent('privacy-policy');
-		}
-
+	$has_consent = isset($posted_data['privacy-policy']) && $posted_data['privacy-policy'] === '1';
+	
+	if ($has_consent && $user_email) {
+		$dataSubject = gdpr('data-subject')->getByEmail($user_email);
+		$dataSubject->giveConsent('privacy-policy');
 	}
+
 }
