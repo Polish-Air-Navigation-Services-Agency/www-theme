@@ -28,7 +28,7 @@ $tiles = $args['tiles'];
                     $tileID++;
                 ?>
                     <?php if ($tile) : ?>
-                        <div data-js-tile-numbered="tile-numbered" class="tile-wrapper group basis-[100%] md:basis-[calc(100%/3-30px)] lg:basis-[calc(100%/4-30px)] px-5 py-[30px] flex flex-col bg-white hover:bg-primary transition ease duration-200">
+                        <div data-js-tile-numbered="tile-numbered" class="tile-wrapper group basis-[100%] md:basis-[calc(100%/3-30px+(30px/3))] lg:basis-[calc(100%/4-30px+(30px/4))] px-5 py-[30px] flex flex-col bg-white hover:bg-primary transition ease duration-200">
                             <?php if ($tile['number']) : ?>
                                 <span class="size-20 mb-10 self-end flex flex-col justify-center items-center text-[50px] text-primary rounded-full font-medium group-hover:bg-secondary"><?php echo $tile['number']; ?></span>
                             <?php endif; ?>
