@@ -15,15 +15,15 @@ $add_decor = $args['add_decor'];
                 <circle cx="75" r="75" fill="#60B8D1" />
             </svg>
         <?php endif;?>
-        <div class="md:aspect-[2048/600] grid grid-cols-1 md:grid-cols-2">
-            <div data-js-parallax="container" class="max-h-[700px]">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div data-js-parallax="container" class="h-64 md:h-[700px]">
                 <div data-js-parallax="img" class="w-full h-full">
                     <?php if (isset($image_left['url'])){
                             echo pansa_img_responsive($image_left, 'h-full w-full object-cover', array(1024, 700), 'lazy');
                     }; ?>
                 </div>
             </div>
-            <div data-js-parallax="container" class="max-h-[700px]">
+            <div data-js-parallax="container" class="h-64 md:h-[700px]">
                 <div data-js-parallax="img" class="w-full h-full">
                     <?php if (isset($image_right['url'])){
                             echo pansa_img_responsive($image_right, 'h-full w-full object-cover', array(1024, 700), 'lazy');
