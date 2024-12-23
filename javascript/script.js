@@ -150,6 +150,7 @@ function initWideSwipers() {
 			spaceBetween: 20,
 			slidesPerView: 1,
 			modules: [Navigation],
+			loop: true,
 			watchSlidesProgress: true,
 			navigation: {
 				nextEl: nextBtn,
