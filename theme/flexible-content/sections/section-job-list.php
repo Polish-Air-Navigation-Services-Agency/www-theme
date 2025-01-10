@@ -32,7 +32,7 @@ $JOBS_INCREMENT_COUNT = 10;
                             <span class="text-[30px] w-9 font-medium text-secondary"><?php echo $tileID; ?></span>
                             <div class="mb-5 lg:mb-0">
                                 <?php if ($tile['title']) : ?>
-                                    <h3 class="mb-[10px] text-[30px] font-medium text-primary group-hover:text-secondary transition duration-200"><?php echo $tile['title']; ?></h3>
+                                    <h3 class="mb-[10px] text-[30px] font-medium <?php echo $tile['featured'] ? 'text-red-500' : 'text-primary'; ?> group-hover:text-secondary transition duration-200"><?php echo $tile['title']; ?></h3>
                                 <?php endif; ?>
 
                                 <div class="flex gap-[14px]">

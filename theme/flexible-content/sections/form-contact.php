@@ -13,6 +13,16 @@ $person_name = $args['person_name'];
 $position = $args['position'];
 $contact_info = $args['contact_info'];
 
+$person2_visible = $args['person2_visible'];
+
+$image2 = $args['image2'];
+if ($image2['url']) {
+    $image2_url = $image2['url'];
+}
+$person2_name = $args['person2_name'];
+$position2 = $args['position2'];
+$contact_info2 = $args['contact_info2'];
+
 
 ?>
 
@@ -44,29 +54,56 @@ $contact_info = $args['contact_info'];
                     </div>
                 </div>
 
-                <div class="lg:basis-1/2 lg:pl-[100px] mb-10 lg:mb-0">
+                <div class="lg:basis-1/2 lg:pl-[100px] mb-10 lg:mb-0 flex gap-10 md:gap-5 flex-col md:flex-row">
 
-                    <?php if ($image_url) : ?>
-                        <div class="relative mb-3 min-[430px]:max-w-[315px]">
-                            <img src="<?= $image_url ?>" class="w-full object-cover" <?= $image['alt'] ? 'alt="'.$image['alt'] . '"' : '' ?> loading="lazy">
-                            <svg class="hidden min-[430px]:block absolute left-full top-1/2 -translate-y-1/2 max-h-[80%]" width="72" height="284" viewBox="1 0 85 284" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M72 142C72 84.0755 43.8577 32.7242 0.5 0.872803V283.127C43.8577 251.276 72 199.924 72 142Z" fill="#60B8D1"/>
-                            </svg>
+                    <div>
+                        <?php if ($image_url) : ?>
+                            <div class="relative mb-3 min-[430px]:max-w-[315px]">
+                                <img src="<?= $image_url ?>" class="w-full object-cover" <?= $image['alt'] ? 'alt="'.$image['alt'] . '"' : '' ?> loading="lazy">
+                                <svg class="hidden min-[430px]:block absolute left-full top-1/2 -translate-y-1/2 max-h-[80%]" width="72" height="284" viewBox="1 0 85 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M72 142C72 84.0755 43.8577 32.7242 0.5 0.872803V283.127C43.8577 251.276 72 199.924 72 142Z" fill="#60B8D1"/>
+                                </svg>
+                            </div>
+                        <?php endif; ?>
+    
+                        <?php if ($person_name) : ?>
+                        <h3 class="text-3xl font-medium text-foreground mb-1"><?= $person_name ?></h3>
+                        <?php endif; ?>
+    
+                        <?php if ($position) : ?>
+                        <p class="text-lg text-secondary font-medium pb-2.5 mb-2.5 relative after:absolute after:block after:content-[''] after:h-1 after:bg-secondary after:bottom-0 after:w-[61px] after:rounded-full"><?= $position ?></p>
+                        <?php endif; ?>
+    
+                        <?php if ($contact_info) : ?>
+                        <div class="text-textGray font-semibold text-xl prose-a:transition prose-a:duration-200 hover:prose-a:text-secondary">
+                            <?= $contact_info ?>
                         </div>
-                    <?php endif; ?>
-
-                    <?php if ($person_name) : ?>
-                    <h3 class="text-3xl font-medium text-foreground mb-1"><?= $person_name ?></h3>
-                    <?php endif; ?>
-
-                    <?php if ($position) : ?>
-                    <p class="text-lg text-secondary font-medium pb-2.5 mb-2.5 relative after:absolute after:block after:content-[''] after:h-1 after:bg-secondary after:bottom-0 after:w-[61px] after:rounded-full"><?= $position ?></p>
-                    <?php endif; ?>
-
-                    <?php if ($contact_info) : ?>
-                    <div class="text-textGray font-semibold text-xl prose-a:transition prose-a:duration-200 hover:prose-a:text-secondary">
-                    <?= $contact_info ?>
+                        <?php endif; ?>
                     </div>
+
+                    <?php if ($person2_visible) : ?>
+                        <div>
+                            <?php if ($image2_url) : ?>
+                            <div class="relative mb-3 min-[430px]:max-w-[315px]">
+                                <img src="<?= $image2_url ?>" class="w-full object-cover" <?= $image2['alt'] ? 'alt="'.$image2['alt'] . '"' : '' ?> loading="lazy">
+                            </div>
+                            <?php endif; ?>
+
+                            <?php if ($person2_name) : ?>
+                            <h3 class="text-3xl font-medium text-foreground mb-1"><?= $person_name ?></h3>
+                            <?php endif; ?>
+
+                            <?php if ($position2) : ?>
+                            <p class="text-lg text-secondary font-medium pb-2.5 mb-2.5 relative after:absolute after:block after:content-[''] after:h-1 after:bg-secondary after:bottom-0 after:w-[61px] after:rounded-full"><?= $position ?></p>
+                            <?php endif; ?>
+
+                            <?php if ($contact_info2) : ?>
+                            <div class="text-textGray font-semibold text-xl prose-a:transition prose-a:duration-200 hover:prose-a:text-secondary">
+                                <?= $contact_info2 ?>
+                            </div>
+                            <?php endif; ?>
+
+                        </div>
                     <?php endif; ?>
 
                 </div>
