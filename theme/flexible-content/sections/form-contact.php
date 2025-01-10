@@ -54,12 +54,12 @@ $contact_info2 = $args['contact_info2'];
                     </div>
                 </div>
 
-                <div class="lg:basis-1/2 lg:pl-[100px] mb-10 lg:mb-0 flex gap-10 md:gap-5 flex-col md:flex-row">
+                <div class="lg:basis-1/2 lg:pl-[100px] mb-10 lg:mb-0 flex gap-10 lg:gap-16 flex-col md:flex-row">
 
                     <div>
                         <?php if ($image_url) : ?>
                             <div class="relative mb-3 min-[430px]:max-w-[315px]">
-                                <img src="<?= $image_url ?>" class="w-full object-cover" <?= $image['alt'] ? 'alt="'.$image['alt'] . '"' : '' ?> loading="lazy">
+                                <img src="<?= $image_url ?>" class="w-full object-cover lg:max-h-[330px]" <?= $image['alt'] ? 'alt="'.$image['alt'] . '"' : '' ?> loading="lazy">
                                 <svg class="hidden min-[430px]:block absolute left-full top-1/2 -translate-y-1/2 max-h-[80%]" width="72" height="284" viewBox="1 0 85 284" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M72 142C72 84.0755 43.8577 32.7242 0.5 0.872803V283.127C43.8577 251.276 72 199.924 72 142Z" fill="#60B8D1"/>
                                 </svg>
@@ -85,16 +85,19 @@ $contact_info2 = $args['contact_info2'];
                         <div>
                             <?php if ($image2_url) : ?>
                             <div class="relative mb-3 min-[430px]:max-w-[315px]">
-                                <img src="<?= $image2_url ?>" class="w-full object-cover" <?= $image2['alt'] ? 'alt="'.$image2['alt'] . '"' : '' ?> loading="lazy">
+                                <img src="<?= $image2_url ?>" class="w-full object-cover lg:max-h-[330px]" <?= $image2['alt'] ? 'alt="'.$image2['alt'] . '"' : '' ?> loading="lazy">
+                                <svg class="hidden min-[430px]:block absolute left-full top-1/2 -translate-y-1/2 max-h-[80%]" width="72" height="284" viewBox="1 0 85 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M72 142C72 84.0755 43.8577 32.7242 0.5 0.872803V283.127C43.8577 251.276 72 199.924 72 142Z" fill="#60B8D1"/>
+                                </svg>
                             </div>
                             <?php endif; ?>
 
                             <?php if ($person2_name) : ?>
-                            <h3 class="text-3xl font-medium text-foreground mb-1"><?= $person_name ?></h3>
+                            <h3 class="text-3xl font-medium text-foreground mb-1"><?= $person2_name ?></h3>
                             <?php endif; ?>
 
                             <?php if ($position2) : ?>
-                            <p class="text-lg text-secondary font-medium pb-2.5 mb-2.5 relative after:absolute after:block after:content-[''] after:h-1 after:bg-secondary after:bottom-0 after:w-[61px] after:rounded-full"><?= $position ?></p>
+                            <p class="text-lg text-secondary font-medium pb-2.5 mb-2.5 relative after:absolute after:block after:content-[''] after:h-1 after:bg-secondary after:bottom-0 after:w-[61px] after:rounded-full"><?= $position2 ?></p>
                             <?php endif; ?>
 
                             <?php if ($contact_info2) : ?>
