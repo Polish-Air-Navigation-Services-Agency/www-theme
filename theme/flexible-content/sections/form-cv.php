@@ -31,7 +31,7 @@ if ($image['url']) {
                     <?php endif; ?>
 
                     <?php if ($title) : ?>
-                        <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative"><?php echo $title; ?></h2>
+                        <h2 class="mb-[50px] text-[50px] lg:text-[60px] text-white leading-[64px] lg:leading-[72px] font-medium z-[1] relative pr-5 md:pr-10"><?php echo $title; ?></h2>
                     <?php endif; ?>
                 </div>
 
@@ -63,7 +63,7 @@ if ($image['url']) {
     <?php if($image_url): ?>
         <div class="aspect-[900/550] md:aspect-[1440/550]" data-js-parallax="container">
             <div data-js-parallax="img">
-                <?php echo pansa_img_responsive($image, 'w-full h-full object-cover', array(1440, 500), 'lazy');?>
+                <?php echo pansa_img_responsive($image, 'w-full h-full object-cover object-top', array(1440, 500), 'lazy');?>
             </div>
         </div>
     <?php endif;?>

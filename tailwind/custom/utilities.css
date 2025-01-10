@@ -6,3 +6,8 @@
  *
  * https://tailwindcss.com/docs/plugins#adding-utilities
  */
+
+
+.mobile-paralax-disabled{
+    @apply max-md:inset-0 max-md:!transform-none 
+}

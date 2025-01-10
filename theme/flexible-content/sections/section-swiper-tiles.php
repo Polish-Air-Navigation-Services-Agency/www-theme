@@ -2,13 +2,14 @@
 
 /** Template to display 'Swiper kafelek' - section_swiper_tiles */
 
+$section_id = $args['section_id'];
 $section_number = $args['section_number'];
 $title = $args['title'];
 $tiles = $args['tiles'];
 
 ?>
 
-<section class="relative my-20 lg:mt-36 lg:mb-[100px] overflow-hidden">
+<section class="relative my-20 lg:mt-36 lg:mb-[100px] overflow-hidden" <?php echo $section_id ? 'id="' . $section_id . '"' : ''; ?>>
     <div class="container w-full flex flex-col ">
         <?php if ($section_number) : ?>
             <span class="w-fit mb-2 text-base leading-[24px] text-secondary font-semibold after:content-[''] after:w-[61px] after:h-[2px] after:bg-secondary after:rounded-full after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-70px] relative"><?php echo $section_number; ?></span>
