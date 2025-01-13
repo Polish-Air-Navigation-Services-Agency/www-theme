@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
 
     [text* your-lastname placeholder "Twoje nazwisko*"]
 
-    [tel* your-phone placeholder "Numer telefon*"]
+    [tel* your-phone placeholder "Numer telefonu*"]
 
     [email* your-email placeholder "Adres e-mail*"]
 
