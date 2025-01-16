@@ -18,6 +18,7 @@ if ($hero_background_mobile['url']) {
 ?>
 
 <section class="relative w-full !h-[600px] md:!h-[700px] flex flex-col justify-center">
+    <div class="md:hidden absolute inset-0 bg-gradient-to-t from-black/30 via-black/30 to-transparent z-[-2]"></div>
     <div class="!absolute inset-0 -z-10" data-js-parallax="container">
         <picture data-js-parallax="img">
             <source media="(min-width:768px)" srcset="<?= $hero_bg_url ?>">
