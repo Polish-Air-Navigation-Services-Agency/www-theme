@@ -4,7 +4,8 @@
 
 $section_number = $args['section_number'];
 $title = $args['title'];
-$video = $args['video'];
+$video_yt = $args['video_yt']; //embed link
+$video_mp4 = $args['video_mp4']; //mp4 file link
 $video_thumbnail = $args['video_thumbnail'];
 $desc1 = $args['desc1'];
 $desc2 = $args['desc2'];
@@ -41,8 +42,14 @@ if ($video_thumbnail['url']) {
                 <span class="inset-0 absolute z-10 bg-[#0F304D80]">
                 </span>
             </div>
-            <div class="absolute z-10 inset-0 w-full [&>iframe]:w-full [&>iframe]:h-full opacity-0 transition duration-300" data-js-video-iframe-container="<?php echo $video; ?>">
-            </div>
+            <?php if ($video_mp4) : ?>
+                <video class="absolute z-10 inset-0 w-full h-full object-cover opacity-0 transition duration-300" loading="lazy" autoplay controls>
+                    <source src="<?php echo $video_mp4; ?>" type="video/mp4">
+                </video>
+            <?php else : ?>
+                <div class="absolute z-10 inset-0 w-full [&>iframe]:w-full [&>iframe]:h-full opacity-0 transition duration-300" data-js-video-iframe-container="<?php echo $video_yt; ?>">
+                </div>
+            <?php endif; ?>
             <div class="absolute inset-0">
                 <?php if (isset($video_thumbnail_url)) : ?>
                     <?php 
