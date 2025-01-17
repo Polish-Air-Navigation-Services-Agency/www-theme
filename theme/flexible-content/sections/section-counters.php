@@ -32,15 +32,9 @@ $overlapping_background = $args['overlapping_background'];
                     <div class="relative flex flex-col items-center text-left">
                         <div class="mb-1 lg:mb-6 self-start">
                             <?php if ($tile) : ?>
-                                <h3 class="text-[40px] lg:text-[60px] text-white font-medium">
-                                    <span id="target<?php echo $tileID ?>" data-counter-target<?php echo $tileID ?>="<?php echo $tile['counter_target']; ?>" data-counter-qty>
-                                        <?php echo $tile['counter_target']; ?>
-                                    </span>
-
-                                    <?php if ($tile['counter_unit_2']) : ?>
-                                        <span><?php echo $tile['counter_unit_2']; ?></span>
-                                    <?php endif; ?>
-
+                                <h3 class="text-[40px] lg:text-[60px] text-white font-medium whitespace-nowrap">
+                                    <?php if ($tile['counter_prefix']) : ?><span><?php echo $tile['counter_prefix']; ?></span><?php endif; ?><span id="target<?php echo $tileID ?>" data-counter-target<?php echo $tileID ?>="<?php echo $tile['counter_target']; ?>" data-counter-qty><?php echo $tile['counter_target']; ?></span>
+                                    <?php if ($tile['counter_unit_2']) : ?><span><?php echo $tile['counter_unit_2']; ?></span><?php endif; ?>
                                     <span class="text-secondary text-base font-semibold absolute top-[10px] lg:top-4"><?php echo $tile['counter_unit']; ?></span>
                                 </h3>
                             <?php endif; ?>

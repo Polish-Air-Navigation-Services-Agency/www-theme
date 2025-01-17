@@ -43,7 +43,7 @@ if ($video_thumbnail['url']) {
                 </span>
             </div>
             <?php if ($video_mp4) : ?>
-                <video class="absolute z-10 inset-0 w-full h-full object-cover opacity-0 transition duration-300" loading="lazy" autoplay controls>
+                <video class="absolute z-10 inset-0 w-full h-full object-cover opacity-0 transition duration-300" loading="lazy" controls>
                     <source src="<?php echo $video_mp4; ?>" type="video/mp4">
                 </video>
             <?php else : ?>
