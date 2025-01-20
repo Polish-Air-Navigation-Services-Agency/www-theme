@@ -7,7 +7,8 @@ $title = $args['title'];
 $description = $args['description'];
 $description2 = $args['description2'];
 $decoration_paragraph = $args['decoration_paragraph'];
-$video = $args['video'];
+$video_yt = $args['video_yt']; //embed link
+$video_mp4 = $args['video_mp4']; //mp4 file link
 $video_thumbnail = $args['video_thumbnail'];
 
 ?>
@@ -52,7 +53,7 @@ $video_thumbnail = $args['video_thumbnail'];
             </div>
         </div>
 
-        <?php if (isset($video)) : ?>
+        <?php if (isset($video_mp4) || isset($video_yt)) : ?>
             <div class="col-start-1 row-start-1 relative 
                 <?php if ($title || $description || $description2) : ?> 
                     lg:pr-16 
@@ -82,8 +83,14 @@ $video_thumbnail = $args['video_thumbnail'];
                         <span class="inset-0 absolute z-10 bg-[#0F304D80]">
                         </span>
                     </div>
-                    <div class="absolute z-10 inset-0 w-full [&>iframe]:w-full [&>iframe]:h-full opacity-0 transition duration-300" data-js-video-iframe-container="<?php echo $video; ?>">
-                    </div>
+                    <?php if ($video_mp4) : ?>
+                        <video class="absolute z-10 inset-0 w-full h-full object-cover opacity-0 transition duration-300" loading="lazy" controls>
+                            <source src="<?php echo $video_mp4; ?>" type="video/mp4">
+                        </video>
+                    <?php else : ?>
+                        <div class="absolute z-10 inset-0 w-full [&>iframe]:w-full [&>iframe]:h-full opacity-0 transition duration-300" data-js-video-iframe-container="<?php echo $video_yt; ?>">
+                        </div>
+                    <?php endif; ?> 
                     <div class="relative w-full min-h-52 lg:min-h-[400px]">
                         <?php if ($video_thumbnail) : ?>
                             <img class="object-cover w-full h-auto max-h-[660px]" width="600" height="660" src="<?php echo $video_thumbnail['url']; ?>" <?php if(isset($video_thumbnail['alt'])){echo 'alt="'.$video_thumbnail['alt'].'"';}; ?> loading="lazy" >
