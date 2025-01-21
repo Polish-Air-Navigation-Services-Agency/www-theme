@@ -26,6 +26,7 @@
 	<script>
 		const translations = {
 			'Attach CV file': '<?php esc_html_e('Attach CV file', '_pansa') ?>',
+			'Apply': '<?php esc_html_e('Apply', '_pansa') ?>',
 		}
 	</script>
 </head>

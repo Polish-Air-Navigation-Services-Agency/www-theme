@@ -4,14 +4,17 @@
 
 $is_preview = $args['preview'];
 $endpoint_base = $args['endpoint'];
-
+$featured_offers_numbers = $args['featured_list'];
 ?>
-
 <section class="bg-[#F6F8F9]">
     <div class="container mx-auto pb-[100px]" data-aos="fade" data-aos-delay="50">
-        <div data-js="job-list-raw" data-jobs-endpoint="<?= $endpoint_base; ?>" class="hidden"></div>
+        <div data-js="job-list-raw" 
+            data-jobs-endpoint="<?= $endpoint_base; ?>"
+            data-jobs-featured="<?= implode(', ', array_column($featured_offers_numbers, 'number')); ?>" 
+            class="hidden"></div>
 
-        <div data-js="job-list" data-jobs-preview="<?= $is_preview ? 'true' : 'false' ?>" class="mb-10 md:mb-[60px]">
+        <div data-js="job-list" data-jobs-preview="<?= $is_preview ? 'true' : 'false' ?>" 
+            class="mb-10 md:mb-[60px]">
         </div>
 
         <p data-js="job-list-empty" class="hidden mb-5 mx-auto max-w-96 text-3xl md:text-4xl text-center text-textGray/40 font-medium">
